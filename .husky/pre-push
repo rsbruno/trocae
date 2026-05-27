@@ -1,0 +1,3 @@
+echo "🔶 running build"
+pnpm build
+echo "✅ build"

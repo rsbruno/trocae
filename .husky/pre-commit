@@ -1,0 +1,10 @@
+echo "🔶 running prettier"
+pnpm format
+echo "✅ prettier"
+
+echo "🔶 running eslint"
+pnpm lint:fix
+echo "✅ eslint"
+
+git add .
+echo "✅ all good commit ready"

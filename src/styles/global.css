@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@font-face {
+  font-family: 'Novecento Sans';
+  src: url('/assets/fonts/novecento-sans-normal.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Novecento Sans';
+  src: url('/assets/fonts/novecento-sans-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+}
+
+@theme inline {
+  --font-sticker: 'Novecento Sans', sans-serif;
+  --font-country: 'Gasoek One', sans-serif;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  --color-sticker: var(--sticker);
+  --color-sticker-forward: var(--sticker-forward);
+  --color-sticker-midfielder: var(--sticker-midfielder);
+  --color-sticker-defender: var(--sticker-defender);
+  --color-sticker-goalkeeper: var(--sticker-goalkeeper);
+  --color-sticker-normal: var(--sticker-normal);
+  --color-sticker-silver: var(--sticker-silver);
+  --color-sticker-bronze: var(--sticker-bronze);
+  --color-sticker-gold: var(--sticker-gold);
+  --color-sticker-extra: var(--sticker-extra);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  --sticker: #77C7CA;
+  --sticker-forward: #057D8E;
+  --sticker-midfielder: #ED611E;
+  --sticker-defender: #E7244E;
+  --sticker-goalkeeper: #924090;
+  --sticker-normal: #BC8EBC;
+  --sticker-silver: #999D9F;
+  --sticker-bronze: #C49B7B;
+  --sticker-gold: #AA9B71;
+  --sticker-extra: #110801;
+}
