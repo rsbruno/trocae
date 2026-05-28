@@ -6,7 +6,6 @@ import path from "node:path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  envPrefix: ["VITE_", "FIREBASE_"],
   plugins: [
     tanstackRouter({
       generatedRouteTree: "./src/routes/index.ts",
@@ -24,5 +23,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
-  }
+  },
+  envPrefix: ["VITE_", "FIREBASE_"]
 });

@@ -1,5 +1,5 @@
-import { getApps, initializeApp, type FirebaseApp } from "firebase/app";
-import { getFirestore, type Firestore } from "firebase/firestore";
+import { type FirebaseApp, initializeApp, getApps } from "firebase/app";
+import { type Firestore, getFirestore } from "firebase/firestore";
 
 import { getFirebaseConfig } from "./config";
 

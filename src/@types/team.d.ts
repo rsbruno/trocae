@@ -1,10 +1,4 @@
-export type Confederation =
-  | "CONMEBOL"
-  | "CONCACAF"
-  | "UEFA"
-  | "AFC"
-  | "CAF"
-  | "OFC";
+export type Confederation = "CONMEBOL" | "CONCACAF" | "UEFA" | "AFC" | "CAF" | "OFC";
 
 import type { DocumentReference } from "firebase/firestore";
 

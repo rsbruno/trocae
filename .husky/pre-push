@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo "🔶 running build"
 pnpm build
 echo "✅ build"

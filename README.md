@@ -259,6 +259,22 @@ src/
 | `pnpm lint:fix` | ESLint com correção automática |
 | `pnpm format` | Prettier em TS/TSX/JSON |
 
+### Git hooks (Husky)
+
+Após `pnpm install`, o script `prepare` registra os hooks em `.husky/_` (`core.hooksPath`).
+
+| Hook | O que roda |
+|------|------------|
+| **pre-commit** | `pnpm format` → `pnpm lint:fix` → `git add .` |
+| **pre-push** | `pnpm build` |
+
+Para pular os hooks em um comando pontual:
+
+```bash
+HUSKY=0 git commit -m "mensagem"
+HUSKY=0 git push
+```
+
 ---
 
 ## Stack

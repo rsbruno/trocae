@@ -1,10 +1,8 @@
 import "dotenv/config";
-
-import { readdir, readFile } from "node:fs/promises";
-import path from "node:path";
+import { type Firestore, FieldValue } from "firebase-admin/firestore";
+import { readFile, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-
-import { FieldValue, type Firestore } from "firebase-admin/firestore";
+import path from "node:path";
 
 import { getAdminFirestore } from "@/infra/firebase/admin";
 
@@ -55,10 +53,7 @@ function sortSeedFiles(fileNames: string[]) {
   });
 }
 
-function resolveReferences(
-  db: Firestore,
-  data: Record<string, unknown>
-): Record<string, unknown> {
+function resolveReferences(db: Firestore, data: Record<string, unknown>): Record<string, unknown> {
   const resolved: Record<string, unknown> = { ...data };
 
   for (const [field, collectionId] of Object.entries(referenceFieldCollections)) {
@@ -75,8 +70,7 @@ function resolveReferences(
 function toSeedDocuments(content: unknown): Record<string, unknown>[] {
   if (Array.isArray(content)) {
     return content.filter(
-      (item): item is Record<string, unknown> =>
-        item !== null && typeof item === "object" && !Array.isArray(item)
+      (item): item is Record<string, unknown> => item !== null && typeof item === "object" && !Array.isArray(item)
     );
   }
 
@@ -89,18 +83,10 @@ function toSeedDocuments(content: unknown): Record<string, unknown>[] {
 
 async function listJsonFiles(dir: string) {
   const entries = await readdir(dir, { withFileTypes: true });
-  return sortSeedFiles(
-    entries
-      .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-      .map((entry) => entry.name)
-  );
+  return sortSeedFiles(entries.filter((entry) => entry.isFile() && entry.name.endsWith(".json")).map((entry) => entry.name));
 }
 
-async function syncJsonFile(
-  db: Firestore,
-  seedsDir: string,
-  fileName: string
-): Promise<SeedDocumentResult[]> {
+async function syncJsonFile(db: Firestore, seedsDir: string, fileName: string): Promise<SeedDocumentResult[]> {
   const collectionId = collectionIdFromJsonFile(fileName);
   const filePath = path.join(seedsDir, fileName);
   const raw = await readFile(filePath, "utf8");
@@ -111,9 +97,7 @@ async function syncJsonFile(
     const documentId = document.id;
 
     if (typeof documentId !== "string" || documentId.length === 0) {
-      throw new Error(
-        `Documento sem "id" válido em ${fileName}: ${JSON.stringify(document)}`
-      );
+      throw new Error(`Documento sem "id" válido em ${fileName}: ${JSON.stringify(document)}`);
     }
 
     const docRef = db.collection(collectionId).doc(documentId);
@@ -122,10 +106,7 @@ async function syncJsonFile(
     const payload = resolveReferences(db, document);
 
     if (created) {
-      await docRef.set(
-        { ...payload, createdAt: FieldValue.serverTimestamp() },
-        { merge: true }
-      );
+      await docRef.set({ ...payload, createdAt: FieldValue.serverTimestamp() }, { merge: true });
     } else {
       await docRef.set(payload, { merge: true });
     }
@@ -140,9 +121,7 @@ async function syncJsonFile(
   return results;
 }
 
-export async function syncFirestoreSeeds(
-  seedsDir = defaultSeedsDir
-): Promise<SeedCollectionResult[]> {
+export async function syncFirestoreSeeds(seedsDir = defaultSeedsDir): Promise<SeedCollectionResult[]> {
   const db = getAdminFirestore();
   const jsonFiles = await listJsonFiles(seedsDir);
   const collectionResults = new Map<string, SeedCollectionResult>();
@@ -177,8 +156,8 @@ async function main() {
   const results = await syncFirestoreSeeds();
 
   for (const result of results) {
-    console.log(
-      `[${result.collectionId}] ${result.total} documentos (${result.created} criados, ${result.updated} atualizados)`
+    process.stdout.write(
+      `[${result.collectionId}] ${result.total} documentos (${result.created} criados, ${result.updated} atualizados)\n`
     );
   }
 }

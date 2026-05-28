@@ -1,7 +1,6 @@
-import { readFileSync } from "node:fs";
-
-import { cert, getApps, initializeApp, type ServiceAccount } from "firebase-admin/app";
+import { type ServiceAccount, initializeApp, getApps, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+import { readFileSync } from "node:fs";
 
 function loadServiceAccount(): ServiceAccount {
   const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH;
@@ -16,12 +15,10 @@ function loadServiceAccount(): ServiceAccount {
   const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n");
 
   if (!projectId || !clientEmail || !privateKey) {
-    throw new Error(
-      "Para o seed, defina FIREBASE_SERVICE_ACCOUNT_PATH ou FIREBASE_CLIENT_EMAIL e FIREBASE_PRIVATE_KEY."
-    );
+    throw new Error("Para o seed, defina FIREBASE_SERVICE_ACCOUNT_PATH ou FIREBASE_CLIENT_EMAIL e FIREBASE_PRIVATE_KEY.");
   }
 
-  return { projectId, clientEmail, privateKey };
+  return { clientEmail, privateKey, projectId };
 }
 
 export function getAdminFirestore() {

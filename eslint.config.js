@@ -6,15 +6,7 @@ import js from "@eslint/js";
 
 export default tseslint.config(
   {
-    ignores: [
-      "src/routes/**",
-      "node_modules/**",
-      "dist/**",
-      "build/**",
-      ".husky/**",
-      ".vscode/**",
-      "src/utils/sanitize-plain-text.ts"
-    ]
+    ignores: ["src/routes/**", "node_modules/**", "dist/**", "build/**", ".husky/**", ".vscode/**", "src/database/**"]
   },
   {
     rules: {
