@@ -2,7 +2,10 @@ import { RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
 
 import "./styles/global.css";
+import { getFirebaseApp } from "@/infra/firebase/client";
 import { router } from "./routes/router";
+
+getFirebaseApp();
 
 const rootElement = document.getElementById("root");
 

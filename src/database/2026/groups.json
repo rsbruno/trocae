@@ -1,0 +1,74 @@
+[
+  {
+    "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+    "name": "Grupo A",
+    "code": "A",
+    "order": 1
+  },
+  {
+    "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+    "name": "Grupo B",
+    "code": "B",
+    "order": 2
+  },
+  {
+    "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+    "name": "Grupo C",
+    "code": "C",
+    "order": 3
+  },
+  {
+    "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+    "name": "Grupo D",
+    "code": "D",
+    "order": 4
+  },
+  {
+    "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+    "name": "Grupo E",
+    "code": "E",
+    "order": 5
+  },
+  {
+    "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+    "name": "Grupo F",
+    "code": "F",
+    "order": 6
+  },
+  {
+    "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+    "name": "Grupo G",
+    "code": "G",
+    "order": 7
+  },
+  {
+    "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+    "name": "Grupo H",
+    "code": "H",
+    "order": 8
+  },
+  {
+    "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+    "name": "Grupo I",
+    "code": "I",
+    "order": 9
+  },
+  {
+    "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+    "name": "Grupo J",
+    "code": "J",
+    "order": 10
+  },
+  {
+    "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+    "name": "Grupo K",
+    "code": "K",
+    "order": 11
+  },
+  {
+    "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+    "name": "Grupo L",
+    "code": "L",
+    "order": 12
+  }
+]
