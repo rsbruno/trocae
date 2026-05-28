@@ -25,7 +25,7 @@ function isNavigationItemActive(pathname: string, to: string) {
   return pathname === to || pathname.startsWith(to);
 }
 
-export function AppBottomNavigation() {
+export function BottomNavigation() {
   const { location } = useRouterState();
   const currentPath = location.pathname;
 

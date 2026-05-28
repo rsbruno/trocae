@@ -9,12 +9,12 @@ import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
+import { ButtonRoot } from "@/components/ui/button";
 import { mockInventory } from "@/mocks/inventory";
 import { ShowIf } from "@/components/utils/show";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-export const Route = createFileRoute("/inventory/")({
+export const Route = createFileRoute("/_auth/inventory/")({
   component: InventoryPage
 });
 
@@ -87,15 +87,15 @@ function InventoryPage() {
               </ForEach>
             </TabsList>
           </Tabs>
-          <Button
+          <ButtonRoot
             className="text-ink-secondary rounded-md"
             onClick={() => setSortAsc(!sortAsc)}
-            variant="outline"
+            variant="secondary"
             type="button"
             size="icon"
           >
             <ArrowDownUp size={14} />
-          </Button>
+          </ButtonRoot>
         </div>
 
         <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">

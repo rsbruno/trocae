@@ -43,7 +43,7 @@ import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
 import { Card } from "@/components/ui/card";
 
-export const Route = createFileRoute("/album/")({
+export const Route = createFileRoute("/_auth/album/")({
   component: AlbumPage
 });
 

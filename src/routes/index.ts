@@ -9,159 +9,257 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './../pages/__root'
-import { Route as IndexRouteImport } from './../pages/index'
-import { Route as TradesIndexRouteImport } from './../pages/trades/index'
-import { Route as ProfileIndexRouteImport } from './../pages/profile/index'
-import { Route as InventoryIndexRouteImport } from './../pages/inventory/index'
-import { Route as AlbumIndexRouteImport } from './../pages/album/index'
-import { Route as AlbumIdPaisIndexRouteImport } from './../pages/album/$id/$pais/index'
+import { Route as PublicRouteRouteImport } from './../pages/_public/route'
+import { Route as AuthRouteRouteImport } from './../pages/_auth/route'
+import { Route as PublicEntrarIndexRouteImport } from './../pages/_public/entrar/index'
+import { Route as PublicCriarContaIndexRouteImport } from './../pages/_public/criar-conta/index'
+import { Route as AuthTradesIndexRouteImport } from './../pages/_auth/trades/index'
+import { Route as AuthProfileIndexRouteImport } from './../pages/_auth/profile/index'
+import { Route as AuthInventoryIndexRouteImport } from './../pages/_auth/inventory/index'
+import { Route as AuthHomeIndexRouteImport } from './../pages/_auth/home/index'
+import { Route as AuthAlbumIndexRouteImport } from './../pages/_auth/album/index'
+import { Route as AuthAlbumIdPaisIndexRouteImport } from './../pages/_auth/album/$id/$pais/index'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const PublicRouteRoute = PublicRouteRouteImport.update({
+  id: '/_public',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TradesIndexRoute = TradesIndexRouteImport.update({
+const AuthRouteRoute = AuthRouteRouteImport.update({
+  id: '/_auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicEntrarIndexRoute = PublicEntrarIndexRouteImport.update({
+  id: '/entrar/',
+  path: '/entrar/',
+  getParentRoute: () => PublicRouteRoute,
+} as any)
+const PublicCriarContaIndexRoute = PublicCriarContaIndexRouteImport.update({
+  id: '/criar-conta/',
+  path: '/criar-conta/',
+  getParentRoute: () => PublicRouteRoute,
+} as any)
+const AuthTradesIndexRoute = AuthTradesIndexRouteImport.update({
   id: '/trades/',
   path: '/trades/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthRouteRoute,
 } as any)
-const ProfileIndexRoute = ProfileIndexRouteImport.update({
+const AuthProfileIndexRoute = AuthProfileIndexRouteImport.update({
   id: '/profile/',
   path: '/profile/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthRouteRoute,
 } as any)
-const InventoryIndexRoute = InventoryIndexRouteImport.update({
+const AuthInventoryIndexRoute = AuthInventoryIndexRouteImport.update({
   id: '/inventory/',
   path: '/inventory/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthRouteRoute,
 } as any)
-const AlbumIndexRoute = AlbumIndexRouteImport.update({
+const AuthHomeIndexRoute = AuthHomeIndexRouteImport.update({
+  id: '/home/',
+  path: '/home/',
+  getParentRoute: () => AuthRouteRoute,
+} as any)
+const AuthAlbumIndexRoute = AuthAlbumIndexRouteImport.update({
   id: '/album/',
   path: '/album/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthRouteRoute,
 } as any)
-const AlbumIdPaisIndexRoute = AlbumIdPaisIndexRouteImport.update({
+const AuthAlbumIdPaisIndexRoute = AuthAlbumIdPaisIndexRouteImport.update({
   id: '/album/$id/$pais/',
   path: '/album/$id/$pais/',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => AuthRouteRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/album/': typeof AlbumIndexRoute
-  '/inventory/': typeof InventoryIndexRoute
-  '/profile/': typeof ProfileIndexRoute
-  '/trades/': typeof TradesIndexRoute
-  '/album/$id/$pais/': typeof AlbumIdPaisIndexRoute
+  '/': typeof PublicRouteRouteWithChildren
+  '/album/': typeof AuthAlbumIndexRoute
+  '/home/': typeof AuthHomeIndexRoute
+  '/inventory/': typeof AuthInventoryIndexRoute
+  '/profile/': typeof AuthProfileIndexRoute
+  '/trades/': typeof AuthTradesIndexRoute
+  '/criar-conta/': typeof PublicCriarContaIndexRoute
+  '/entrar/': typeof PublicEntrarIndexRoute
+  '/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/album': typeof AlbumIndexRoute
-  '/inventory': typeof InventoryIndexRoute
-  '/profile': typeof ProfileIndexRoute
-  '/trades': typeof TradesIndexRoute
-  '/album/$id/$pais': typeof AlbumIdPaisIndexRoute
+  '/': typeof PublicRouteRouteWithChildren
+  '/album': typeof AuthAlbumIndexRoute
+  '/home': typeof AuthHomeIndexRoute
+  '/inventory': typeof AuthInventoryIndexRoute
+  '/profile': typeof AuthProfileIndexRoute
+  '/trades': typeof AuthTradesIndexRoute
+  '/criar-conta': typeof PublicCriarContaIndexRoute
+  '/entrar': typeof PublicEntrarIndexRoute
+  '/album/$id/$pais': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/album/': typeof AlbumIndexRoute
-  '/inventory/': typeof InventoryIndexRoute
-  '/profile/': typeof ProfileIndexRoute
-  '/trades/': typeof TradesIndexRoute
-  '/album/$id/$pais/': typeof AlbumIdPaisIndexRoute
+  '/_auth': typeof AuthRouteRouteWithChildren
+  '/_public': typeof PublicRouteRouteWithChildren
+  '/_auth/album/': typeof AuthAlbumIndexRoute
+  '/_auth/home/': typeof AuthHomeIndexRoute
+  '/_auth/inventory/': typeof AuthInventoryIndexRoute
+  '/_auth/profile/': typeof AuthProfileIndexRoute
+  '/_auth/trades/': typeof AuthTradesIndexRoute
+  '/_public/criar-conta/': typeof PublicCriarContaIndexRoute
+  '/_public/entrar/': typeof PublicEntrarIndexRoute
+  '/_auth/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/album/'
+    | '/home/'
     | '/inventory/'
     | '/profile/'
     | '/trades/'
+    | '/criar-conta/'
+    | '/entrar/'
     | '/album/$id/$pais/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/album'
+    | '/home'
     | '/inventory'
     | '/profile'
     | '/trades'
+    | '/criar-conta'
+    | '/entrar'
     | '/album/$id/$pais'
   id:
     | '__root__'
-    | '/'
-    | '/album/'
-    | '/inventory/'
-    | '/profile/'
-    | '/trades/'
-    | '/album/$id/$pais/'
+    | '/_auth'
+    | '/_public'
+    | '/_auth/album/'
+    | '/_auth/home/'
+    | '/_auth/inventory/'
+    | '/_auth/profile/'
+    | '/_auth/trades/'
+    | '/_public/criar-conta/'
+    | '/_public/entrar/'
+    | '/_auth/album/$id/$pais/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  AlbumIndexRoute: typeof AlbumIndexRoute
-  InventoryIndexRoute: typeof InventoryIndexRoute
-  ProfileIndexRoute: typeof ProfileIndexRoute
-  TradesIndexRoute: typeof TradesIndexRoute
-  AlbumIdPaisIndexRoute: typeof AlbumIdPaisIndexRoute
+  AuthRouteRoute: typeof AuthRouteRouteWithChildren
+  PublicRouteRoute: typeof PublicRouteRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
+    '/_public': {
+      id: '/_public'
+      path: ''
       fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+      preLoaderRoute: typeof PublicRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/trades/': {
-      id: '/trades/'
+    '/_auth': {
+      id: '/_auth'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_public/entrar/': {
+      id: '/_public/entrar/'
+      path: '/entrar'
+      fullPath: '/entrar/'
+      preLoaderRoute: typeof PublicEntrarIndexRouteImport
+      parentRoute: typeof PublicRouteRoute
+    }
+    '/_public/criar-conta/': {
+      id: '/_public/criar-conta/'
+      path: '/criar-conta'
+      fullPath: '/criar-conta/'
+      preLoaderRoute: typeof PublicCriarContaIndexRouteImport
+      parentRoute: typeof PublicRouteRoute
+    }
+    '/_auth/trades/': {
+      id: '/_auth/trades/'
       path: '/trades'
       fullPath: '/trades/'
-      preLoaderRoute: typeof TradesIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      preLoaderRoute: typeof AuthTradesIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
     }
-    '/profile/': {
-      id: '/profile/'
+    '/_auth/profile/': {
+      id: '/_auth/profile/'
       path: '/profile'
       fullPath: '/profile/'
-      preLoaderRoute: typeof ProfileIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      preLoaderRoute: typeof AuthProfileIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
     }
-    '/inventory/': {
-      id: '/inventory/'
+    '/_auth/inventory/': {
+      id: '/_auth/inventory/'
       path: '/inventory'
       fullPath: '/inventory/'
-      preLoaderRoute: typeof InventoryIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      preLoaderRoute: typeof AuthInventoryIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
     }
-    '/album/': {
-      id: '/album/'
+    '/_auth/home/': {
+      id: '/_auth/home/'
+      path: '/home'
+      fullPath: '/home/'
+      preLoaderRoute: typeof AuthHomeIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
+    }
+    '/_auth/album/': {
+      id: '/_auth/album/'
       path: '/album'
       fullPath: '/album/'
-      preLoaderRoute: typeof AlbumIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      preLoaderRoute: typeof AuthAlbumIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
     }
-    '/album/$id/$pais/': {
-      id: '/album/$id/$pais/'
+    '/_auth/album/$id/$pais/': {
+      id: '/_auth/album/$id/$pais/'
       path: '/album/$id/$pais'
       fullPath: '/album/$id/$pais/'
-      preLoaderRoute: typeof AlbumIdPaisIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      preLoaderRoute: typeof AuthAlbumIdPaisIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
     }
   }
 }
 
+interface AuthRouteRouteChildren {
+  AuthAlbumIndexRoute: typeof AuthAlbumIndexRoute
+  AuthHomeIndexRoute: typeof AuthHomeIndexRoute
+  AuthInventoryIndexRoute: typeof AuthInventoryIndexRoute
+  AuthProfileIndexRoute: typeof AuthProfileIndexRoute
+  AuthTradesIndexRoute: typeof AuthTradesIndexRoute
+  AuthAlbumIdPaisIndexRoute: typeof AuthAlbumIdPaisIndexRoute
+}
+
+const AuthRouteRouteChildren: AuthRouteRouteChildren = {
+  AuthAlbumIndexRoute: AuthAlbumIndexRoute,
+  AuthHomeIndexRoute: AuthHomeIndexRoute,
+  AuthInventoryIndexRoute: AuthInventoryIndexRoute,
+  AuthProfileIndexRoute: AuthProfileIndexRoute,
+  AuthTradesIndexRoute: AuthTradesIndexRoute,
+  AuthAlbumIdPaisIndexRoute: AuthAlbumIdPaisIndexRoute,
+}
+
+const AuthRouteRouteWithChildren = AuthRouteRoute._addFileChildren(
+  AuthRouteRouteChildren,
+)
+
+interface PublicRouteRouteChildren {
+  PublicCriarContaIndexRoute: typeof PublicCriarContaIndexRoute
+  PublicEntrarIndexRoute: typeof PublicEntrarIndexRoute
+}
+
+const PublicRouteRouteChildren: PublicRouteRouteChildren = {
+  PublicCriarContaIndexRoute: PublicCriarContaIndexRoute,
+  PublicEntrarIndexRoute: PublicEntrarIndexRoute,
+}
+
+const PublicRouteRouteWithChildren = PublicRouteRoute._addFileChildren(
+  PublicRouteRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AlbumIndexRoute: AlbumIndexRoute,
-  InventoryIndexRoute: InventoryIndexRoute,
-  ProfileIndexRoute: ProfileIndexRoute,
-  TradesIndexRoute: TradesIndexRoute,
-  AlbumIdPaisIndexRoute: AlbumIdPaisIndexRoute,
+  AuthRouteRoute: AuthRouteRouteWithChildren,
+  PublicRouteRoute: PublicRouteRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

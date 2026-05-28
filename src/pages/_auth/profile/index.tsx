@@ -8,7 +8,7 @@ import {
   PageHeaderTitle,
   PageHeaderRoot
 } from "@/components/ui/page/header";
-import { ProfileProgressRingRoot } from "@/pages/profile/_components/profile-progress-ring";
+import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
 import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { profileConfederations, profileAchievements } from "@/mocks/profile";
@@ -17,7 +17,7 @@ import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
 import { Card } from "@/components/ui/card";
 
-export const Route = createFileRoute("/profile/")({
+export const Route = createFileRoute("/_auth/profile/")({
   component: ProfilePage
 });
 

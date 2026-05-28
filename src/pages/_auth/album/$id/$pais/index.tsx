@@ -29,7 +29,7 @@ import { PageRoot } from "@/components/ui/page/root";
 import { ShowIf } from "@/components/utils/show";
 import { paisStickers } from "@/mocks/pais";
 
-export const Route = createFileRoute("/album/$id/$pais/")({
+export const Route = createFileRoute("/_auth/album/$id/$pais/")({
   component: RouteComponent
 });
 

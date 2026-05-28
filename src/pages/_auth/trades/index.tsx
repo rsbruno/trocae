@@ -10,11 +10,11 @@ import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
+import { ButtonRoot } from "@/components/ui/button";
 import { ShowIf } from "@/components/utils/show";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-export const Route = createFileRoute("/trades/")({
+export const Route = createFileRoute("/_auth/trades/")({
   component: TradesPage
 });
 
@@ -56,12 +56,12 @@ function TradesPage() {
               <Typography color="subtle" as="span" size="sm">
                 {wishlistItems.length} desejadas
               </Typography>
-              <Button className="gap-1.5 rounded-md px-3.5 py-2 text-xs active:scale-[0.98] active:opacity-90" type="button">
+              <ButtonRoot className="gap-1.5 rounded-md px-3.5 py-2 text-xs active:scale-[0.98] active:opacity-90" type="button">
                 <Plus size={13} />
                 <Typography variant="semibold" color="inverse" as="span" size="xs">
                   Adicionar
                 </Typography>
-              </Button>
+              </ButtonRoot>
             </div>
             <SearchInputRoot>
               <SearchInputIcon />
@@ -94,11 +94,11 @@ function TradesPage() {
                         {item.flag} {item.country}
                       </Typography>
                     </div>
-                    <Button className="rounded-md px-3 py-1.5" variant="ghost" type="button" size="sm">
+                    <ButtonRoot className="rounded-md px-3 py-1.5" variant="link" type="button" size="sm">
                       <Typography variant="medium" color="muted" as="span" size="xs">
                         Procurar
                       </Typography>
-                    </Button>
+                    </ButtonRoot>
                   </SurfaceCardGhost>
                 )}
               </ForEach>
@@ -158,16 +158,16 @@ function TradesPage() {
                   </div>
                   <ShowIf if={offer.status === "pending"}>
                     <div className="mt-3 flex gap-2">
-                      <Button className="flex-1 rounded-md py-2.5 active:scale-[0.98] active:opacity-90" type="button">
+                      <ButtonRoot className="flex-1 rounded-md py-2.5 active:scale-[0.98] active:opacity-90" type="button">
                         <Typography variant="medium" color="inverse" as="span" size="sm">
                           Aceitar
                         </Typography>
-                      </Button>
-                      <Button className="flex-1 rounded-md py-2.5" variant="secondary" type="button">
+                      </ButtonRoot>
+                      <ButtonRoot className="flex-1 rounded-md py-2.5" variant="secondary" type="button">
                         <Typography variant="medium" color="muted" as="span" size="sm">
                           Recusar
                         </Typography>
-                      </Button>
+                      </ButtonRoot>
                     </div>
                   </ShowIf>
                 </SurfaceCardRoot>

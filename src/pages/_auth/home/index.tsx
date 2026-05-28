@@ -40,7 +40,7 @@ import { PageRoot } from "@/components/ui/page/root";
 import { ShowIf } from "@/components/utils/show";
 import { Card } from "@/components/ui/card";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/_auth/home/")({
   component: HomePage
 });
 
