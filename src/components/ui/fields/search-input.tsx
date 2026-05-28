@@ -23,7 +23,7 @@ export function SearchInputField({ placeholder = "Buscar figurinha...", classNam
   return (
     <input
       className={twMerge(
-        "border-border bg-surface text-ink placeholder:text-ink-muted focus:border-accent-primary/30 focus:ring-accent-primary/8 w-full rounded-lg border py-2.5 pr-4 pl-10 text-sm transition-all focus:ring-2 focus:outline-none",
+        "bg-surface/85 text-ink placeholder:text-ink-muted focus:border-accent-primary/35 focus:ring-accent-primary/10 w-full rounded-lg border border-white/10 py-2.5 pr-4 pl-10 text-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] transition-all focus:ring-2 focus:outline-none",
         className
       )}
       placeholder={placeholder}

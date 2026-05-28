@@ -31,7 +31,7 @@ export function AppBottomNavigation() {
 
   return (
     <nav className="absolute right-0 bottom-0 left-0 z-50 px-5 pb-5">
-      <div className="border-border bg-surface/80 mx-auto grid max-w-md grid-cols-5 items-end rounded-[20px] border px-2 py-3 shadow-lg backdrop-blur-xl">
+      <div className="bg-surface/75 mx-auto grid max-w-md grid-cols-5 items-end rounded-[20px] border border-white/10 px-2 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.35)] ring-1 ring-white/5 backdrop-blur-xl">
         <ForEach items={navigationItems}>
           {(item) => {
             const Icon = item.icon;

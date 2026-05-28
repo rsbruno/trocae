@@ -10,6 +10,7 @@ import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
 import { ShowIf } from "@/components/utils/show";
+import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/trades/")({
   component: TradesPage
@@ -35,7 +36,7 @@ function TradesPage() {
         </div>
       </PageHeaderRoot>
       <div className="flex flex-col gap-5 px-4">
-        <div className="bg-surface-alt flex gap-1 rounded-lg p-1">
+        <Card className="flex gap-1 rounded-lg p-1" tone="surfaceAlt">
           <ForEach items={tabs}>
             {(tab) => (
               <button
@@ -52,7 +53,7 @@ function TradesPage() {
               </button>
             )}
           </ForEach>
-        </div>
+        </Card>
 
         <ShowIf if={activeTab === "wishlist"}>
           <div className="space-y-4">
@@ -193,7 +194,7 @@ function TradesPage() {
           <div className="flex flex-col gap-2">
             <ForEach items={tradeHistory}>
               {(trade, props) => (
-                <div className="border-border bg-surface flex items-center gap-3 border px-3 py-3" key={props?.index}>
+                <Card className="flex items-center gap-3 rounded-lg px-3 py-3" key={props?.index}>
                   <span
                     className={`flex size-9 items-center justify-center border ${
                       trade.success ? "bg-accent-primary/10 text-accent-primary" : "bg-status-danger/10 text-status-danger"
@@ -212,7 +213,7 @@ function TradesPage() {
                   <Typography variant="medium" color="subtle" as="span" size="xs">
                     {trade.date}
                   </Typography>
-                </div>
+                </Card>
               )}
             </ForEach>
           </div>

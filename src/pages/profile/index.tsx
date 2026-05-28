@@ -14,6 +14,7 @@ import { profileConfederations, profileAchievements } from "@/mocks/profile";
 import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
+import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/profile/")({
   component: ProfilePage
@@ -124,7 +125,7 @@ function ProfilePage() {
           <Typography variant="semibold" color="base" size="sm" as="h3">
             Por confederação
           </Typography>
-          <div className="flex flex-col gap-3">
+          <Card className="flex flex-col gap-3 p-3">
             <ForEach items={profileConfederations}>
               {(conf) => {
                 const pct = Math.round((conf.collected / conf.total) * 100);
@@ -148,14 +149,14 @@ function ProfilePage() {
                 );
               }}
             </ForEach>
-          </div>
+          </Card>
         </section>
 
         <section className="space-y-3.5">
           <Typography variant="semibold" color="base" size="sm" as="h3">
             Conquistas
           </Typography>
-          <div className="grid grid-cols-3 gap-2">
+          <Card className="grid grid-cols-3 gap-2 p-2.5">
             <ForEach items={profileAchievements}>
               {(ach, props) => (
                 <SurfaceCardGhost
@@ -169,7 +170,7 @@ function ProfilePage() {
                 </SurfaceCardGhost>
               )}
             </ForEach>
-          </div>
+          </Card>
         </section>
       </div>
     </PageRoot>

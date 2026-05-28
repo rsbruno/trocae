@@ -89,7 +89,7 @@ export function PageHeaderRoot({ children }: HeaderRootProps) {
   const { showBack } = useContext(PageContext);
 
   return (
-    <header className="border-border bg-bg sticky top-0 z-40 mb-5 border-b px-4 pt-[env(safe-area-inset-top)]">
+    <header className="bg-bg/80 sticky top-0 z-40 mb-5 border-b border-white/8 px-4 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
       <div className="flex h-14 items-center gap-3">
         <ShowIf if={!!showBack}>
           <PageHeaderBackButton />

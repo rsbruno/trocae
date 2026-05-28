@@ -37,6 +37,7 @@ import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
 import { ShowIf } from "@/components/utils/show";
+import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/")({
   component: HomePage
@@ -64,7 +65,7 @@ function HomePage() {
       </PageHeaderRoot>
 
       <div className="flex flex-col gap-7 px-4 pb-8">
-        <div className="bg-surface rounded-xl p-5">
+        <Card className="p-5">
           <div className="mb-4 flex items-center justify-between">
             <div className="flex items-baseline gap-1">
               <Typography className="tracking-tight" variant="bold" color="base" as="span" size="xl">
@@ -110,7 +111,7 @@ function HomePage() {
               )}
             </ForEach>
           </div>
-        </div>
+        </Card>
 
         <section className="space-y-4">
           <div className="flex items-center justify-between">
@@ -198,7 +199,7 @@ function HomePage() {
               </Typography>
             </Link>
           </div>
-          <div className="bg-surface flex flex-col divide-y divide-white/6 overflow-hidden rounded-xl p-0">
+          <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
             <ForEach items={homeTeams}>
               {(team) => (
                 <Link
@@ -225,14 +226,14 @@ function HomePage() {
                 </Link>
               )}
             </ForEach>
-          </div>
+          </Card>
         </section>
 
         <section className="space-y-4">
           <Typography variant="medium" color="base" size="sm" as="h2">
             Atividade
           </Typography>
-          <div className="bg-surface flex flex-col divide-y divide-white/6 overflow-hidden rounded-xl p-0">
+          <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
             <ForEach items={homeActivity}>
               {(item, props) => (
                 <div className="flex items-center gap-3 px-4 py-3" key={props?.index}>
@@ -248,7 +249,7 @@ function HomePage() {
                 </div>
               )}
             </ForEach>
-          </div>
+          </Card>
         </section>
       </div>
     </PageRoot>

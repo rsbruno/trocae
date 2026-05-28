@@ -10,6 +10,7 @@ import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
 import { mockInventory } from "@/mocks/inventory";
 import { ShowIf } from "@/components/utils/show";
+import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/inventory/")({
   component: InventoryPage
@@ -73,7 +74,7 @@ function InventoryPage() {
         </SearchInputRoot>
 
         <div className="flex items-center gap-2">
-          <div className="bg-surface-alt flex flex-1 gap-1 rounded-lg p-1">
+          <Card className="flex flex-1 gap-1 rounded-lg p-1" tone="surfaceAlt">
             <ForEach items={tabs}>
               {(tab) => (
                 <button
@@ -88,9 +89,9 @@ function InventoryPage() {
                 </button>
               )}
             </ForEach>
-          </div>
+          </Card>
           <button
-            className="bg-surface-alt text-ink-secondary hover:bg-surface rounded-md p-2.5 transition-colors"
+            className="text-ink-secondary hover:bg-surface bg-surface-alt/90 rounded-md border border-white/8 p-2.5 transition-colors"
             onClick={() => setSortAsc(!sortAsc)}
             type="button"
           >
@@ -98,7 +99,7 @@ function InventoryPage() {
           </button>
         </div>
 
-        <div className="bg-surface flex flex-col divide-y divide-white/6 overflow-hidden rounded-xl p-0">
+        <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
           <ForEach items={sorted}>
             {(sticker) => (
               <div className={`flex items-center gap-3 px-4 py-3.5 ${sticker.owned ? "" : "opacity-50"}`} key={sticker.number}>
@@ -135,7 +136,7 @@ function InventoryPage() {
               </div>
             )}
           </ForEach>
-        </div>
+        </Card>
       </div>
     </PageRoot>
   );

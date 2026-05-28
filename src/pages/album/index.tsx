@@ -40,6 +40,7 @@ import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
+import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/album/")({
   component: AlbumPage
@@ -165,7 +166,7 @@ function AlbumPage() {
                 <Typography className="mb-3 tracking-[0.08em] uppercase" variant="medium" color="accent" size="xs" as="p">
                   Grupo {group.code}
                 </Typography>
-                <div className="bg-surface flex flex-col divide-y divide-white/6 overflow-hidden rounded-xl p-0">
+                <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
                   <ForEach items={group.teams}>
                     {(team) => {
                       const progress = Math.round((team.collected / team.total) * 100);
@@ -199,7 +200,7 @@ function AlbumPage() {
                       );
                     }}
                   </ForEach>
-                </div>
+                </Card>
               </section>
             )}
           </ForEach>

@@ -6,7 +6,7 @@ type SurfaceCardRootProps = ComponentPropsWithRef<"div">;
 
 export function SurfaceCardRoot({ className, children, ...props }: SurfaceCardRootProps) {
   return (
-    <div className={twMerge("bg-surface rounded-xl p-4", className)} {...props}>
+    <div className={twMerge("bg-surface/92 rounded-xl border border-white/8 p-4", className)} {...props}>
       {children}
     </div>
   );
@@ -14,7 +14,7 @@ export function SurfaceCardRoot({ className, children, ...props }: SurfaceCardRo
 
 export function SurfaceCardGhost({ className, children, ...props }: SurfaceCardRootProps) {
   return (
-    <div className={twMerge("bg-surface-alt rounded-lg p-4", className)} {...props}>
+    <div className={twMerge("bg-surface-alt/95 rounded-lg border border-white/7 p-4", className)} {...props}>
       {children}
     </div>
   );
@@ -22,7 +22,10 @@ export function SurfaceCardGhost({ className, children, ...props }: SurfaceCardR
 
 export function SurfaceCardAccent({ className, children, ...props }: SurfaceCardRootProps) {
   return (
-    <div className={twMerge("bg-surface ring-accent-primary/20 rounded-xl p-4 ring-1", className)} {...props}>
+    <div
+      className={twMerge("bg-surface/92 ring-accent-primary/20 rounded-xl border border-white/10 p-4 ring-1", className)}
+      {...props}
+    >
       {children}
     </div>
   );
