@@ -6,10 +6,12 @@ import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { wishlistItems, tradeHistory, tradeOffers } from "@/mocks/trades";
+import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
-import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
+import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/trades/")({
@@ -36,24 +38,17 @@ function TradesPage() {
         </div>
       </PageHeaderRoot>
       <div className="flex flex-col gap-5 px-4">
-        <Card className="flex gap-1 rounded-lg p-1" tone="surfaceAlt">
-          <ForEach items={tabs}>
-            {(tab) => (
-              <button
-                className={`flex flex-1 rounded-md py-2.5 text-sm leading-5 font-medium transition-all ${
-                  activeTab === tab.id ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
-                }`}
-                onClick={() => setActiveTab(tab.id)}
-                type="button"
-                key={tab.id}
-              >
-                <Typography color={activeTab === tab.id ? "base" : "subtle"} variant="medium" as="span" size="sm">
+        <Tabs onValueChange={(value) => setActiveTab(value as Tab)} value={activeTab}>
+          <TabsList className="w-full">
+            <ForEach items={tabs}>
+              {(tab) => (
+                <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
                   {tab.label}
-                </Typography>
-              </button>
-            )}
-          </ForEach>
-        </Card>
+                </TabsTrigger>
+              )}
+            </ForEach>
+          </TabsList>
+        </Tabs>
 
         <ShowIf if={activeTab === "wishlist"}>
           <div className="space-y-4">
@@ -61,15 +56,12 @@ function TradesPage() {
               <Typography color="subtle" as="span" size="sm">
                 {wishlistItems.length} desejadas
               </Typography>
-              <button
-                className="bg-accent-primary text-bg flex items-center gap-1.5 rounded-md px-3.5 py-2 text-xs font-semibold transition active:scale-[0.98] active:opacity-90"
-                type="button"
-              >
+              <Button className="gap-1.5 rounded-md px-3.5 py-2 text-xs active:scale-[0.98] active:opacity-90" type="button">
                 <Plus size={13} />
                 <Typography variant="semibold" color="inverse" as="span" size="xs">
                   Adicionar
                 </Typography>
-              </button>
+              </Button>
             </div>
             <SearchInputRoot>
               <SearchInputIcon />
@@ -102,11 +94,11 @@ function TradesPage() {
                         {item.flag} {item.country}
                       </Typography>
                     </div>
-                    <button className="bg-surface hover:bg-surface-alt rounded-md px-3 py-1.5 transition-colors" type="button">
+                    <Button className="rounded-md px-3 py-1.5" variant="ghost" type="button" size="sm">
                       <Typography variant="medium" color="muted" as="span" size="xs">
                         Procurar
                       </Typography>
-                    </button>
+                    </Button>
                   </SurfaceCardGhost>
                 )}
               </ForEach>
@@ -166,22 +158,16 @@ function TradesPage() {
                   </div>
                   <ShowIf if={offer.status === "pending"}>
                     <div className="mt-3 flex gap-2">
-                      <button
-                        className="bg-accent-primary flex-1 rounded-md py-2.5 transition active:scale-[0.98] active:opacity-90"
-                        type="button"
-                      >
+                      <Button className="flex-1 rounded-md py-2.5 active:scale-[0.98] active:opacity-90" type="button">
                         <Typography variant="medium" color="inverse" as="span" size="sm">
                           Aceitar
                         </Typography>
-                      </button>
-                      <button
-                        className="bg-surface-alt hover:bg-surface flex-1 rounded-md py-2.5 transition-colors"
-                        type="button"
-                      >
+                      </Button>
+                      <Button className="flex-1 rounded-md py-2.5" variant="secondary" type="button">
                         <Typography variant="medium" color="muted" as="span" size="sm">
                           Recusar
                         </Typography>
-                      </button>
+                      </Button>
                     </div>
                   </ShowIf>
                 </SurfaceCardRoot>

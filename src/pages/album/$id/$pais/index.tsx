@@ -41,7 +41,7 @@ function RouteComponent() {
 
     return (
       <div className="relative">
-        <div className="overflow-hidden shadow-lg transition-all active:scale-[0.985]">
+        <div className="overflow-hidden">
           <ShowIf if={sticker.type === "extra"}>
             <ExtraStickerRoot variant={sticker.variant as "normal" | "silver" | "bronze" | "gold"} size="album">
               <ExtraStickerLogo />
@@ -92,7 +92,7 @@ function RouteComponent() {
           <PageHeaderSubtitle />
         </div>
       </PageHeaderRoot>
-      <div className="grid grid-cols-2 gap-3 px-4">
+      <div className="grid grid-cols-2">
         {renderStickerTile(stickers[0])}
         {renderStickerTile(stickers[1])}
       </div>

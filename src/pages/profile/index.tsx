@@ -9,6 +9,7 @@ import {
   PageHeaderRoot
 } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/profile/_components/profile-progress-ring";
+import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { profileConfederations, profileAchievements } from "@/mocks/profile";
 import { Typography } from "@/components/ui/typography";
@@ -134,12 +135,11 @@ function ProfilePage() {
                     <Typography variant="medium" className="w-20" color="muted" as="span" size="xs">
                       {conf.name}
                     </Typography>
-                    <div className="bg-surface-alt h-1.5 flex-1 overflow-hidden rounded-full">
-                      <div
-                        className="from-accent-primary-strong to-accent-primary h-full rounded-full bg-gradient-to-r transition-[width] duration-700 ease-in-out"
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
+                    <Progress className="flex-1" value={pct}>
+                      <ProgressTrack className="h-1.5">
+                        <ProgressIndicator />
+                      </ProgressTrack>
+                    </Progress>
                     <span className="w-12 text-right">
                       <Typography variant="medium" color="subtle" as="span" size="xs">
                         {conf.collected}/{conf.total}

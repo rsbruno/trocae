@@ -4,12 +4,14 @@ import { useState } from "react";
 
 import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
-import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
+import { ForEach } from "@/components/utils/foreach";
 import { mockInventory } from "@/mocks/inventory";
 import { ShowIf } from "@/components/utils/show";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/inventory/")({
@@ -74,29 +76,26 @@ function InventoryPage() {
         </SearchInputRoot>
 
         <div className="flex items-center gap-2">
-          <Card className="flex flex-1 gap-1 rounded-lg p-1" tone="surfaceAlt">
-            <ForEach items={tabs}>
-              {(tab) => (
-                <button
-                  className={`flex-1 rounded-md py-2 transition-all ${activeTab === tab.id ? "bg-surface shadow-sm" : ""}`}
-                  onClick={() => setActiveTab(tab.id)}
-                  type="button"
-                  key={tab.id}
-                >
-                  <Typography color={activeTab === tab.id ? "base" : "subtle"} variant="medium" as="span" size="xs">
+          <Tabs onValueChange={(value) => setActiveTab(value as FilterTab)} className="flex-1" value={activeTab}>
+            <TabsList className="w-full">
+              <ForEach items={tabs}>
+                {(tab) => (
+                  <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
                     {tab.label}
-                  </Typography>
-                </button>
-              )}
-            </ForEach>
-          </Card>
-          <button
-            className="text-ink-secondary hover:bg-surface bg-surface-alt/90 rounded-md border border-white/8 p-2.5 transition-colors"
+                  </TabsTrigger>
+                )}
+              </ForEach>
+            </TabsList>
+          </Tabs>
+          <Button
+            className="text-ink-secondary rounded-md"
             onClick={() => setSortAsc(!sortAsc)}
+            variant="outline"
             type="button"
+            size="icon"
           >
             <ArrowDownUp size={14} />
-          </button>
+          </Button>
         </div>
 
         <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">

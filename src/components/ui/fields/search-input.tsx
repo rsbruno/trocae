@@ -1,8 +1,7 @@
 import type { ComponentPropsWithRef } from "react";
 
+import { twMerge } from "tailwind-merge";
 import { Search } from "lucide-react";
-
-import { twMerge } from "@/lib/tv";
 
 type SearchInputRootProps = ComponentPropsWithRef<"div">;
 type SearchInputFieldProps = Omit<ComponentPropsWithRef<"input">, "type">;

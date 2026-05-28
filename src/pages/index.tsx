@@ -32,6 +32,7 @@ import {
   PageHeaderTitle,
   PageHeaderRoot
 } from "@/components/ui/page/header";
+import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
 import { recentStickers, homeActivity, homeTeams } from "@/mocks/home";
 import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
@@ -85,12 +86,11 @@ function HomePage() {
               {Math.round(progress)}%
             </Typography>
           </div>
-          <div className="bg-surface-alt h-[5px] overflow-hidden rounded-full">
-            <div
-              className="from-accent-primary-strong to-accent-primary h-full rounded-full bg-gradient-to-r transition-[width] duration-700 ease-in-out"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
+          <Progress value={progress}>
+            <ProgressTrack>
+              <ProgressIndicator />
+            </ProgressTrack>
+          </Progress>
           <div className="mt-5 grid grid-cols-3 divide-x divide-white/6">
             <ForEach
               items={[
@@ -124,7 +124,7 @@ function HomePage() {
               </Typography>
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-1">
             <ForEach items={recentStickers}>
               {(sticker) => {
                 const avatar = (sticker as { avatar?: string }).avatar;
@@ -216,12 +216,11 @@ function HomePage() {
                   <Typography className="tabular-nums" variant="medium" color="subtle" as="span" size="xs">
                     {team.collected}/{team.total}
                   </Typography>
-                  <div className="bg-surface-alt h-1 w-14 overflow-hidden rounded-full">
-                    <div
-                      className="from-accent-primary-strong to-accent-primary h-full rounded-full bg-gradient-to-r transition-[width] duration-700 ease-in-out"
-                      style={{ width: `${team.progress}%` }}
-                    />
-                  </div>
+                  <Progress value={team.progress} className="w-14">
+                    <ProgressTrack className="h-1.5">
+                      <ProgressIndicator />
+                    </ProgressTrack>
+                  </Progress>
                   <ChevronRight className="text-ink-muted" size={14} />
                 </Link>
               )}

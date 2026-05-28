@@ -34,6 +34,7 @@ import {
   PageHeaderRoot
 } from "@/components/ui/page/header";
 import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
+import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
 import { brazilAlbumStickers, albumGroups } from "@/mocks/album";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
@@ -189,12 +190,11 @@ function AlbumPage() {
                           <Typography className="tabular-nums" variant="medium" color="subtle" as="span" size="xs">
                             {team.collected}/{team.total}
                           </Typography>
-                          <div className="bg-surface-alt h-1 w-14 overflow-hidden rounded-full">
-                            <div
-                              className="from-accent-primary-strong to-accent-primary h-full rounded-full bg-gradient-to-r transition-[width] duration-700 ease-in-out"
-                              style={{ width: `${progress}%` }}
-                            />
-                          </div>
+                          <Progress value={progress} className="w-14">
+                            <ProgressTrack className="h-1.5">
+                              <ProgressIndicator />
+                            </ProgressTrack>
+                          </Progress>
                           <ChevronRight className="text-ink-muted" size={14} />
                         </button>
                       );
@@ -226,7 +226,7 @@ function AlbumPage() {
             </Typography>
           </SurfaceCardRoot>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-1">
             <ForEach items={stickers}>{(sticker) => <div key={sticker.number}>{renderStickerTile(sticker)}</div>}</ForEach>
           </div>
         </div>

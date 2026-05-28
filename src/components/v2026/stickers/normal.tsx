@@ -1,8 +1,8 @@
 import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
+import { twMerge } from "tailwind-merge";
 
 import { Typography } from "@/components/ui/typography";
-import { twMerge } from "@/lib/tv";
 
 export type StickerVariant = "forward" | "midfielder" | "defender" | "goalkeeper";
 
@@ -189,13 +189,8 @@ export function StickerSidebarGroup({ className, ...props }: ComponentPropsWithR
 
 export function StickerFlag({ className, src, alt, ...props }: ComponentPropsWithRef<"img">) {
   return (
-    <div className="border-sticker size-8 rounded-full rounded-br-none border-2">
-      <img
-        className={twMerge("size-full rounded-full rounded-br-none border border-white object-fill", className)}
-        src={src}
-        alt={alt}
-        {...props}
-      />
+    <div className="size-8 rounded-full rounded-br-none">
+      <img className={twMerge("size-full rounded-full rounded-br-none object-fill", className)} src={src} alt={alt} {...props} />
     </div>
   );
 }

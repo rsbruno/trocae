@@ -1,33 +1,29 @@
 import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
+import { twMerge } from "tailwind-merge";
 
 import { Typography } from "@/components/ui/typography";
-import { twMerge } from "@/lib/tv";
 
 const variants = tv({
   variants: {
     variant: {
       normal: {
-        root: "border-sticker-normal/30",
         content: "bg-sticker-normal"
       },
       silver: {
-        root: "border-sticker-silver/30",
         content: "bg-sticker-silver"
       },
       bronze: {
-        root: "border-sticker-bronze/30",
         content: "bg-sticker-bronze"
       },
       gold: {
-        root: "border-sticker-gold/30",
         content: "bg-sticker-gold"
       }
     }
   },
   slots: {
     content: "bg-sticker-normal size-full relative flex flex-col items-end justify-end",
-    root: "relative flex w-full flex-col gap-1.5 bg-sticker p-3 bg-white border"
+    root: "relative flex w-full flex-col gap-1.5 bg-sticker p-3 bg-white"
   },
   defaultVariants: {
     variant: "normal"

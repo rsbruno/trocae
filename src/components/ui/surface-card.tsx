@@ -1,6 +1,6 @@
 import type { ComponentPropsWithRef } from "react";
 
-import { twMerge } from "@/lib/tv";
+import { twMerge } from "tailwind-merge";
 
 type SurfaceCardRootProps = ComponentPropsWithRef<"div">;
 
