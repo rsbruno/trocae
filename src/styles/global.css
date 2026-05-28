@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
 
 @font-face {
   font-family: 'Novecento Sans';
@@ -18,21 +19,59 @@
   font-display: swap;
 }
 
-body {
+html, body {
   margin: 0;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: 'Geist Variable', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @theme inline {
   --font-sticker: 'Novecento Sans', sans-serif;
   --font-country: 'Gasoek One', sans-serif;
+  --font-heading: 'Novecento Sans', sans-serif;
+  --font-body: 'Geist Variable', system-ui, sans-serif;
 
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
 
   --color-sticker: var(--sticker);
   --color-sticker-forward: var(--sticker-forward);
@@ -44,10 +83,56 @@ body {
   --color-sticker-bronze: var(--sticker-bronze);
   --color-sticker-gold: var(--sticker-gold);
   --color-sticker-extra: var(--sticker-extra);
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-strong: var(--accent-primary-strong);
+  --color-accent-highlight: var(--accent-highlight);
+  --color-status-danger: var(--status-danger);
+  --color-typography-base: var(--ink);
+  --color-typography-muted: var(--ink-secondary);
+  --color-typography-subtle: var(--ink-muted);
+  --color-typography-inverse: var(--bg);
+  --color-typography-accent: var(--accent-primary);
+  --color-typography-highlight: var(--accent-highlight);
+  --color-typography-success: var(--accent-primary);
+  --color-typography-danger: var(--status-danger);
+  --color-typography-info: var(--sticker);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.75rem;
+
+  --font-size-xxs: 0.5625rem;
+  --line-height-xxs: 1rem;
+  --font-weight-xxs: 500;
+
+  --font-size-xs: 0.6875rem;
+  --line-height-xs: 1rem;
+  --font-weight-xs: 500;
+
+  --font-size-sm: 0.8125rem;
+  --line-height-sm: 1.125rem;
+  --font-weight-sm: 500;
+
+  --font-size-md: 0.9375rem;
+  --line-height-md: 1.25rem;
+  --font-weight-md: 500;
+
+  --font-size-lg: 1.0625rem;
+  --line-height-lg: 1.375rem;
+  --font-weight-lg: 600;
+
+  --font-size-xl: 2.125rem;
+  --line-height-xl: 2.25rem;
+  --font-weight-xl: 700;
 
   --sticker: #77C7CA;
   --sticker-forward: #057D8E;
@@ -59,4 +144,18 @@ body {
   --sticker-bronze: #C49B7B;
   --sticker-gold: #AA9B71;
   --sticker-extra: #110801;
+
+  --bg: #0B0E11;
+  --surface: #141920;
+  --surface-alt: #1A2029;
+  --ink: #F1F3F5;
+  --ink-secondary: #9BA4B0;
+  --ink-muted: #5C6670;
+  --accent-primary: #00E676;
+  --accent-primary-strong: #00C853;
+  --accent-highlight: #FFD54F;
+  --status-danger: #FF6B6B;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.10);
 }
+

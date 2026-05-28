@@ -1,6 +1,7 @@
 import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
 
+import { Typography } from "@/components/ui/typography";
 import { twMerge } from "@/lib/tv";
 
 export type StickerVariant = "forward" | "midfielder" | "defender" | "goalkeeper";
@@ -52,13 +53,23 @@ const stickerSpecContainerVariants = tv({
 
 type StickerRootProps = ComponentPropsWithRef<"section"> & {
   variant?: StickerVariant;
+  size?: "album" | "compact";
 };
 
-export function StickerRoot({ variant = "forward", className, children, ...props }: StickerRootProps) {
+const stickerSizeClasses = {
+  compact: "h-[300px]",
+  album: "h-[340px]"
+} as const;
+
+export function StickerRoot({ variant = "forward", size = "album", className, children, ...props }: StickerRootProps) {
   return (
     <StickerContext.Provider value={{ variant }}>
       <section
-        className={twMerge("bg-sticker border-sticker relative flex h-72 w-full flex-col gap-1.5 border p-3", className)}
+        className={twMerge(
+          "bg-sticker border-sticker relative flex w-full flex-col gap-1.5 border p-3",
+          stickerSizeClasses[size],
+          className
+        )}
         {...props}
       >
         {children}
@@ -119,25 +130,48 @@ type StickerPlayerNameProps = {
 
 export function StickerPlayerName({ firstName, className, lastName }: StickerPlayerNameProps) {
   return (
-    <span className={twMerge("font-sticker block text-[10px] leading-none text-white uppercase", className)}>
-      {firstName} <b className="font-bold">{lastName}</b>
-    </span>
+    <Typography
+      className={twMerge("font-sticker block uppercase", className)}
+      variant="medium"
+      color="inverse"
+      as="span"
+      size="xs"
+    >
+      {firstName}{" "}
+      <Typography color="inverse" variant="bold" size="xs" as="b">
+        {lastName}
+      </Typography>
+    </Typography>
   );
 }
 
-export function StickerPlayerStats({ className, children, ...props }: ComponentPropsWithRef<"small">) {
+export function StickerPlayerStats({ className, children, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
   return (
-    <small className={twMerge("font-sticker block text-[10px] leading-none font-medium text-white", className)} {...props}>
+    <Typography
+      className={twMerge("font-sticker block", className)}
+      variant="medium"
+      color="inverse"
+      as="small"
+      size="xs"
+      {...props}
+    >
       {children}
-    </small>
+    </Typography>
   );
 }
 
-export function StickerClubLabel({ className, children, ...props }: ComponentPropsWithRef<"small">) {
+export function StickerClubLabel({ className, children, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
   return (
-    <small className={twMerge("font-sticker text-[7px] font-bold text-white uppercase", className)} {...props}>
+    <Typography
+      className={twMerge("font-sticker uppercase", className)}
+      color="inverse"
+      variant="bold"
+      as="small"
+      size="xs"
+      {...props}
+    >
       {children}
-    </small>
+    </Typography>
   );
 }
 
@@ -166,16 +200,18 @@ export function StickerFlag({ className, src, alt, ...props }: ComponentPropsWit
   );
 }
 
-export function StickerCountryName({ className, children, ...props }: ComponentPropsWithRef<"span">) {
+export function StickerCountryName({ className, children, ...props }: Omit<ComponentPropsWithRef<"span">, "color">) {
   return (
-    <span
+    <Typography
       className={twMerge(
-        "font-country block max-w-5 text-[34px] leading-7.5 whitespace-break-spaces text-transparent uppercase [-webkit-text-stroke:1px_#ffffff]",
+        "font-country block max-w-5 text-4xl leading-9 whitespace-break-spaces text-transparent uppercase [-webkit-text-stroke:1px_var(--ink)]",
         className
       )}
+      color="inverse"
+      as="span"
       {...props}
     >
       {children}
-    </span>
+    </Typography>
   );
 }

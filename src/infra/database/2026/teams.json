@@ -402,7 +402,7 @@
     "federationName": "Österreichischer Fußball-Bund",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-austria.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
+    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
     "coach": "Ralf Rangnick",
     "primaryColor": "#ED2939",
     "secondaryColor": "#FFFFFF"
@@ -426,7 +426,7 @@
     "federationName": "Hrvatski Nogometni Savez",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-croatia.png",
-    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
+    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Zlatko Dalić",
     "primaryColor": "#FF0000",
     "secondaryColor": "#FFFFFF"
@@ -438,7 +438,7 @@
     "federationName": "Football Association of the Czech Republic",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-czechia.png",
-    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
     "coach": "Ivan Hašek",
     "primaryColor": "#D7141A",
     "secondaryColor": "#11457E"
@@ -450,7 +450,7 @@
     "federationName": "Scottish Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-scotland.png",
-    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
+    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
     "coach": "Steve Clarke",
     "primaryColor": "#005EB8",
     "secondaryColor": "#FFFFFF"
@@ -474,7 +474,7 @@
     "federationName": "Swiss Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-switzerland.png",
-    "groupRef": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
     "coach": "Murat Yakin",
     "primaryColor": "#D52B1E",
     "secondaryColor": "#FFFFFF"
@@ -486,7 +486,7 @@
     "federationName": "Türkiye Futbol Federasyonu",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-turkey.png",
-    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
     "coach": "Vincenzo Montella",
     "primaryColor": "#E30A17",
     "secondaryColor": "#FFFFFF"
@@ -510,45 +510,9 @@
     "federationName": "Federação Caboverdiana de Futebol",
     "confederation": "CAF",
     "flag": "/assets/png/flag-cape-verde.png",
-    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
     "coach": "Bubista",
     "primaryColor": "#003893",
-    "secondaryColor": "#FFFFFF"
-  },
-  {
-    "id": "169f585d-2699-4701-855d-4db5cf232832",
-    "name": "Mali",
-    "fifaCode": "MLI",
-    "federationName": "Fédération Malienne de Football",
-    "confederation": "CAF",
-    "flag": "/assets/png/flag-mali.png",
-    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
-    "coach": "Tom Saintfiet",
-    "primaryColor": "#14B53A",
-    "secondaryColor": "#FCD116"
-  },
-  {
-    "id": "572cee49-0d58-448e-a995-25fc5a73047b",
-    "name": "Emirados Árabes Unidos",
-    "fifaCode": "UAE",
-    "federationName": "United Arab Emirates Football Association",
-    "confederation": "AFC",
-    "flag": "/assets/png/flag-uae.png",
-    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
-    "coach": "Paulo Bento",
-    "primaryColor": "#00732F",
-    "secondaryColor": "#CE1126"
-  },
-  {
-    "id": "033c51b2-62ab-4f3e-acc4-81d5a2eaf400",
-    "name": "Omã",
-    "fifaCode": "OMA",
-    "federationName": "Oman Football Association",
-    "confederation": "AFC",
-    "flag": "/assets/png/flag-oman.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
-    "coach": "Jaroslav Šilhavý",
-    "primaryColor": "#DB161B",
     "secondaryColor": "#FFFFFF"
   },
   {
@@ -558,21 +522,57 @@
     "federationName": "Federación Panameña de Fútbol",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-panama.png",
-    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
+    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Thomas Christiansen",
     "primaryColor": "#D21034",
     "secondaryColor": "#005293"
   },
   {
-    "id": "42faa7aa-1bf1-483c-8ced-3668cfce1df6",
-    "name": "Costa Rica",
-    "fifaCode": "CRC",
-    "federationName": "Federación Costarricense de Fútbol",
+    "id": "d75bfe12-5a0f-5c19-9f86-272a30b02b2b",
+    "name": "África do Sul",
+    "fifaCode": "RSA",
+    "federationName": "South African Football Association",
+    "confederation": "CAF",
+    "flag": "/assets/png/flag-south-africa.png",
+    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
+    "coach": "Hugo Broos",
+    "primaryColor": "#007847",
+    "secondaryColor": "#FFB612"
+  },
+  {
+    "id": "796bb156-e1e5-579f-bd2c-9caaa85fd1f2",
+    "name": "Haiti",
+    "fifaCode": "HAI",
+    "federationName": "Fédération Haïtienne de Football",
     "confederation": "CONCACAF",
-    "flag": "/assets/png/flag-costa-rica.png",
+    "flag": "/assets/png/flag-haiti.png",
     "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
-    "coach": "Gustavo Alfaro",
-    "primaryColor": "#002B7F",
-    "secondaryColor": "#CE1126"
+    "coach": "Sébastien Migné",
+    "primaryColor": "#00209F",
+    "secondaryColor": "#D21034"
+  },
+  {
+    "id": "f35856ed-af2b-5895-b27d-8191797a7ebd",
+    "name": "Curaçao",
+    "fifaCode": "CUW",
+    "federationName": "Federashon Futbòl Kòrsou",
+    "confederation": "CONCACAF",
+    "flag": "/assets/png/flag-curacao.png",
+    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
+    "coach": "Dick Advocaat",
+    "primaryColor": "#0057B8",
+    "secondaryColor": "#F7D117"
+  },
+  {
+    "id": "c2983458-d9db-5927-a24e-445565dc62fa",
+    "name": "RD Congo",
+    "fifaCode": "COD",
+    "federationName": "Fédération Congolaise de Football Association",
+    "confederation": "CAF",
+    "flag": "/assets/png/flag-dr-congo.png",
+    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+    "coach": "Sébastien Desabre",
+    "primaryColor": "#00A3E0",
+    "secondaryColor": "#EF3340"
   }
 ]

@@ -4,6 +4,7 @@ import {
   StickerSpecContainer,
   StickerPlayerAvatar,
   StickerSidebarGroup,
+  type StickerVariant,
   StickerCountryName,
   StickerPlayerStats,
   StickerBackground,
@@ -23,47 +24,78 @@ import {
   ExtraStickerLogo,
   ExtraStickerRoot
 } from "@/components/v2026/stickers/extra";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { PageRoot } from "@/components/ui/page/root";
+import { ShowIf } from "@/components/utils/show";
+import { paisStickers } from "@/mocks/pais";
 
 export const Route = createFileRoute("/album/$id/$pais/")({
   component: RouteComponent
 });
 
 function RouteComponent() {
-  return (
-    <section className="h-dvh w-full p-1">
-      <div className="mx-auto grid h-full w-full max-w-md grid-cols-2 gap-3">
-        <StickerRoot variant="midfielder">
-          <StickerBackground secondaryColor="#FEDF00" primaryColor="#009B3A" />
-          <StickerContent>
-            <StickerColumn>
-              <StickerPlayerAvatar src="/assets/png/soccer-player.png" alt="Bruno Santos" />
-              <StickerSpecContainer mode="player">
-                <StickerPlayerName firstName="bruno" lastName="santos" />
-                <StickerPlayerStats>16-2-2000 | 1,80m | 75kg</StickerPlayerStats>
+  const stickers = paisStickers;
+
+  const renderStickerTile = (sticker: (typeof stickers)[number]) => {
+    const avatar = (sticker as { avatar?: string }).avatar;
+
+    return (
+      <div className="relative">
+        <div className="overflow-hidden shadow-lg transition-all active:scale-[0.985]">
+          <ShowIf if={sticker.type === "extra"}>
+            <ExtraStickerRoot variant={sticker.variant as "normal" | "silver" | "bronze" | "gold"} size="album">
+              <ExtraStickerLogo />
+              <ExtraStickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
+              <ExtraStickerPlayerAvatar src={avatar ?? "/assets/png/soccer-player.png"} alt={sticker.lastName ?? "Jogador"} />
+              <ExtraStickerPlayerName>
+                {sticker.firstName} {sticker.lastName}
+              </ExtraStickerPlayerName>
+            </ExtraStickerRoot>
+          </ShowIf>
+          <ShowIf if={sticker.type === "player"}>
+            <StickerRoot variant={sticker.variant as StickerVariant} size="album">
+              <StickerBackground
+                primaryColor={sticker.primaryColor ?? "var(--accent-primary-strong)"}
+                secondaryColor={sticker.secondaryColor ?? "var(--accent-highlight)"}
+              />
+              <StickerContent>
+                <StickerColumn>
+                  <StickerPlayerAvatar src={avatar ?? "/assets/png/soccer-player.png"} alt={sticker.lastName ?? "Jogador"} />
+                  <StickerSpecContainer mode="player">
+                    <StickerPlayerName lastName={sticker.lastName ?? "sobrenome"} firstName={sticker.firstName ?? "nome"} />
+                    <StickerPlayerStats>{sticker.stats ?? "—"}</StickerPlayerStats>
+                  </StickerSpecContainer>
+                </StickerColumn>
+                <StickerSidebar>
+                  <StickerLogo />
+                  <StickerSidebarGroup>
+                    <StickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
+                    <StickerCountryName>{(sticker.countryCode ?? "BRA").split("").join(" ")}</StickerCountryName>
+                  </StickerSidebarGroup>
+                </StickerSidebar>
+              </StickerContent>
+              <StickerSpecContainer mode="club">
+                <StickerClubLabel>{sticker.club ?? "Clube do jogador"}</StickerClubLabel>
               </StickerSpecContainer>
-            </StickerColumn>
-
-            <StickerSidebar>
-              <StickerLogo />
-              <StickerSidebarGroup>
-                <StickerFlag src="/assets/png/flag-brazil.png" alt="Bandeira do Brasil" />
-                <StickerCountryName>b r a</StickerCountryName>
-              </StickerSidebarGroup>
-            </StickerSidebar>
-          </StickerContent>
-
-          <StickerSpecContainer mode="club">
-            <StickerClubLabel>Clube atual do jogador (BRA)</StickerClubLabel>
-          </StickerSpecContainer>
-        </StickerRoot>
-
-        <ExtraStickerRoot variant="gold">
-          <ExtraStickerLogo />
-          <ExtraStickerFlag src="/assets/png/flag-brazil.png" alt="Bandeira do Brasil" />
-          <ExtraStickerPlayerAvatar src="/assets/png/soccer-player.png" alt="Bruno Santos" />
-          <ExtraStickerPlayerName>Bruno Santos</ExtraStickerPlayerName>
-        </ExtraStickerRoot>
+            </StickerRoot>
+          </ShowIf>
+        </div>
       </div>
-    </section>
+    );
+  };
+
+  return (
+    <PageRoot className="mx-auto max-w-md pb-6" subtitle="Seleção Brasileira" title="Brasil" showBack>
+      <PageHeaderRoot>
+        <div className="min-w-0 flex-1">
+          <PageHeaderTitle />
+          <PageHeaderSubtitle />
+        </div>
+      </PageHeaderRoot>
+      <div className="grid grid-cols-2 gap-3 px-4">
+        {renderStickerTile(stickers[0])}
+        {renderStickerTile(stickers[1])}
+      </div>
+    </PageRoot>
   );
 }

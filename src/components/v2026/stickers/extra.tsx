@@ -1,6 +1,8 @@
 import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
-import { twMerge } from "tailwind-merge";
+
+import { Typography } from "@/components/ui/typography";
+import { twMerge } from "@/lib/tv";
 
 const variants = tv({
   variants: {
@@ -25,7 +27,7 @@ const variants = tv({
   },
   slots: {
     content: "bg-sticker-normal size-full relative flex flex-col items-end justify-end",
-    root: "relative flex h-72 w-full flex-col gap-1.5 bg-sticker p-3 bg-white border"
+    root: "relative flex w-full flex-col gap-1.5 bg-sticker p-3 bg-white border"
   },
   defaultVariants: {
     variant: "normal"
@@ -48,14 +50,22 @@ export function useSticker() {
   return useStickerContext();
 }
 
-type StickerRootProps = ComponentPropsWithRef<"section"> & VariantProps<typeof variants>;
+type StickerRootProps = ComponentPropsWithRef<"section"> &
+  VariantProps<typeof variants> & {
+    size?: "album" | "compact";
+  };
 
-export function ExtraStickerRoot({ children, variant, ...props }: StickerRootProps) {
+const extraStickerSizeClasses = {
+  compact: "h-[300px]",
+  album: "h-[340px]"
+} as const;
+
+export function ExtraStickerRoot({ size = "album", className, children, variant, ...props }: StickerRootProps) {
   const { content, root } = variants({ variant });
 
   return (
     <StickerContext.Provider value={{ variant }}>
-      <section className={root()} {...props}>
+      <section className={twMerge(root(), extraStickerSizeClasses[size], className)} {...props}>
         <div className={content()}>{children}</div>
       </section>
     </StickerContext.Provider>
@@ -70,13 +80,17 @@ export function ExtraStickerLogo({ className, ...props }: ComponentPropsWithRef<
   );
 }
 
-export function ExtraStickerPlayerName({ className, ...props }: ComponentPropsWithRef<"span">) {
+export function ExtraStickerPlayerName({ className, ...props }: Omit<ComponentPropsWithRef<"span">, "color">) {
   return (
-    <span
+    <Typography
       className={twMerge(
-        "font-sticker bg-sticker-extra absolute bottom-3 mx-[5%] block w-[90%] rounded-tr-xl rounded-bl-xl py-1 text-center text-[10px] leading-none font-bold text-white uppercase",
+        "font-sticker bg-sticker-extra absolute bottom-3 mx-[5%] block w-[90%] rounded-tr-xl rounded-bl-xl py-1 text-center uppercase",
         className
       )}
+      color="inverse"
+      variant="bold"
+      as="span"
+      size="xs"
       {...props}
     />
   );

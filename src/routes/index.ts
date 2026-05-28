@@ -10,11 +10,35 @@
 
 import { Route as rootRouteImport } from './../pages/__root'
 import { Route as IndexRouteImport } from './../pages/index'
+import { Route as TradesIndexRouteImport } from './../pages/trades/index'
+import { Route as ProfileIndexRouteImport } from './../pages/profile/index'
+import { Route as InventoryIndexRouteImport } from './../pages/inventory/index'
+import { Route as AlbumIndexRouteImport } from './../pages/album/index'
 import { Route as AlbumIdPaisIndexRouteImport } from './../pages/album/$id/$pais/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TradesIndexRoute = TradesIndexRouteImport.update({
+  id: '/trades/',
+  path: '/trades/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileIndexRoute = ProfileIndexRouteImport.update({
+  id: '/profile/',
+  path: '/profile/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InventoryIndexRoute = InventoryIndexRouteImport.update({
+  id: '/inventory/',
+  path: '/inventory/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlbumIndexRoute = AlbumIndexRouteImport.update({
+  id: '/album/',
+  path: '/album/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AlbumIdPaisIndexRoute = AlbumIdPaisIndexRouteImport.update({
@@ -25,27 +49,62 @@ const AlbumIdPaisIndexRoute = AlbumIdPaisIndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/album/': typeof AlbumIndexRoute
+  '/inventory/': typeof InventoryIndexRoute
+  '/profile/': typeof ProfileIndexRoute
+  '/trades/': typeof TradesIndexRoute
   '/album/$id/$pais/': typeof AlbumIdPaisIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/album': typeof AlbumIndexRoute
+  '/inventory': typeof InventoryIndexRoute
+  '/profile': typeof ProfileIndexRoute
+  '/trades': typeof TradesIndexRoute
   '/album/$id/$pais': typeof AlbumIdPaisIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/album/': typeof AlbumIndexRoute
+  '/inventory/': typeof InventoryIndexRoute
+  '/profile/': typeof ProfileIndexRoute
+  '/trades/': typeof TradesIndexRoute
   '/album/$id/$pais/': typeof AlbumIdPaisIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/album/$id/$pais/'
+  fullPaths:
+    | '/'
+    | '/album/'
+    | '/inventory/'
+    | '/profile/'
+    | '/trades/'
+    | '/album/$id/$pais/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/album/$id/$pais'
-  id: '__root__' | '/' | '/album/$id/$pais/'
+  to:
+    | '/'
+    | '/album'
+    | '/inventory'
+    | '/profile'
+    | '/trades'
+    | '/album/$id/$pais'
+  id:
+    | '__root__'
+    | '/'
+    | '/album/'
+    | '/inventory/'
+    | '/profile/'
+    | '/trades/'
+    | '/album/$id/$pais/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlbumIndexRoute: typeof AlbumIndexRoute
+  InventoryIndexRoute: typeof InventoryIndexRoute
+  ProfileIndexRoute: typeof ProfileIndexRoute
+  TradesIndexRoute: typeof TradesIndexRoute
   AlbumIdPaisIndexRoute: typeof AlbumIdPaisIndexRoute
 }
 
@@ -56,6 +115,34 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trades/': {
+      id: '/trades/'
+      path: '/trades'
+      fullPath: '/trades/'
+      preLoaderRoute: typeof TradesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile/': {
+      id: '/profile/'
+      path: '/profile'
+      fullPath: '/profile/'
+      preLoaderRoute: typeof ProfileIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inventory/': {
+      id: '/inventory/'
+      path: '/inventory'
+      fullPath: '/inventory/'
+      preLoaderRoute: typeof InventoryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/album/': {
+      id: '/album/'
+      path: '/album'
+      fullPath: '/album/'
+      preLoaderRoute: typeof AlbumIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/album/$id/$pais/': {
@@ -70,6 +157,10 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlbumIndexRoute: AlbumIndexRoute,
+  InventoryIndexRoute: InventoryIndexRoute,
+  ProfileIndexRoute: ProfileIndexRoute,
+  TradesIndexRoute: TradesIndexRoute,
   AlbumIdPaisIndexRoute: AlbumIdPaisIndexRoute,
 }
 export const routeTree = rootRouteImport

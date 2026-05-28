@@ -1,0 +1,223 @@
+import { ArrowLeftRight, Sparkles, Plus, Send } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+
+import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
+import { wishlistItems, tradeHistory, tradeOffers } from "@/mocks/trades";
+import { Typography } from "@/components/ui/typography";
+import { ForEach } from "@/components/utils/foreach";
+import { PageRoot } from "@/components/ui/page/root";
+import { ShowIf } from "@/components/utils/show";
+
+export const Route = createFileRoute("/trades/")({
+  component: TradesPage
+});
+
+type Tab = "wishlist" | "offers" | "history";
+
+function TradesPage() {
+  const [activeTab, setActiveTab] = useState<Tab>("wishlist");
+
+  const tabs: { id: Tab; label: string }[] = [
+    { label: "Wishlist", id: "wishlist" },
+    { label: "Ofertas", id: "offers" },
+    { label: "Histórico", id: "history" }
+  ];
+
+  return (
+    <PageRoot className="mx-auto max-w-md pb-8" subtitle="2 ofertas pendentes" title="Trocas" showBack>
+      <PageHeaderRoot>
+        <div className="min-w-0 flex-1">
+          <PageHeaderTitle />
+          <PageHeaderSubtitle />
+        </div>
+      </PageHeaderRoot>
+      <div className="flex flex-col gap-5 px-4">
+        <div className="bg-surface-alt flex gap-1 rounded-lg p-1">
+          <ForEach items={tabs}>
+            {(tab) => (
+              <button
+                className={`flex flex-1 rounded-md py-2.5 text-sm leading-5 font-medium transition-all ${
+                  activeTab === tab.id ? "bg-surface text-ink shadow-sm" : "text-ink-muted"
+                }`}
+                onClick={() => setActiveTab(tab.id)}
+                type="button"
+                key={tab.id}
+              >
+                <Typography color={activeTab === tab.id ? "base" : "subtle"} variant="medium" as="span" size="sm">
+                  {tab.label}
+                </Typography>
+              </button>
+            )}
+          </ForEach>
+        </div>
+
+        <ShowIf if={activeTab === "wishlist"}>
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <Typography color="subtle" as="span" size="sm">
+                {wishlistItems.length} desejadas
+              </Typography>
+              <button
+                className="bg-accent-primary text-bg flex items-center gap-1.5 rounded-md px-3.5 py-2 text-xs font-semibold transition active:scale-[0.98] active:opacity-90"
+                type="button"
+              >
+                <Plus size={13} />
+                <Typography variant="semibold" color="inverse" as="span" size="xs">
+                  Adicionar
+                </Typography>
+              </button>
+            </div>
+            <SearchInputRoot>
+              <SearchInputIcon />
+              <SearchInputField placeholder="Buscar na wishlist..." />
+            </SearchInputRoot>
+            <div className="flex flex-col gap-2">
+              <ForEach items={wishlistItems}>
+                {(item) => (
+                  <SurfaceCardGhost className="flex items-center gap-3 px-4 py-3" key={item.number}>
+                    <div className="border-border bg-surface-alt flex size-10 items-center justify-center border">
+                      <Typography variant="medium" color="muted" as="span" size="xs">
+                        {String(item.number).padStart(3, "0")}
+                      </Typography>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-1">
+                        <Typography variant="medium" color="base" as="span" size="sm">
+                          {item.name}
+                        </Typography>
+                        <ShowIf if={item.rarity === "rare"}>
+                          <Typography color="highlight" as="span">
+                            ★
+                          </Typography>
+                        </ShowIf>
+                        <ShowIf if={item.rarity === "holographic"}>
+                          <Sparkles className="text-accent-highlight" size={10} />
+                        </ShowIf>
+                      </div>
+                      <Typography variant="medium" color="subtle" as="span" size="xs">
+                        {item.flag} {item.country}
+                      </Typography>
+                    </div>
+                    <button className="bg-surface hover:bg-surface-alt rounded-md px-3 py-1.5 transition-colors" type="button">
+                      <Typography variant="medium" color="muted" as="span" size="xs">
+                        Procurar
+                      </Typography>
+                    </button>
+                  </SurfaceCardGhost>
+                )}
+              </ForEach>
+            </div>
+          </div>
+        </ShowIf>
+
+        <ShowIf if={activeTab === "offers"}>
+          <div className="flex flex-col gap-3">
+            <ForEach items={tradeOffers}>
+              {(offer) => (
+                <SurfaceCardRoot key={offer.id}>
+                  <div className="mb-3 flex items-center gap-2">
+                    <div className="border-accent-primary/30 bg-accent-primary/10 text-accent-primary flex size-8 items-center justify-center border text-xs font-semibold">
+                      {offer.avatar}
+                    </div>
+                    <Typography variant="medium" color="base" as="span" size="sm">
+                      {offer.user}
+                    </Typography>
+                    <span
+                      className={`ml-auto inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-medium ${offer.status === "pending" ? "bg-accent-highlight/10 text-accent-highlight" : "bg-accent-primary/10 text-accent-primary"}`}
+                    >
+                      <Typography
+                        color={offer.status === "pending" ? "highlight" : "accent"}
+                        variant="medium"
+                        as="span"
+                        size="xs"
+                      >
+                        {offer.status === "pending" ? "Pendente" : "Aceita"}
+                      </Typography>
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="bg-surface-alt flex-1 rounded-lg py-2.5 text-center">
+                      <Typography variant="medium" color="subtle" size="xs" as="p">
+                        Oferece
+                      </Typography>
+                      <Typography variant="semibold" color="accent" as="p">
+                        #{String(offer.offering.number).padStart(3, "0")}
+                      </Typography>
+                      <Typography variant="medium" color="muted" size="xs" as="p">
+                        {offer.offering.name}
+                      </Typography>
+                    </div>
+                    <ArrowLeftRight className="text-ink-muted" size={16} />
+                    <div className="bg-surface-alt flex-1 rounded-lg py-2.5 text-center">
+                      <Typography variant="medium" color="subtle" size="xs" as="p">
+                        Quer
+                      </Typography>
+                      <Typography variant="semibold" color="highlight" as="p">
+                        #{String(offer.requesting.number).padStart(3, "0")}
+                      </Typography>
+                      <Typography variant="medium" color="muted" size="xs" as="p">
+                        {offer.requesting.name}
+                      </Typography>
+                    </div>
+                  </div>
+                  <ShowIf if={offer.status === "pending"}>
+                    <div className="mt-3 flex gap-2">
+                      <button
+                        className="bg-accent-primary flex-1 rounded-md py-2.5 transition active:scale-[0.98] active:opacity-90"
+                        type="button"
+                      >
+                        <Typography variant="medium" color="inverse" as="span" size="sm">
+                          Aceitar
+                        </Typography>
+                      </button>
+                      <button
+                        className="bg-surface-alt hover:bg-surface flex-1 rounded-md py-2.5 transition-colors"
+                        type="button"
+                      >
+                        <Typography variant="medium" color="muted" as="span" size="sm">
+                          Recusar
+                        </Typography>
+                      </button>
+                    </div>
+                  </ShowIf>
+                </SurfaceCardRoot>
+              )}
+            </ForEach>
+          </div>
+        </ShowIf>
+
+        <ShowIf if={activeTab === "history"}>
+          <div className="flex flex-col gap-2">
+            <ForEach items={tradeHistory}>
+              {(trade, props) => (
+                <div className="border-border bg-surface flex items-center gap-3 border px-3 py-3" key={props?.index}>
+                  <span
+                    className={`flex size-9 items-center justify-center border ${
+                      trade.success ? "bg-accent-primary/10 text-accent-primary" : "bg-status-danger/10 text-status-danger"
+                    }`}
+                  >
+                    {trade.success ? <ArrowLeftRight size={14} /> : <Send size={14} />}
+                  </span>
+                  <div className="flex-1">
+                    <Typography variant="medium" color="base" size="sm" as="p">
+                      {trade.success ? `Troca com ${trade.user}` : "Oferta recusada"}
+                    </Typography>
+                    <Typography variant="medium" color="subtle" size="xs" as="p">
+                      {trade.gave} → {trade.received}
+                    </Typography>
+                  </div>
+                  <Typography variant="medium" color="subtle" as="span" size="xs">
+                    {trade.date}
+                  </Typography>
+                </div>
+              )}
+            </ForEach>
+          </div>
+        </ShowIf>
+      </div>
+    </PageRoot>
+  );
+}
