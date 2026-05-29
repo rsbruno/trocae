@@ -105,6 +105,8 @@ body {
   --color-typography-info: var(--sticker);
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
+
+  --animate-skeleton-shimmer: skeleton-shimmer 1.85s ease-in-out infinite;
 }
 
 :root {
@@ -157,5 +159,21 @@ body {
   --status-danger: #FF6B6B;
   --border: rgba(255, 255, 255, 0.06);
   --border-strong: rgba(255, 255, 255, 0.10);
+
+  --skeleton-base: rgba(255, 255, 255, 0.08);
+  --skeleton-highlight: rgba(255, 255, 255, 0.16);
+  --skeleton-muted: rgba(255, 255, 255, 0.05);
+  --skeleton-ring: rgba(255, 255, 255, 0.06);
+  --skeleton-gray: rgba(155, 164, 176, 0.22);
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 

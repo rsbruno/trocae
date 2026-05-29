@@ -3,9 +3,13 @@ import type { ReactNode } from "react";
 import { WarningCircle } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
+import { Skeleton } from "@/components/ui/skeleton";
+import { ShowIf } from "@/components/utils/show";
+
 export interface FieldContainerProps {
   children: ReactNode;
   className?: string;
+  loading?: boolean;
   label?: string;
   error?: string;
   name: string;
@@ -23,26 +27,42 @@ export function fieldInputClassName(hasError: boolean, className?: string) {
   );
 }
 
-export function FieldContainer({ className, children, label, error, name, id }: FieldContainerProps) {
+export function FieldContainer({ loading = false, className, children, label, error, name, id }: FieldContainerProps) {
   const inputId = id ?? name;
   const hasError = Boolean(error);
 
   return (
-    <div className={twMerge("flex flex-col gap-1.5", className)} data-slot="field-container" data-error={hasError}>
-      {label && (
-        <label className="text-ink-secondary text-[0.6875rem] font-medium tracking-[0.07em] uppercase" htmlFor={inputId}>
-          {label}
-        </label>
-      )}
+    <div
+      className={twMerge("flex flex-col gap-1.5", className)}
+      aria-busy={loading || undefined}
+      data-slot="field-container"
+      data-error={hasError}
+    >
+      <ShowIf if={loading}>
+        <div className="flex flex-col gap-1.5">
+          <ShowIf if={Boolean(label)}>
+            <Skeleton className="h-3.5 w-36" tone="muted" rounded="sm" />
+          </ShowIf>
+          <Skeleton className="h-11" rounded="lg" />
+        </div>
+      </ShowIf>
 
-      <div className="relative">{children}</div>
+      <ShowIf if={!loading}>
+        {label && (
+          <label className="text-ink-secondary text-[0.6875rem] font-medium tracking-[0.07em] uppercase" htmlFor={inputId}>
+            {label}
+          </label>
+        )}
 
-      {error && (
-        <p className="text-status-danger flex items-center gap-1.5 text-xs" id={`${inputId}-error`} role="alert">
-          <WarningCircle className="shrink-0" weight="fill" size={11} />
-          {error}
-        </p>
-      )}
+        <div className="relative">{children}</div>
+
+        {error && (
+          <p className="text-status-danger flex items-center gap-1.5 text-xs" id={`${inputId}-error`} role="alert">
+            <WarningCircle className="shrink-0" weight="fill" size={11} />
+            {error}
+          </p>
+        )}
+      </ShowIf>
     </div>
   );
 }

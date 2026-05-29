@@ -3,3 +3,5 @@ export type Option<TData = unknown> = {
   value: string;
   data?: TData;
 };
+
+export type Options<TData = unknown> = Option<TData>[];

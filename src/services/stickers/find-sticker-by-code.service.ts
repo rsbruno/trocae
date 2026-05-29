@@ -3,6 +3,7 @@ import { type UseQueryOptions, useQuery } from "@tanstack/react-query";
 
 import type { Sticker } from "@/@types/sticker";
 
+import { STICKER_CODE_LENGTH } from "@/schemas/zod/add-sticker";
 import { getFirestoreClient } from "@/infra/firebase/client";
 
 type UseFindStickerByCodeOptions = Omit<
@@ -27,7 +28,7 @@ export function useFindStickerByCode(code: string, options?: UseFindStickerByCod
   return useQuery({
     queryFn: () => findStickerByCodeService(normalizedCode),
     queryKey: ["use-find-sticker-by-code", normalizedCode],
-    enabled: normalizedCode.length >= 2,
+    enabled: normalizedCode.length === STICKER_CODE_LENGTH,
     ...options
   });
 }

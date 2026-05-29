@@ -1,10 +1,11 @@
-import { type ComponentPropsWithRef, createContext, useContext } from "react";
+import { type ComponentPropsWithRef, createContext, useContext, Fragment } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
 
 import type { PlayerPosition, Sticker } from "@/@types/sticker";
 
 import { Typography } from "@/components/ui/typography";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export type StickerVariant = "forward" | "midfielder" | "defender" | "goalkeeper";
 
@@ -64,7 +65,8 @@ const stickerSpecContainerVariants = tv({
 });
 
 type StickerRootProps = ComponentPropsWithRef<"section"> & {
-  data: Sticker;
+  loading?: boolean;
+  data?: Sticker;
   variant?: StickerVariant;
   size?: "album" | "compact";
 };
@@ -74,19 +76,49 @@ const stickerSizeClasses = {
   album: "h-[340px]"
 } as const;
 
-export function StickerRoot({ size = "album", className, children, variant, data, ...props }: StickerRootProps) {
+const stickerFrameClassName = "bg-sticker border-sticker relative flex w-full flex-col gap-1.5 border p-3";
+
+const stickerLoadingFrameClassName =
+  "relative flex w-full flex-col gap-1.5 overflow-hidden rounded-sm border border-white/8 bg-surface-alt p-3";
+
+function StickerRootLoading() {
+  return (
+    <Fragment>
+      <div className="z-10 flex flex-1 gap-1.5">
+        <div className="flex flex-1 flex-col gap-1.5">
+          <Skeleton className="min-h-0 flex-1 rounded-bl-[40px]" rounded="sm" tone="base" />
+          <Skeleton className="h-14 w-full" tone="muted" rounded="sm" />
+        </div>
+        <Skeleton className="h-full w-9 shrink-0" tone="muted" rounded="sm" />
+      </div>
+      <Skeleton className="h-6 w-full" tone="muted" rounded="sm" />
+    </Fragment>
+  );
+}
+
+export function StickerRoot({ loading = false, size = "album", className, children, variant, data, ...props }: StickerRootProps) {
+  if (loading) {
+    return (
+      <section
+        className={twMerge(stickerLoadingFrameClassName, stickerSizeClasses[size], className)}
+        aria-label="Carregando figurinha"
+        aria-busy="true"
+        {...props}
+      >
+        <StickerRootLoading />
+      </section>
+    );
+  }
+
+  if (!data) {
+    throw new Error("StickerRoot requires data when loading is false.");
+  }
+
   const resolvedVariant = variant ?? positionVariantMap[data.player.position] ?? "forward";
 
   return (
     <StickerContext.Provider value={{ variant: resolvedVariant, data }}>
-      <section
-        className={twMerge(
-          "bg-sticker border-sticker relative flex w-full flex-col gap-1.5 border p-3",
-          stickerSizeClasses[size],
-          className
-        )}
-        {...props}
-      >
+      <section className={twMerge(stickerFrameClassName, stickerSizeClasses[size], className)} {...props}>
         {children}
       </section>
     </StickerContext.Provider>

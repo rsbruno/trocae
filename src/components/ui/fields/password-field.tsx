@@ -1,4 +1,4 @@
-import { type InputHTMLAttributes, type ChangeEvent, forwardRef, useState } from "react";
+import { type InputHTMLAttributes, type ChangeEvent, forwardRef, useState, Fragment } from "react";
 import { EyeSlashIcon, EyeIcon } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
@@ -23,7 +23,7 @@ export const PasswordFieldPrimitive = forwardRef<HTMLInputElement, PasswordField
       onChange?.(next);
     }
     return (
-      <>
+      <Fragment>
         <input
           {...props}
           className={fieldInputClassName(hasError, twMerge("pr-12", className))}
@@ -52,18 +52,21 @@ export const PasswordFieldPrimitive = forwardRef<HTMLInputElement, PasswordField
             <EyeIcon weight="regular" size={18} />
           </ShowIf>
         </button>
-      </>
+      </Fragment>
     );
   }
 );
+
 PasswordFieldPrimitive.displayName = "PasswordFieldPrimitive";
+
 export const PasswordField = forwardRef<HTMLInputElement, PasswordFieldProps>(
-  ({ className, error, label, name, id, ...props }, ref) => {
+  ({ className, loading, error, label, name, id, ...props }, ref) => {
     return (
-      <FieldContainer label={label} error={error} name={name} id={id}>
+      <FieldContainer loading={loading} label={label} error={error} name={name} id={id}>
         <PasswordFieldPrimitive className={className} error={error} label={label} name={name} ref={ref} id={id} {...props} />
       </FieldContainer>
     );
   }
 );
+
 PasswordField.displayName = "PasswordField";

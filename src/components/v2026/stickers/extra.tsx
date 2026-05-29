@@ -5,6 +5,7 @@ import { tv } from "tailwind-variants";
 import type { Sticker } from "@/@types/sticker";
 
 import { Typography } from "@/components/ui/typography";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export type ExtraStickerVariant = "normal" | "silver" | "bronze" | "gold";
 
@@ -56,7 +57,8 @@ export function useExtraSticker() {
 }
 
 type ExtraStickerRootProps = ComponentPropsWithRef<"section"> & {
-  data: Sticker;
+  loading?: boolean;
+  data?: Sticker;
   variant?: ExtraStickerVariant;
   size?: "album" | "compact";
 };
@@ -66,7 +68,45 @@ const extraStickerSizeClasses = {
   album: "h-[340px]"
 } as const;
 
-export function ExtraStickerRoot({ size = "album", className, children, variant, data, ...props }: ExtraStickerRootProps) {
+const extraStickerLoadingFrameClassName =
+  "relative flex w-full flex-col gap-1.5 overflow-hidden rounded-sm border border-white/8 bg-surface-alt p-3";
+
+function ExtraStickerRootLoading() {
+  return (
+    <div className="relative flex size-full min-h-0 flex-1 flex-col">
+      <Skeleton className="absolute top-5 left-1/2 aspect-square w-[70%] max-w-48 -translate-x-1/2" rounded="full" tone="muted" />
+      <Skeleton className="mt-auto h-54 w-full shrink-0" rounded="sm" />
+      <Skeleton className="absolute bottom-3 left-[5%] h-8 w-[90%]" tone="muted" rounded="lg" />
+    </div>
+  );
+}
+
+export function ExtraStickerRoot({
+  loading = false,
+  size = "album",
+  className,
+  children,
+  variant,
+  data,
+  ...props
+}: ExtraStickerRootProps) {
+  if (loading) {
+    return (
+      <section
+        className={twMerge(extraStickerLoadingFrameClassName, extraStickerSizeClasses[size], className)}
+        aria-label="Carregando figurinha extra"
+        aria-busy="true"
+        {...props}
+      >
+        <ExtraStickerRootLoading />
+      </section>
+    );
+  }
+
+  if (!data) {
+    throw new Error("ExtraStickerRoot requires data when loading is false.");
+  }
+
   const resolvedVariant = variant ?? "normal";
   const { content, root } = variants({ variant: resolvedVariant });
 

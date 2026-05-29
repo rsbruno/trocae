@@ -331,6 +331,7 @@ export function SelectFieldPrimitive<TData, TOption extends Option<TData> = Opti
 }
 export function SelectField<TData, TOption extends Option<TData> = Option<TData>>({
   className,
+  loading,
   error,
   label,
   name,
@@ -338,7 +339,7 @@ export function SelectField<TData, TOption extends Option<TData> = Option<TData>
   ...props
 }: SelectFieldProps<TData, TOption>) {
   return (
-    <FieldContainer className={className} label={label} error={error} name={name} id={id}>
+    <FieldContainer className={className} loading={loading} label={label} error={error} name={name} id={id}>
       <SelectFieldPrimitive {...props} error={error} label={label} name={name} id={id} />
     </FieldContainer>
   );

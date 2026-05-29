@@ -51,9 +51,9 @@ export const TextFieldPrimitive = forwardRef<HTMLInputElement, TextFieldProps>(
 );
 TextFieldPrimitive.displayName = "TextFieldPrimitive";
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
-  ({ className, prefix, error, label, name, id, ...props }, ref) => {
+  ({ className, loading, prefix, error, label, name, id, ...props }, ref) => {
     return (
-      <FieldContainer label={label} error={error} name={name} id={id}>
+      <FieldContainer loading={loading} label={label} error={error} name={name} id={id}>
         <div className={twMerge("flex w-full items-center", prefix && "gap-2")}>
           <ShowIf if={Boolean(prefix)}>
             <span className="text-ink-secondary shrink-0 pl-1 text-sm select-none">{prefix}</span>

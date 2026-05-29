@@ -1,8 +1,10 @@
 import { type ReactElement, isValidElement, createContext, Children, use } from "react";
 import { Button as ButtonPrimitive } from "@base-ui/react/button";
 import { type VariantProps, tv } from "tailwind-variants";
+import { twMerge } from "tailwind-merge";
 
 import { type TypographyProps, Typography } from "@/components/ui/typography";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const button = tv({
   variants: {
@@ -65,6 +67,7 @@ export type ButtonContextValue = {
   variant: ButtonVariant;
   size: ButtonSize;
   disabled?: boolean;
+  loading?: boolean;
   labelProps: Partial<TypographyProps<"span">>;
 };
 
@@ -85,10 +88,12 @@ export type ButtonLabelProps = Omit<TypographyProps<"span">, "as">;
 export type ButtonRootProps = ButtonPrimitive.Props &
   VariantProps<typeof button> & {
     asChild?: boolean;
+    skeleton?: boolean;
+    loading?: boolean;
   };
 
 export function ButtonLabel({ className, children, ...props }: ButtonLabelProps) {
-  const { labelProps, disabled, variant, size } = useButtonContext();
+  const { labelProps, disabled, loading, variant, size } = useButtonContext();
   const { label } = button({
     class: typeof className === "string" ? className : undefined,
     variant,
@@ -105,16 +110,23 @@ export function ButtonLabel({ className, children, ...props }: ButtonLabelProps)
       as="span"
       {...props}
     >
-      {children}
+      {loading ? "Aguarde..." : children}
     </Typography>
   );
 }
 
+const buttonSkeletonShellClassName =
+  "pointer-events-none border-white/8 bg-white/[0.04] shadow-none ring-1 ring-inset ring-white/[0.06] hover:opacity-100 active:scale-100";
+
+const buttonLoadingClassName = "pointer-events-none cursor-wait opacity-60";
+
 export function ButtonRoot({
   variant = "primary",
   size = "default",
+  skeleton = false,
   type = "button",
   asChild = false,
+  loading = false,
   nativeButton,
   className,
   children,
@@ -130,17 +142,38 @@ export function ButtonRoot({
     size: resolvedSize
   });
 
+  const resolvedClassName =
+    typeof className === "function" ? root() : twMerge(root(), typeof className === "string" ? className : undefined);
+
+  if (skeleton) {
+    return (
+      <div
+        className={twMerge(resolvedClassName, buttonSkeletonShellClassName)}
+        aria-disabled="true"
+        data-slot="button"
+        aria-busy="true"
+        role="status"
+      >
+        <Skeleton className="size-full min-h-0 flex-1 rounded-[inherit]" tone="strong" />
+      </div>
+    );
+  }
+
+  const isDisabled = disabled || loading;
+
   const contextValue: ButtonContextValue = {
     labelProps: {
       ...buttonLabelPropsByVariant[resolvedVariant],
       ...buttonLabelPropsBySize[resolvedSize]
     },
     variant: resolvedVariant,
+    disabled: isDisabled,
     size: resolvedSize,
-    disabled
+    loading
   };
 
-  const rootClassName = typeof className === "function" ? className : root();
+  const rootClassName =
+    typeof className === "function" ? className : twMerge(resolvedClassName, loading ? buttonLoadingClassName : undefined);
   const resolvedNativeButton = nativeButton ?? !asChild;
 
   if (asChild) {
@@ -155,8 +188,9 @@ export function ButtonRoot({
         <ButtonPrimitive
           render={child as ReactElement<Record<string, unknown>>}
           nativeButton={resolvedNativeButton}
+          aria-busy={loading || undefined}
           className={rootClassName}
-          disabled={disabled}
+          disabled={isDisabled}
           data-slot="button"
           {...(resolvedNativeButton ? { type } : {})}
           {...props}
@@ -169,8 +203,9 @@ export function ButtonRoot({
     <ButtonContext value={contextValue}>
       <ButtonPrimitive
         nativeButton={resolvedNativeButton}
+        aria-busy={loading || undefined}
         className={rootClassName}
-        disabled={disabled}
+        disabled={isDisabled}
         data-slot="button"
         render={render}
         type={type}

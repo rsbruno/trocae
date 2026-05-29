@@ -22,6 +22,10 @@ export const getCollectionStickerStatsService = async ({
 
   const currentUser = auth.currentUser;
 
+  if (currentUser === null) {
+    throw new Error("Sua sessão expirou. Entre novamente.");
+  }
+
   const userId = currentUser.uid;
   const collectionsRef = collection(getFirestoreClient(), "collections");
 

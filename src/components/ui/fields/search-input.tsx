@@ -1,5 +1,5 @@
 import { type InputHTMLAttributes, type ChangeEvent, forwardRef, useEffect, useState } from "react";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
 import { type FieldContainerProps, fieldInputClassName, FieldContainer } from "./container";
@@ -61,11 +61,11 @@ export const SearchInputPrimitive = forwardRef<HTMLInputElement, SearchInputProp
 SearchInputPrimitive.displayName = "SearchInputPrimitive";
 
 export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
-  ({ className, clearable, error, label, name, id, ...props }, ref) => {
+  ({ className, clearable, loading, error, label, name, id, ...props }, ref) => {
     return (
-      <FieldContainer label={label} error={error} name={name} id={id}>
+      <FieldContainer loading={loading} label={label} error={error} name={name} id={id}>
         <div className="relative flex w-full items-center">
-          <MagnifyingGlass
+          <MagnifyingGlassIcon
             className="text-ink-muted pointer-events-none absolute top-1/2 left-4 -translate-y-1/2"
             weight="regular"
             size={16}
