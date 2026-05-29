@@ -4,7 +4,6 @@
     "order": 1,
     "code": "BRA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Brasil",
       "birthDate": "1900-01-01",
@@ -31,7 +30,6 @@
     "order": 2,
     "code": "BRA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alisson",
       "birthDate": "1992-10-02",
@@ -58,7 +56,6 @@
     "order": 3,
     "code": "BRA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bento",
       "birthDate": "1999-06-10",
@@ -85,7 +82,6 @@
     "order": 4,
     "code": "BRA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marquinhos",
       "birthDate": "1994-05-14",
@@ -112,7 +108,6 @@
     "order": 5,
     "code": "BRA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Éder Militão",
       "birthDate": "1998-01-18",
@@ -139,7 +134,6 @@
     "order": 6,
     "code": "BRA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gabriel Magalhães",
       "birthDate": "1997-12-19",
@@ -166,7 +160,6 @@
     "order": 7,
     "code": "BRA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Danilo",
       "birthDate": "1991-07-15",
@@ -193,7 +186,6 @@
     "order": 8,
     "code": "BRA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Wesley",
       "birthDate": "2003-09-06",
@@ -220,7 +212,6 @@
     "order": 9,
     "code": "BRA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lucas Paquetá",
       "birthDate": "1997-08-27",
@@ -247,7 +238,6 @@
     "order": 10,
     "code": "BRA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Casemiro",
       "birthDate": "1992-02-23",
@@ -274,7 +264,6 @@
     "order": 11,
     "code": "BRA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bruno Guimarães",
       "birthDate": "1997-11-16",
@@ -301,7 +290,6 @@
     "order": 12,
     "code": "BRA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luiz Henrique",
       "birthDate": "2001-01-02",
@@ -328,7 +316,6 @@
     "order": 13,
     "code": "BRA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -355,7 +342,6 @@
     "order": 14,
     "code": "BRA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vinicius Júnior",
       "birthDate": "2000-07-12",
@@ -382,7 +368,6 @@
     "order": 15,
     "code": "BRA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rodrygo",
       "birthDate": "2001-01-09",
@@ -409,7 +394,6 @@
     "order": 16,
     "code": "BRA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "João Pedro",
       "birthDate": "2001-09-26",
@@ -436,7 +420,6 @@
     "order": 17,
     "code": "BRA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matheus Cunha",
       "birthDate": "1999-05-27",
@@ -463,7 +446,6 @@
     "order": 18,
     "code": "BRA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gabriel Martinelli",
       "birthDate": "2001-06-18",
@@ -490,7 +472,6 @@
     "order": 19,
     "code": "BRA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Raphinha",
       "birthDate": "1996-12-14",
@@ -517,7 +498,6 @@
     "order": 20,
     "code": "BRA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Estévão",
       "birthDate": "2007-04-24",
@@ -544,7 +524,6 @@
     "order": 1,
     "code": "MEX01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "México",
       "birthDate": "1900-01-01",
@@ -571,7 +550,6 @@
     "order": 2,
     "code": "MEX02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luis Malagón",
       "birthDate": "1997-03-02",
@@ -598,7 +576,6 @@
     "order": 3,
     "code": "MEX03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Johan Vasquez",
       "birthDate": "1998-10-22",
@@ -625,7 +602,6 @@
     "order": 4,
     "code": "MEX04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jorge Sánchez",
       "birthDate": "1997-12-10",
@@ -652,7 +628,6 @@
     "order": 5,
     "code": "MEX05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cesar Montes",
       "birthDate": "1997-02-24",
@@ -679,7 +654,6 @@
     "order": 6,
     "code": "MEX06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jesus Gallardo",
       "birthDate": "1994-08-15",
@@ -706,7 +680,6 @@
     "order": 7,
     "code": "MEX07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Israel Reyes",
       "birthDate": "2000-05-23",
@@ -733,7 +706,6 @@
     "order": 8,
     "code": "MEX08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diego Lainez",
       "birthDate": "2000-06-09",
@@ -760,7 +732,6 @@
     "order": 9,
     "code": "MEX09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Carlos Rodriguez",
       "birthDate": "1997-01-03",
@@ -787,7 +758,6 @@
     "order": 10,
     "code": "MEX10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Edson Alvarez",
       "birthDate": "1997-10-24",
@@ -814,7 +784,6 @@
     "order": 11,
     "code": "MEX11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Orbelin Pineda",
       "birthDate": "1996-03-24",
@@ -841,7 +810,6 @@
     "order": 12,
     "code": "MEX12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marcel Ruiz",
       "birthDate": "2000-10-26",
@@ -868,7 +836,6 @@
     "order": 13,
     "code": "MEX13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -895,7 +862,6 @@
     "order": 14,
     "code": "MEX14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Érick Sánchez",
       "birthDate": "1999-09-27",
@@ -922,7 +888,6 @@
     "order": 15,
     "code": "MEX15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hirving Lozano",
       "birthDate": "1995-07-30",
@@ -949,7 +914,6 @@
     "order": 16,
     "code": "MEX16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Santiago Giménez",
       "birthDate": "2001-04-18",
@@ -976,7 +940,6 @@
     "order": 17,
     "code": "MEX17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Raúl Jiménez",
       "birthDate": "1991-05-05",
@@ -1003,7 +966,6 @@
     "order": 18,
     "code": "MEX18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexis Vega",
       "birthDate": "1997-11-25",
@@ -1030,7 +992,6 @@
     "order": 19,
     "code": "MEX19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Roberto Alvarado",
       "birthDate": "1998-09-07",
@@ -1057,7 +1018,6 @@
     "order": 20,
     "code": "MEX20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cesar Huerta",
       "birthDate": "2000-12-03",
@@ -1084,7 +1044,6 @@
     "order": 1,
     "code": "RSA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "África do Sul",
       "birthDate": "1900-01-01",
@@ -1111,7 +1070,6 @@
     "order": 2,
     "code": "RSA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ronwen Williams",
       "birthDate": "1992-01-02",
@@ -1138,7 +1096,6 @@
     "order": 3,
     "code": "RSA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sipho Chaine",
       "birthDate": "1996-12-01",
@@ -1165,7 +1122,6 @@
     "order": 4,
     "code": "RSA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aubrey Modiba",
       "birthDate": "1995-07-02",
@@ -1192,7 +1148,6 @@
     "order": 5,
     "code": "RSA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Samukele Kabini",
       "birthDate": "2004-03-01",
@@ -1219,7 +1174,6 @@
     "order": 6,
     "code": "RSA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mbekezeli Mbokazi",
       "birthDate": "2005-09-01",
@@ -1246,7 +1200,6 @@
     "order": 7,
     "code": "RSA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Khulumani Ndamane",
       "birthDate": "2004-02-01",
@@ -1273,7 +1226,6 @@
     "order": 8,
     "code": "RSA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Siyabonga Ngezana",
       "birthDate": "1997-11-01",
@@ -1300,7 +1252,6 @@
     "order": 9,
     "code": "RSA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Khuliso Mudau",
       "birthDate": "1995-04-02",
@@ -1327,7 +1278,6 @@
     "order": 10,
     "code": "RSA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nkosinathi Sibisi",
       "birthDate": "1995-05-02",
@@ -1354,7 +1304,6 @@
     "order": 11,
     "code": "RSA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Teboho Mokoena",
       "birthDate": "1997-01-02",
@@ -1381,7 +1330,6 @@
     "order": 12,
     "code": "RSA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Thalente Mbatha",
       "birthDate": "2000-03-01",
@@ -1408,7 +1356,6 @@
     "order": 13,
     "code": "RSA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -1435,7 +1382,6 @@
     "order": 14,
     "code": "RSA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bathusi Aubaas",
       "birthDate": "1995-05-01",
@@ -1462,7 +1408,6 @@
     "order": 15,
     "code": "RSA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yaya Sithole",
       "birthDate": "1999-03-01",
@@ -1489,7 +1434,6 @@
     "order": 16,
     "code": "RSA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sipho Mbule",
       "birthDate": "1998-03-02",
@@ -1516,7 +1460,6 @@
     "order": 17,
     "code": "RSA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lyle Foster",
       "birthDate": "2000-09-01",
@@ -1543,7 +1486,6 @@
     "order": 18,
     "code": "RSA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Iqraam Rayners",
       "birthDate": "1995-12-01",
@@ -1570,7 +1512,6 @@
     "order": 19,
     "code": "RSA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohau Nkota",
       "birthDate": "2004-11-01",
@@ -1597,7 +1538,6 @@
     "order": 20,
     "code": "RSA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Oswin Appollis",
       "birthDate": "2001-08-02",
@@ -1624,7 +1564,6 @@
     "order": 1,
     "code": "KOR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Coreia do Sul",
       "birthDate": "1900-01-01",
@@ -1651,7 +1590,6 @@
     "order": 2,
     "code": "KOR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hyeon-woo Jo",
       "birthDate": "1991-09-02",
@@ -1678,7 +1616,6 @@
     "order": 3,
     "code": "KOR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Seung-Gyu Kim",
       "birthDate": "1995-06-15",
@@ -1705,7 +1642,6 @@
     "order": 4,
     "code": "KOR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Min-jae Kim",
       "birthDate": "1996-11-01",
@@ -1732,7 +1668,6 @@
     "order": 5,
     "code": "KOR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yu-min Cho",
       "birthDate": "1996-11-01",
@@ -1759,7 +1694,6 @@
     "order": 6,
     "code": "KOR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Young-woo Seol",
       "birthDate": "1995-06-15",
@@ -1786,7 +1720,6 @@
     "order": 7,
     "code": "KOR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Han-beom Lee",
       "birthDate": "2002-06-01",
@@ -1813,7 +1746,6 @@
     "order": 8,
     "code": "KOR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tae-seok Lee",
       "birthDate": "1995-06-15",
@@ -1840,7 +1772,6 @@
     "order": 9,
     "code": "KOR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Myung-jae Lee",
       "birthDate": "1995-06-15",
@@ -1867,7 +1798,6 @@
     "order": 10,
     "code": "KOR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jae-sung Lee",
       "birthDate": "1992-08-01",
@@ -1894,7 +1824,6 @@
     "order": 11,
     "code": "KOR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "In-beom Hwang",
       "birthDate": "1996-09-02",
@@ -1921,7 +1850,6 @@
     "order": 12,
     "code": "KOR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kang-in Lee",
       "birthDate": "2001-02-01",
@@ -1948,7 +1876,6 @@
     "order": 13,
     "code": "KOR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -1975,7 +1902,6 @@
     "order": 14,
     "code": "KOR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Seung-ho Paik",
       "birthDate": "1997-03-01",
@@ -2002,7 +1928,6 @@
     "order": 15,
     "code": "KOR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jens Castrop",
       "birthDate": "2003-07-02",
@@ -2029,7 +1954,6 @@
     "order": 16,
     "code": "KOR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dongg-yeong Lee",
       "birthDate": "1995-06-15",
@@ -2056,7 +1980,6 @@
     "order": 17,
     "code": "KOR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gue-sung Cho",
       "birthDate": "1998-01-02",
@@ -2083,7 +2006,6 @@
     "order": 18,
     "code": "KOR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Heung-min Son",
       "birthDate": "1992-07-01",
@@ -2110,7 +2032,6 @@
     "order": 19,
     "code": "KOR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hee-chan Hwang",
       "birthDate": "1996-01-02",
@@ -2137,7 +2058,6 @@
     "order": 20,
     "code": "KOR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hyeon-Gyu Oh",
       "birthDate": "2001-04-01",
@@ -2164,7 +2084,6 @@
     "order": 1,
     "code": "CZE01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Tchéquia",
       "birthDate": "1900-01-01",
@@ -2191,7 +2110,6 @@
     "order": 2,
     "code": "CZE02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matej Kovar",
       "birthDate": "2000-05-01",
@@ -2218,7 +2136,6 @@
     "order": 3,
     "code": "CZE03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jindrich Stanek",
       "birthDate": "1996-04-02",
@@ -2245,7 +2162,6 @@
     "order": 4,
     "code": "CZE04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ladislav Krejci",
       "birthDate": "1999-04-02",
@@ -2272,7 +2188,6 @@
     "order": 5,
     "code": "CZE05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vladimir Coufal",
       "birthDate": "1992-08-02",
@@ -2299,7 +2214,6 @@
     "order": 6,
     "code": "CZE06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jaroslav Zeleny",
       "birthDate": "1992-08-02",
@@ -2326,7 +2240,6 @@
     "order": 7,
     "code": "CZE07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tomas Holes",
       "birthDate": "1993-03-03",
@@ -2353,7 +2266,6 @@
     "order": 8,
     "code": "CZE08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "David Zima",
       "birthDate": "2000-11-01",
@@ -2380,7 +2292,6 @@
     "order": 9,
     "code": "CZE09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michal Sadilek",
       "birthDate": "1999-05-03",
@@ -2407,7 +2318,6 @@
     "order": 10,
     "code": "CZE10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lukas Provod",
       "birthDate": "1996-10-02",
@@ -2434,7 +2344,6 @@
     "order": 11,
     "code": "CZE11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lukas Cerv",
       "birthDate": "2001-04-01",
@@ -2461,7 +2370,6 @@
     "order": 12,
     "code": "CZE12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tomas Soucek",
       "birthDate": "1995-02-02",
@@ -2488,7 +2396,6 @@
     "order": 13,
     "code": "CZE13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -2515,7 +2422,6 @@
     "order": 14,
     "code": "CZE14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pavel Sulc",
       "birthDate": "2000-12-02",
@@ -2542,7 +2448,6 @@
     "order": 15,
     "code": "CZE15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matej Vydra",
       "birthDate": "1992-05-01",
@@ -2569,7 +2474,6 @@
     "order": 16,
     "code": "CZE16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vasil Kusej",
       "birthDate": "2000-05-02",
@@ -2596,7 +2500,6 @@
     "order": 17,
     "code": "CZE17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tomas Chory",
       "birthDate": "1995-01-02",
@@ -2623,7 +2526,6 @@
     "order": 18,
     "code": "CZE18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vaclav Cerny",
       "birthDate": "1997-10-01",
@@ -2650,7 +2552,6 @@
     "order": 19,
     "code": "CZE19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Adam Hlozek",
       "birthDate": "2002-07-02",
@@ -2677,7 +2578,6 @@
     "order": 20,
     "code": "CZE20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrik Schick",
       "birthDate": "1996-01-02",
@@ -2704,7 +2604,6 @@
     "order": 1,
     "code": "CAN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Canadá",
       "birthDate": "1900-01-01",
@@ -2731,7 +2630,6 @@
     "order": 2,
     "code": "CAN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dayne St.Clair",
       "birthDate": "1995-06-15",
@@ -2758,7 +2656,6 @@
     "order": 3,
     "code": "CAN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alphonso Davies",
       "birthDate": "2000-11-01",
@@ -2785,7 +2682,6 @@
     "order": 4,
     "code": "CAN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alistair Johnston",
       "birthDate": "1998-10-01",
@@ -2812,7 +2708,6 @@
     "order": 5,
     "code": "CAN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Samuel Adekugbe",
       "birthDate": "1995-01-01",
@@ -2839,7 +2734,6 @@
     "order": 6,
     "code": "CAN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Richie Laryea",
       "birthDate": "1995-01-01",
@@ -2866,7 +2760,6 @@
     "order": 7,
     "code": "CAN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Derek Cornelius",
       "birthDate": "1997-11-02",
@@ -2893,7 +2786,6 @@
     "order": 8,
     "code": "CAN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Moïse Bombito",
       "birthDate": "2000-03-03",
@@ -2920,7 +2812,6 @@
     "order": 9,
     "code": "CAN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kamal Miller",
       "birthDate": "1997-05-01",
@@ -2947,7 +2838,6 @@
     "order": 10,
     "code": "CAN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Stephen Eustáquio",
       "birthDate": "1996-12-02",
@@ -2974,7 +2864,6 @@
     "order": 11,
     "code": "CAN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismaël Koné",
       "birthDate": "2002-06-01",
@@ -3001,7 +2890,6 @@
     "order": 12,
     "code": "CAN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jonathan Osorio",
       "birthDate": "1992-06-01",
@@ -3028,7 +2916,6 @@
     "order": 13,
     "code": "CAN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -3055,7 +2942,6 @@
     "order": 14,
     "code": "CAN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jacob Shaffelburg",
       "birthDate": "1999-11-02",
@@ -3082,7 +2968,6 @@
     "order": 15,
     "code": "CAN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mathieu Choinière",
       "birthDate": "1999-02-01",
@@ -3109,7 +2994,6 @@
     "order": 16,
     "code": "CAN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Niko Sigur",
       "birthDate": "2003-09-01",
@@ -3136,7 +3020,6 @@
     "order": 17,
     "code": "CAN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tajon Buchanan",
       "birthDate": "1999-02-01",
@@ -3163,7 +3046,6 @@
     "order": 18,
     "code": "CAN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Liam Millar",
       "birthDate": "1999-09-02",
@@ -3190,7 +3072,6 @@
     "order": 19,
     "code": "CAN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cyle Larin",
       "birthDate": "1995-04-01",
@@ -3217,7 +3098,6 @@
     "order": 20,
     "code": "CAN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jonathan David",
       "birthDate": "2000-01-01",
@@ -3244,7 +3124,6 @@
     "order": 1,
     "code": "QAT01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Qatar",
       "birthDate": "1900-01-01",
@@ -3271,7 +3150,6 @@
     "order": 2,
     "code": "QAT02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Meshaal Barsham",
       "birthDate": "1998-02-01",
@@ -3298,7 +3176,6 @@
     "order": 3,
     "code": "QAT03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sultan Albrake",
       "birthDate": "1995-06-15",
@@ -3325,7 +3202,6 @@
     "order": 4,
     "code": "QAT04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lucas Mendes",
       "birthDate": "1990-07-01",
@@ -3352,7 +3228,6 @@
     "order": 5,
     "code": "QAT05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Homam Ahmed",
       "birthDate": "1999-08-02",
@@ -3379,7 +3254,6 @@
     "order": 6,
     "code": "QAT06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Boualem Khoukhi",
       "birthDate": "1990-07-01",
@@ -3406,7 +3280,6 @@
     "order": 7,
     "code": "QAT07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pedro Miguel",
       "birthDate": "1990-08-01",
@@ -3433,7 +3306,6 @@
     "order": 8,
     "code": "QAT08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tarek Salman",
       "birthDate": "1997-12-01",
@@ -3460,7 +3332,6 @@
     "order": 9,
     "code": "QAT09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Al-Mannai",
       "birthDate": "2003-10-02",
@@ -3487,7 +3358,6 @@
     "order": 10,
     "code": "QAT10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Karim Boudiaf",
       "birthDate": "1990-09-01",
@@ -3514,7 +3384,6 @@
     "order": 11,
     "code": "QAT11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Assim Madibo",
       "birthDate": "1996-10-02",
@@ -3541,7 +3410,6 @@
     "order": 12,
     "code": "QAT12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ahmed Fatehi",
       "birthDate": "1993-01-02",
@@ -3568,7 +3436,6 @@
     "order": 13,
     "code": "QAT13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -3595,7 +3462,6 @@
     "order": 14,
     "code": "QAT14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammed Waad",
       "birthDate": "1999-09-01",
@@ -3622,7 +3488,6 @@
     "order": 15,
     "code": "QAT15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdulaziz Hatem",
       "birthDate": "1990-10-02",
@@ -3649,7 +3514,6 @@
     "order": 16,
     "code": "QAT16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hassan Al-Haydos",
       "birthDate": "1990-12-01",
@@ -3676,7 +3540,6 @@
     "order": 17,
     "code": "QAT17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Edmilson Junior",
       "birthDate": "1994-08-01",
@@ -3703,7 +3566,6 @@
     "order": 18,
     "code": "QAT18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Akram Hassan Afif",
       "birthDate": "1996-11-01",
@@ -3730,7 +3592,6 @@
     "order": 19,
     "code": "QAT19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ahmed Al Ganehi",
       "birthDate": "2000-09-02",
@@ -3757,7 +3618,6 @@
     "order": 20,
     "code": "QAT20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Almoez Ali",
       "birthDate": "1996-08-01",
@@ -3784,7 +3644,6 @@
     "order": 1,
     "code": "BIH01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Bósnia e Herzegovina",
       "birthDate": "1900-01-01",
@@ -3811,7 +3670,6 @@
     "order": 2,
     "code": "BIH02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nikola Vasilj",
       "birthDate": "1995-12-01",
@@ -3838,7 +3696,6 @@
     "order": 3,
     "code": "BIH03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amer Dedic",
       "birthDate": "1995-06-15",
@@ -3865,7 +3722,6 @@
     "order": 4,
     "code": "BIH04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sead Kolasinac",
       "birthDate": "1993-06-02",
@@ -3892,7 +3748,6 @@
     "order": 5,
     "code": "BIH05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tarik Muharemovic",
       "birthDate": "2003-02-02",
@@ -3919,7 +3774,6 @@
     "order": 6,
     "code": "BIH06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nihad Mujakic",
       "birthDate": "1998-04-01",
@@ -3946,7 +3800,6 @@
     "order": 7,
     "code": "BIH07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nikola Katic",
       "birthDate": "1996-10-01",
@@ -3973,7 +3826,6 @@
     "order": 8,
     "code": "BIH08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amir Hadziahmetovic",
       "birthDate": "1997-03-01",
@@ -4000,7 +3852,6 @@
     "order": 9,
     "code": "BIH09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Benjamin Tahirovic",
       "birthDate": "2003-03-01",
@@ -4027,7 +3878,6 @@
     "order": 10,
     "code": "BIH10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Armin Gigovic",
       "birthDate": "2002-04-01",
@@ -4054,7 +3904,6 @@
     "order": 11,
     "code": "BIH11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ivan Sunjic",
       "birthDate": "1996-10-01",
@@ -4081,7 +3930,6 @@
     "order": 12,
     "code": "BIH12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ivan Basic",
       "birthDate": "2002-04-03",
@@ -4108,7 +3956,6 @@
     "order": 13,
     "code": "BIH13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -4135,7 +3982,6 @@
     "order": 14,
     "code": "BIH14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dzenis Burnic",
       "birthDate": "1998-05-02",
@@ -4162,7 +4008,6 @@
     "order": 15,
     "code": "BIH15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Esmir Bajraktarevic",
       "birthDate": "2005-03-01",
@@ -4189,7 +4034,6 @@
     "order": 16,
     "code": "BIH16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amar Memic",
       "birthDate": "2001-01-02",
@@ -4216,7 +4060,6 @@
     "order": 17,
     "code": "BIH17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ermedin Demirovic",
       "birthDate": "1998-03-02",
@@ -4243,7 +4086,6 @@
     "order": 18,
     "code": "BIH18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Edin Dzeko",
       "birthDate": "1986-03-01",
@@ -4270,7 +4112,6 @@
     "order": 19,
     "code": "BIH19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Samed Bazdar",
       "birthDate": "2004-01-03",
@@ -4297,7 +4138,6 @@
     "order": 20,
     "code": "BIH20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Haris Tabakovic",
       "birthDate": "1994-06-02",
@@ -4324,7 +4164,6 @@
     "order": 1,
     "code": "SUI01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Suíça",
       "birthDate": "1900-01-01",
@@ -4351,7 +4190,6 @@
     "order": 2,
     "code": "SUI02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gregor Kobel",
       "birthDate": "1997-12-01",
@@ -4378,7 +4216,6 @@
     "order": 3,
     "code": "SUI03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yvon Mvogo",
       "birthDate": "1994-06-01",
@@ -4405,7 +4242,6 @@
     "order": 4,
     "code": "SUI04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Manuel Akanji",
       "birthDate": "1995-07-01",
@@ -4432,7 +4268,6 @@
     "order": 5,
     "code": "SUI05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ricardo Rodriguez",
       "birthDate": "1992-08-02",
@@ -4459,7 +4294,6 @@
     "order": 6,
     "code": "SUI06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nico Elvedi",
       "birthDate": "1996-09-03",
@@ -4486,7 +4320,6 @@
     "order": 7,
     "code": "SUI07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aurèle Amenda",
       "birthDate": "2003-07-03",
@@ -4513,7 +4346,6 @@
     "order": 8,
     "code": "SUI08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Silvan Widmer",
       "birthDate": "1993-03-01",
@@ -4540,7 +4372,6 @@
     "order": 9,
     "code": "SUI09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Granit Xhaka",
       "birthDate": "1992-09-02",
@@ -4567,7 +4398,6 @@
     "order": 10,
     "code": "SUI10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Denis Zakaria",
       "birthDate": "1996-11-02",
@@ -4594,7 +4424,6 @@
     "order": 11,
     "code": "SUI11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Remo Freuler",
       "birthDate": "1992-04-01",
@@ -4621,7 +4450,6 @@
     "order": 12,
     "code": "SUI12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Fabian Rieder",
       "birthDate": "2002-02-01",
@@ -4648,7 +4476,6 @@
     "order": 13,
     "code": "SUI13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -4675,7 +4502,6 @@
     "order": 14,
     "code": "SUI14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ardon Jashari",
       "birthDate": "2002-07-03",
@@ -4702,7 +4528,6 @@
     "order": 15,
     "code": "SUI15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Johan Manzambi",
       "birthDate": "2005-10-01",
@@ -4729,7 +4554,6 @@
     "order": 16,
     "code": "SUI16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michel Aebischer",
       "birthDate": "1997-01-01",
@@ -4756,7 +4580,6 @@
     "order": 17,
     "code": "SUI17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Breel Embolo",
       "birthDate": "1997-02-01",
@@ -4783,7 +4606,6 @@
     "order": 18,
     "code": "SUI18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ruben Vargas",
       "birthDate": "1998-08-01",
@@ -4810,7 +4632,6 @@
     "order": 19,
     "code": "SUI19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dan Ndoye",
       "birthDate": "2000-10-02",
@@ -4837,7 +4658,6 @@
     "order": 20,
     "code": "SUI20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zeki Amdouni",
       "birthDate": "2000-12-01",
@@ -4864,7 +4684,6 @@
     "order": 1,
     "code": "HAI01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Haiti",
       "birthDate": "1900-01-01",
@@ -4891,7 +4710,6 @@
     "order": 2,
     "code": "HAI02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Johny Placide",
       "birthDate": "1988-01-02",
@@ -4918,7 +4736,6 @@
     "order": 3,
     "code": "HAI03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Carlens Arcus",
       "birthDate": "1996-06-02",
@@ -4945,7 +4762,6 @@
     "order": 4,
     "code": "HAI04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Martin Expérience",
       "birthDate": "1998-03-01",
@@ -4972,7 +4788,6 @@
     "order": 5,
     "code": "HAI05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jean-Kevin Duverne",
       "birthDate": "1997-07-01",
@@ -4999,7 +4814,6 @@
     "order": 6,
     "code": "HAI06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ricardo Adé",
       "birthDate": "1990-05-02",
@@ -5026,7 +4840,6 @@
     "order": 7,
     "code": "HAI07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Duke Lacroix",
       "birthDate": "1993-10-01",
@@ -5053,7 +4866,6 @@
     "order": 8,
     "code": "HAI08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Garven Metusala",
       "birthDate": "1999-12-03",
@@ -5080,7 +4892,6 @@
     "order": 9,
     "code": "HAI09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hannes Delcroix",
       "birthDate": "1999-02-02",
@@ -5107,7 +4918,6 @@
     "order": 10,
     "code": "HAI10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leverton Pierre",
       "birthDate": "1998-03-01",
@@ -5134,7 +4944,6 @@
     "order": 11,
     "code": "HAI11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Danley Jean Jacques",
       "birthDate": "2000-05-02",
@@ -5161,7 +4970,6 @@
     "order": 12,
     "code": "HAI12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jean-Ricner Bellegarde",
       "birthDate": "1998-06-02",
@@ -5188,7 +4996,6 @@
     "order": 13,
     "code": "HAI13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -5215,7 +5022,6 @@
     "order": 14,
     "code": "HAI14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Christopher Attys",
       "birthDate": "2001-03-01",
@@ -5242,7 +5048,6 @@
     "order": 15,
     "code": "HAI15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Derrick Etienne Jr",
       "birthDate": "1996-11-02",
@@ -5269,7 +5074,6 @@
     "order": 16,
     "code": "HAI16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Josue Casimir",
       "birthDate": "2001-09-02",
@@ -5296,7 +5100,6 @@
     "order": 17,
     "code": "HAI17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ruben Providence",
       "birthDate": "2001-07-01",
@@ -5323,7 +5126,6 @@
     "order": 18,
     "code": "HAI18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Duckens Nazon",
       "birthDate": "1994-04-01",
@@ -5350,7 +5152,6 @@
     "order": 19,
     "code": "HAI19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Louicius Deedson",
       "birthDate": "2001-02-01",
@@ -5377,7 +5178,6 @@
     "order": 20,
     "code": "HAI20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Frantzdy Pierrot",
       "birthDate": "1995-03-02",
@@ -5404,7 +5204,6 @@
     "order": 1,
     "code": "MAR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Marrocos",
       "birthDate": "1900-01-01",
@@ -5431,7 +5230,6 @@
     "order": 2,
     "code": "MAR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yassine Bounou",
       "birthDate": "1991-04-01",
@@ -5458,7 +5256,6 @@
     "order": 3,
     "code": "MAR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Munir El Kajoui",
       "birthDate": "1989-05-01",
@@ -5485,7 +5282,6 @@
     "order": 4,
     "code": "MAR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Achraf Hakimi",
       "birthDate": "1998-11-01",
@@ -5512,7 +5308,6 @@
     "order": 5,
     "code": "MAR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Noussair Mazraoui",
       "birthDate": "1997-11-01",
@@ -5539,7 +5334,6 @@
     "order": 6,
     "code": "MAR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nayef Aguerd",
       "birthDate": "1996-03-03",
@@ -5566,7 +5360,6 @@
     "order": 7,
     "code": "MAR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Romain Saïss",
       "birthDate": "1990-03-02",
@@ -5593,7 +5386,6 @@
     "order": 8,
     "code": "MAR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jawad El Yamiq",
       "birthDate": "1992-02-02",
@@ -5620,7 +5412,6 @@
     "order": 9,
     "code": "MAR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Adam Masina",
       "birthDate": "1994-01-01",
@@ -5647,7 +5438,6 @@
     "order": 10,
     "code": "MAR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sofyan Amrabat",
       "birthDate": "1996-08-02",
@@ -5674,7 +5464,6 @@
     "order": 11,
     "code": "MAR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Azzedine Ounahi",
       "birthDate": "2000-04-01",
@@ -5701,7 +5490,6 @@
     "order": 12,
     "code": "MAR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Eliesse Ben Seghir",
       "birthDate": "2005-02-01",
@@ -5728,7 +5516,6 @@
     "order": 13,
     "code": "MAR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -5755,7 +5542,6 @@
     "order": 14,
     "code": "MAR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bilal El Khannouss",
       "birthDate": "2004-05-01",
@@ -5782,7 +5568,6 @@
     "order": 15,
     "code": "MAR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismael Saibari",
       "birthDate": "2001-01-02",
@@ -5809,7 +5594,6 @@
     "order": 16,
     "code": "MAR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Youssef En-Nesyri",
       "birthDate": "1997-06-01",
@@ -5836,7 +5620,6 @@
     "order": 17,
     "code": "MAR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abde Ezzalzouli",
       "birthDate": "2001-12-01",
@@ -5863,7 +5646,6 @@
     "order": 18,
     "code": "MAR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Soufiane Rahimi",
       "birthDate": "1996-06-01",
@@ -5890,7 +5672,6 @@
     "order": 19,
     "code": "MAR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Brahim Diaz",
       "birthDate": "1999-08-01",
@@ -5917,7 +5698,6 @@
     "order": 20,
     "code": "MAR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ayoub El Kaabi",
       "birthDate": "1993-06-02",
@@ -5944,7 +5724,6 @@
     "order": 1,
     "code": "SCO01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Escócia",
       "birthDate": "1900-01-01",
@@ -5971,7 +5750,6 @@
     "order": 2,
     "code": "SCO02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Angus Gunn",
       "birthDate": "1996-01-02",
@@ -5998,7 +5776,6 @@
     "order": 3,
     "code": "SCO03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jack Hendry",
       "birthDate": "1995-05-01",
@@ -6025,7 +5802,6 @@
     "order": 4,
     "code": "SCO04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kieran Tierney",
       "birthDate": "1997-06-01",
@@ -6052,7 +5828,6 @@
     "order": 5,
     "code": "SCO05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aaron Hickey",
       "birthDate": "2002-06-01",
@@ -6079,7 +5854,6 @@
     "order": 6,
     "code": "SCO06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Andrew Robertson",
       "birthDate": "1994-03-01",
@@ -6106,7 +5880,6 @@
     "order": 7,
     "code": "SCO07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Scott McKenna",
       "birthDate": "1996-11-01",
@@ -6133,7 +5906,6 @@
     "order": 8,
     "code": "SCO08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "John Souttar",
       "birthDate": "1996-09-02",
@@ -6160,7 +5932,6 @@
     "order": 9,
     "code": "SCO09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Anthony Ralston",
       "birthDate": "1998-11-01",
@@ -6187,7 +5958,6 @@
     "order": 10,
     "code": "SCO10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Grant Hanley",
       "birthDate": "1991-11-02",
@@ -6214,7 +5984,6 @@
     "order": 11,
     "code": "SCO11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Scott McTominay",
       "birthDate": "1996-12-01",
@@ -6241,7 +6010,6 @@
     "order": 12,
     "code": "SCO12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Billy Gilmour",
       "birthDate": "2001-06-01",
@@ -6268,7 +6036,6 @@
     "order": 13,
     "code": "SCO13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -6295,7 +6062,6 @@
     "order": 14,
     "code": "SCO14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lewis Ferguson",
       "birthDate": "1999-08-02",
@@ -6322,7 +6088,6 @@
     "order": 15,
     "code": "SCO15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ryan Christie",
       "birthDate": "1995-02-02",
@@ -6349,7 +6114,6 @@
     "order": 16,
     "code": "SCO16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kenny McLean",
       "birthDate": "1992-01-01",
@@ -6376,7 +6140,6 @@
     "order": 17,
     "code": "SCO17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "John McGinn",
       "birthDate": "1994-10-01",
@@ -6403,7 +6166,6 @@
     "order": 18,
     "code": "SCO18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lyndon Dykes",
       "birthDate": "1995-10-01",
@@ -6430,7 +6192,6 @@
     "order": 19,
     "code": "SCO19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Che Adams",
       "birthDate": "1996-07-01",
@@ -6457,7 +6218,6 @@
     "order": 20,
     "code": "SCO20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ben Gannon-Doak",
       "birthDate": "2005-11-01",
@@ -6484,7 +6244,6 @@
     "order": 1,
     "code": "USA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Estados Unidos",
       "birthDate": "1900-01-01",
@@ -6511,7 +6270,6 @@
     "order": 2,
     "code": "USA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matt Freese",
       "birthDate": "1998-09-01",
@@ -6538,7 +6296,6 @@
     "order": 3,
     "code": "USA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Chris Richards",
       "birthDate": "2000-03-02",
@@ -6565,7 +6322,6 @@
     "order": 4,
     "code": "USA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tim Ream",
       "birthDate": "1987-10-01",
@@ -6592,7 +6348,6 @@
     "order": 5,
     "code": "USA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mark McKenzie",
       "birthDate": "2000-08-01",
@@ -6619,7 +6374,6 @@
     "order": 6,
     "code": "USA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alex Freeman",
       "birthDate": "2004-08-01",
@@ -6646,7 +6400,6 @@
     "order": 7,
     "code": "USA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Antonee Robinson",
       "birthDate": "1997-08-01",
@@ -6673,7 +6426,6 @@
     "order": 8,
     "code": "USA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tyler Adams",
       "birthDate": "1999-02-01",
@@ -6700,7 +6452,6 @@
     "order": 9,
     "code": "USA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tanner Tessmann",
       "birthDate": "2001-09-02",
@@ -6727,7 +6478,6 @@
     "order": 10,
     "code": "USA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Weston McKenny",
       "birthDate": "1995-06-15",
@@ -6754,7 +6504,6 @@
     "order": 11,
     "code": "USA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Christian Roldan",
       "birthDate": "1995-06-15",
@@ -6781,7 +6530,6 @@
     "order": 12,
     "code": "USA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Timothy Weah",
       "birthDate": "2000-02-02",
@@ -6808,7 +6556,6 @@
     "order": 13,
     "code": "USA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -6835,7 +6582,6 @@
     "order": 14,
     "code": "USA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diego Luna",
       "birthDate": "2003-09-01",
@@ -6862,7 +6608,6 @@
     "order": 15,
     "code": "USA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Malik Tillman",
       "birthDate": "2002-05-02",
@@ -6889,7 +6634,6 @@
     "order": 16,
     "code": "USA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Christian Pulisic",
       "birthDate": "1998-09-01",
@@ -6916,7 +6660,6 @@
     "order": 17,
     "code": "USA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Brenden Aaronson",
       "birthDate": "2000-10-02",
@@ -6943,7 +6686,6 @@
     "order": 18,
     "code": "USA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ricardo Pepi",
       "birthDate": "2003-01-01",
@@ -6970,7 +6712,6 @@
     "order": 19,
     "code": "USA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Haji Wright",
       "birthDate": "1998-03-02",
@@ -6997,7 +6738,6 @@
     "order": 20,
     "code": "USA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Folarin Balogun",
       "birthDate": "2001-07-01",
@@ -7024,7 +6764,6 @@
     "order": 1,
     "code": "AUS01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Austrália",
       "birthDate": "1900-01-01",
@@ -7051,7 +6790,6 @@
     "order": 2,
     "code": "AUS02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mathew Ryan",
       "birthDate": "1992-04-01",
@@ -7078,7 +6816,6 @@
     "order": 3,
     "code": "AUS03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joe Gauci",
       "birthDate": "2000-07-01",
@@ -7105,7 +6842,6 @@
     "order": 4,
     "code": "AUS04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Harry Souttar",
       "birthDate": "1998-10-02",
@@ -7132,7 +6868,6 @@
     "order": 5,
     "code": "AUS05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alessandro Circati",
       "birthDate": "2003-10-01",
@@ -7159,7 +6894,6 @@
     "order": 6,
     "code": "AUS06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jordan Bos",
       "birthDate": "2002-10-02",
@@ -7186,7 +6920,6 @@
     "order": 7,
     "code": "AUS07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aziz Behich",
       "birthDate": "1990-12-01",
@@ -7213,7 +6946,6 @@
     "order": 8,
     "code": "AUS08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cameron Burgess",
       "birthDate": "1995-10-02",
@@ -7240,7 +6972,6 @@
     "order": 9,
     "code": "AUS09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lewis Miller",
       "birthDate": "2000-08-02",
@@ -7267,7 +6998,6 @@
     "order": 10,
     "code": "AUS10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Milos Degenek",
       "birthDate": "1994-04-02",
@@ -7294,7 +7024,6 @@
     "order": 11,
     "code": "AUS11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jackson Irvine",
       "birthDate": "1993-03-01",
@@ -7321,7 +7050,6 @@
     "order": 12,
     "code": "AUS12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Riley McGree",
       "birthDate": "1998-11-01",
@@ -7348,7 +7076,6 @@
     "order": 13,
     "code": "AUS13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -7375,7 +7102,6 @@
     "order": 14,
     "code": "AUS14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aiden O'Neill",
       "birthDate": "1998-07-01",
@@ -7402,7 +7128,6 @@
     "order": 15,
     "code": "AUS15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Connor Metcalfe",
       "birthDate": "1999-11-01",
@@ -7429,7 +7154,6 @@
     "order": 16,
     "code": "AUS16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrick Yazbek",
       "birthDate": "2002-04-01",
@@ -7456,7 +7180,6 @@
     "order": 17,
     "code": "AUS17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Craig Goodwin",
       "birthDate": "1991-12-01",
@@ -7483,7 +7206,6 @@
     "order": 18,
     "code": "AUS18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kusini Yengi",
       "birthDate": "1999-01-01",
@@ -7510,7 +7232,6 @@
     "order": 19,
     "code": "AUS19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nestory Irankunda",
       "birthDate": "2006-02-01",
@@ -7537,7 +7258,6 @@
     "order": 20,
     "code": "AUS20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Touré",
       "birthDate": "1997-03-03",
@@ -7564,7 +7284,6 @@
     "order": 1,
     "code": "PAR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Paraguai",
       "birthDate": "1900-01-01",
@@ -7591,7 +7310,6 @@
     "order": 2,
     "code": "PAR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Roberto Fernandez",
       "birthDate": "1962-07-01",
@@ -7618,7 +7336,6 @@
     "order": 3,
     "code": "PAR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Orlando Gill",
       "birthDate": "2000-06-01",
@@ -7645,7 +7362,6 @@
     "order": 4,
     "code": "PAR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gustavo Gomez",
       "birthDate": "1993-05-01",
@@ -7672,7 +7388,6 @@
     "order": 5,
     "code": "PAR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Fabián Balbuena",
       "birthDate": "1991-08-02",
@@ -7699,7 +7414,6 @@
     "order": 6,
     "code": "PAR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Juan José Cáceres",
       "birthDate": "2000-06-01",
@@ -7726,7 +7440,6 @@
     "order": 7,
     "code": "PAR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Omar Alderete",
       "birthDate": "1996-12-02",
@@ -7753,7 +7466,6 @@
     "order": 8,
     "code": "PAR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Junior Alonso",
       "birthDate": "1993-02-01",
@@ -7780,7 +7492,6 @@
     "order": 9,
     "code": "PAR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mathías Villasanti",
       "birthDate": "1997-01-02",
@@ -7807,7 +7518,6 @@
     "order": 10,
     "code": "PAR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diego Gomez",
       "birthDate": "1972-03-02",
@@ -7834,7 +7544,6 @@
     "order": 11,
     "code": "PAR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Damián Bobadilla",
       "birthDate": "2001-07-01",
@@ -7861,7 +7570,6 @@
     "order": 12,
     "code": "PAR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Andres Cubas",
       "birthDate": "1996-06-02",
@@ -7888,7 +7596,6 @@
     "order": 13,
     "code": "PAR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -7915,7 +7622,6 @@
     "order": 14,
     "code": "PAR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matias Galarza Fonda",
       "birthDate": "2002-02-01",
@@ -7942,7 +7648,6 @@
     "order": 15,
     "code": "PAR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Julio Enciso",
       "birthDate": "2004-01-02",
@@ -7969,7 +7674,6 @@
     "order": 16,
     "code": "PAR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alejandro Romero Gamarra",
       "birthDate": "1995-01-01",
@@ -7996,7 +7700,6 @@
     "order": 17,
     "code": "PAR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Miguel Almirón",
       "birthDate": "1994-02-01",
@@ -8023,7 +7726,6 @@
     "order": 18,
     "code": "PAR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ramon Sosa",
       "birthDate": "1999-08-03",
@@ -8050,7 +7752,6 @@
     "order": 19,
     "code": "PAR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Angel Romero",
       "birthDate": "1992-07-01",
@@ -8077,7 +7778,6 @@
     "order": 20,
     "code": "PAR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Antonio Sanabria",
       "birthDate": "1996-03-01",
@@ -8104,7 +7804,6 @@
     "order": 1,
     "code": "TUR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Turquia",
       "birthDate": "1900-01-01",
@@ -8131,7 +7830,6 @@
     "order": 2,
     "code": "TUR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ugurcan Cakir",
       "birthDate": "1996-04-01",
@@ -8158,7 +7856,6 @@
     "order": 3,
     "code": "TUR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mert Muldur",
       "birthDate": "1999-04-01",
@@ -8185,7 +7882,6 @@
     "order": 4,
     "code": "TUR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zeki Celik",
       "birthDate": "1997-02-01",
@@ -8212,7 +7908,6 @@
     "order": 5,
     "code": "TUR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdulkerim Bardakci",
       "birthDate": "1994-09-01",
@@ -8239,7 +7934,6 @@
     "order": 6,
     "code": "TUR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Caglar Soyuncu",
       "birthDate": "1996-05-02",
@@ -8266,7 +7960,6 @@
     "order": 7,
     "code": "TUR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Merih Demiral",
       "birthDate": "1998-03-01",
@@ -8293,7 +7986,6 @@
     "order": 8,
     "code": "TUR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ferdi Kadioglu",
       "birthDate": "1999-10-01",
@@ -8320,7 +8012,6 @@
     "order": 9,
     "code": "TUR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kaan Ayhan",
       "birthDate": "1994-11-01",
@@ -8347,7 +8038,6 @@
     "order": 10,
     "code": "TUR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismail Yuksek",
       "birthDate": "1999-01-02",
@@ -8374,7 +8064,6 @@
     "order": 11,
     "code": "TUR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hakan Calhanoglu",
       "birthDate": "1994-02-01",
@@ -8401,7 +8090,6 @@
     "order": 12,
     "code": "TUR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Orkun Kokcu",
       "birthDate": "2000-12-02",
@@ -8428,7 +8116,6 @@
     "order": 13,
     "code": "TUR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -8455,7 +8142,6 @@
     "order": 14,
     "code": "TUR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Arda Guler",
       "birthDate": "2005-02-02",
@@ -8482,7 +8168,6 @@
     "order": 15,
     "code": "TUR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Irfan Can Kahveci",
       "birthDate": "1995-07-01",
@@ -8509,7 +8194,6 @@
     "order": 16,
     "code": "TUR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yunus Akgun",
       "birthDate": "2000-07-01",
@@ -8536,7 +8220,6 @@
     "order": 17,
     "code": "TUR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Can Uzun",
       "birthDate": "2005-11-01",
@@ -8563,7 +8246,6 @@
     "order": 18,
     "code": "TUR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Baris Alper Yilmaz",
       "birthDate": "2000-05-02",
@@ -8590,7 +8272,6 @@
     "order": 19,
     "code": "TUR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kerem Akturkoglu",
       "birthDate": "1998-10-02",
@@ -8617,7 +8298,6 @@
     "order": 20,
     "code": "TUR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kenan Yildiz",
       "birthDate": "2005-05-01",
@@ -8644,7 +8324,6 @@
     "order": 1,
     "code": "GER01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Alemanha",
       "birthDate": "1900-01-01",
@@ -8671,7 +8350,6 @@
     "order": 2,
     "code": "GER02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marc-André ter Stegen",
       "birthDate": "1992-04-03",
@@ -8698,7 +8376,6 @@
     "order": 3,
     "code": "GER03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jonathan Tah",
       "birthDate": "1996-02-01",
@@ -8725,7 +8402,6 @@
     "order": 4,
     "code": "GER04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "David Raum",
       "birthDate": "1998-04-02",
@@ -8752,7 +8428,6 @@
     "order": 5,
     "code": "GER05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nico Schlotterbeck",
       "birthDate": "1999-12-01",
@@ -8779,7 +8454,6 @@
     "order": 6,
     "code": "GER06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Antonio Rüdiger",
       "birthDate": "1993-03-01",
@@ -8806,7 +8480,6 @@
     "order": 7,
     "code": "GER07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Waldemar Anton",
       "birthDate": "1996-07-02",
@@ -8833,7 +8506,6 @@
     "order": 8,
     "code": "GER08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ridle Baku",
       "birthDate": "1998-04-01",
@@ -8860,7 +8532,6 @@
     "order": 9,
     "code": "GER09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Maximilian Mittelstadt",
       "birthDate": "1997-03-01",
@@ -8887,7 +8558,6 @@
     "order": 10,
     "code": "GER10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joshua Kimmich",
       "birthDate": "1995-02-01",
@@ -8914,7 +8584,6 @@
     "order": 11,
     "code": "GER11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Florian Wirtz",
       "birthDate": "2003-05-01",
@@ -8941,7 +8610,6 @@
     "order": 12,
     "code": "GER12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Felix Nmecha",
       "birthDate": "2000-10-01",
@@ -8968,7 +8636,6 @@
     "order": 13,
     "code": "GER13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -8995,7 +8662,6 @@
     "order": 14,
     "code": "GER14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leon Goretzka",
       "birthDate": "1995-02-01",
@@ -9022,7 +8688,6 @@
     "order": 15,
     "code": "GER15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jamal Musiala",
       "birthDate": "2003-02-02",
@@ -9049,7 +8714,6 @@
     "order": 16,
     "code": "GER16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Serge Gnabry",
       "birthDate": "1995-07-01",
@@ -9076,7 +8740,6 @@
     "order": 17,
     "code": "GER17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kai Havertz",
       "birthDate": "1999-06-01",
@@ -9103,7 +8766,6 @@
     "order": 18,
     "code": "GER18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leroy Sane",
       "birthDate": "1996-01-01",
@@ -9130,7 +8792,6 @@
     "order": 19,
     "code": "GER19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Karim Adeyemi",
       "birthDate": "2002-01-01",
@@ -9157,7 +8818,6 @@
     "order": 20,
     "code": "GER20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nick Woltemade",
       "birthDate": "2002-02-01",
@@ -9184,7 +8844,6 @@
     "order": 1,
     "code": "CIV01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Costa do Marfim",
       "birthDate": "1900-01-01",
@@ -9211,7 +8870,6 @@
     "order": 2,
     "code": "CIV02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yahia Fofana",
       "birthDate": "2000-08-02",
@@ -9238,7 +8896,6 @@
     "order": 3,
     "code": "CIV03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ghislain Konan",
       "birthDate": "1995-12-02",
@@ -9265,7 +8922,6 @@
     "order": 4,
     "code": "CIV04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Wilfried Singo",
       "birthDate": "2000-12-02",
@@ -9292,7 +8948,6 @@
     "order": 5,
     "code": "CIV05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Odilon Kossounou",
       "birthDate": "2001-01-01",
@@ -9319,7 +8974,6 @@
     "order": 6,
     "code": "CIV06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Evan Ndicka",
       "birthDate": "1999-08-02",
@@ -9346,7 +9000,6 @@
     "order": 7,
     "code": "CIV07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Willy Boly",
       "birthDate": "1991-02-01",
@@ -9373,7 +9026,6 @@
     "order": 8,
     "code": "CIV08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Emmanuel Agbadou",
       "birthDate": "1997-06-01",
@@ -9400,7 +9052,6 @@
     "order": 9,
     "code": "CIV09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ousmane Diomande",
       "birthDate": "2003-12-01",
@@ -9427,7 +9078,6 @@
     "order": 10,
     "code": "CIV10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Franck Kessie",
       "birthDate": "1996-12-01",
@@ -9454,7 +9104,6 @@
     "order": 11,
     "code": "CIV11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Seko Fofana",
       "birthDate": "1995-05-01",
@@ -9481,7 +9130,6 @@
     "order": 12,
     "code": "CIV12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ibrahim Sangare",
       "birthDate": "1997-12-01",
@@ -9508,7 +9156,6 @@
     "order": 13,
     "code": "CIV13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -9535,7 +9182,6 @@
     "order": 14,
     "code": "CIV14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jean-Philippe Gbamin",
       "birthDate": "1995-09-02",
@@ -9562,7 +9208,6 @@
     "order": 15,
     "code": "CIV15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amad Diallo",
       "birthDate": "2002-07-01",
@@ -9589,7 +9234,6 @@
     "order": 16,
     "code": "CIV16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sébastien Haller",
       "birthDate": "1994-06-02",
@@ -9616,7 +9260,6 @@
     "order": 17,
     "code": "CIV17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Simon Adingra",
       "birthDate": "2002-01-01",
@@ -9643,7 +9286,6 @@
     "order": 18,
     "code": "CIV18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yan Diomande",
       "birthDate": "2006-11-01",
@@ -9670,7 +9312,6 @@
     "order": 19,
     "code": "CIV19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Evann Guessand",
       "birthDate": "2001-07-01",
@@ -9697,7 +9338,6 @@
     "order": 20,
     "code": "CIV20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Oumar Diakite",
       "birthDate": "2003-12-02",
@@ -9724,7 +9364,6 @@
     "order": 1,
     "code": "CUW01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Curaçao",
       "birthDate": "1900-01-01",
@@ -9751,7 +9390,6 @@
     "order": 2,
     "code": "CUW02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Eloy Room",
       "birthDate": "1989-02-01",
@@ -9778,7 +9416,6 @@
     "order": 3,
     "code": "CUW03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Armando Obispo",
       "birthDate": "1999-03-01",
@@ -9805,7 +9442,6 @@
     "order": 4,
     "code": "CUW04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sherel Floranus",
       "birthDate": "1998-08-02",
@@ -9832,7 +9468,6 @@
     "order": 5,
     "code": "CUW05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jurien Gaari",
       "birthDate": "1993-12-02",
@@ -9859,7 +9494,6 @@
     "order": 6,
     "code": "CUW06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joshua Brenet",
       "birthDate": "1994-03-02",
@@ -9886,7 +9520,6 @@
     "order": 7,
     "code": "CUW07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Roshon Van Eijma",
       "birthDate": "1998-06-01",
@@ -9913,7 +9546,6 @@
     "order": 8,
     "code": "CUW08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Shurandy Sambo",
       "birthDate": "2001-08-01",
@@ -9940,7 +9572,6 @@
     "order": 9,
     "code": "CUW09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Livano Comenencia",
       "birthDate": "2004-02-01",
@@ -9967,7 +9598,6 @@
     "order": 10,
     "code": "CUW10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Godfried Roemeratoe",
       "birthDate": "1999-08-01",
@@ -9994,7 +9624,6 @@
     "order": 11,
     "code": "CUW11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Juninho Bacuna",
       "birthDate": "1997-08-01",
@@ -10021,7 +9650,6 @@
     "order": 12,
     "code": "CUW12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leandro Bacuna",
       "birthDate": "1991-08-02",
@@ -10048,7 +9676,6 @@
     "order": 13,
     "code": "CUW13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -10075,7 +9702,6 @@
     "order": 14,
     "code": "CUW14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tahith Chong",
       "birthDate": "1999-12-01",
@@ -10102,7 +9728,6 @@
     "order": 15,
     "code": "CUW15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kenji Gorre",
       "birthDate": "1994-09-02",
@@ -10129,7 +9754,6 @@
     "order": 16,
     "code": "CUW16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jearl Margaritha",
       "birthDate": "2000-04-01",
@@ -10156,7 +9780,6 @@
     "order": 17,
     "code": "CUW17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jurgen Locadia",
       "birthDate": "1993-11-01",
@@ -10183,7 +9806,6 @@
     "order": 18,
     "code": "CUW18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jeremy Antonisse",
       "birthDate": "2002-03-02",
@@ -10210,7 +9832,6 @@
     "order": 19,
     "code": "CUW19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gervane Kastaneer",
       "birthDate": "1996-06-01",
@@ -10237,7 +9858,6 @@
     "order": 20,
     "code": "CUW20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sontje Hansen",
       "birthDate": "2002-05-01",
@@ -10264,7 +9884,6 @@
     "order": 1,
     "code": "ECU01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Equador",
       "birthDate": "1900-01-01",
@@ -10291,7 +9910,6 @@
     "order": 2,
     "code": "ECU02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hernán Galíndez",
       "birthDate": "1987-03-03",
@@ -10318,7 +9936,6 @@
     "order": 3,
     "code": "ECU03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gonzalo Valle",
       "birthDate": "1996-02-02",
@@ -10345,7 +9962,6 @@
     "order": 4,
     "code": "ECU04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Piero Hincapié",
       "birthDate": "2002-01-01",
@@ -10372,7 +9988,6 @@
     "order": 5,
     "code": "ECU05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pervis Estupiñán",
       "birthDate": "1998-01-02",
@@ -10399,7 +10014,6 @@
     "order": 6,
     "code": "ECU06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Willian Pacho",
       "birthDate": "2001-10-01",
@@ -10426,7 +10040,6 @@
     "order": 7,
     "code": "ECU07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ángelo Preciado",
       "birthDate": "1998-02-01",
@@ -10453,7 +10066,6 @@
     "order": 8,
     "code": "ECU08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joel Ordóñez",
       "birthDate": "2004-04-02",
@@ -10480,7 +10092,6 @@
     "order": 9,
     "code": "ECU09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Moises Caicedo",
       "birthDate": "2001-11-01",
@@ -10507,7 +10118,6 @@
     "order": 10,
     "code": "ECU10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alan Franco",
       "birthDate": "1998-08-02",
@@ -10534,7 +10144,6 @@
     "order": 11,
     "code": "ECU11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kendry Paez",
       "birthDate": "2007-05-01",
@@ -10561,7 +10170,6 @@
     "order": 12,
     "code": "ECU12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pedro Vite",
       "birthDate": "2002-03-01",
@@ -10588,7 +10196,6 @@
     "order": 13,
     "code": "ECU13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -10615,7 +10222,6 @@
     "order": 14,
     "code": "ECU14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "John Yeboah",
       "birthDate": "2000-06-02",
@@ -10642,7 +10248,6 @@
     "order": 15,
     "code": "ECU15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leonardo Campana",
       "birthDate": "2000-07-02",
@@ -10669,7 +10274,6 @@
     "order": 16,
     "code": "ECU16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gonzalo Plata",
       "birthDate": "2000-11-01",
@@ -10696,7 +10300,6 @@
     "order": 17,
     "code": "ECU17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nilson Angulo",
       "birthDate": "2003-06-01",
@@ -10723,7 +10326,6 @@
     "order": 18,
     "code": "ECU18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alan Minda",
       "birthDate": "2003-05-01",
@@ -10750,7 +10352,6 @@
     "order": 19,
     "code": "ECU19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kevin Rodriguez",
       "birthDate": "1996-09-02",
@@ -10777,7 +10378,6 @@
     "order": 20,
     "code": "ECU20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Enner Valencia",
       "birthDate": "1989-11-01",
@@ -10804,7 +10404,6 @@
     "order": 1,
     "code": "NED01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Holanda",
       "birthDate": "1900-01-01",
@@ -10831,7 +10430,6 @@
     "order": 2,
     "code": "NED02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bart Verbruggen",
       "birthDate": "2002-08-01",
@@ -10858,7 +10456,6 @@
     "order": 3,
     "code": "NED03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Virgil van Dijk",
       "birthDate": "1991-07-01",
@@ -10885,7 +10482,6 @@
     "order": 4,
     "code": "NED04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Micky van de Ven",
       "birthDate": "2001-04-01",
@@ -10912,7 +10508,6 @@
     "order": 5,
     "code": "NED05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jurrien Timber",
       "birthDate": "2001-06-01",
@@ -10939,7 +10534,6 @@
     "order": 6,
     "code": "NED06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Denzel Dumfries",
       "birthDate": "1996-04-01",
@@ -10966,7 +10560,6 @@
     "order": 7,
     "code": "NED07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nathan Aké",
       "birthDate": "1995-02-01",
@@ -10993,7 +10586,6 @@
     "order": 8,
     "code": "NED08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jeremie Frimpong",
       "birthDate": "2000-12-01",
@@ -11020,7 +10612,6 @@
     "order": 9,
     "code": "NED09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jan Paul van Hecke",
       "birthDate": "2000-06-01",
@@ -11047,7 +10638,6 @@
     "order": 10,
     "code": "NED10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tijjani Reijnders",
       "birthDate": "1998-07-02",
@@ -11074,7 +10664,6 @@
     "order": 11,
     "code": "NED11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ryan Gravenberch",
       "birthDate": "2002-05-01",
@@ -11101,7 +10690,6 @@
     "order": 12,
     "code": "NED12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Teun Koopmeiners",
       "birthDate": "1998-02-02",
@@ -11128,7 +10716,6 @@
     "order": 13,
     "code": "NED13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -11155,7 +10742,6 @@
     "order": 14,
     "code": "NED14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Frenkie de Jong",
       "birthDate": "1997-05-01",
@@ -11182,7 +10768,6 @@
     "order": 15,
     "code": "NED15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Xavi Simons",
       "birthDate": "2003-04-02",
@@ -11209,7 +10794,6 @@
     "order": 16,
     "code": "NED16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Justin Kluivert",
       "birthDate": "1999-05-01",
@@ -11236,7 +10820,6 @@
     "order": 17,
     "code": "NED17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Memphis Depay",
       "birthDate": "1994-02-01",
@@ -11263,7 +10846,6 @@
     "order": 18,
     "code": "NED18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Donyell Malen",
       "birthDate": "1999-01-01",
@@ -11290,7 +10872,6 @@
     "order": 19,
     "code": "NED19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Wout Weghorst",
       "birthDate": "1992-08-01",
@@ -11317,7 +10898,6 @@
     "order": 20,
     "code": "NED20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cody Gakpo",
       "birthDate": "1999-05-01",
@@ -11344,7 +10924,6 @@
     "order": 1,
     "code": "SWE01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Suécia",
       "birthDate": "1900-01-01",
@@ -11371,7 +10950,6 @@
     "order": 2,
     "code": "SWE02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Victor Johansson",
       "birthDate": "1995-06-15",
@@ -11398,7 +10976,6 @@
     "order": 3,
     "code": "SWE03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Isak Hien",
       "birthDate": "1999-01-01",
@@ -11425,7 +11002,6 @@
     "order": 4,
     "code": "SWE04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gabriel Gudmundsson",
       "birthDate": "1999-04-02",
@@ -11452,7 +11028,6 @@
     "order": 5,
     "code": "SWE05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Emil Holm",
       "birthDate": "2000-05-13",
@@ -11479,7 +11054,6 @@
     "order": 6,
     "code": "SWE06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Victor Nilsson Lindelöf",
       "birthDate": "1994-07-01",
@@ -11506,7 +11080,6 @@
     "order": 7,
     "code": "SWE07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gustaf Lagerbielke",
       "birthDate": "2000-04-01",
@@ -11533,7 +11106,6 @@
     "order": 8,
     "code": "SWE08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lucas Bergvall",
       "birthDate": "2006-02-01",
@@ -11560,7 +11132,6 @@
     "order": 9,
     "code": "SWE09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hugo Larsson",
       "birthDate": "2004-06-02",
@@ -11587,7 +11158,6 @@
     "order": 10,
     "code": "SWE10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jesper Karlström",
       "birthDate": "1995-06-02",
@@ -11614,7 +11184,6 @@
     "order": 11,
     "code": "SWE11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yasin Ayari",
       "birthDate": "2003-10-01",
@@ -11641,7 +11210,6 @@
     "order": 12,
     "code": "SWE12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mattias Svanberg",
       "birthDate": "1999-01-01",
@@ -11668,7 +11236,6 @@
     "order": 13,
     "code": "SWE13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -11695,7 +11262,6 @@
     "order": 14,
     "code": "SWE14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Daniel Svensson",
       "birthDate": "2002-02-01",
@@ -11722,7 +11288,6 @@
     "order": 15,
     "code": "SWE15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ken Sema",
       "birthDate": "1993-09-03",
@@ -11749,7 +11314,6 @@
     "order": 16,
     "code": "SWE16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Roony Bardghji",
       "birthDate": "2005-11-01",
@@ -11776,7 +11340,6 @@
     "order": 17,
     "code": "SWE17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dejan Kulusevski",
       "birthDate": "2000-04-02",
@@ -11803,7 +11366,6 @@
     "order": 18,
     "code": "SWE18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Anthony Elanga",
       "birthDate": "2002-04-02",
@@ -11830,7 +11392,6 @@
     "order": 19,
     "code": "SWE19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexander Isak",
       "birthDate": "1999-09-02",
@@ -11857,7 +11418,6 @@
     "order": 20,
     "code": "SWE20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Viktor Gyökeres",
       "birthDate": "1998-06-01",
@@ -11884,7 +11444,6 @@
     "order": 1,
     "code": "JPN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Japão",
       "birthDate": "1900-01-01",
@@ -11911,7 +11470,6 @@
     "order": 2,
     "code": "JPN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zion Suzuki",
       "birthDate": "2002-08-02",
@@ -11938,7 +11496,6 @@
     "order": 3,
     "code": "JPN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Henry Heroki Mochizuki",
       "birthDate": "2001-09-02",
@@ -11965,7 +11522,6 @@
     "order": 4,
     "code": "JPN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ayumu Seko",
       "birthDate": "2000-06-01",
@@ -11992,7 +11548,6 @@
     "order": 5,
     "code": "JPN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Junnosuke Suzuki",
       "birthDate": "2003-07-01",
@@ -12019,7 +11574,6 @@
     "order": 6,
     "code": "JPN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Shogo Taniguchi",
       "birthDate": "1991-07-01",
@@ -12046,7 +11600,6 @@
     "order": 7,
     "code": "JPN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tsuyoshi Watanabe",
       "birthDate": "1997-02-01",
@@ -12073,7 +11626,6 @@
     "order": 8,
     "code": "JPN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kaishu Sano",
       "birthDate": "2000-12-03",
@@ -12100,7 +11652,6 @@
     "order": 9,
     "code": "JPN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yuki Soma",
       "birthDate": "1997-02-02",
@@ -12127,7 +11678,6 @@
     "order": 10,
     "code": "JPN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ao Tanaka",
       "birthDate": "1998-09-01",
@@ -12154,7 +11704,6 @@
     "order": 11,
     "code": "JPN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Daichi Kamada",
       "birthDate": "1996-08-01",
@@ -12181,7 +11730,6 @@
     "order": 12,
     "code": "JPN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Takefusa Kubo",
       "birthDate": "2001-06-01",
@@ -12208,7 +11756,6 @@
     "order": 13,
     "code": "JPN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -12235,7 +11782,6 @@
     "order": 14,
     "code": "JPN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ritsu Doan",
       "birthDate": "1998-06-01",
@@ -12262,7 +11808,6 @@
     "order": 15,
     "code": "JPN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Keito Nakamura",
       "birthDate": "2000-07-02",
@@ -12289,7 +11834,6 @@
     "order": 16,
     "code": "JPN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Takumi Minamino",
       "birthDate": "1995-01-01",
@@ -12316,7 +11860,6 @@
     "order": 17,
     "code": "JPN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Shuto Machino",
       "birthDate": "1999-09-03",
@@ -12343,7 +11886,6 @@
     "order": 18,
     "code": "JPN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Junya Ito",
       "birthDate": "1993-03-01",
@@ -12370,7 +11912,6 @@
     "order": 19,
     "code": "JPN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Koki Ogawa",
       "birthDate": "1997-08-01",
@@ -12397,7 +11938,6 @@
     "order": 20,
     "code": "JPN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ayase Ueda",
       "birthDate": "1998-08-02",
@@ -12424,7 +11964,6 @@
     "order": 1,
     "code": "TUN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Tunísia",
       "birthDate": "1900-01-01",
@@ -12451,7 +11990,6 @@
     "order": 2,
     "code": "TUN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bechir Ben Said",
       "birthDate": "1992-11-02",
@@ -12478,7 +12016,6 @@
     "order": 3,
     "code": "TUN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aymen Dahmen",
       "birthDate": "1997-01-02",
@@ -12505,7 +12042,6 @@
     "order": 4,
     "code": "TUN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yan Valery",
       "birthDate": "1999-02-02",
@@ -12532,7 +12068,6 @@
     "order": 5,
     "code": "TUN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Montassar Talbi",
       "birthDate": "1998-05-02",
@@ -12559,7 +12094,6 @@
     "order": 6,
     "code": "TUN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yassine Meriah",
       "birthDate": "1993-07-01",
@@ -12586,7 +12120,6 @@
     "order": 7,
     "code": "TUN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ali Abdi",
       "birthDate": "1993-12-02",
@@ -12613,7 +12146,6 @@
     "order": 8,
     "code": "TUN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dylan Bronn",
       "birthDate": "1995-06-01",
@@ -12640,7 +12172,6 @@
     "order": 9,
     "code": "TUN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ellyes Skhiri",
       "birthDate": "1995-05-01",
@@ -12667,7 +12198,6 @@
     "order": 10,
     "code": "TUN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aissa Laidouni",
       "birthDate": "1996-12-01",
@@ -12694,7 +12224,6 @@
     "order": 11,
     "code": "TUN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ferjani Sassi",
       "birthDate": "1992-03-01",
@@ -12721,7 +12250,6 @@
     "order": 12,
     "code": "TUN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Ali Ben Romdhane",
       "birthDate": "1999-09-01",
@@ -12748,7 +12276,6 @@
     "order": 13,
     "code": "TUN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -12775,7 +12302,6 @@
     "order": 14,
     "code": "TUN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hannibal Mejbri",
       "birthDate": "2003-01-02",
@@ -12802,7 +12328,6 @@
     "order": 15,
     "code": "TUN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Elias Achouri",
       "birthDate": "1999-02-01",
@@ -12829,7 +12354,6 @@
     "order": 16,
     "code": "TUN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Elias Saad",
       "birthDate": "1999-12-02",
@@ -12856,7 +12380,6 @@
     "order": 17,
     "code": "TUN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hazem Mastouri",
       "birthDate": "1997-06-01",
@@ -12883,7 +12406,6 @@
     "order": 18,
     "code": "TUN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismael Gharbi",
       "birthDate": "2004-04-01",
@@ -12910,7 +12432,6 @@
     "order": 19,
     "code": "TUN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sayfallah Ltaief",
       "birthDate": "2000-04-02",
@@ -12937,7 +12458,6 @@
     "order": 20,
     "code": "TUN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Naim Sliti",
       "birthDate": "1992-07-02",
@@ -12964,7 +12484,6 @@
     "order": 1,
     "code": "BEL01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Bélgica",
       "birthDate": "1900-01-01",
@@ -12991,7 +12510,6 @@
     "order": 2,
     "code": "BEL02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Thibaut Courtois",
       "birthDate": "1992-05-01",
@@ -13018,7 +12536,6 @@
     "order": 3,
     "code": "BEL03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Arthur Theate",
       "birthDate": "2000-05-02",
@@ -13045,7 +12562,6 @@
     "order": 4,
     "code": "BEL04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Timothy Castagne",
       "birthDate": "1995-12-01",
@@ -13072,7 +12588,6 @@
     "order": 5,
     "code": "BEL05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zeno Debast",
       "birthDate": "2003-10-02",
@@ -13099,7 +12614,6 @@
     "order": 6,
     "code": "BEL06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Brandon Mechele",
       "birthDate": "1993-01-02",
@@ -13126,7 +12640,6 @@
     "order": 7,
     "code": "BEL07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Maxim De Cuyper",
       "birthDate": "2000-12-02",
@@ -13153,7 +12666,6 @@
     "order": 8,
     "code": "BEL08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Thomas Meunier",
       "birthDate": "1991-09-01",
@@ -13180,7 +12692,6 @@
     "order": 9,
     "code": "BEL09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Youri Tielemans",
       "birthDate": "1997-05-01",
@@ -13207,7 +12718,6 @@
     "order": 10,
     "code": "BEL10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amadou Onana",
       "birthDate": "2001-08-01",
@@ -13234,7 +12744,6 @@
     "order": 11,
     "code": "BEL11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolas Raskin",
       "birthDate": "2001-02-02",
@@ -13261,7 +12770,6 @@
     "order": 12,
     "code": "BEL12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexis Saelemaekers",
       "birthDate": "1999-06-02",
@@ -13288,7 +12796,6 @@
     "order": 13,
     "code": "BEL13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -13315,7 +12822,6 @@
     "order": 14,
     "code": "BEL14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hans Vanaken",
       "birthDate": "1992-08-02",
@@ -13342,7 +12848,6 @@
     "order": 15,
     "code": "BEL15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kevin De Bruyne",
       "birthDate": "1991-06-02",
@@ -13369,7 +12874,6 @@
     "order": 16,
     "code": "BEL16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jérémy Doku",
       "birthDate": "2002-05-02",
@@ -13396,7 +12900,6 @@
     "order": 17,
     "code": "BEL17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Charles De Ketelaere",
       "birthDate": "2001-03-01",
@@ -13423,7 +12926,6 @@
     "order": 18,
     "code": "BEL18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leandro Trossard",
       "birthDate": "1994-12-01",
@@ -13450,7 +12952,6 @@
     "order": 19,
     "code": "BEL19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Loïs Openda",
       "birthDate": "2000-02-01",
@@ -13477,7 +12978,6 @@
     "order": 20,
     "code": "BEL20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Romelu Lukaku",
       "birthDate": "1993-05-01",
@@ -13504,7 +13004,6 @@
     "order": 1,
     "code": "IRN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Irã",
       "birthDate": "1900-01-01",
@@ -13531,7 +13030,6 @@
     "order": 2,
     "code": "IRN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alireza Beiranvand",
       "birthDate": "1992-09-02",
@@ -13558,7 +13056,6 @@
     "order": 3,
     "code": "IRN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Morteza Pouraliganji",
       "birthDate": "1992-04-01",
@@ -13585,7 +13082,6 @@
     "order": 4,
     "code": "IRN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ehsan Hajsafi",
       "birthDate": "1990-02-02",
@@ -13612,7 +13108,6 @@
     "order": 5,
     "code": "IRN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Milad Mohammadi",
       "birthDate": "1993-09-02",
@@ -13639,7 +13134,6 @@
     "order": 6,
     "code": "IRN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Shojae Khalilzadeh",
       "birthDate": "1989-05-01",
@@ -13666,7 +13160,6 @@
     "order": 7,
     "code": "IRN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ramin Rezaeian",
       "birthDate": "1990-03-02",
@@ -13693,7 +13186,6 @@
     "order": 8,
     "code": "IRN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hossein Kanaani",
       "birthDate": "1994-03-02",
@@ -13720,7 +13212,6 @@
     "order": 9,
     "code": "IRN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sadegh Moharrami",
       "birthDate": "1996-03-01",
@@ -13747,7 +13238,6 @@
     "order": 10,
     "code": "IRN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saleh Hardani",
       "birthDate": "1996-09-01",
@@ -13774,7 +13264,6 @@
     "order": 11,
     "code": "IRN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saeed Ezatolahi",
       "birthDate": "1996-10-01",
@@ -13801,7 +13290,6 @@
     "order": 12,
     "code": "IRN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saman Ghoddos",
       "birthDate": "1993-09-01",
@@ -13828,7 +13316,6 @@
     "order": 13,
     "code": "IRN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -13855,7 +13342,6 @@
     "order": 14,
     "code": "IRN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Omid Noorafkan",
       "birthDate": "1997-04-01",
@@ -13882,7 +13368,6 @@
     "order": 15,
     "code": "IRN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Roozbeh Cheshmi",
       "birthDate": "1993-07-02",
@@ -13909,7 +13394,6 @@
     "order": 16,
     "code": "IRN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammad Mohebi",
       "birthDate": "1998-12-02",
@@ -13936,7 +13420,6 @@
     "order": 17,
     "code": "IRN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sardar Azmoun",
       "birthDate": "1995-01-01",
@@ -13963,7 +13446,6 @@
     "order": 18,
     "code": "IRN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mehdi Taremi",
       "birthDate": "1992-07-01",
@@ -13990,7 +13472,6 @@
     "order": 19,
     "code": "IRN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alireza Jahanbakhsh",
       "birthDate": "1993-08-01",
@@ -14017,7 +13498,6 @@
     "order": 20,
     "code": "IRN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ali Gholizadeh",
       "birthDate": "1996-03-01",
@@ -14044,7 +13524,6 @@
     "order": 1,
     "code": "EGY01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Egito",
       "birthDate": "1900-01-01",
@@ -14071,7 +13550,6 @@
     "order": 2,
     "code": "EGY02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed El Shenawy",
       "birthDate": "1988-12-01",
@@ -14098,7 +13576,6 @@
     "order": 3,
     "code": "EGY03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Hany",
       "birthDate": "1996-01-02",
@@ -14125,7 +13602,6 @@
     "order": 4,
     "code": "EGY04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Hamdy",
       "birthDate": "1991-12-01",
@@ -14152,7 +13628,6 @@
     "order": 5,
     "code": "EGY05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yasser Ibrahim",
       "birthDate": "1989-05-01",
@@ -14179,7 +13654,6 @@
     "order": 6,
     "code": "EGY06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Khaled Sobhi",
       "birthDate": "1995-05-01",
@@ -14206,7 +13680,6 @@
     "order": 7,
     "code": "EGY07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ramy Rabia",
       "birthDate": "1993-05-02",
@@ -14233,7 +13706,6 @@
     "order": 8,
     "code": "EGY08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hossam Abdelmaguid",
       "birthDate": "2001-04-03",
@@ -14260,7 +13732,6 @@
     "order": 9,
     "code": "EGY09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ahmed Fatouh",
       "birthDate": "1995-06-15",
@@ -14287,7 +13758,6 @@
     "order": 10,
     "code": "EGY10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marwan Attia",
       "birthDate": "1998-08-01",
@@ -14314,7 +13784,6 @@
     "order": 11,
     "code": "EGY11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zizo",
       "birthDate": "1996-01-01",
@@ -14341,7 +13810,6 @@
     "order": 12,
     "code": "EGY12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hamdy Fathy",
       "birthDate": "1994-09-02",
@@ -14368,7 +13836,6 @@
     "order": 13,
     "code": "EGY13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -14395,7 +13862,6 @@
     "order": 14,
     "code": "EGY14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Lasheen",
       "birthDate": "1995-06-15",
@@ -14422,7 +13888,6 @@
     "order": 15,
     "code": "EGY15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Emam Ashour",
       "birthDate": "1998-02-02",
@@ -14449,7 +13914,6 @@
     "order": 16,
     "code": "EGY16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Osama Faisal",
       "birthDate": "2001-01-01",
@@ -14476,7 +13940,6 @@
     "order": 17,
     "code": "EGY17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Salah",
       "birthDate": "1992-06-01",
@@ -14503,7 +13966,6 @@
     "order": 18,
     "code": "EGY18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mostafa Mohamed",
       "birthDate": "1997-11-02",
@@ -14530,7 +13992,6 @@
     "order": 19,
     "code": "EGY19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Trezeguet",
       "birthDate": "1994-10-01",
@@ -14557,7 +14018,6 @@
     "order": 20,
     "code": "EGY20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Omar Marmoush",
       "birthDate": "1999-02-01",
@@ -14584,7 +14044,6 @@
     "order": 1,
     "code": "NZL01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Nova Zelândia",
       "birthDate": "1900-01-01",
@@ -14611,7 +14070,6 @@
     "order": 2,
     "code": "NZL02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Max Crocombe",
       "birthDate": "1993-08-01",
@@ -14638,7 +14096,6 @@
     "order": 3,
     "code": "NZL03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alex Paulsen",
       "birthDate": "2002-07-01",
@@ -14665,7 +14122,6 @@
     "order": 4,
     "code": "NZL04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michael Boxall",
       "birthDate": "1988-08-01",
@@ -14692,7 +14148,6 @@
     "order": 5,
     "code": "NZL05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Liberato Cacace",
       "birthDate": "2000-09-02",
@@ -14719,7 +14174,6 @@
     "order": 6,
     "code": "NZL06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tim Payne",
       "birthDate": "1994-01-01",
@@ -14746,7 +14200,6 @@
     "order": 7,
     "code": "NZL07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tyler Bindon",
       "birthDate": "2005-01-02",
@@ -14773,7 +14226,6 @@
     "order": 8,
     "code": "NZL08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Francis de Vries",
       "birthDate": "1994-11-02",
@@ -14800,7 +14252,6 @@
     "order": 9,
     "code": "NZL09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Finn Surman",
       "birthDate": "2003-09-02",
@@ -14827,7 +14278,6 @@
     "order": 10,
     "code": "NZL10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joe Bell",
       "birthDate": "1999-04-02",
@@ -14854,7 +14304,6 @@
     "order": 11,
     "code": "NZL11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sarpreet Singh",
       "birthDate": "1999-02-02",
@@ -14881,7 +14330,6 @@
     "order": 12,
     "code": "NZL12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ryan Thomas",
       "birthDate": "1994-12-02",
@@ -14908,7 +14356,6 @@
     "order": 13,
     "code": "NZL13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -14935,7 +14382,6 @@
     "order": 14,
     "code": "NZL14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Matthew Garbett",
       "birthDate": "2002-04-01",
@@ -14962,7 +14408,6 @@
     "order": 15,
     "code": "NZL15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marko Stamenić",
       "birthDate": "2002-02-01",
@@ -14989,7 +14434,6 @@
     "order": 16,
     "code": "NZL16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ben Old",
       "birthDate": "2002-08-01",
@@ -15016,7 +14460,6 @@
     "order": 17,
     "code": "NZL17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Chris Wood",
       "birthDate": "1991-12-01",
@@ -15043,7 +14486,6 @@
     "order": 18,
     "code": "NZL18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Elijah Just",
       "birthDate": "2000-05-01",
@@ -15070,7 +14512,6 @@
     "order": 19,
     "code": "NZL19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Callum McCowatt",
       "birthDate": "1999-04-03",
@@ -15097,7 +14538,6 @@
     "order": 20,
     "code": "NZL20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kosta Barbarouses",
       "birthDate": "1990-02-01",
@@ -15124,7 +14564,6 @@
     "order": 1,
     "code": "ESP01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Espanha",
       "birthDate": "1900-01-01",
@@ -15151,7 +14590,6 @@
     "order": 2,
     "code": "ESP02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Unai Simon",
       "birthDate": "1997-06-01",
@@ -15178,7 +14616,6 @@
     "order": 3,
     "code": "ESP03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Robin Le Normand",
       "birthDate": "1996-11-01",
@@ -15205,7 +14642,6 @@
     "order": 4,
     "code": "ESP04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aymeric Laporte",
       "birthDate": "1994-05-02",
@@ -15232,7 +14668,6 @@
     "order": 5,
     "code": "ESP05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dean Huijsen",
       "birthDate": "2005-04-01",
@@ -15259,7 +14694,6 @@
     "order": 6,
     "code": "ESP06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pedro Porro",
       "birthDate": "1999-09-01",
@@ -15286,7 +14720,6 @@
     "order": 7,
     "code": "ESP07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dani Carvajal",
       "birthDate": "1992-01-01",
@@ -15313,7 +14746,6 @@
     "order": 8,
     "code": "ESP08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marc Cucurella",
       "birthDate": "1998-07-02",
@@ -15340,7 +14772,6 @@
     "order": 9,
     "code": "ESP09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Martín Zubimendi",
       "birthDate": "1999-02-01",
@@ -15367,7 +14798,6 @@
     "order": 10,
     "code": "ESP10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rodri",
       "birthDate": "1996-06-02",
@@ -15394,7 +14824,6 @@
     "order": 11,
     "code": "ESP11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pedri",
       "birthDate": "2002-11-02",
@@ -15421,7 +14850,6 @@
     "order": 12,
     "code": "ESP12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Fabian Ruiz",
       "birthDate": "1996-04-01",
@@ -15448,7 +14876,6 @@
     "order": 13,
     "code": "ESP13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -15475,7 +14902,6 @@
     "order": 14,
     "code": "ESP14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mikel Merino",
       "birthDate": "1996-06-02",
@@ -15502,7 +14928,6 @@
     "order": 15,
     "code": "ESP15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lamine Yamal",
       "birthDate": "2007-07-01",
@@ -15529,7 +14954,6 @@
     "order": 16,
     "code": "ESP16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dani Olmo",
       "birthDate": "1998-05-01",
@@ -15556,7 +14980,6 @@
     "order": 17,
     "code": "ESP17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nico Williams",
       "birthDate": "2002-07-01",
@@ -15583,7 +15006,6 @@
     "order": 18,
     "code": "ESP18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ferran Torres",
       "birthDate": "2000-02-02",
@@ -15610,7 +15032,6 @@
     "order": 19,
     "code": "ESP19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Álvaro Morata",
       "birthDate": "1992-10-02",
@@ -15637,7 +15058,6 @@
     "order": 20,
     "code": "ESP20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mikel Oyarzabal",
       "birthDate": "1997-04-02",
@@ -15664,7 +15084,6 @@
     "order": 1,
     "code": "KSA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Arábia Saudita",
       "birthDate": "1900-01-01",
@@ -15691,7 +15110,6 @@
     "order": 2,
     "code": "KSA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nawaf Alaqidi",
       "birthDate": "1995-06-15",
@@ -15718,7 +15136,6 @@
     "order": 3,
     "code": "KSA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdulrahman Al-Sanbi",
       "birthDate": "2001-02-01",
@@ -15745,7 +15162,6 @@
     "order": 4,
     "code": "KSA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saud Abdulhamid",
       "birthDate": "1999-07-01",
@@ -15772,7 +15188,6 @@
     "order": 5,
     "code": "KSA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nawaf Bouwashl",
       "birthDate": "1995-06-15",
@@ -15799,7 +15214,6 @@
     "order": 6,
     "code": "KSA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jihad Thakri",
       "birthDate": "1995-06-15",
@@ -15826,7 +15240,6 @@
     "order": 7,
     "code": "KSA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Moteb Al-Harbi",
       "birthDate": "2000-02-01",
@@ -15853,7 +15266,6 @@
     "order": 8,
     "code": "KSA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hassan Altambakti",
       "birthDate": "1995-06-15",
@@ -15880,7 +15292,6 @@
     "order": 9,
     "code": "KSA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Musab Aljuwayr",
       "birthDate": "1995-06-15",
@@ -15907,7 +15318,6 @@
     "order": 10,
     "code": "KSA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ziyad Aljohani",
       "birthDate": "1995-06-15",
@@ -15934,7 +15344,6 @@
     "order": 11,
     "code": "KSA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdullah Alkhaibari",
       "birthDate": "1995-06-15",
@@ -15961,7 +15370,6 @@
     "order": 12,
     "code": "KSA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nasser Aldawsari",
       "birthDate": "1995-06-15",
@@ -15988,7 +15396,6 @@
     "order": 13,
     "code": "KSA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -16015,7 +15422,6 @@
     "order": 14,
     "code": "KSA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saleh Abu Alshamat",
       "birthDate": "1995-06-15",
@@ -16042,7 +15448,6 @@
     "order": 15,
     "code": "KSA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marwan Alsahafi",
       "birthDate": "1995-06-15",
@@ -16069,7 +15474,6 @@
     "order": 16,
     "code": "KSA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Salem Aldawsari",
       "birthDate": "1995-06-15",
@@ -16096,7 +15500,6 @@
     "order": 17,
     "code": "KSA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdulrahman Al-Aboud",
       "birthDate": "1995-06-01",
@@ -16123,7 +15526,6 @@
     "order": 18,
     "code": "KSA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Feras Akbrikan",
       "birthDate": "1995-06-15",
@@ -16150,7 +15552,6 @@
     "order": 19,
     "code": "KSA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saleh Alshehri",
       "birthDate": "1995-06-15",
@@ -16177,7 +15578,6 @@
     "order": 20,
     "code": "KSA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdullah Al-Hamdan",
       "birthDate": "1999-09-01",
@@ -16204,7 +15604,6 @@
     "order": 1,
     "code": "URU01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Uruguai",
       "birthDate": "1900-01-01",
@@ -16231,7 +15630,6 @@
     "order": 2,
     "code": "URU02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sergio Rochet",
       "birthDate": "1993-03-02",
@@ -16258,7 +15656,6 @@
     "order": 3,
     "code": "URU03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Santiago Mele",
       "birthDate": "1997-09-01",
@@ -16285,7 +15682,6 @@
     "order": 4,
     "code": "URU04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ronald Araujo",
       "birthDate": "1999-03-01",
@@ -16312,7 +15708,6 @@
     "order": 5,
     "code": "URU05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "José María Giménez",
       "birthDate": "1995-01-02",
@@ -16339,7 +15734,6 @@
     "order": 6,
     "code": "URU06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sebastian Caceres",
       "birthDate": "2000-01-01",
@@ -16366,7 +15760,6 @@
     "order": 7,
     "code": "URU07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mathias Olivera",
       "birthDate": "1997-10-03",
@@ -16393,7 +15786,6 @@
     "order": 8,
     "code": "URU08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Guillermo Varela",
       "birthDate": "1993-03-02",
@@ -16420,7 +15812,6 @@
     "order": 9,
     "code": "URU09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nahitan Nandez",
       "birthDate": "1995-12-02",
@@ -16447,7 +15838,6 @@
     "order": 10,
     "code": "URU10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Federico Valverde",
       "birthDate": "1998-07-02",
@@ -16474,7 +15864,6 @@
     "order": 11,
     "code": "URU11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Giorgian De Arrascaeta",
       "birthDate": "1994-06-01",
@@ -16501,7 +15890,6 @@
     "order": 12,
     "code": "URU12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rodrigo Bentancur",
       "birthDate": "1997-06-02",
@@ -16528,7 +15916,6 @@
     "order": 13,
     "code": "URU13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -16555,7 +15942,6 @@
     "order": 14,
     "code": "URU14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Manuel Ugarte",
       "birthDate": "2001-04-01",
@@ -16582,7 +15968,6 @@
     "order": 15,
     "code": "URU15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolás de la Cruz",
       "birthDate": "1997-06-01",
@@ -16609,7 +15994,6 @@
     "order": 16,
     "code": "URU16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Maxi Araujo",
       "birthDate": "1995-06-15",
@@ -16636,7 +16020,6 @@
     "order": 17,
     "code": "URU17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Darwin Núñez",
       "birthDate": "1999-06-02",
@@ -16663,7 +16046,6 @@
     "order": 18,
     "code": "URU18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Federico Viñas",
       "birthDate": "1998-06-03",
@@ -16690,7 +16072,6 @@
     "order": 19,
     "code": "URU19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rodrigo Aguirre",
       "birthDate": "1994-10-01",
@@ -16717,7 +16098,6 @@
     "order": 20,
     "code": "URU20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Facundo Pellistri",
       "birthDate": "2001-12-02",
@@ -16744,7 +16124,6 @@
     "order": 1,
     "code": "CPV01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Cabo Verde",
       "birthDate": "1900-01-01",
@@ -16771,7 +16150,6 @@
     "order": 2,
     "code": "CPV02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vozinha",
       "birthDate": "1986-06-01",
@@ -16798,7 +16176,6 @@
     "order": 3,
     "code": "CPV03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Logan Costa",
       "birthDate": "2001-04-01",
@@ -16825,7 +16202,6 @@
     "order": 4,
     "code": "CPV04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pico",
       "birthDate": "1995-06-15",
@@ -16852,7 +16228,6 @@
     "order": 5,
     "code": "CPV05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diney",
       "birthDate": "1995-01-01",
@@ -16879,7 +16254,6 @@
     "order": 6,
     "code": "CPV06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Steven Moreira",
       "birthDate": "1994-08-01",
@@ -16906,7 +16280,6 @@
     "order": 7,
     "code": "CPV07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Wagner Pina",
       "birthDate": "2002-11-01",
@@ -16933,7 +16306,6 @@
     "order": 8,
     "code": "CPV08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joao Paulo",
       "birthDate": "1995-06-15",
@@ -16960,7 +16332,6 @@
     "order": 9,
     "code": "CPV09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yannick Semedo",
       "birthDate": "1995-12-02",
@@ -16987,7 +16358,6 @@
     "order": 10,
     "code": "CPV10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kevin Pina",
       "birthDate": "1997-01-02",
@@ -17014,7 +16384,6 @@
     "order": 11,
     "code": "CPV11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrick Andrade",
       "birthDate": "1993-02-01",
@@ -17041,7 +16410,6 @@
     "order": 12,
     "code": "CPV12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jamiro Monteiro",
       "birthDate": "1993-11-02",
@@ -17068,7 +16436,6 @@
     "order": 13,
     "code": "CPV13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -17095,7 +16462,6 @@
     "order": 14,
     "code": "CPV14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Deroy Duarte",
       "birthDate": "1999-07-01",
@@ -17122,7 +16488,6 @@
     "order": 15,
     "code": "CPV15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Garry Rodrigues",
       "birthDate": "1990-11-02",
@@ -17149,7 +16514,6 @@
     "order": 16,
     "code": "CPV16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jovane Cabral",
       "birthDate": "1998-06-01",
@@ -17176,7 +16540,6 @@
     "order": 17,
     "code": "CPV17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ryan Mendes",
       "birthDate": "1990-01-01",
@@ -17203,7 +16566,6 @@
     "order": 18,
     "code": "CPV18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dailon Livramento",
       "birthDate": "2001-05-01",
@@ -17230,7 +16592,6 @@
     "order": 19,
     "code": "CPV19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Willy Semedo",
       "birthDate": "1994-04-02",
@@ -17257,7 +16618,6 @@
     "order": 20,
     "code": "CPV20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bebe",
       "birthDate": "1995-06-15",
@@ -17284,7 +16644,6 @@
     "order": 1,
     "code": "FRA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "França",
       "birthDate": "1900-01-01",
@@ -17311,7 +16670,6 @@
     "order": 2,
     "code": "FRA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mike Maignan",
       "birthDate": "1995-07-01",
@@ -17338,7 +16696,6 @@
     "order": 3,
     "code": "FRA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Theo Hernandez",
       "birthDate": "1997-10-01",
@@ -17365,7 +16722,6 @@
     "order": 4,
     "code": "FRA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "William Saliba",
       "birthDate": "2001-03-02",
@@ -17392,7 +16748,6 @@
     "order": 5,
     "code": "FRA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jules Kounde",
       "birthDate": "1998-11-01",
@@ -17419,7 +16774,6 @@
     "order": 6,
     "code": "FRA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ibrahima Konate",
       "birthDate": "1999-05-02",
@@ -17446,7 +16800,6 @@
     "order": 7,
     "code": "FRA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dayot Upamecano",
       "birthDate": "1998-10-02",
@@ -17473,7 +16826,6 @@
     "order": 8,
     "code": "FRA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lucas Digne",
       "birthDate": "1993-07-02",
@@ -17500,7 +16852,6 @@
     "order": 9,
     "code": "FRA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aurélien Tchouaméni",
       "birthDate": "2000-01-02",
@@ -17527,7 +16878,6 @@
     "order": 10,
     "code": "FRA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Eduardo Camavinga",
       "birthDate": "2002-11-01",
@@ -17554,7 +16904,6 @@
     "order": 11,
     "code": "FRA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Manu Kone",
       "birthDate": "2001-05-01",
@@ -17581,7 +16930,6 @@
     "order": 12,
     "code": "FRA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Adrien Rabiot",
       "birthDate": "1995-04-01",
@@ -17608,7 +16956,6 @@
     "order": 13,
     "code": "FRA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -17635,7 +16982,6 @@
     "order": 14,
     "code": "FRA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michael Olise",
       "birthDate": "2001-12-01",
@@ -17662,7 +17008,6 @@
     "order": 15,
     "code": "FRA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ousmane Dembele",
       "birthDate": "1997-05-01",
@@ -17689,7 +17034,6 @@
     "order": 16,
     "code": "FRA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bradley Barcola",
       "birthDate": "2002-09-01",
@@ -17716,7 +17060,6 @@
     "order": 17,
     "code": "FRA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Désiré Doué",
       "birthDate": "2005-06-01",
@@ -17743,7 +17086,6 @@
     "order": 18,
     "code": "FRA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kingsley Coman",
       "birthDate": "1996-06-01",
@@ -17770,7 +17112,6 @@
     "order": 19,
     "code": "FRA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hugo Ekitike",
       "birthDate": "2002-06-02",
@@ -17797,7 +17138,6 @@
     "order": 20,
     "code": "FRA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kylian Mbappe",
       "birthDate": "1998-12-02",
@@ -17824,7 +17164,6 @@
     "order": 1,
     "code": "IRQ01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Iraque",
       "birthDate": "1900-01-01",
@@ -17851,7 +17190,6 @@
     "order": 2,
     "code": "IRQ02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jalal Hassan",
       "birthDate": "1991-05-01",
@@ -17878,7 +17216,6 @@
     "order": 3,
     "code": "IRQ03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rebin Sulaka",
       "birthDate": "1992-04-01",
@@ -17905,7 +17242,6 @@
     "order": 4,
     "code": "IRQ04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hussein Ali",
       "birthDate": "2002-03-01",
@@ -17932,7 +17268,6 @@
     "order": 5,
     "code": "IRQ05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Akam Hashem",
       "birthDate": "1995-06-15",
@@ -17959,7 +17294,6 @@
     "order": 6,
     "code": "IRQ06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Merchas Doski",
       "birthDate": "1999-12-01",
@@ -17986,7 +17320,6 @@
     "order": 7,
     "code": "IRQ07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zaid Tahseen",
       "birthDate": "2001-01-02",
@@ -18013,7 +17346,6 @@
     "order": 8,
     "code": "IRQ08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Manaf Younis",
       "birthDate": "1996-12-02",
@@ -18040,7 +17372,6 @@
     "order": 9,
     "code": "IRQ09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Zidane Iqbal",
       "birthDate": "2003-04-02",
@@ -18067,7 +17398,6 @@
     "order": 10,
     "code": "IRQ10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amir Al-Ammari",
       "birthDate": "1997-07-02",
@@ -18094,7 +17424,6 @@
     "order": 11,
     "code": "IRQ11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ibrahim Bavesh",
       "birthDate": "1995-06-15",
@@ -18121,7 +17450,6 @@
     "order": 12,
     "code": "IRQ12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ali Jasim",
       "birthDate": "1987-07-01",
@@ -18148,7 +17476,6 @@
     "order": 13,
     "code": "IRQ13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -18175,7 +17502,6 @@
     "order": 14,
     "code": "IRQ14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Youssef Amyn",
       "birthDate": "2003-08-02",
@@ -18202,7 +17528,6 @@
     "order": 15,
     "code": "IRQ15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aimar Sher",
       "birthDate": "2002-12-02",
@@ -18229,7 +17554,6 @@
     "order": 16,
     "code": "IRQ16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marko Farji",
       "birthDate": "2004-03-01",
@@ -18256,7 +17580,6 @@
     "order": 17,
     "code": "IRQ17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Osama Rashid",
       "birthDate": "1992-01-01",
@@ -18283,7 +17606,6 @@
     "order": 18,
     "code": "IRQ18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ali Al-Hamadi",
       "birthDate": "2002-03-01",
@@ -18310,7 +17632,6 @@
     "order": 19,
     "code": "IRQ19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aymen Hussein",
       "birthDate": "1996-03-02",
@@ -18337,7 +17658,6 @@
     "order": 20,
     "code": "IRQ20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohanad Ali",
       "birthDate": "2000-06-02",
@@ -18364,7 +17684,6 @@
     "order": 1,
     "code": "SEN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Senegal",
       "birthDate": "1900-01-01",
@@ -18391,7 +17710,6 @@
     "order": 2,
     "code": "SEN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Édouard Mendy",
       "birthDate": "1992-03-01",
@@ -18418,7 +17736,6 @@
     "order": 3,
     "code": "SEN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yehvann Diouf",
       "birthDate": "1999-11-01",
@@ -18445,7 +17762,6 @@
     "order": 4,
     "code": "SEN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Moussa Niakhaté",
       "birthDate": "1996-03-01",
@@ -18472,7 +17788,6 @@
     "order": 5,
     "code": "SEN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdoulaye Seck",
       "birthDate": "1992-06-01",
@@ -18499,7 +17814,6 @@
     "order": 6,
     "code": "SEN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismail Jakobs",
       "birthDate": "1999-08-01",
@@ -18526,7 +17840,6 @@
     "order": 7,
     "code": "SEN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "El Hadji Malick Diouf",
       "birthDate": "2004-12-02",
@@ -18553,7 +17866,6 @@
     "order": 8,
     "code": "SEN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kalidou Koulibaly",
       "birthDate": "1991-06-02",
@@ -18580,7 +17892,6 @@
     "order": 9,
     "code": "SEN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Idrissa Gana Gueye",
       "birthDate": "1989-09-02",
@@ -18607,7 +17918,6 @@
     "order": 10,
     "code": "SEN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pape Matar Sarr",
       "birthDate": "2002-09-01",
@@ -18634,7 +17944,6 @@
     "order": 11,
     "code": "SEN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pape Gueye",
       "birthDate": "1999-01-02",
@@ -18661,7 +17970,6 @@
     "order": 12,
     "code": "SEN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Habib Diarra",
       "birthDate": "2004-01-01",
@@ -18688,7 +17996,6 @@
     "order": 13,
     "code": "SEN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -18715,7 +18022,6 @@
     "order": 14,
     "code": "SEN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lamine Camara",
       "birthDate": "2004-01-01",
@@ -18742,7 +18048,6 @@
     "order": 15,
     "code": "SEN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sadio Mane",
       "birthDate": "1992-04-01",
@@ -18769,7 +18074,6 @@
     "order": 16,
     "code": "SEN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismaïla Sarr",
       "birthDate": "1998-02-02",
@@ -18796,7 +18100,6 @@
     "order": 17,
     "code": "SEN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Boulaye Dia",
       "birthDate": "1996-11-01",
@@ -18823,7 +18126,6 @@
     "order": 18,
     "code": "SEN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Iliman Ndiaye",
       "birthDate": "2000-03-01",
@@ -18850,7 +18152,6 @@
     "order": 19,
     "code": "SEN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolas Jackson",
       "birthDate": "2001-06-02",
@@ -18877,7 +18178,6 @@
     "order": 20,
     "code": "SEN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Krepin Diatta",
       "birthDate": "1999-02-02",
@@ -18904,7 +18204,6 @@
     "order": 1,
     "code": "NOR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Noruega",
       "birthDate": "1900-01-01",
@@ -18931,7 +18230,6 @@
     "order": 2,
     "code": "NOR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Orjan Nyland",
       "birthDate": "1990-09-01",
@@ -18958,7 +18256,6 @@
     "order": 3,
     "code": "NOR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Julian Ryerson",
       "birthDate": "1997-11-01",
@@ -18985,7 +18282,6 @@
     "order": 4,
     "code": "NOR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leo Ostigård",
       "birthDate": "1999-11-02",
@@ -19012,7 +18308,6 @@
     "order": 5,
     "code": "NOR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kristoffer Vassbakk Ajer",
       "birthDate": "1998-04-01",
@@ -19039,7 +18334,6 @@
     "order": 6,
     "code": "NOR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marcus Holmgren Pedersen",
       "birthDate": "2000-07-01",
@@ -19066,7 +18360,6 @@
     "order": 7,
     "code": "NOR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "David Møller Wolfe",
       "birthDate": "2002-04-02",
@@ -19093,7 +18386,6 @@
     "order": 8,
     "code": "NOR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Torbjørn Heggem",
       "birthDate": "1999-01-01",
@@ -19120,7 +18412,6 @@
     "order": 9,
     "code": "NOR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Morten Thorsby",
       "birthDate": "1996-05-01",
@@ -19147,7 +18438,6 @@
     "order": 10,
     "code": "NOR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Martin Ødegaard",
       "birthDate": "1998-12-01",
@@ -19174,7 +18464,6 @@
     "order": 11,
     "code": "NOR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sander Berge",
       "birthDate": "1998-02-01",
@@ -19201,7 +18490,6 @@
     "order": 12,
     "code": "NOR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Andreas Schjelderup",
       "birthDate": "2004-06-01",
@@ -19228,7 +18516,6 @@
     "order": 13,
     "code": "NOR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -19255,7 +18542,6 @@
     "order": 14,
     "code": "NOR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrick Berg",
       "birthDate": "1997-11-02",
@@ -19282,7 +18568,6 @@
     "order": 15,
     "code": "NOR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Erling Haaland",
       "birthDate": "2000-07-02",
@@ -19309,7 +18594,6 @@
     "order": 16,
     "code": "NOR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexander Sørloth",
       "birthDate": "1995-12-01",
@@ -19336,7 +18620,6 @@
     "order": 17,
     "code": "NOR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aron Dønnum",
       "birthDate": "1998-04-02",
@@ -19363,7 +18646,6 @@
     "order": 18,
     "code": "NOR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jorgen Strand Larsen",
       "birthDate": "2000-02-01",
@@ -19390,7 +18672,6 @@
     "order": 19,
     "code": "NOR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Antonio Nusa",
       "birthDate": "2005-04-01",
@@ -19417,7 +18698,6 @@
     "order": 20,
     "code": "NOR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Oscar Bobb",
       "birthDate": "2003-07-01",
@@ -19444,7 +18724,6 @@
     "order": 1,
     "code": "ARG01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Argentina",
       "birthDate": "1900-01-01",
@@ -19471,7 +18750,6 @@
     "order": 2,
     "code": "ARG02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Emiliano Martinez",
       "birthDate": "1992-09-01",
@@ -19498,7 +18776,6 @@
     "order": 3,
     "code": "ARG03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nahuel Molina",
       "birthDate": "1998-04-01",
@@ -19525,7 +18802,6 @@
     "order": 4,
     "code": "ARG04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cristian Romero",
       "birthDate": "1998-04-02",
@@ -19552,7 +18828,6 @@
     "order": 5,
     "code": "ARG05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolas Otamendi",
       "birthDate": "1988-02-01",
@@ -19579,7 +18854,6 @@
     "order": 6,
     "code": "ARG06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolas Tagliafico",
       "birthDate": "1992-08-03",
@@ -19606,7 +18880,6 @@
     "order": 7,
     "code": "ARG07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leonardo Balerdi",
       "birthDate": "1999-01-02",
@@ -19633,7 +18906,6 @@
     "order": 8,
     "code": "ARG08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Enzo Fernandez",
       "birthDate": "2001-01-01",
@@ -19660,7 +18932,6 @@
     "order": 9,
     "code": "ARG09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexis Mac Allister",
       "birthDate": "1998-12-02",
@@ -19687,7 +18958,6 @@
     "order": 10,
     "code": "ARG10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rodrigo De Paul",
       "birthDate": "1994-05-02",
@@ -19714,7 +18984,6 @@
     "order": 11,
     "code": "ARG11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Exequiel Palacios",
       "birthDate": "1998-10-01",
@@ -19741,7 +19010,6 @@
     "order": 12,
     "code": "ARG12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Leandro Paredes",
       "birthDate": "1994-06-02",
@@ -19768,7 +19036,6 @@
     "order": 13,
     "code": "ARG13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -19795,7 +19062,6 @@
     "order": 14,
     "code": "ARG14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nico Paz",
       "birthDate": "2004-09-01",
@@ -19822,7 +19088,6 @@
     "order": 15,
     "code": "ARG15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Franco Mastantuono",
       "birthDate": "2007-08-01",
@@ -19849,7 +19114,6 @@
     "order": 16,
     "code": "ARG16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nico Gonzalez",
       "birthDate": "1998-04-01",
@@ -19876,7 +19140,6 @@
     "order": 17,
     "code": "ARG17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lionel Messi",
       "birthDate": "1987-06-02",
@@ -19903,7 +19166,6 @@
     "order": 18,
     "code": "ARG18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lautaro Martinez",
       "birthDate": "1997-08-02",
@@ -19930,7 +19192,6 @@
     "order": 19,
     "code": "ARG19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Julian Alvarez",
       "birthDate": "2000-01-03",
@@ -19957,7 +19218,6 @@
     "order": 20,
     "code": "ARG20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Giuliano Simeone",
       "birthDate": "2002-12-01",
@@ -19984,7 +19244,6 @@
     "order": 1,
     "code": "AUT01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Áustria",
       "birthDate": "1900-01-01",
@@ -20011,7 +19270,6 @@
     "order": 2,
     "code": "AUT02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexander Schlager",
       "birthDate": "1996-02-01",
@@ -20038,7 +19296,6 @@
     "order": 3,
     "code": "AUT03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrick Pentz",
       "birthDate": "1997-01-01",
@@ -20065,7 +19322,6 @@
     "order": 4,
     "code": "AUT04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "David Alaba",
       "birthDate": "1992-06-02",
@@ -20092,7 +19348,6 @@
     "order": 5,
     "code": "AUT05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kevin Danso",
       "birthDate": "1998-09-01",
@@ -20119,7 +19374,6 @@
     "order": 6,
     "code": "AUT06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Philipp Lienhart",
       "birthDate": "1996-07-01",
@@ -20146,7 +19400,6 @@
     "order": 7,
     "code": "AUT07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Stefan Posch",
       "birthDate": "1997-05-01",
@@ -20173,7 +19426,6 @@
     "order": 8,
     "code": "AUT08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Phillipp Mwene",
       "birthDate": "1994-01-02",
@@ -20200,7 +19452,6 @@
     "order": 9,
     "code": "AUT09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexander Prass",
       "birthDate": "2001-05-02",
@@ -20227,7 +19478,6 @@
     "order": 10,
     "code": "AUT10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Xaver Schlager",
       "birthDate": "1997-09-02",
@@ -20254,7 +19504,6 @@
     "order": 11,
     "code": "AUT11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marcel Sabitzer",
       "birthDate": "1994-03-01",
@@ -20281,7 +19530,6 @@
     "order": 12,
     "code": "AUT12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Konrad Laimer",
       "birthDate": "1997-05-02",
@@ -20308,7 +19556,6 @@
     "order": 13,
     "code": "AUT13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -20335,7 +19582,6 @@
     "order": 14,
     "code": "AUT14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Florian Grillitsch",
       "birthDate": "1995-08-01",
@@ -20362,7 +19608,6 @@
     "order": 15,
     "code": "AUT15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nicolas Seiwald",
       "birthDate": "2001-05-01",
@@ -20389,7 +19634,6 @@
     "order": 16,
     "code": "AUT16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Romano Schmid",
       "birthDate": "2000-01-02",
@@ -20416,7 +19660,6 @@
     "order": 17,
     "code": "AUT17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Patrick Wimmer",
       "birthDate": "2001-05-03",
@@ -20443,7 +19686,6 @@
     "order": 18,
     "code": "AUT18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Christoph Baumgartner",
       "birthDate": "1999-08-01",
@@ -20470,7 +19712,6 @@
     "order": 19,
     "code": "AUT19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michael Gregoritsch",
       "birthDate": "1994-04-01",
@@ -20497,7 +19738,6 @@
     "order": 20,
     "code": "AUT20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marko Arnautović",
       "birthDate": "1989-04-01",
@@ -20524,7 +19764,6 @@
     "order": 1,
     "code": "ALG01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Argélia",
       "birthDate": "1900-01-01",
@@ -20551,7 +19790,6 @@
     "order": 2,
     "code": "ALG02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexis Guendouz",
       "birthDate": "1996-01-02",
@@ -20578,7 +19816,6 @@
     "order": 3,
     "code": "ALG03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ramy Bensebaini",
       "birthDate": "1995-04-01",
@@ -20605,7 +19842,6 @@
     "order": 4,
     "code": "ALG04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Youcef Atal",
       "birthDate": "1996-05-01",
@@ -20632,7 +19868,6 @@
     "order": 5,
     "code": "ALG05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rayan Aït-Nouri",
       "birthDate": "2001-06-01",
@@ -20659,7 +19894,6 @@
     "order": 6,
     "code": "ALG06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohamed Amine Tougai",
       "birthDate": "2000-01-02",
@@ -20686,7 +19920,6 @@
     "order": 7,
     "code": "ALG07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aïssa Mandi",
       "birthDate": "1991-10-02",
@@ -20713,7 +19946,6 @@
     "order": 8,
     "code": "ALG08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismael Bennacer",
       "birthDate": "1997-12-01",
@@ -20740,7 +19972,6 @@
     "order": 9,
     "code": "ALG09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Houssem Aouar",
       "birthDate": "1998-06-03",
@@ -20767,7 +19998,6 @@
     "order": 10,
     "code": "ALG10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Hicham Boudaoui",
       "birthDate": "1999-09-02",
@@ -20794,7 +20024,6 @@
     "order": 11,
     "code": "ALG11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ramiz Zerrouki",
       "birthDate": "1998-05-02",
@@ -20821,7 +20050,6 @@
     "order": 12,
     "code": "ALG12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nabil Bentaleb",
       "birthDate": "1994-11-02",
@@ -20848,7 +20076,6 @@
     "order": 13,
     "code": "ALG13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -20875,7 +20102,6 @@
     "order": 14,
     "code": "ALG14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Farés Chaibi",
       "birthDate": "2002-11-02",
@@ -20902,7 +20128,6 @@
     "order": 15,
     "code": "ALG15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Riyad Mahrez",
       "birthDate": "1991-02-02",
@@ -20929,7 +20154,6 @@
     "order": 16,
     "code": "ALG16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Said Benrahma",
       "birthDate": "1995-08-01",
@@ -20956,7 +20180,6 @@
     "order": 17,
     "code": "ALG17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Anis Hadj Moussa",
       "birthDate": "2002-02-01",
@@ -20983,7 +20206,6 @@
     "order": 18,
     "code": "ALG18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amine Gouiri",
       "birthDate": "2000-02-01",
@@ -21010,7 +20232,6 @@
     "order": 19,
     "code": "ALG19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Baghdad Bounedjah",
       "birthDate": "1991-11-02",
@@ -21037,7 +20258,6 @@
     "order": 20,
     "code": "ALG20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammed Amoura",
       "birthDate": "2000-05-01",
@@ -21064,7 +20284,6 @@
     "order": 1,
     "code": "JOR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Jordânia",
       "birthDate": "1900-01-01",
@@ -21091,7 +20310,6 @@
     "order": 2,
     "code": "JOR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yazeed Abulaila",
       "birthDate": "1993-01-01",
@@ -21118,7 +20336,6 @@
     "order": 3,
     "code": "JOR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ihsan Haddad",
       "birthDate": "1994-02-01",
@@ -21145,7 +20362,6 @@
     "order": 4,
     "code": "JOR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammad Abu Hashish",
       "birthDate": "1995-05-01",
@@ -21172,7 +20388,6 @@
     "order": 5,
     "code": "JOR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yazan Al-Arab",
       "birthDate": "1996-01-03",
@@ -21199,7 +20414,6 @@
     "order": 6,
     "code": "JOR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdallah Nasib",
       "birthDate": "1994-02-02",
@@ -21226,7 +20440,6 @@
     "order": 7,
     "code": "JOR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Saleem Obaid",
       "birthDate": "1992-01-01",
@@ -21253,7 +20466,6 @@
     "order": 8,
     "code": "JOR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammad Abualnadi",
       "birthDate": "1995-06-15",
@@ -21280,7 +20492,6 @@
     "order": 9,
     "code": "JOR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ibrahim Saadeh",
       "birthDate": "1995-06-15",
@@ -21307,7 +20518,6 @@
     "order": 10,
     "code": "JOR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nizar Al-Rashdan",
       "birthDate": "1999-03-02",
@@ -21334,7 +20544,6 @@
     "order": 11,
     "code": "JOR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Noor Al-Rawabdeh",
       "birthDate": "1997-02-02",
@@ -21361,7 +20570,6 @@
     "order": 12,
     "code": "JOR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohannad Abu Taha",
       "birthDate": "2003-02-01",
@@ -21388,7 +20596,6 @@
     "order": 13,
     "code": "JOR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -21415,7 +20622,6 @@
     "order": 14,
     "code": "JOR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Amer Jamous",
       "birthDate": "2002-07-01",
@@ -21442,7 +20648,6 @@
     "order": 15,
     "code": "JOR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Musa Al-Taamari",
       "birthDate": "1997-06-01",
@@ -21469,7 +20674,6 @@
     "order": 16,
     "code": "JOR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yazan Al-Naimat",
       "birthDate": "1999-06-01",
@@ -21496,7 +20700,6 @@
     "order": 17,
     "code": "JOR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mahmoud Al-Mardi",
       "birthDate": "1993-10-01",
@@ -21523,7 +20726,6 @@
     "order": 18,
     "code": "JOR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ali Olwan",
       "birthDate": "2000-03-02",
@@ -21550,7 +20752,6 @@
     "order": 19,
     "code": "JOR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammad Abu Zrayq",
       "birthDate": "1997-12-03",
@@ -21577,7 +20778,6 @@
     "order": 20,
     "code": "JOR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ibrahim Sabra",
       "birthDate": "2006-02-01",
@@ -21604,7 +20804,6 @@
     "order": 1,
     "code": "POR01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Portugal",
       "birthDate": "1900-01-01",
@@ -21631,7 +20830,6 @@
     "order": 2,
     "code": "POR02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diogo Costa",
       "birthDate": "1999-09-01",
@@ -21658,7 +20856,6 @@
     "order": 3,
     "code": "POR03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "José Sá",
       "birthDate": "1993-01-17",
@@ -21685,7 +20882,6 @@
     "order": 4,
     "code": "POR04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ruben Dias",
       "birthDate": "1997-05-01",
@@ -21712,7 +20908,6 @@
     "order": 5,
     "code": "POR05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "João Cancelo",
       "birthDate": "1994-05-02",
@@ -21739,7 +20934,6 @@
     "order": 6,
     "code": "POR06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Diogo Dalot",
       "birthDate": "1999-03-01",
@@ -21766,7 +20960,6 @@
     "order": 7,
     "code": "POR07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nuno Mendes",
       "birthDate": "2002-06-01",
@@ -21793,7 +20986,6 @@
     "order": 8,
     "code": "POR08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gonçalo Inácio",
       "birthDate": "2001-08-02",
@@ -21820,7 +21012,6 @@
     "order": 9,
     "code": "POR09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bernardo Silva",
       "birthDate": "2001-05-03",
@@ -21847,7 +21038,6 @@
     "order": 10,
     "code": "POR10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bruno Fernandes",
       "birthDate": "1994-09-01",
@@ -21874,7 +21064,6 @@
     "order": 11,
     "code": "POR11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ruben Neves",
       "birthDate": "1997-03-01",
@@ -21901,7 +21090,6 @@
     "order": 12,
     "code": "POR12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Vitinha",
       "birthDate": "1999-01-03",
@@ -21928,7 +21116,6 @@
     "order": 13,
     "code": "POR13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -21955,7 +21142,6 @@
     "order": 14,
     "code": "POR14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "João Neves",
       "birthDate": "2004-09-02",
@@ -21982,7 +21168,6 @@
     "order": 15,
     "code": "POR15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cristiano Ronaldo",
       "birthDate": "1985-02-01",
@@ -22009,7 +21194,6 @@
     "order": 16,
     "code": "POR16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Francisco Trincao",
       "birthDate": "1999-12-02",
@@ -22036,7 +21220,6 @@
     "order": 17,
     "code": "POR17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "João Felix",
       "birthDate": "1999-11-01",
@@ -22063,7 +21246,6 @@
     "order": 18,
     "code": "POR18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gonçalo Ramos",
       "birthDate": "2001-06-02",
@@ -22090,7 +21272,6 @@
     "order": 19,
     "code": "POR19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Pedro Neto",
       "birthDate": "2000-03-01",
@@ -22117,7 +21298,6 @@
     "order": 20,
     "code": "POR20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rafael Leão",
       "birthDate": "1999-06-01",
@@ -22144,7 +21324,6 @@
     "order": 1,
     "code": "UZB01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Uzbequistão",
       "birthDate": "1900-01-01",
@@ -22171,7 +21350,6 @@
     "order": 2,
     "code": "UZB02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Utkir Yusupov",
       "birthDate": "1991-01-01",
@@ -22198,7 +21376,6 @@
     "order": 3,
     "code": "UZB03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Farrukh Savfiev",
       "birthDate": "1995-06-15",
@@ -22225,7 +21402,6 @@
     "order": 4,
     "code": "UZB04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Sherzod Nasrullaev",
       "birthDate": "1998-07-02",
@@ -22252,7 +21428,6 @@
     "order": 5,
     "code": "UZB05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Umar Eshmurodov",
       "birthDate": "1992-11-03",
@@ -22279,7 +21454,6 @@
     "order": 6,
     "code": "UZB06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Husniddin Aliqulov",
       "birthDate": "1999-04-01",
@@ -22306,7 +21480,6 @@
     "order": 7,
     "code": "UZB07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Rustamjon Ashurmatov",
       "birthDate": "1995-06-15",
@@ -22333,7 +21506,6 @@
     "order": 8,
     "code": "UZB08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Khojiakbar Alijonov",
       "birthDate": "1997-04-01",
@@ -22360,7 +21532,6 @@
     "order": 9,
     "code": "UZB09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdukodir Khusanov",
       "birthDate": "2004-02-02",
@@ -22387,7 +21558,6 @@
     "order": 10,
     "code": "UZB10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Odiljon Hamrobekov",
       "birthDate": "1996-02-01",
@@ -22414,7 +21584,6 @@
     "order": 11,
     "code": "UZB11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Otabek Shukurov",
       "birthDate": "1996-06-02",
@@ -22441,7 +21610,6 @@
     "order": 12,
     "code": "UZB12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jamshid Iskanderov",
       "birthDate": "1993-10-01",
@@ -22468,7 +21636,6 @@
     "order": 13,
     "code": "UZB13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -22495,7 +21662,6 @@
     "order": 14,
     "code": "UZB14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Azizbek Turgunboev",
       "birthDate": "1994-10-01",
@@ -22522,7 +21688,6 @@
     "order": 15,
     "code": "UZB15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Khojimat Erkinov",
       "birthDate": "2001-05-02",
@@ -22549,7 +21714,6 @@
     "order": 16,
     "code": "UZB16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Eldor Shomurodov",
       "birthDate": "1995-06-02",
@@ -22576,7 +21740,6 @@
     "order": 17,
     "code": "UZB17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Oston Urunov",
       "birthDate": "2000-12-01",
@@ -22603,7 +21766,6 @@
     "order": 18,
     "code": "UZB18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jaloliddin Masharipov",
       "birthDate": "1993-09-01",
@@ -22630,7 +21792,6 @@
     "order": 19,
     "code": "UZB19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Igor Sergeev",
       "birthDate": "1993-04-03",
@@ -22657,7 +21818,6 @@
     "order": 20,
     "code": "UZB20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abbosbek Fayzullaev",
       "birthDate": "2003-10-01",
@@ -22684,7 +21844,6 @@
     "order": 1,
     "code": "COL01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Colômbia",
       "birthDate": "1900-01-01",
@@ -22711,7 +21870,6 @@
     "order": 2,
     "code": "COL02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Camilo Vargas",
       "birthDate": "1989-03-01",
@@ -22738,7 +21896,6 @@
     "order": 3,
     "code": "COL03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "David Ospina",
       "birthDate": "1988-08-03",
@@ -22765,7 +21922,6 @@
     "order": 4,
     "code": "COL04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dávinson Sánchez",
       "birthDate": "1996-06-01",
@@ -22792,7 +21948,6 @@
     "order": 5,
     "code": "COL05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yerry Mina",
       "birthDate": "1994-09-02",
@@ -22819,7 +21974,6 @@
     "order": 6,
     "code": "COL06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Daniel Munoz",
       "birthDate": "1996-05-02",
@@ -22846,7 +22000,6 @@
     "order": 7,
     "code": "COL07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Johan Mojica",
       "birthDate": "1992-08-02",
@@ -22873,7 +22026,6 @@
     "order": 8,
     "code": "COL08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jhon Lucumí",
       "birthDate": "1998-06-02",
@@ -22900,7 +22052,6 @@
     "order": 9,
     "code": "COL09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Santiago Arias",
       "birthDate": "1992-01-01",
@@ -22927,7 +22078,6 @@
     "order": 10,
     "code": "COL10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jefferson Lerma",
       "birthDate": "1994-10-02",
@@ -22954,7 +22104,6 @@
     "order": 11,
     "code": "COL11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kevin Castaño",
       "birthDate": "2000-09-02",
@@ -22981,7 +22130,6 @@
     "order": 12,
     "code": "COL12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Richard Rios",
       "birthDate": "1986-06-01",
@@ -23008,7 +22156,6 @@
     "order": 13,
     "code": "COL13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -23035,7 +22182,6 @@
     "order": 14,
     "code": "COL14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "James Rodriguez",
       "birthDate": "1991-07-01",
@@ -23062,7 +22208,6 @@
     "order": 15,
     "code": "COL15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Juan Fernando Quintero",
       "birthDate": "1993-01-01",
@@ -23089,7 +22234,6 @@
     "order": 16,
     "code": "COL16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jorge Carrascal",
       "birthDate": "1998-05-02",
@@ -23116,7 +22260,6 @@
     "order": 17,
     "code": "COL17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jhon Arias",
       "birthDate": "1997-09-02",
@@ -23143,7 +22286,6 @@
     "order": 18,
     "code": "COL18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jhon Cordova",
       "birthDate": "1995-06-15",
@@ -23170,7 +22312,6 @@
     "order": 19,
     "code": "COL19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luis Suarez",
       "birthDate": "1987-01-02",
@@ -23197,7 +22338,6 @@
     "order": 20,
     "code": "COL20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luis Diaz",
       "birthDate": "1995-06-15",
@@ -23224,7 +22364,6 @@
     "order": 1,
     "code": "COD01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "RD Congo",
       "birthDate": "1900-01-01",
@@ -23251,7 +22390,6 @@
     "order": 2,
     "code": "COD02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lionel Mpasi-Nzau",
       "birthDate": "1994-08-01",
@@ -23278,7 +22416,6 @@
     "order": 3,
     "code": "COD03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aaron Wan-Bissaka",
       "birthDate": "1997-11-02",
@@ -23305,7 +22442,6 @@
     "order": 4,
     "code": "COD04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Axel Tuanzebe",
       "birthDate": "1997-11-01",
@@ -23332,7 +22468,6 @@
     "order": 5,
     "code": "COD05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Arthur Masuaku",
       "birthDate": "1993-11-01",
@@ -23359,7 +22494,6 @@
     "order": 6,
     "code": "COD06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Chancel Mbemba",
       "birthDate": "1994-08-01",
@@ -23386,7 +22520,6 @@
     "order": 7,
     "code": "COD07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joris Kayembe",
       "birthDate": "1994-08-01",
@@ -23413,7 +22546,6 @@
     "order": 8,
     "code": "COD08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Charles Pickel",
       "birthDate": "1997-05-01",
@@ -23440,7 +22572,6 @@
     "order": 9,
     "code": "COD09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ngal'ayel Mukau",
       "birthDate": "2004-11-01",
@@ -23467,7 +22598,6 @@
     "order": 10,
     "code": "COD10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Edo Kayembe",
       "birthDate": "1998-08-01",
@@ -23494,7 +22624,6 @@
     "order": 11,
     "code": "COD11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Samuel Moutoussamy",
       "birthDate": "1996-08-01",
@@ -23521,7 +22650,6 @@
     "order": 12,
     "code": "COD12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Noah Sadiki",
       "birthDate": "2004-12-01",
@@ -23548,7 +22676,6 @@
     "order": 13,
     "code": "COD13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -23575,7 +22702,6 @@
     "order": 14,
     "code": "COD14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Théo Bongonda",
       "birthDate": "1995-11-02",
@@ -23602,7 +22728,6 @@
     "order": 15,
     "code": "COD15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Meschak Elia",
       "birthDate": "1997-08-01",
@@ -23629,7 +22754,6 @@
     "order": 16,
     "code": "COD16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Yoane Wissa",
       "birthDate": "1996-09-01",
@@ -23656,7 +22780,6 @@
     "order": 17,
     "code": "COD17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Brian Cipenga",
       "birthDate": "1998-01-01",
@@ -23683,7 +22806,6 @@
     "order": 18,
     "code": "COD18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Fiston Mayele",
       "birthDate": "1994-06-02",
@@ -23710,7 +22832,6 @@
     "order": 19,
     "code": "COD19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cédric Bakambu",
       "birthDate": "1991-04-01",
@@ -23737,7 +22858,6 @@
     "order": 20,
     "code": "COD20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Nathanaël Mbuku",
       "birthDate": "2002-03-01",
@@ -23764,7 +22884,6 @@
     "order": 1,
     "code": "ENG01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Inglaterra",
       "birthDate": "1900-01-01",
@@ -23791,7 +22910,6 @@
     "order": 2,
     "code": "ENG02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jordan Pickford",
       "birthDate": "1994-03-01",
@@ -23818,7 +22936,6 @@
     "order": 3,
     "code": "ENG03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "John Stones",
       "birthDate": "1994-05-02",
@@ -23845,7 +22962,6 @@
     "order": 4,
     "code": "ENG04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marc Guéhi",
       "birthDate": "2000-07-01",
@@ -23872,7 +22988,6 @@
     "order": 5,
     "code": "ENG05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ezri Konsa",
       "birthDate": "1997-10-02",
@@ -23899,7 +23014,6 @@
     "order": 6,
     "code": "ENG06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Trent Alexander-Arnold",
       "birthDate": "1998-10-01",
@@ -23926,7 +23040,6 @@
     "order": 7,
     "code": "ENG07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Reece James",
       "birthDate": "1999-12-01",
@@ -23953,7 +23066,6 @@
     "order": 8,
     "code": "ENG08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dan Burn",
       "birthDate": "1992-05-01",
@@ -23980,7 +23092,6 @@
     "order": 9,
     "code": "ENG09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jordan Henderson",
       "birthDate": "1990-06-01",
@@ -24007,7 +23118,6 @@
     "order": 10,
     "code": "ENG10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Declan Rice",
       "birthDate": "1999-01-01",
@@ -24034,7 +23144,6 @@
     "order": 11,
     "code": "ENG11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jude Bellingham",
       "birthDate": "2003-06-02",
@@ -24061,7 +23170,6 @@
     "order": 12,
     "code": "ENG12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cole Palmer",
       "birthDate": "2002-05-01",
@@ -24088,7 +23196,6 @@
     "order": 13,
     "code": "ENG13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -24115,7 +23222,6 @@
     "order": 14,
     "code": "ENG14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Morgan Rogers",
       "birthDate": "2002-07-01",
@@ -24142,7 +23248,6 @@
     "order": 15,
     "code": "ENG15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Anthony Gordon",
       "birthDate": "2001-02-02",
@@ -24169,7 +23274,6 @@
     "order": 16,
     "code": "ENG16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Phil Foden",
       "birthDate": "2000-05-02",
@@ -24196,7 +23300,6 @@
     "order": 17,
     "code": "ENG17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Bukayo Saka",
       "birthDate": "2001-09-01",
@@ -24223,7 +23326,6 @@
     "order": 18,
     "code": "ENG18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Harry Kane",
       "birthDate": "1993-07-02",
@@ -24250,7 +23352,6 @@
     "order": 19,
     "code": "ENG19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marcus Rashford",
       "birthDate": "1997-10-03",
@@ -24277,7 +23378,6 @@
     "order": 20,
     "code": "ENG20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ollie Watkins",
       "birthDate": "1995-12-03",
@@ -24304,7 +23404,6 @@
     "order": 1,
     "code": "GHA01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Gana",
       "birthDate": "1900-01-01",
@@ -24331,7 +23430,6 @@
     "order": 2,
     "code": "GHA02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lawrence Ati Zigi",
       "birthDate": "1996-11-02",
@@ -24358,7 +23456,6 @@
     "order": 3,
     "code": "GHA03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Tariq Lamptey",
       "birthDate": "2000-09-03",
@@ -24385,7 +23482,6 @@
     "order": 4,
     "code": "GHA04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammed Salisu",
       "birthDate": "1999-04-01",
@@ -24412,7 +23508,6 @@
     "order": 5,
     "code": "GHA05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alidu Seidu",
       "birthDate": "2000-06-01",
@@ -24439,7 +23534,6 @@
     "order": 6,
     "code": "GHA06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alexander Djiku",
       "birthDate": "1994-08-01",
@@ -24466,7 +23560,6 @@
     "order": 7,
     "code": "GHA07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Gideon Mensah",
       "birthDate": "1998-07-01",
@@ -24493,7 +23586,6 @@
     "order": 8,
     "code": "GHA08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Caleb Yirenkyi",
       "birthDate": "2006-01-01",
@@ -24520,7 +23612,6 @@
     "order": 9,
     "code": "GHA09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Abdul Issahaku Fatawu",
       "birthDate": "1995-06-15",
@@ -24547,7 +23638,6 @@
     "order": 10,
     "code": "GHA10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Thomas Partey",
       "birthDate": "1993-06-13",
@@ -24574,7 +23664,6 @@
     "order": 11,
     "code": "GHA11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Salis Abdul Samed",
       "birthDate": "2000-03-02",
@@ -24601,7 +23690,6 @@
     "order": 12,
     "code": "GHA12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kamaldeen Sulemana",
       "birthDate": "2002-02-01",
@@ -24628,7 +23716,6 @@
     "order": 13,
     "code": "GHA13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -24655,7 +23742,6 @@
     "order": 14,
     "code": "GHA14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mohammed Kudus",
       "birthDate": "2000-08-01",
@@ -24682,7 +23768,6 @@
     "order": 15,
     "code": "GHA15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Inaki Williams",
       "birthDate": "1994-06-01",
@@ -24709,7 +23794,6 @@
     "order": 16,
     "code": "GHA16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jordan Ayew",
       "birthDate": "1991-09-01",
@@ -24736,7 +23820,6 @@
     "order": 17,
     "code": "GHA17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "André Ayew",
       "birthDate": "1989-12-01",
@@ -24763,7 +23846,6 @@
     "order": 18,
     "code": "GHA18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Joseph Paintsil",
       "birthDate": "1998-02-01",
@@ -24790,7 +23872,6 @@
     "order": 19,
     "code": "GHA19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Osman Bukari",
       "birthDate": "1998-12-01",
@@ -24817,7 +23898,6 @@
     "order": 20,
     "code": "GHA20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Antoine Semenyo",
       "birthDate": "2000-01-01",
@@ -24844,7 +23924,6 @@
     "order": 1,
     "code": "CRO01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Croácia",
       "birthDate": "1900-01-01",
@@ -24871,7 +23950,6 @@
     "order": 2,
     "code": "CRO02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Dominik Livaković",
       "birthDate": "1995-01-01",
@@ -24898,7 +23976,6 @@
     "order": 3,
     "code": "CRO03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Duje Caleta-Car",
       "birthDate": "1996-09-01",
@@ -24925,7 +24002,6 @@
     "order": 4,
     "code": "CRO04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Josko Gvardiol",
       "birthDate": "2002-01-02",
@@ -24952,7 +24028,6 @@
     "order": 5,
     "code": "CRO05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Josip Stanišić",
       "birthDate": "2000-04-01",
@@ -24979,7 +24054,6 @@
     "order": 6,
     "code": "CRO06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luka Vušković",
       "birthDate": "2007-02-02",
@@ -25006,7 +24080,6 @@
     "order": 7,
     "code": "CRO07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Josip Sutalo",
       "birthDate": "2000-02-02",
@@ -25033,7 +24106,6 @@
     "order": 8,
     "code": "CRO08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Kristijan Jakic",
       "birthDate": "1997-05-01",
@@ -25060,7 +24132,6 @@
     "order": 9,
     "code": "CRO09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luka Modrić",
       "birthDate": "1985-09-01",
@@ -25087,7 +24158,6 @@
     "order": 10,
     "code": "CRO10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mateo Kovacic",
       "birthDate": "1994-05-01",
@@ -25114,7 +24184,6 @@
     "order": 11,
     "code": "CRO11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Martin Baturina",
       "birthDate": "2003-02-01",
@@ -25141,7 +24210,6 @@
     "order": 12,
     "code": "CRO12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Lovro Majer",
       "birthDate": "1998-01-01",
@@ -25168,7 +24236,6 @@
     "order": 13,
     "code": "CRO13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -25195,7 +24262,6 @@
     "order": 14,
     "code": "CRO14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Mario Pasalic",
       "birthDate": "1995-02-01",
@@ -25222,7 +24288,6 @@
     "order": 15,
     "code": "CRO15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Petar Sucic",
       "birthDate": "2003-10-02",
@@ -25249,7 +24314,6 @@
     "order": 16,
     "code": "CRO16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ivan Perišić",
       "birthDate": "1989-02-01",
@@ -25276,7 +24340,6 @@
     "order": 17,
     "code": "CRO17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Marco Pasalic",
       "birthDate": "2000-09-01",
@@ -25303,7 +24366,6 @@
     "order": 18,
     "code": "CRO18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ante Budimir",
       "birthDate": "1991-07-02",
@@ -25330,7 +24392,6 @@
     "order": 19,
     "code": "CRO19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Andrej Kramarić",
       "birthDate": "1991-06-01",
@@ -25357,7 +24418,6 @@
     "order": 20,
     "code": "CRO20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Franjo Ivanovic",
       "birthDate": "2003-10-01",
@@ -25384,7 +24444,6 @@
     "order": 1,
     "code": "PAN01",
     "type": "badge",
-    "rarity": "normal",
     "player": {
       "name": "Panamá",
       "birthDate": "1900-01-01",
@@ -25411,7 +24470,6 @@
     "order": 2,
     "code": "PAN02",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Orlando Mosquera",
       "birthDate": "1994-12-02",
@@ -25438,7 +24496,6 @@
     "order": 3,
     "code": "PAN03",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Luis Mejia",
       "birthDate": "1991-03-01",
@@ -25465,7 +24522,6 @@
     "order": 4,
     "code": "PAN04",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Fidel Escobar",
       "birthDate": "1995-01-01",
@@ -25492,7 +24548,6 @@
     "order": 5,
     "code": "PAN05",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Andres Andrade",
       "birthDate": "1998-10-01",
@@ -25519,7 +24574,6 @@
     "order": 6,
     "code": "PAN06",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Michael Amir Murillo",
       "birthDate": "1996-02-01",
@@ -25546,7 +24600,6 @@
     "order": 7,
     "code": "PAN07",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Eric Davis",
       "birthDate": "1932-02-02",
@@ -25573,7 +24626,6 @@
     "order": 8,
     "code": "PAN08",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jose Cordoba",
       "birthDate": "2001-03-01",
@@ -25600,7 +24652,6 @@
     "order": 9,
     "code": "PAN09",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cesar Blackman",
       "birthDate": "1975-01-01",
@@ -25627,7 +24678,6 @@
     "order": 10,
     "code": "PAN10",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cristian Martinez",
       "birthDate": "1989-10-01",
@@ -25654,7 +24704,6 @@
     "order": 11,
     "code": "PAN11",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Aníbal Godoy",
       "birthDate": "1990-02-01",
@@ -25681,7 +24730,6 @@
     "order": 12,
     "code": "PAN12",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Adalberto Carrasquilla",
       "birthDate": "1998-11-02",
@@ -25708,7 +24756,6 @@
     "order": 13,
     "code": "PAN13",
     "type": "team",
-    "rarity": "normal",
     "player": {
       "name": "National Team Photo",
       "birthDate": "1900-01-01",
@@ -25735,7 +24782,6 @@
     "order": 14,
     "code": "PAN14",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Édgar Bárcenas",
       "birthDate": "1993-10-02",
@@ -25762,7 +24808,6 @@
     "order": 15,
     "code": "PAN15",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Carlos Harvey",
       "birthDate": "2000-02-01",
@@ -25789,7 +24834,6 @@
     "order": 16,
     "code": "PAN16",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Ismael Díaz",
       "birthDate": "1997-05-01",
@@ -25816,7 +24860,6 @@
     "order": 17,
     "code": "PAN17",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jose Fajardo",
       "birthDate": "1993-08-01",
@@ -25843,7 +24886,6 @@
     "order": 18,
     "code": "PAN18",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Cecilio Waterman",
       "birthDate": "1991-04-01",
@@ -25870,7 +24912,6 @@
     "order": 19,
     "code": "PAN19",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Jose Luiz Rodriguez",
       "birthDate": "1995-06-15",
@@ -25897,7 +24938,6 @@
     "order": 20,
     "code": "PAN20",
     "type": "player",
-    "rarity": "normal",
     "player": {
       "name": "Alberto Quintero",
       "birthDate": "1987-12-01",

@@ -1,8 +1,9 @@
 import { serverTimestamp, Timestamp, getDoc, setDoc, doc } from "firebase/firestore";
 import { type UseMutationOptions, useMutation } from "@tanstack/react-query";
 
-import type { StickerRarity, Sticker } from "@/@types/sticker";
+import type { StickerRarity } from "@/@types/collection";
 import type { Collection } from "@/@types/collection";
+import type { Sticker } from "@/@types/sticker";
 
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
@@ -24,23 +25,16 @@ export const upsertCollectionItemService = async ({ stickerRarity, sticker }: Up
     throw new Error("Sua sessão expirou. Entre novamente.");
   }
 
-  const firestore = getFirestoreClient();
   const userId = currentUser.uid;
-  const userRef = doc(firestore, "users", userId);
-  const stickerRef = doc(firestore, "stickers", sticker.id);
-  const teamRef = doc(firestore, "teams", sticker.team.id);
-
   const collectionId = crypto.randomUUID();
-  const collectionRef = doc(firestore, "collections", collectionId);
+
+  const collectionRef = doc(getFirestoreClient(), "collections", collectionId);
 
   await setDoc(collectionRef, {
     createdAt: serverTimestamp(),
-    teamId: sticker.team.id,
-    stickerId: sticker.id,
+    id: collectionId,
     stickerRarity,
-    stickerRef,
-    teamRef,
-    userRef,
+    sticker,
     userId
   });
 
@@ -58,13 +52,9 @@ export const upsertCollectionItemService = async ({ stickerRarity, sticker }: Up
 
   return {
     createdAt: data.createdAt,
-    teamId: sticker.team.id,
-    stickerId: sticker.id,
     id: collectionId,
     stickerRarity,
-    stickerRef,
-    teamRef,
-    userRef,
+    sticker,
     userId
   };
 };

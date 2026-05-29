@@ -2,7 +2,7 @@ import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
 
-import type { StickerRarity, Sticker } from "@/@types/sticker";
+import type { Sticker } from "@/@types/sticker";
 
 import { Typography } from "@/components/ui/typography";
 
@@ -11,14 +11,6 @@ export type ExtraStickerVariant = "normal" | "silver" | "bronze" | "gold";
 type ExtraStickerContextValue = {
   data: Sticker;
   variant: ExtraStickerVariant;
-};
-
-const rarityVariantMap: Record<StickerRarity, ExtraStickerVariant> = {
-  common: "normal",
-  normal: "normal",
-  bronze: "bronze",
-  silver: "silver",
-  gold: "gold"
 };
 
 const variants = tv({
@@ -75,7 +67,7 @@ const extraStickerSizeClasses = {
 } as const;
 
 export function ExtraStickerRoot({ size = "album", className, children, variant, data, ...props }: ExtraStickerRootProps) {
-  const resolvedVariant = variant ?? rarityVariantMap[data.rarity] ?? "normal";
+  const resolvedVariant = variant ?? "normal";
   const { content, root } = variants({ variant: resolvedVariant });
 
   return (

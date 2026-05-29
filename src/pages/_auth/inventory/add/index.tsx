@@ -3,7 +3,7 @@ import { useWatch, useForm, Form } from "react-hook-form";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
-import type { StickerRarity } from "@/@types/sticker";
+import type { StickerRarity } from "@/@types/collection";
 import type { Option } from "@/@types/option";
 
 import {

@@ -1,15 +1,13 @@
-import type { DocumentReference, Timestamp } from "firebase/firestore";
+import type { Timestamp } from "firebase/firestore";
 
-import type { StickerRarity } from "./sticker";
+import type { Sticker } from "./sticker";
+
+export type StickerRarity = "common" | "normal" | "bronze" | "silver" | "gold";
 
 export type Collection = {
   id: string;
   userId: string;
-  userRef: DocumentReference;
-  stickerId: string;
-  stickerRef: DocumentReference;
   stickerRarity: StickerRarity;
-  teamId: string;
-  teamRef: DocumentReference;
+  sticker: Sticker;
   createdAt: Timestamp;
 };

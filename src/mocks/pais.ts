@@ -34,7 +34,6 @@ export const paisStickers: PaisSticker[] = [
       },
       currentTeam: { name: "Clube atual do jogador (BRA)", fifaCode: "BRA" },
       team: mockBrazilTeam,
-      rarity: "normal",
       code: "PAIS001",
       type: "player",
       id: "pais-1",
@@ -58,7 +57,6 @@ export const paisStickers: PaisSticker[] = [
       team: mockBrazilTeam,
       code: "PAIS002",
       type: "player",
-      rarity: "gold",
       id: "pais-2",
       order: 2
     },
