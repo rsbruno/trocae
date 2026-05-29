@@ -1,9 +1,21 @@
-import { createFileRoute, Outlet } from "@tanstack/react-router";
+import { createFileRoute, redirect, Outlet } from "@tanstack/react-router";
+
+import { useAuthStore } from "@/stores/auth.store";
 
 import { BottomNavigation } from "./_components/bottom-navigation";
 
 export const Route = createFileRoute("/_auth")({
-  component: AuthLayout
+  beforeLoad: async () => {
+    if (!useAuthStore.persist.hasHydrated())
+      await new Promise<void>((resolve) => {
+        useAuthStore.persist.onFinishHydration(() => resolve());
+      });
+
+    const { session, user } = useAuthStore.getState();
+    if (!session || !user) throw redirect({ to: "/" });
+  },
+  component: AuthLayout,
+  staleTime: 0
 });
 
 function AuthLayout() {
