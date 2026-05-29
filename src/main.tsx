@@ -2,6 +2,7 @@ import { RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
 
 import "./styles/global.css";
+import { queryClient } from "@/infra/query-client/query-client";
 import { getFirebaseApp } from "@/infra/firebase/client";
 
 import { router } from "./routes/router";
@@ -14,4 +15,4 @@ if (!rootElement) {
   throw new Error("Root element with id 'root' not found.");
 }
 
-createRoot(rootElement).render(<RouterProvider router={router} />);
+createRoot(rootElement).render(<RouterProvider context={{ queryClient }} router={router} />);

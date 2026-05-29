@@ -1,5 +1,5 @@
+import { CaretRight, Funnel } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ChevronRight, Filter } from "lucide-react";
 import { useState } from "react";
 
 import {
@@ -149,7 +149,7 @@ function AlbumPage() {
           <PageHeaderSubtitle />
         </div>
         <PageHeaderActions>
-          <PageHeaderAction icon={<Filter size={18} />} />
+          <PageHeaderAction icon={<Funnel weight="regular" size={18} />} />
         </PageHeaderActions>
       </PageHeaderRoot>
       <div className="mb-5 px-4">
@@ -195,7 +195,7 @@ function AlbumPage() {
                               <ProgressIndicator />
                             </ProgressTrack>
                           </Progress>
-                          <ChevronRight className="text-ink-muted" size={14} />
+                          <CaretRight className="text-ink-muted" weight="regular" size={14} />
                         </button>
                       );
                     }}

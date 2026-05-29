@@ -1,4 +1,4 @@
-import { TrendingUp, Calendar, Settings, Share2, Target, Trophy, Award, Crown, Flame, Star } from "lucide-react";
+import { ShareNetwork, Calendar, TrendUp, Target, Trophy, Medal, Crown, Flame, Gear, Star } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import {
@@ -22,12 +22,12 @@ export const Route = createFileRoute("/_auth/profile/")({
 });
 
 const achievementIcons = {
-  trophy: <Trophy size={16} />,
-  target: <Target size={16} />,
-  flame: <Flame size={16} />,
-  crown: <Crown size={16} />,
-  award: <Award size={16} />,
-  star: <Star size={16} />
+  trophy: <Trophy weight="regular" size={16} />,
+  target: <Target weight="regular" size={16} />,
+  flame: <Flame weight="regular" size={16} />,
+  crown: <Crown weight="regular" size={16} />,
+  award: <Medal weight="regular" size={16} />,
+  star: <Star weight="regular" size={16} />
 } as const;
 
 function ProfilePage() {
@@ -39,7 +39,7 @@ function ProfilePage() {
           <PageHeaderSubtitle />
         </div>
         <PageHeaderActions>
-          <PageHeaderAction icon={<Settings size={18} />} />
+          <PageHeaderAction icon={<Gear weight="regular" size={18} />} />
         </PageHeaderActions>
       </PageHeaderRoot>
       <div className="flex flex-col gap-5 px-4">
@@ -70,10 +70,10 @@ function ProfilePage() {
               </Typography>
               <div className="text-ink-muted mt-1 flex gap-3 text-xs leading-4 font-medium">
                 <Typography className="flex items-center gap-1" variant="medium" color="subtle" as="span" size="xs">
-                  <Calendar size={10} /> Mai 2026
+                  <Calendar weight="regular" size={10} /> Mai 2026
                 </Typography>
                 <Typography className="flex items-center gap-1" variant="medium" color="subtle" as="span" size="xs">
-                  <Flame className="text-accent-highlight" size={10} /> 12 dias
+                  <Flame className="text-accent-highlight" weight="fill" size={10} /> 12 dias
                 </Typography>
               </div>
             </div>
@@ -81,7 +81,7 @@ function ProfilePage() {
               className="bg-surface-alt text-ink-secondary hover:bg-surface rounded-md p-2.5 transition-colors"
               type="button"
             >
-              <Share2 size={14} />
+              <ShareNetwork weight="regular" size={14} />
             </button>
           </div>
         </SurfaceCardRoot>
@@ -114,7 +114,7 @@ function ProfilePage() {
           <div className="bg-border h-10 w-px" />
           <div className="text-center">
             <Typography className="flex items-center justify-center gap-0.5" variant="semibold" color="accent" size="xl" as="p">
-              <TrendingUp size={14} /> 12
+              <TrendUp weight="regular" size={14} /> 12
             </Typography>
             <Typography variant="medium" color="subtle" size="xs" as="p">
               Streak

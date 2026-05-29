@@ -1,5 +1,5 @@
+import { ArrowsDownUp, Check, Hash } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowDownUp, Check, Hash } from "lucide-react";
 import { useState } from "react";
 
 import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
@@ -94,7 +94,7 @@ function InventoryPage() {
             type="button"
             size="icon"
           >
-            <ArrowDownUp size={14} />
+            <ArrowsDownUp weight="regular" size={14} />
           </ButtonRoot>
         </div>
 
@@ -123,12 +123,12 @@ function InventoryPage() {
                 <div className="flex items-center gap-2">
                   <ShowIf if={sticker.owned}>
                     <span className="bg-accent-primary/10 text-accent-primary flex size-7 items-center justify-center rounded-full">
-                      <Check strokeWidth={2.5} size={13} />
+                      <Check weight="bold" size={13} />
                     </span>
                   </ShowIf>
                   <ShowIf if={!sticker.owned}>
                     <span className="bg-surface-alt text-ink-muted flex size-7 items-center justify-center rounded-full">
-                      <Hash size={12} />
+                      <Hash weight="regular" size={12} />
                     </span>
                   </ShowIf>
                 </div>

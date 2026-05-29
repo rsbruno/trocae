@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { AlertCircle } from "lucide-react";
+import { WarningCircle } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
 export interface FieldContainerProps {
@@ -39,7 +39,7 @@ export function FieldContainer({ className, children, label, error, name, id }: 
 
       {error && (
         <p className="text-status-danger flex items-center gap-1.5 text-xs" id={`${inputId}-error`} role="alert">
-          <AlertCircle className="shrink-0" size={11} />
+          <WarningCircle className="shrink-0" weight="fill" size={11} />
           {error}
         </p>
       )}

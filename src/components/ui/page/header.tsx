@@ -1,6 +1,6 @@
 import { useRouter } from "@tanstack/react-router";
 import { type ReactNode, useContext } from "react";
-import { ChevronLeft } from "lucide-react";
+import { CaretLeft } from "@phosphor-icons/react";
 
 import { Typography } from "@/components/ui/typography";
 import { ShowIf } from "@/components/utils/show";
@@ -51,7 +51,7 @@ export function PageHeaderBackButton() {
       onClick={handleBack}
       type="button"
     >
-      <ChevronLeft strokeWidth={2.2} size={20} />
+      <CaretLeft weight="bold" size={20} />
     </button>
   );
 }

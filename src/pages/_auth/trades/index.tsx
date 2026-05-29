@@ -1,4 +1,4 @@
-import { ArrowLeftRight, Sparkles, Plus, Send } from "lucide-react";
+import { ArrowsLeftRight, PaperPlaneTilt, Sparkle, Plus } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
@@ -57,7 +57,7 @@ function TradesPage() {
                 {wishlistItems.length} desejadas
               </Typography>
               <ButtonRoot className="gap-1.5 rounded-md px-3.5 py-2 text-xs active:scale-[0.98] active:opacity-90" type="button">
-                <Plus size={13} />
+                <Plus weight="bold" size={13} />
                 <Typography variant="semibold" color="inverse" as="span" size="xs">
                   Adicionar
                 </Typography>
@@ -87,7 +87,7 @@ function TradesPage() {
                           </Typography>
                         </ShowIf>
                         <ShowIf if={item.rarity === "holographic"}>
-                          <Sparkles className="text-accent-highlight" size={10} />
+                          <Sparkle className="text-accent-highlight" weight="fill" size={10} />
                         </ShowIf>
                       </div>
                       <Typography variant="medium" color="subtle" as="span" size="xs">
@@ -143,7 +143,7 @@ function TradesPage() {
                         {offer.offering.name}
                       </Typography>
                     </div>
-                    <ArrowLeftRight className="text-ink-muted" size={16} />
+                    <ArrowsLeftRight className="text-ink-muted" weight="regular" size={16} />
                     <div className="bg-surface-alt flex-1 rounded-lg py-2.5 text-center">
                       <Typography variant="medium" color="subtle" size="xs" as="p">
                         Quer
@@ -186,7 +186,11 @@ function TradesPage() {
                       trade.success ? "bg-accent-primary/10 text-accent-primary" : "bg-status-danger/10 text-status-danger"
                     }`}
                   >
-                    {trade.success ? <ArrowLeftRight size={14} /> : <Send size={14} />}
+                    {trade.success ? (
+                      <ArrowsLeftRight weight="regular" size={14} />
+                    ) : (
+                      <PaperPlaneTilt weight="regular" size={14} />
+                    )}
                   </span>
                   <div className="flex-1">
                     <Typography variant="medium" color="base" size="sm" as="p">

@@ -27,3 +27,4 @@ firebase-service-account.json
 *.sw?
 .cursor
 .tanstack
+.pnpm-store

@@ -1,4 +1,4 @@
-import { ChevronRight, TrendingUp, Sparkles, Trophy, Bell } from "lucide-react";
+import { CaretRight, TrendUp, Sparkle, Trophy, Bell } from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import {
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/_auth/home/")({
 });
 
 const activityIcons = {
-  "trending-up": <TrendingUp size={14} />,
-  sparkles: <Sparkles size={14} />,
-  trophy: <Trophy size={14} />
+  "trending-up": <TrendUp weight="regular" size={14} />,
+  sparkles: <Sparkle weight="regular" size={14} />,
+  trophy: <Trophy weight="regular" size={14} />
 } as const;
 
 function HomePage() {
@@ -61,7 +61,7 @@ function HomePage() {
           <PageHeaderSubtitle />
         </div>
         <PageHeaderActions>
-          <PageHeaderAction icon={<Bell size={18} />} badge={3} />
+          <PageHeaderAction icon={<Bell weight="regular" size={18} />} badge={3} />
         </PageHeaderActions>
       </PageHeaderRoot>
 
@@ -221,7 +221,7 @@ function HomePage() {
                       <ProgressIndicator />
                     </ProgressTrack>
                   </Progress>
-                  <ChevronRight className="text-ink-muted" size={14} />
+                  <CaretRight className="text-ink-muted" weight="regular" size={14} />
                 </Link>
               )}
             </ForEach>

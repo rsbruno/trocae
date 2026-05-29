@@ -1,4 +1,4 @@
-import { ArrowLeftRight, Package, Album, Home, User } from "lucide-react";
+import { ArrowsLeftRight, type Icon, Package, Images, House, User } from "@phosphor-icons/react";
 import { useRouterState, Link } from "@tanstack/react-router";
 
 import { Typography } from "@/components/ui/typography";
@@ -7,16 +7,16 @@ import { ShowIf } from "@/components/utils/show";
 
 type NavigationItem = {
   to: string;
-  icon: typeof Album;
+  icon: Icon;
   label: string;
   isCenter?: boolean;
 };
 
 const navigationItems: NavigationItem[] = [
-  { label: "Album", to: "/album", icon: Album },
+  { label: "Album", to: "/album", icon: Images },
   { to: "/inventory", label: "Colecao", icon: Package },
-  { label: "Inicio", isCenter: true, icon: Home, to: "/" },
-  { icon: ArrowLeftRight, label: "Trocas", to: "/trades" },
+  { label: "Inicio", isCenter: true, icon: House, to: "/" },
+  { icon: ArrowsLeftRight, label: "Trocas", to: "/trades" },
   { label: "Perfil", to: "/profile", icon: User }
 ];
 
@@ -34,7 +34,7 @@ export function BottomNavigation() {
       <div className="bg-surface/75 mx-auto grid max-w-md grid-cols-5 items-end rounded-[20px] border border-white/10 px-2 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.35)] ring-1 ring-white/5 backdrop-blur-xl">
         <ForEach items={navigationItems}>
           {(item) => {
-            const Icon = item.icon;
+            const IconComponent = item.icon;
             const isActive = isNavigationItemActive(currentPath, item.to);
             return (
               <>
@@ -45,9 +45,9 @@ export function BottomNavigation() {
                         isActive ? "bg-accent-primary shadow-lg" : "bg-surface-alt shadow-lg"
                       }`}
                     >
-                      <Icon
+                      <IconComponent
                         className={isActive ? "text-bg" : "text-white/80 group-hover:text-white"}
-                        strokeWidth={2.2}
+                        weight={isActive ? "fill" : "regular"}
                         size={24}
                       />
                     </div>
@@ -59,9 +59,9 @@ export function BottomNavigation() {
 
                 <ShowIf if={!item.isCenter}>
                   <Link className="flex flex-col items-center gap-1.5" key={item.to} to={item.to}>
-                    <Icon
+                    <IconComponent
                       className={`transition-colors ${isActive ? "text-accent-primary" : "text-white/60 hover:text-white/80"}`}
-                      strokeWidth={isActive ? 2.2 : 1.6}
+                      weight={isActive ? "bold" : "regular"}
                       size={22}
                     />
                     <Typography color={isActive ? "accent" : "subtle"} variant="medium" as="span" size="xs">

@@ -1,7 +1,7 @@
 import type { ComponentPropsWithRef } from "react";
 
+import { MagnifyingGlass } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
-import { Search } from "lucide-react";
 
 type SearchInputRootProps = ComponentPropsWithRef<"div">;
 type SearchInputFieldProps = Omit<ComponentPropsWithRef<"input">, "type">;
@@ -15,7 +15,7 @@ export function SearchInputRoot({ className, children, ...props }: SearchInputRo
 }
 
 export function SearchInputIcon() {
-  return <Search className="text-ink-muted absolute top-1/2 left-3.5 -translate-y-1/2" size={16} />;
+  return <MagnifyingGlass className="text-ink-muted absolute top-1/2 left-3.5 -translate-y-1/2" weight="regular" size={16} />;
 }
 
 export function SearchInputField({ placeholder = "Buscar figurinha...", className, ...props }: SearchInputFieldProps) {
