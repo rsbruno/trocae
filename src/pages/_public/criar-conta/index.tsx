@@ -1,3 +1,5 @@
+import type { UserCredential } from "firebase/auth";
+
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useForm, Form } from "react-hook-form";
 
@@ -5,12 +7,14 @@ import { useSignInWithGoogleService } from "@/services/firebase/sign-in-with-goo
 import { PasswordFieldControlled } from "@/components/ui/fields/controlled/password-field";
 import { PageStackFooter, PageStackMain, PageStackRoot } from "@/components/ui/page/stack";
 import { useSignUpWithEmailService } from "@/services/firebase/sign-up-with-email.service";
+import { getCurrentProfileService } from "@/services/users/get-current-profile.service";
 import { TextFieldControlled } from "@/components/ui/fields/controlled/text-field";
 import { type SignUpFormData, EMPTY_DATA, resolver } from "@/schemas/zod/sign-up";
 import { ButtonLabel, ButtonRoot } from "@/components/ui/button";
 import { PageBrandMark } from "@/components/ui/page/brand-mark";
 import { GoogleIcon } from "@/assets/icons/google-icon";
 import { Typography } from "@/components/ui/typography";
+import { useAuthStore } from "@/stores/auth.store";
 import { notify } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/_public/criar-conta/")({
@@ -19,15 +23,29 @@ export const Route = createFileRoute("/_public/criar-conta/")({
 
 function CriarContaPage() {
   const { control, reset } = useForm({ resolver });
+  const setUser = useAuthStore((state) => state.setUser);
+  const setSession = useAuthStore((state) => state.setSession);
+
+  const onSuccess = async (credential: UserCredential) => {
+    const { user } = credential;
+    const profile = await getCurrentProfileService(user.uid);
+
+    setSession({
+      accessToken: await user.getIdToken(),
+      refreshToken: user.refreshToken
+    });
+    setUser(profile);
+    reset(EMPTY_DATA);
+  };
 
   const googleSignIn = useSignInWithGoogleService({
     onError: (error) => notify("error", error.message),
-    onSuccess: () => reset(EMPTY_DATA)
+    onSuccess
   });
 
   const signUpWithEmail = useSignUpWithEmailService({
     onError: (error) => notify("error", error.message),
-    onSuccess: () => reset(EMPTY_DATA)
+    onSuccess
   });
 
   const isSubmitting = signUpWithEmail.isPending || googleSignIn.isPending;

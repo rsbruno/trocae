@@ -10,18 +10,16 @@ type UseGetUserByIdOptions = Omit<UseQueryOptions<User | null>, "queryKey" | "qu
 
 export const getCurrentProfileService = async (id: string): Promise<User | null> => {
   const { currentUser } = getFirebaseAuth();
-  if (!currentUser) return null;
-
   const snapshot = await getDoc(doc(getFirestoreClient(), "users", id));
-  if (!snapshot.exists()) return null;
+  if (!currentUser && !snapshot.exists()) return null;
 
   const data = snapshot.data();
   return {
-    photoURL: currentUser?.photoURL,
-    fullName: data?.displayName,
-    email: currentUser?.email,
-    nickname: data?.nickname,
-    id: currentUser?.uid
+    fullName: data?.displayName ?? currentUser?.displayName ?? null,
+    photoURL: currentUser?.photoURL ?? null,
+    email: currentUser?.email ?? null,
+    nickname: data?.nickname ?? null,
+    id: currentUser?.uid ?? id
   };
 };
 
