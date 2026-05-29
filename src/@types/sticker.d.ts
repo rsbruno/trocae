@@ -1,28 +1,35 @@
-import type { DocumentReference } from "firebase/firestore";
-
 export type StickerType = "badge" | "team" | "player";
 
 export type StickerRarity = "common" | "normal" | "bronze" | "silver" | "gold";
 
-export type PlayerPosition = "" | "GK" | "CB" | "RB" | "LB" | "CM" | "CDM" | "CAM" | "RW" | "LW" | "ST" | "CF";
+export type PlayerPosition = "GK" | "CB" | "RB" | "LB" | "CM" | "CDM" | "CAM" | "RW" | "LW" | "ST" | "CF";
 
 export type Sticker = {
   id: string;
-  number: number;
+  order: number;
   code: string;
-  name: string;
   type: StickerType;
   rarity: StickerRarity;
-  teamRef: DocumentReference;
-  playerPosition: PlayerPosition;
-  playerName: string;
-  weight: number;
-  height: number;
-  birthDate: string;
-  currentClub: string;
-  currentClubCountryCode: string;
+  player: {
+    name: string;
+    birthDate: string;
+    position: PlayerPosition;
+    weight: number;
+    height: number;
+  };
+  currentTeam: {
+    name: string;
+    fifaCode: string;
+  };
+  team: {
+    id: string;
+    name: string;
+    fifaCode: string;
+    flag: string;
+    primaryColor: string;
+    secondaryColor: string;
+    groupCode: string;
+  };
 };
 
-export type StickerSeed = Omit<Sticker, "teamRef"> & {
-  teamRef: string;
-};
+export type StickerSeed = Sticker;

@@ -5,7 +5,6 @@ import {
   StickerSpecContainer,
   StickerPlayerAvatar,
   StickerSidebarGroup,
-  type StickerVariant,
   StickerCountryName,
   StickerPlayerStats,
   StickerBackground,
@@ -126,64 +125,46 @@ function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-1">
             <ForEach items={recentStickers}>
-              {(sticker) => {
-                const avatar = (sticker as { avatar?: string }).avatar;
-
-                return (
-                  <div key={sticker.number} className="relative">
-                    <div
-                      className={`overflow-hidden shadow-lg transition-all active:scale-[0.985] ${sticker.isHolographic ? "border-accent-highlight/30 rounded-sm border-2" : ""}`}
-                    >
-                      <ShowIf if={sticker.type === "extra"}>
-                        <ExtraStickerRoot variant={sticker.variant as "normal" | "silver" | "bronze" | "gold"} size="album">
-                          <ExtraStickerLogo />
-                          <ExtraStickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
-                          <ExtraStickerPlayerAvatar
-                            src={avatar ?? "/assets/png/soccer-player.png"}
-                            alt={sticker.lastName ?? "Jogador"}
-                          />
-                          <ExtraStickerPlayerName>
-                            {sticker.firstName} {sticker.lastName}
-                          </ExtraStickerPlayerName>
-                        </ExtraStickerRoot>
-                      </ShowIf>
-                      <ShowIf if={sticker.type === "player"}>
-                        <StickerRoot variant={sticker.variant as StickerVariant} size="album">
-                          <StickerBackground
-                            primaryColor={sticker.primaryColor ?? "var(--accent-primary-strong)"}
-                            secondaryColor={sticker.secondaryColor ?? "var(--accent-highlight)"}
-                          />
-                          <StickerContent>
-                            <StickerColumn>
-                              <StickerPlayerAvatar
-                                src={avatar ?? "/assets/png/soccer-player.png"}
-                                alt={sticker.lastName ?? "Jogador"}
-                              />
-                              <StickerSpecContainer mode="player">
-                                <StickerPlayerName
-                                  lastName={sticker.lastName ?? "sobrenome"}
-                                  firstName={sticker.firstName ?? "nome"}
-                                />
-                                <StickerPlayerStats>{sticker.stats ?? "—"}</StickerPlayerStats>
-                              </StickerSpecContainer>
-                            </StickerColumn>
-                            <StickerSidebar>
-                              <StickerLogo />
-                              <StickerSidebarGroup>
-                                <StickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
-                                <StickerCountryName>{(sticker.countryCode ?? "BRA").split("").join(" ")}</StickerCountryName>
-                              </StickerSidebarGroup>
-                            </StickerSidebar>
-                          </StickerContent>
-                          <StickerSpecContainer mode="club">
-                            <StickerClubLabel>{sticker.club ?? "Clube do jogador"}</StickerClubLabel>
-                          </StickerSpecContainer>
-                        </StickerRoot>
-                      </ShowIf>
-                    </div>
+              {(sticker) => (
+                <div key={sticker.number} className="relative">
+                  <div
+                    className={`overflow-hidden shadow-lg transition-all active:scale-[0.985] ${sticker.isHolographic ? "border-accent-highlight/30 rounded-sm border-2" : ""}`}
+                  >
+                    <ShowIf if={sticker.layout === "extra"}>
+                      <ExtraStickerRoot variant={sticker.extraVariant} data={sticker.sticker} size="album">
+                        <ExtraStickerLogo />
+                        <ExtraStickerFlag />
+                        <ExtraStickerPlayerAvatar />
+                        <ExtraStickerPlayerName />
+                      </ExtraStickerRoot>
+                    </ShowIf>
+                    <ShowIf if={sticker.layout === "player"}>
+                      <StickerRoot variant={sticker.playerVariant} data={sticker.sticker} size="album">
+                        <StickerBackground />
+                        <StickerContent>
+                          <StickerColumn>
+                            <StickerPlayerAvatar />
+                            <StickerSpecContainer mode="player">
+                              <StickerPlayerName />
+                              <StickerPlayerStats />
+                            </StickerSpecContainer>
+                          </StickerColumn>
+                          <StickerSidebar>
+                            <StickerLogo />
+                            <StickerSidebarGroup>
+                              <StickerFlag />
+                              <StickerCountryName />
+                            </StickerSidebarGroup>
+                          </StickerSidebar>
+                        </StickerContent>
+                        <StickerSpecContainer mode="club">
+                          <StickerClubLabel />
+                        </StickerSpecContainer>
+                      </StickerRoot>
+                    </ShowIf>
                   </div>
-                );
-              }}
+                </div>
+              )}
             </ForEach>
           </div>
         </section>

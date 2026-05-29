@@ -1,8 +1,14 @@
-import { ArrowsDownUp, Check, Hash } from "@phosphor-icons/react";
-import { createFileRoute } from "@tanstack/react-router";
+import { ArrowsDownUp, Check, Hash, Plus } from "@phosphor-icons/react";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import {
+  PageHeaderSubtitle,
+  PageHeaderActions,
+  PageHeaderAction,
+  PageHeaderTitle,
+  PageHeaderRoot
+} from "@/components/ui/page/header";
 import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { SearchInput } from "@/components/ui/fields/search-input";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
@@ -21,6 +27,7 @@ export const Route = createFileRoute("/_auth/inventory/")({
 type FilterTab = "all" | "owned" | "missing" | "repeated";
 
 function InventoryPage() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<FilterTab>("all");
   const [sortAsc, setSortAsc] = useState(true);
 
@@ -47,6 +54,9 @@ function InventoryPage() {
           <PageHeaderTitle />
           <PageHeaderSubtitle />
         </div>
+        <PageHeaderActions>
+          <PageHeaderAction onClick={() => navigate({ to: "/inventory/add" })} icon={<Plus weight="bold" size={18} />} />
+        </PageHeaderActions>
       </PageHeaderRoot>
       <div className="flex flex-col gap-5 px-4">
         <div className="grid grid-cols-3 gap-2">

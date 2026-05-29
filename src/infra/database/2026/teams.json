@@ -6,10 +6,15 @@
     "federationName": "Confederação Brasileira de Futebol",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-brazil.png",
-    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
     "coach": "Carlo Ancelotti",
     "primaryColor": "#F7E017",
-    "secondaryColor": "#1B7F3B"
+    "secondaryColor": "#1B7F3B",
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    }
   },
   {
     "id": "4977a899-436c-4cb2-b384-ab2afc584447",
@@ -18,10 +23,15 @@
     "federationName": "Asociación del Fútbol Argentino",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-argentina.png",
-    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
     "coach": "Lionel Scaloni",
     "primaryColor": "#6CC6F0",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    }
   },
   {
     "id": "5d31037d-a18c-4d02-98e5-98911149c713",
@@ -30,10 +40,15 @@
     "federationName": "United States Soccer Federation",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-usa.png",
-    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
     "coach": "Mauricio Pochettino",
     "primaryColor": "#1E3A8A",
-    "secondaryColor": "#DC2626"
+    "secondaryColor": "#DC2626",
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    }
   },
   {
     "id": "335d54c5-1010-4ed3-92b8-6984ff102a12",
@@ -42,10 +57,15 @@
     "federationName": "Federación Mexicana de Fútbol Asociación",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-mexico.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
     "coach": "Jaime Lozano",
     "primaryColor": "#006847",
-    "secondaryColor": "#CE1126"
+    "secondaryColor": "#CE1126",
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    }
   },
   {
     "id": "7f6d3313-1bf7-4462-807d-82e590477c00",
@@ -54,10 +74,15 @@
     "federationName": "Canada Soccer",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-canada.png",
-    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
     "coach": "Jesse Marsch",
     "primaryColor": "#D80621",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    }
   },
   {
     "id": "3bbd9482-3a61-4c61-a899-5c9ccfde66ea",
@@ -66,10 +91,15 @@
     "federationName": "Fédération Française de Football",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-france.png",
-    "groupRef": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
     "coach": "Didier Deschamps",
     "primaryColor": "#1D4ED8",
-    "secondaryColor": "#DC2626"
+    "secondaryColor": "#DC2626",
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    }
   },
   {
     "id": "5c484f49-c2e5-40c0-88df-9c39a601477d",
@@ -78,10 +108,15 @@
     "federationName": "Deutscher Fußball-Bund",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-germany.png",
-    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
     "coach": "Julian Nagelsmann",
     "primaryColor": "#111111",
-    "secondaryColor": "#DD0000"
+    "secondaryColor": "#DD0000",
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    }
   },
   {
     "id": "d665ddb6-3a69-414e-8d35-d390ab738353",
@@ -90,10 +125,15 @@
     "federationName": "The Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-england.png",
-    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Thomas Tuchel",
     "primaryColor": "#FFFFFF",
-    "secondaryColor": "#CF142B"
+    "secondaryColor": "#CF142B",
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    }
   },
   {
     "id": "7e594d33-6bb5-4bce-9257-c2c8d911b1ca",
@@ -102,10 +142,15 @@
     "federationName": "Real Federación Española de Fútbol",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-spain.png",
-    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
     "coach": "Luis de la Fuente",
     "primaryColor": "#C60B1E",
-    "secondaryColor": "#FFC400"
+    "secondaryColor": "#FFC400",
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    }
   },
   {
     "id": "a5ca31d3-8303-41fb-bce1-674308d84f10",
@@ -114,10 +159,15 @@
     "federationName": "Federação Portuguesa de Futebol",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-portugal.png",
-    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
     "coach": "Roberto Martínez",
     "primaryColor": "#046A38",
-    "secondaryColor": "#DA291C"
+    "secondaryColor": "#DA291C",
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    }
   },
   {
     "id": "ceae1eee-0b92-449c-8133-c0fa8ebd8d50",
@@ -126,10 +176,15 @@
     "federationName": "Koninklijke Nederlandse Voetbalbond",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-netherlands.png",
-    "groupRef": "0720fcfa-38aa-4998-9c29-d354cf581595",
     "coach": "Ronald Koeman",
     "primaryColor": "#F97316",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    }
   },
   {
     "id": "6b0d091b-9cb9-4b6f-ab67-ee74b8e003f4",
@@ -138,10 +193,15 @@
     "federationName": "Asociación Uruguaya de Fútbol",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-uruguay.png",
-    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
     "coach": "Marcelo Bielsa",
     "primaryColor": "#7CC6FE",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    }
   },
   {
     "id": "0f1efc61-610a-4cce-9a0d-9fb742e780bf",
@@ -150,10 +210,15 @@
     "federationName": "Federación Colombiana de Fútbol",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-colombia.png",
-    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
     "coach": "Néstor Lorenzo",
     "primaryColor": "#FCD116",
-    "secondaryColor": "#003893"
+    "secondaryColor": "#003893",
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    }
   },
   {
     "id": "1027eb6d-f854-4a5d-ae5f-4379f4f1cde9",
@@ -162,10 +227,15 @@
     "federationName": "Japan Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-japan.png",
-    "groupRef": "0720fcfa-38aa-4998-9c29-d354cf581595",
     "coach": "Hajime Moriyasu",
     "primaryColor": "#1E40AF",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    }
   },
   {
     "id": "0771d35f-802a-4f99-bb3b-62cbf4e38eba",
@@ -174,10 +244,15 @@
     "federationName": "Fédération Royale Marocaine de Football",
     "confederation": "CAF",
     "flag": "/assets/png/flag-morocco.png",
-    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
     "coach": "Walid Regragui",
     "primaryColor": "#C1272D",
-    "secondaryColor": "#006233"
+    "secondaryColor": "#006233",
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    }
   },
   {
     "id": "a657a1e2-cc71-4223-ae98-444f1bc67ab1",
@@ -186,10 +261,15 @@
     "federationName": "Fédération Sénégalaise de Football",
     "confederation": "CAF",
     "flag": "/assets/png/flag-senegal.png",
-    "groupRef": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
     "coach": "Aliou Cissé",
     "primaryColor": "#00853F",
-    "secondaryColor": "#FDEF42"
+    "secondaryColor": "#FDEF42",
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    }
   },
   {
     "id": "d7e9feb9-29f0-47f1-b83f-6a1af35c08a1",
@@ -198,10 +278,15 @@
     "federationName": "Korea Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-south-korea.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
     "coach": "Hong Myung-bo",
     "primaryColor": "#E11D48",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    }
   },
   {
     "id": "6ca20b74-ffa1-410b-b59a-be6d91b8ffdf",
@@ -210,10 +295,15 @@
     "federationName": "Football Australia",
     "confederation": "AFC",
     "flag": "/assets/png/flag-australia.png",
-    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
     "coach": "Tony Popovic",
     "primaryColor": "#FCD116",
-    "secondaryColor": "#0B6623"
+    "secondaryColor": "#0B6623",
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    }
   },
   {
     "id": "eea2e603-9bdb-4746-9630-4dd6768ecd9d",
@@ -222,10 +312,15 @@
     "federationName": "Football Federation Islamic Republic of Iran",
     "confederation": "AFC",
     "flag": "/assets/png/flag-iran.png",
-    "groupRef": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
     "coach": "Amir Ghalenoei",
     "primaryColor": "#239F40",
-    "secondaryColor": "#DA0000"
+    "secondaryColor": "#DA0000",
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    }
   },
   {
     "id": "b15d3f78-8e95-4b6f-9395-508c93a23bb1",
@@ -234,10 +329,15 @@
     "federationName": "Royal Belgian Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-belgium.png",
-    "groupRef": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
     "coach": "Domenico Tedesco",
     "primaryColor": "#111111",
-    "secondaryColor": "#FAE042"
+    "secondaryColor": "#FAE042",
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    }
   },
   {
     "id": "f6d73ac8-0463-4ee4-aaab-76ce5f3783f3",
@@ -246,10 +346,15 @@
     "federationName": "Asociación Paraguaya de Fútbol",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-paraguay.png",
-    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
     "coach": "Daniel Garnero",
     "primaryColor": "#D52B1E",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    }
   },
   {
     "id": "47885e92-c2cb-4431-9c02-dcd3617a1df2",
@@ -258,10 +363,15 @@
     "federationName": "Federación Ecuatoriana de Fútbol",
     "confederation": "CONMEBOL",
     "flag": "/assets/png/flag-ecuador.png",
-    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
     "coach": "Félix Sánchez Bas",
     "primaryColor": "#FCD116",
-    "secondaryColor": "#003893"
+    "secondaryColor": "#003893",
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    }
   },
   {
     "id": "da7f786a-3e8f-497b-83b3-4ada3d4c7b39",
@@ -270,10 +380,15 @@
     "federationName": "New Zealand Football",
     "confederation": "OFC",
     "flag": "/assets/png/flag-new-zealand.png",
-    "groupRef": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
     "coach": "Darren Bazeley",
     "primaryColor": "#FFFFFF",
-    "secondaryColor": "#111111"
+    "secondaryColor": "#111111",
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    }
   },
   {
     "id": "a70d9453-f989-4749-8a37-e7fb4d075cb9",
@@ -282,10 +397,15 @@
     "federationName": "Saudi Arabian Football Federation",
     "confederation": "AFC",
     "flag": "/assets/png/flag-saudi-arabia.png",
-    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
     "coach": "Roberto Mancini",
     "primaryColor": "#006C35",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    }
   },
   {
     "id": "b248c8a5-0c70-4e78-9a97-daae946ffb7b",
@@ -294,10 +414,15 @@
     "federationName": "Qatar Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-qatar.png",
-    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
     "coach": "Tintín Márquez",
     "primaryColor": "#5C0B2F",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    }
   },
   {
     "id": "3f7b5c4e-876c-4ce3-b3f0-8c8a4c0f7d37",
@@ -306,10 +431,15 @@
     "federationName": "Uzbekistan Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-uzbekistan.png",
-    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
     "coach": "Srecko Katanec",
     "primaryColor": "#0099B5",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    }
   },
   {
     "id": "581f58f2-61f6-4f85-89b6-e5193fa42d58",
@@ -318,10 +448,15 @@
     "federationName": "Jordan Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-jordan.png",
-    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
     "coach": "Hussein Ammouta",
     "primaryColor": "#CE1126",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    }
   },
   {
     "id": "9d66904f-0159-4695-907c-2be9e41b781f",
@@ -330,10 +465,15 @@
     "federationName": "Iraq Football Association",
     "confederation": "AFC",
     "flag": "/assets/png/flag-iraq.png",
-    "groupRef": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
     "coach": "Jesús Casas",
     "primaryColor": "#007A3D",
-    "secondaryColor": "#CE1126"
+    "secondaryColor": "#CE1126",
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    }
   },
   {
     "id": "9f0ef0d7-c5d4-431b-ba5a-2689380c851d",
@@ -342,10 +482,15 @@
     "federationName": "Egyptian Football Association",
     "confederation": "CAF",
     "flag": "/assets/png/flag-egypt.png",
-    "groupRef": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
     "coach": "Hossam Hassan",
     "primaryColor": "#CE1126",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    }
   },
   {
     "id": "07873a48-e247-4227-9ffe-5b7328ff81f0",
@@ -354,10 +499,15 @@
     "federationName": "Tunisian Football Federation",
     "confederation": "CAF",
     "flag": "/assets/png/flag-tunisia.png",
-    "groupRef": "0720fcfa-38aa-4998-9c29-d354cf581595",
     "coach": "Montassar Louhichi",
     "primaryColor": "#E70013",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    }
   },
   {
     "id": "b4e01d6b-0e6a-444a-aa38-d40cd007d9e6",
@@ -366,10 +516,15 @@
     "federationName": "Fédération Algérienne de Football",
     "confederation": "CAF",
     "flag": "/assets/png/flag-algeria.png",
-    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
     "coach": "Vladimir Petković",
     "primaryColor": "#006233",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    }
   },
   {
     "id": "10ea29fd-4c5c-4501-adcc-610c03300900",
@@ -378,10 +533,15 @@
     "federationName": "Ghana Football Association",
     "confederation": "CAF",
     "flag": "/assets/png/flag-ghana.png",
-    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Otto Addo",
     "primaryColor": "#CE1126",
-    "secondaryColor": "#FCD116"
+    "secondaryColor": "#FCD116",
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    }
   },
   {
     "id": "cda8c56e-72f5-4af5-a559-727c06b74dee",
@@ -390,10 +550,15 @@
     "federationName": "Fédération Ivoirienne de Football",
     "confederation": "CAF",
     "flag": "/assets/png/flag-ivory-coast.png",
-    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
     "coach": "Emerse Faé",
     "primaryColor": "#F77F00",
-    "secondaryColor": "#009E60"
+    "secondaryColor": "#009E60",
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    }
   },
   {
     "id": "566540a4-501d-4440-94c6-8b2b18bb169a",
@@ -402,10 +567,15 @@
     "federationName": "Österreichischer Fußball-Bund",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-austria.png",
-    "groupRef": "4cc523e2-d8c2-4968-906c-163c9f66797a",
     "coach": "Ralf Rangnick",
     "primaryColor": "#ED2939",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    }
   },
   {
     "id": "fe6c5917-cac8-4853-a2f2-55637cdcea95",
@@ -414,10 +584,15 @@
     "federationName": "Nogometni/Fudbalski Savez Bosne i Hercegovine",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-bosnia.png",
-    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
     "coach": "Sergej Barbarez",
     "primaryColor": "#002395",
-    "secondaryColor": "#FECB00"
+    "secondaryColor": "#FECB00",
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    }
   },
   {
     "id": "15f75948-c833-48dd-8729-9a47423dad37",
@@ -426,10 +601,15 @@
     "federationName": "Hrvatski Nogometni Savez",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-croatia.png",
-    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Zlatko Dalić",
     "primaryColor": "#FF0000",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    }
   },
   {
     "id": "97c9ec2c-0fb9-417a-aa34-02013a57face",
@@ -438,10 +618,15 @@
     "federationName": "Football Association of the Czech Republic",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-czechia.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
     "coach": "Ivan Hašek",
     "primaryColor": "#D7141A",
-    "secondaryColor": "#11457E"
+    "secondaryColor": "#11457E",
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    }
   },
   {
     "id": "997aef9c-1d57-429c-b2da-4d44796c7f7d",
@@ -450,10 +635,15 @@
     "federationName": "Scottish Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-scotland.png",
-    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
     "coach": "Steve Clarke",
     "primaryColor": "#005EB8",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    }
   },
   {
     "id": "e4490f39-d19f-410a-9623-65d5cd26a7b2",
@@ -462,10 +652,15 @@
     "federationName": "Svenska Fotbollförbundet",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-sweden.png",
-    "groupRef": "0720fcfa-38aa-4998-9c29-d354cf581595",
     "coach": "Jon Dahl Tomasson",
     "primaryColor": "#006AA7",
-    "secondaryColor": "#FECC00"
+    "secondaryColor": "#FECC00",
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    }
   },
   {
     "id": "9a5d2fd9-8fe6-4370-ae4d-7ecd6547240a",
@@ -474,10 +669,15 @@
     "federationName": "Swiss Football Association",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-switzerland.png",
-    "groupRef": "4f64db3d-a25d-456c-8698-35f183916e25",
     "coach": "Murat Yakin",
     "primaryColor": "#D52B1E",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    }
   },
   {
     "id": "8ef3437b-7184-487c-8b77-c4f44771db22",
@@ -486,10 +686,15 @@
     "federationName": "Türkiye Futbol Federasyonu",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-turkey.png",
-    "groupRef": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
     "coach": "Vincenzo Montella",
     "primaryColor": "#E30A17",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    }
   },
   {
     "id": "a0d2c0aa-61a2-4a4c-a09f-706a1b50cb47",
@@ -498,10 +703,15 @@
     "federationName": "Norges Fotballforbund",
     "confederation": "UEFA",
     "flag": "/assets/png/flag-norway.png",
-    "groupRef": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
     "coach": "Ståle Solbakken",
     "primaryColor": "#BA0C2F",
-    "secondaryColor": "#00205B"
+    "secondaryColor": "#00205B",
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    }
   },
   {
     "id": "a08802a0-2aa9-4543-9bcd-348b5bf650d4",
@@ -510,10 +720,15 @@
     "federationName": "Federação Caboverdiana de Futebol",
     "confederation": "CAF",
     "flag": "/assets/png/flag-cape-verde.png",
-    "groupRef": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
     "coach": "Bubista",
     "primaryColor": "#003893",
-    "secondaryColor": "#FFFFFF"
+    "secondaryColor": "#FFFFFF",
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    }
   },
   {
     "id": "593c2d60-a4c9-41de-ba41-e7318f34e07a",
@@ -522,10 +737,15 @@
     "federationName": "Federación Panameña de Fútbol",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-panama.png",
-    "groupRef": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
     "coach": "Thomas Christiansen",
     "primaryColor": "#D21034",
-    "secondaryColor": "#005293"
+    "secondaryColor": "#005293",
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    }
   },
   {
     "id": "d75bfe12-5a0f-5c19-9f86-272a30b02b2b",
@@ -534,10 +754,15 @@
     "federationName": "South African Football Association",
     "confederation": "CAF",
     "flag": "/assets/png/flag-south-africa.png",
-    "groupRef": "40a1253b-3319-4251-8010-c40ec2f222e5",
     "coach": "Hugo Broos",
     "primaryColor": "#007847",
-    "secondaryColor": "#FFB612"
+    "secondaryColor": "#FFB612",
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    }
   },
   {
     "id": "796bb156-e1e5-579f-bd2c-9caaa85fd1f2",
@@ -546,10 +771,15 @@
     "federationName": "Fédération Haïtienne de Football",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-haiti.png",
-    "groupRef": "49a21f83-3327-4e8a-9280-2e912a55a638",
     "coach": "Sébastien Migné",
     "primaryColor": "#00209F",
-    "secondaryColor": "#D21034"
+    "secondaryColor": "#D21034",
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    }
   },
   {
     "id": "f35856ed-af2b-5895-b27d-8191797a7ebd",
@@ -558,10 +788,15 @@
     "federationName": "Federashon Futbòl Kòrsou",
     "confederation": "CONCACAF",
     "flag": "/assets/png/flag-curacao.png",
-    "groupRef": "50f27e29-fc00-4895-895e-0b815d076a60",
     "coach": "Dick Advocaat",
     "primaryColor": "#0057B8",
-    "secondaryColor": "#F7D117"
+    "secondaryColor": "#F7D117",
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    }
   },
   {
     "id": "c2983458-d9db-5927-a24e-445565dc62fa",
@@ -570,9 +805,14 @@
     "federationName": "Fédération Congolaise de Football Association",
     "confederation": "CAF",
     "flag": "/assets/png/flag-dr-congo.png",
-    "groupRef": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
     "coach": "Sébastien Desabre",
     "primaryColor": "#00A3E0",
-    "secondaryColor": "#EF3340"
+    "secondaryColor": "#EF3340",
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    }
   }
 ]

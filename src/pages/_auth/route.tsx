@@ -1,5 +1,6 @@
 import { createFileRoute, redirect, Outlet } from "@tanstack/react-router";
 
+import { getFirebaseAuth } from "@/infra/firebase/auth";
 import { useAuthStore } from "@/stores/auth.store";
 
 import { BottomNavigation } from "./_components/bottom-navigation";
@@ -11,8 +12,16 @@ export const Route = createFileRoute("/_auth")({
         useAuthStore.persist.onFinishHydration(() => resolve());
       });
 
-    const { session, user } = useAuthStore.getState();
+    const { clearAuth, session, user } = useAuthStore.getState();
     if (!session || !user) throw redirect({ to: "/" });
+
+    const auth = getFirebaseAuth();
+    await auth.authStateReady();
+
+    if (!auth.currentUser) {
+      clearAuth();
+      throw redirect({ to: "/" });
+    }
   },
   component: AuthLayout,
   staleTime: 0

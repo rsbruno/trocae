@@ -6,15 +6,14 @@ import path from "node:path";
 
 import { getAdminFirestore } from "@/infra/firebase/admin";
 
+/**
+ * Seeds write full document snapshots to Firestore — no DocumentReference fields.
+ * Nested data (e.g. team.group, sticker.team) must be embedded in each JSON file.
+ */
 const databaseDir = path.dirname(fileURLToPath(import.meta.url));
 const defaultSeedsDir = path.join(databaseDir, "2026");
 
-const seedFileOrder = ["groups.json", "teams.json"];
-
-const referenceFieldCollections: Record<string, string> = {
-  groupRef: "groups",
-  teamRef: "teams"
-};
+const seedFileOrder = ["groups.json", "teams.json", "stickers.json"];
 
 export type SeedDocumentResult = {
   collectionId: string;
@@ -34,38 +33,47 @@ function collectionIdFromJsonFile(fileName: string) {
 }
 
 function sortSeedFiles(fileNames: string[]) {
-  return [...fileNames].sort((a, b) => {
-    const indexA = seedFileOrder.indexOf(a);
-    const indexB = seedFileOrder.indexOf(b);
+  return [...fileNames].sort((left, right) => {
+    const indexLeft = seedFileOrder.indexOf(left);
+    const indexRight = seedFileOrder.indexOf(right);
 
-    if (indexA === -1 && indexB === -1) {
-      return a.localeCompare(b);
+    if (indexLeft === -1 && indexRight === -1) {
+      return left.localeCompare(right);
     }
 
-    if (indexA === -1) {
+    if (indexLeft === -1) {
       return 1;
     }
 
-    if (indexB === -1) {
+    if (indexRight === -1) {
       return -1;
     }
 
-    return indexA - indexB;
+    return indexLeft - indexRight;
   });
 }
 
-function resolveReferences(db: Firestore, data: Record<string, unknown>): Record<string, unknown> {
-  const resolved: Record<string, unknown> = { ...data };
-
-  for (const [field, collectionId] of Object.entries(referenceFieldCollections)) {
-    const value = resolved[field];
-
-    if (typeof value === "string" && value.length > 0) {
-      resolved[field] = db.collection(collectionId).doc(value);
-    }
+function assertSnapshotPayload(value: unknown, fieldPath = ""): void {
+  if (value === null || typeof value !== "object") {
+    return;
   }
 
-  return resolved;
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => assertSnapshotPayload(item, `${fieldPath}[${index}]`));
+    return;
+  }
+
+  for (const [key, nested] of Object.entries(value)) {
+    const nestedPath = fieldPath ? `${fieldPath}.${key}` : key;
+
+    if (key.endsWith("Ref") && typeof nested === "string") {
+      throw new Error(
+        `Campo "${nestedPath}" parece referência a outro documento. Seeds devem usar snapshots embutidos, sem *Ref.`
+      );
+    }
+
+    assertSnapshotPayload(nested, nestedPath);
+  }
 }
 
 function toSeedDocuments(content: unknown): Record<string, unknown>[] {
@@ -76,7 +84,9 @@ function toSeedDocuments(content: unknown): Record<string, unknown>[] {
   }
 
   if (content !== null && typeof content === "object" && !Array.isArray(content)) {
-    return [content as Record<string, unknown>];
+    return [content].filter(
+      (item): item is Record<string, unknown> => item !== null && typeof item === "object" && !Array.isArray(item)
+    );
   }
 
   throw new Error("JSON deve ser um objeto ou um array de objetos.");
@@ -87,6 +97,39 @@ async function listJsonFiles(dir: string) {
   return sortSeedFiles(entries.filter((entry) => entry.isFile() && entry.name.endsWith(".json")).map((entry) => entry.name));
 }
 
+async function writeSnapshot(
+  db: Firestore,
+  collectionId: string,
+  document: Record<string, unknown>
+): Promise<SeedDocumentResult> {
+  const documentId = document.id;
+
+  if (typeof documentId !== "string" || documentId.length === 0) {
+    throw new Error(`Documento sem "id" válido em ${collectionId}: ${JSON.stringify(document)}`);
+  }
+
+  assertSnapshotPayload(document);
+
+  const docRef = db.collection(collectionId).doc(documentId);
+  const snapshot = await docRef.get();
+  const created = !snapshot.exists;
+
+  if (created) {
+    await docRef.set({
+      ...document,
+      createdAt: FieldValue.serverTimestamp()
+    });
+  } else {
+    await docRef.set(document);
+  }
+
+  return {
+    collectionId,
+    documentId,
+    created
+  };
+}
+
 async function syncJsonFile(db: Firestore, seedsDir: string, fileName: string): Promise<SeedDocumentResult[]> {
   const collectionId = collectionIdFromJsonFile(fileName);
   const filePath = path.join(seedsDir, fileName);
@@ -95,28 +138,7 @@ async function syncJsonFile(db: Firestore, seedsDir: string, fileName: string): 
   const results: SeedDocumentResult[] = [];
 
   for (const document of documents) {
-    const documentId = document.id;
-
-    if (typeof documentId !== "string" || documentId.length === 0) {
-      throw new Error(`Documento sem "id" válido em ${fileName}: ${JSON.stringify(document)}`);
-    }
-
-    const docRef = db.collection(collectionId).doc(documentId);
-    const snapshot = await docRef.get();
-    const created = !snapshot.exists;
-    const payload = resolveReferences(db, document);
-
-    if (created) {
-      await docRef.set({ ...payload, createdAt: FieldValue.serverTimestamp() }, { merge: true });
-    } else {
-      await docRef.set(payload, { merge: true });
-    }
-
-    results.push({
-      collectionId,
-      documentId,
-      created
-    });
+    results.push(await writeSnapshot(db, collectionId, document));
   }
 
   return results;

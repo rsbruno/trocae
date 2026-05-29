@@ -1,41 +1,69 @@
+import type { ExtraStickerVariant } from "@/components/v2026/stickers/extra";
+import type { StickerVariant } from "@/components/v2026/stickers/normal";
+import type { Sticker } from "@/@types/sticker";
+
 export type PaisSticker = {
   number: number;
   owned: boolean;
-  type: "player" | "extra";
-  variant: "midfielder" | "gold" | "normal" | "silver" | "bronze" | "forward" | "defender" | "goalkeeper";
-  firstName?: string;
-  lastName?: string;
-  stats?: string;
-  club?: string;
-  flag?: string;
-  countryCode?: string;
-  primaryColor?: string;
-  secondaryColor?: string;
+  layout: "extra" | "player";
+  sticker: Sticker;
+  playerVariant?: StickerVariant;
+  extraVariant?: ExtraStickerVariant;
   isRare?: boolean;
+};
+
+const mockBrazilTeam: Sticker["team"] = {
+  primaryColor: "var(--accent-primary-strong)",
+  secondaryColor: "var(--accent-highlight)",
+  flag: "/assets/png/flag-brazil.png",
+  id: "mock-brazil-team",
+  fifaCode: "BRA",
+  name: "Brasil",
+  groupCode: "A"
 };
 
 export const paisStickers: PaisSticker[] = [
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    club: "Clube atual do jogador (BRA)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "16-2-2000 | 1,80m | 75kg",
-    variant: "midfielder",
-    firstName: "bruno",
-    lastName: "santos",
-    countryCode: "BRA",
-    type: "player",
+    sticker: {
+      player: {
+        birthDate: "2000-02-16",
+        name: "Bruno Santos",
+        position: "CM",
+        height: 180,
+        weight: 75
+      },
+      currentTeam: { name: "Clube atual do jogador (BRA)", fifaCode: "BRA" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "PAIS001",
+      type: "player",
+      id: "pais-1",
+      order: 1
+    },
+    playerVariant: "midfielder",
+    layout: "player",
     owned: true,
     number: 1
   },
   {
-    flag: "/assets/png/flag-brazil.png",
-    firstName: "Bruno",
-    lastName: "Santos",
-    countryCode: "BRA",
-    variant: "gold",
-    type: "extra",
+    sticker: {
+      player: {
+        birthDate: "2000-02-16",
+        name: "Bruno Santos",
+        position: "CM",
+        height: 180,
+        weight: 75
+      },
+      currentTeam: { fifaCode: "BRA", name: "Brasil" },
+      team: mockBrazilTeam,
+      code: "PAIS002",
+      type: "player",
+      rarity: "gold",
+      id: "pais-2",
+      order: 2
+    },
+    extraVariant: "gold",
+    layout: "extra",
     isRare: true,
     owned: true,
     number: 2

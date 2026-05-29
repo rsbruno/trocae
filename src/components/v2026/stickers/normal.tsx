@@ -2,11 +2,14 @@ import { type ComponentPropsWithRef, createContext, useContext } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
 
+import type { PlayerPosition, Sticker } from "@/@types/sticker";
+
 import { Typography } from "@/components/ui/typography";
 
 export type StickerVariant = "forward" | "midfielder" | "defender" | "goalkeeper";
 
 type StickerContextValue = {
+  data: Sticker;
   variant: StickerVariant;
 };
 
@@ -26,9 +29,18 @@ export function useSticker() {
   return useStickerContext();
 }
 
-type StickerBackgroundProps = {
-  primaryColor?: string;
-  secondaryColor?: string;
+const positionVariantMap: Record<PlayerPosition, StickerVariant> = {
+  CDM: "midfielder",
+  CAM: "midfielder",
+  GK: "goalkeeper",
+  CM: "midfielder",
+  CB: "defender",
+  RB: "defender",
+  LB: "defender",
+  RW: "forward",
+  LW: "forward",
+  ST: "forward",
+  CF: "forward"
 };
 
 const stickerSpecContainerVariants = tv({
@@ -52,6 +64,7 @@ const stickerSpecContainerVariants = tv({
 });
 
 type StickerRootProps = ComponentPropsWithRef<"section"> & {
+  data: Sticker;
   variant?: StickerVariant;
   size?: "album" | "compact";
 };
@@ -61,9 +74,11 @@ const stickerSizeClasses = {
   album: "h-[340px]"
 } as const;
 
-export function StickerRoot({ variant = "forward", size = "album", className, children, ...props }: StickerRootProps) {
+export function StickerRoot({ size = "album", className, children, variant, data, ...props }: StickerRootProps) {
+  const resolvedVariant = variant ?? positionVariantMap[data.player.position] ?? "forward";
+
   return (
-    <StickerContext.Provider value={{ variant }}>
+    <StickerContext.Provider value={{ variant: resolvedVariant, data }}>
       <section
         className={twMerge(
           "bg-sticker border-sticker relative flex w-full flex-col gap-1.5 border p-3",
@@ -78,17 +93,19 @@ export function StickerRoot({ variant = "forward", size = "album", className, ch
   );
 }
 
-export function StickerBackground({ secondaryColor, primaryColor }: StickerBackgroundProps) {
+export function StickerBackground() {
+  const { data } = useStickerContext();
+
   return (
     <span className="absolute top-3 left-0 flex h-40 w-full items-center justify-center p-3 opacity-90">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 384" height="384" width="487" fill="none">
         <path
           d="M486.164 302.006C486.164 257.264 449.88 221.003 405.126 221.003H486.164C486.164 176.273 449.88 140 405.126 140H243.038C198.272 140 162 176.272 162 221.003V302.006V302.018C162 346.76 198.284 383.021 243.038 383.021H405.126C449.88 383.008 486.164 346.736 486.164 302.006Z"
-          fill={secondaryColor}
+          fill={data.team.secondaryColor}
         />
         <path
           d="M324.164 81.003C324.164 36.261 287.88 0 243.126 0H243.114H81.038C36.284 0 0 36.272 0 81.003H81.038C36.284 81.003 0 117.264 0 162.006V243.009L324.165 242.997V161.994H243.127C287.88 162.005 324.164 125.733 324.164 81.003Z"
-          fill={primaryColor}
+          fill={data.team.primaryColor}
         />
       </svg>
     </span>
@@ -103,10 +120,18 @@ export function StickerColumn({ className, ...props }: ComponentPropsWithRef<"di
   return <div className={twMerge("flex flex-1 flex-col gap-1.5", className)} {...props} />;
 }
 
-export function StickerPlayerAvatar({ className, ...props }: ComponentPropsWithRef<"img">) {
+export function StickerPlayerAvatar({ className, src, alt, ...props }: ComponentPropsWithRef<"img">) {
+  const { data } = useStickerContext();
+  const fallbackSrc = "/assets/png/soccer-player.png";
+
   return (
     <div className="flex-1 overflow-hidden rounded-bl-[40px]">
-      <img className={twMerge("size-full object-cover grayscale", className)} {...props} />
+      <img
+        className={twMerge("size-full object-cover grayscale", className)}
+        alt={alt ?? data.player.name}
+        src={src ?? fallbackSrc}
+        {...props}
+      />
     </div>
   );
 }
@@ -123,12 +148,17 @@ export function StickerSpecContainer({ className, mode, ...props }: StickerSpecC
 }
 
 type StickerPlayerNameProps = {
-  firstName: string;
-  lastName: string;
   className?: string;
 };
 
-export function StickerPlayerName({ firstName, className, lastName }: StickerPlayerNameProps) {
+export function StickerPlayerName({ className }: StickerPlayerNameProps) {
+  const { data } = useStickerContext();
+  const playerNameParts = data.player.name.trim().split(/\s+/);
+  const lastName = playerNameParts.length > 1 ? (playerNameParts[playerNameParts.length - 1] ?? "") : (playerNameParts[0] ?? "");
+  const firstName = playerNameParts.length > 1 ? playerNameParts.slice(0, -1).join(" ") : "";
+  const displayFirstName = data.type === "player" ? firstName : data.player.name;
+  const displayLastName = data.type === "player" ? lastName : "";
+
   return (
     <Typography
       className={twMerge("font-sticker block uppercase", className)}
@@ -137,15 +167,22 @@ export function StickerPlayerName({ firstName, className, lastName }: StickerPla
       as="span"
       size="xs"
     >
-      {firstName}{" "}
+      {displayFirstName}{" "}
       <Typography color="inverse" variant="bold" size="xs" as="b">
-        {lastName}
+        {displayLastName}
       </Typography>
     </Typography>
   );
 }
 
-export function StickerPlayerStats({ className, children, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
+export function StickerPlayerStats({ className, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
+  const { data } = useStickerContext();
+  const birthDateParts = data.player.birthDate.split("-");
+  const formattedBirth = birthDateParts.length === 3 ? `${birthDateParts[2]}-${birthDateParts[1]}-${birthDateParts[0]}` : "";
+  const formattedHeight = data.player.height > 0 ? `${(data.player.height / 100).toFixed(2).replace(".", ",")}m` : "";
+  const formattedWeight = data.player.weight > 0 ? `${data.player.weight}kg` : "";
+  const playerStats = [formattedBirth, formattedHeight, formattedWeight].filter(Boolean).join(" | ");
+
   return (
     <Typography
       className={twMerge("font-sticker block", className)}
@@ -155,12 +192,14 @@ export function StickerPlayerStats({ className, children, ...props }: Omit<Compo
       size="xs"
       {...props}
     >
-      {children}
+      {playerStats || "—"}
     </Typography>
   );
 }
 
-export function StickerClubLabel({ className, children, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
+export function StickerTeamLabel({ className, children, ...props }: Omit<ComponentPropsWithRef<"small">, "color">) {
+  const { data } = useStickerContext();
+
   return (
     <Typography
       className={twMerge("font-sticker uppercase", className)}
@@ -170,10 +209,12 @@ export function StickerClubLabel({ className, children, ...props }: Omit<Compone
       size="xs"
       {...props}
     >
-      {children}
+      {children ?? data.currentTeam.name}
     </Typography>
   );
 }
+
+export const StickerClubLabel = StickerTeamLabel;
 
 export function StickerSidebar({ className, ...props }: ComponentPropsWithRef<"div">) {
   return <div className={twMerge("flex h-full w-9 flex-col items-center justify-between", className)} {...props} />;
@@ -188,14 +229,23 @@ export function StickerSidebarGroup({ className, ...props }: ComponentPropsWithR
 }
 
 export function StickerFlag({ className, src, alt, ...props }: ComponentPropsWithRef<"img">) {
+  const { data } = useStickerContext();
+
   return (
     <div className="size-8 rounded-full rounded-br-none">
-      <img className={twMerge("size-full rounded-full rounded-br-none object-fill", className)} src={src} alt={alt} {...props} />
+      <img
+        className={twMerge("size-full rounded-full rounded-br-none object-fill", className)}
+        src={src ?? data.team.flag}
+        alt={alt ?? data.team.name}
+        {...props}
+      />
     </div>
   );
 }
 
 export function StickerCountryName({ className, children, ...props }: Omit<ComponentPropsWithRef<"span">, "color">) {
+  const { data } = useStickerContext();
+
   return (
     <Typography
       className={twMerge(
@@ -206,7 +256,7 @@ export function StickerCountryName({ className, children, ...props }: Omit<Compo
       as="span"
       {...props}
     >
-      {children}
+      {children ?? data.team.fifaCode.split("").join(" ")}
     </Typography>
   );
 }

@@ -1,3 +1,7 @@
+import type { ExtraStickerVariant } from "@/components/v2026/stickers/extra";
+import type { StickerVariant } from "@/components/v2026/stickers/normal";
+import type { Sticker } from "@/@types/sticker";
+
 export type HomeTeam = {
   name: string;
   flag: string;
@@ -13,60 +17,112 @@ export type HomeActivityItem = {
   color: string;
 };
 
-export const recentStickers = [
+export type HomeRecentSticker = {
+  number: number;
+  layout: "extra" | "player";
+  sticker: Sticker;
+  playerVariant?: StickerVariant;
+  extraVariant?: ExtraStickerVariant;
+  isRare?: boolean;
+  isHolographic?: boolean;
+};
+
+const mockBrazilTeam: Sticker["team"] = {
+  primaryColor: "var(--accent-primary-strong)",
+  secondaryColor: "var(--accent-highlight)",
+  flag: "/assets/png/flag-brazil.png",
+  id: "mock-brazil-team",
+  fifaCode: "BRA",
+  name: "Brasil",
+  groupCode: "A"
+};
+
+export const recentStickers: HomeRecentSticker[] = [
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "07-07-2000 | 1,76m | 73kg",
-    club: "Real Madrid (ESP)",
-    firstName: "vinicius",
-    variant: "forward",
-    lastName: "junior",
-    countryCode: "BRA",
-    type: "player",
-    owned: true,
+    sticker: {
+      player: {
+        name: "Vinicius Junior",
+        birthDate: "2000-07-07",
+        position: "ST",
+        height: 176,
+        weight: 73
+      },
+      currentTeam: { name: "Real Madrid (ESP)", fifaCode: "ESP" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "HOME001",
+      type: "player",
+      id: "home-1",
+      order: 1
+    },
+    playerVariant: "forward",
+    layout: "player",
     number: 1
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "09-01-2001 | 1,74m | 64kg",
-    club: "Real Madrid (ESP)",
-    variant: "midfielder",
-    firstName: "rodrygo",
-    countryCode: "BRA",
-    lastName: "goes",
-    type: "player",
+    sticker: {
+      player: {
+        birthDate: "2001-01-09",
+        name: "Rodrygo Goes",
+        position: "CM",
+        height: 174,
+        weight: 64
+      },
+      currentTeam: { name: "Real Madrid (ESP)", fifaCode: "ESP" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "HOME002",
+      type: "player",
+      id: "home-2",
+      order: 2
+    },
+    playerVariant: "midfielder",
+    layout: "player",
     isRare: true,
-    owned: true,
     number: 2
   },
   {
-    flag: "/assets/png/flag-brazil.png",
-    firstName: "neymar",
-    countryCode: "BRA",
-    variant: "gold",
-    lastName: "jr",
-    type: "extra",
-    owned: true,
+    sticker: {
+      player: {
+        birthDate: "1992-02-05",
+        name: "Neymar Jr",
+        position: "ST",
+        height: 175,
+        weight: 68
+      },
+      currentTeam: { fifaCode: "BRA", name: "Brasil" },
+      team: mockBrazilTeam,
+      code: "HOME003",
+      type: "player",
+      rarity: "gold",
+      id: "home-3",
+      order: 3
+    },
+    extraVariant: "gold",
+    layout: "extra",
     number: 3
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "02-10-1992 | 1,93m | 91kg",
-    club: "Liverpool (ENG)",
-    variant: "goalkeeper",
-    firstName: "alisson",
+    sticker: {
+      player: {
+        birthDate: "1992-10-02",
+        name: "Alisson Becker",
+        position: "GK",
+        height: 193,
+        weight: 91
+      },
+      currentTeam: { name: "Liverpool (ENG)", fifaCode: "ENG" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "HOME004",
+      type: "player",
+      id: "home-4",
+      order: 4
+    },
+    playerVariant: "goalkeeper",
     isHolographic: true,
-    lastName: "becker",
-    countryCode: "BRA",
-    type: "player",
+    layout: "player",
     isRare: true,
-    owned: true,
     number: 4
   }
 ];

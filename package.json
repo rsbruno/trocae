@@ -9,7 +9,7 @@
     "lint:fix": "eslint \"**/*.{ts,tsx,js,jsx,json}\" --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
     "preview": "vite preview",
-    "db:seed": "tsx --tsconfig tsconfig.node.json src/database/seed.ts",
+    "db:seed": "tsx --tsconfig tsconfig.node.json src/infra/database/seed.ts",
     "prepare": "husky"
   },
   "dependencies": {

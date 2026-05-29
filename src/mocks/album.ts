@@ -1,3 +1,7 @@
+import type { ExtraStickerVariant } from "@/components/v2026/stickers/extra";
+import type { StickerVariant } from "@/components/v2026/stickers/normal";
+import type { Sticker } from "@/@types/sticker";
+
 export type AlbumTeam = {
   name: string;
   flag: string;
@@ -14,20 +18,41 @@ export type AlbumGroup = {
 export type AlbumSticker = {
   number: number;
   owned: boolean;
-  type: "player" | "extra";
-  variant: "forward" | "midfielder" | "defender" | "goalkeeper" | "normal" | "silver" | "bronze" | "gold";
-  firstName?: string;
-  lastName?: string;
-  stats?: string;
-  club?: string;
-  flag?: string;
-  countryCode?: string;
-  primaryColor?: string;
-  secondaryColor?: string;
+  layout: "extra" | "player";
+  sticker: Sticker;
+  playerVariant?: StickerVariant;
+  extraVariant?: ExtraStickerVariant;
   repeated?: number;
   isRare?: boolean;
   isHolographic?: boolean;
 };
+
+const mockBrazilTeam: Sticker["team"] = {
+  primaryColor: "var(--accent-primary-strong)",
+  secondaryColor: "var(--accent-highlight)",
+  flag: "/assets/png/flag-brazil.png",
+  id: "mock-brazil-team",
+  fifaCode: "BRA",
+  name: "Brasil",
+  groupCode: "A"
+};
+
+const placeholderPlayerSticker = (order: number, position: Sticker["player"]["position"]): Sticker => ({
+  player: {
+    birthDate: "2000-01-01",
+    name: "Jogador",
+    height: 180,
+    weight: 75,
+    position
+  },
+  code: `ALB${String(order).padStart(3, "0")}`,
+  currentTeam: { fifaCode: "BRA", name: "—" },
+  id: `album-${order}`,
+  team: mockBrazilTeam,
+  rarity: "normal",
+  type: "player",
+  order
+});
 
 export const albumGroups: AlbumGroup[] = [
   {
@@ -52,148 +77,242 @@ export const albumGroups: AlbumGroup[] = [
 
 export const brazilAlbumStickers: AlbumSticker[] = [
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "07-07-2000 | 1,76m | 73kg",
-    club: "Real Madrid (ESP)",
-    firstName: "vinícius",
-    variant: "forward",
-    lastName: "júnior",
-    countryCode: "BRA",
-    type: "player",
+    sticker: {
+      player: {
+        name: "Vinícius Júnior",
+        birthDate: "2000-07-07",
+        position: "ST",
+        height: 176,
+        weight: 73
+      },
+      currentTeam: { name: "Real Madrid (ESP)", fifaCode: "ESP" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB001",
+      type: "player",
+      id: "album-1",
+      order: 1
+    },
+    playerVariant: "forward",
+    layout: "player",
     isRare: true,
-    owned: true,
     repeated: 2,
+    owned: true,
     number: 1
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "09-01-2001 | 1,74m | 64kg",
-    club: "Real Madrid (ESP)",
-    variant: "midfielder",
-    firstName: "rodrygo",
-    countryCode: "BRA",
-    lastName: "goes",
-    type: "player",
+    sticker: {
+      player: {
+        birthDate: "2001-01-09",
+        name: "Rodrygo Goes",
+        position: "CM",
+        height: 174,
+        weight: 64
+      },
+      currentTeam: { name: "Real Madrid (ESP)", fifaCode: "ESP" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB002",
+      type: "player",
+      id: "album-2",
+      order: 2
+    },
+    playerVariant: "midfielder",
+    layout: "player",
     owned: true,
     number: 2
   },
   {
-    flag: "/assets/png/flag-brazil.png",
+    sticker: {
+      player: {
+        birthDate: "1992-02-05",
+        name: "Neymar Jr",
+        position: "ST",
+        height: 175,
+        weight: 68
+      },
+      currentTeam: { fifaCode: "BRA", name: "Brasil" },
+      team: mockBrazilTeam,
+      code: "ALB003",
+      type: "player",
+      rarity: "gold",
+      id: "album-3",
+      order: 3
+    },
+    extraVariant: "gold",
     isHolographic: true,
-    firstName: "neymar",
-    countryCode: "BRA",
-    variant: "gold",
-    lastName: "jr",
-    type: "extra",
+    layout: "extra",
     owned: true,
     number: 3
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "02-10-1992 | 1,93m | 91kg",
-    club: "Liverpool (ENG)",
-    variant: "goalkeeper",
-    firstName: "alisson",
-    lastName: "becker",
-    countryCode: "BRA",
-    type: "player",
+    sticker: {
+      player: {
+        birthDate: "1992-10-02",
+        name: "Alisson Becker",
+        position: "GK",
+        height: 193,
+        weight: 91
+      },
+      currentTeam: { name: "Liverpool (ENG)", fifaCode: "ENG" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB004",
+      type: "player",
+      id: "album-4",
+      order: 4
+    },
+    playerVariant: "goalkeeper",
+    layout: "player",
     owned: true,
     number: 4
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "14-05-1994 | 1,83m | 75kg",
-    firstName: "marquinhos",
-    variant: "defender",
-    lastName: "moraes",
-    countryCode: "BRA",
-    club: "PSG (FRA)",
-    type: "player",
-    owned: true,
+    sticker: {
+      player: {
+        name: "Marquinhos Moraes",
+        birthDate: "1994-05-14",
+        position: "CB",
+        height: 183,
+        weight: 75
+      },
+      currentTeam: { name: "PSG (FRA)", fifaCode: "FRA" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB005",
+      type: "player",
+      id: "album-5",
+      order: 5
+    },
+    playerVariant: "defender",
+    layout: "player",
     repeated: 1,
+    owned: true,
     number: 5
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "16-11-1997 | 1,82m | 74kg",
-    club: "Newcastle (ENG)",
-    variant: "midfielder",
-    lastName: "guimarães",
-    firstName: "bruno",
-    countryCode: "BRA",
-    type: "player",
+    sticker: {
+      player: {
+        name: "Bruno Guimarães",
+        birthDate: "1997-11-16",
+        position: "CM",
+        height: 182,
+        weight: 74
+      },
+      currentTeam: { name: "Newcastle (ENG)", fifaCode: "ENG" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB006",
+      type: "player",
+      id: "album-6",
+      order: 6
+    },
+    playerVariant: "midfielder",
+    layout: "player",
     owned: true,
     number: 6
   },
-  { variant: "forward", countryCode: "BRA", type: "player", owned: false, number: 7 },
-  { variant: "midfielder", countryCode: "BRA", type: "player", owned: false, number: 8 },
+  { sticker: placeholderPlayerSticker(7, "ST"), playerVariant: "forward", layout: "player", owned: false, number: 7 },
+  { sticker: placeholderPlayerSticker(8, "CM"), playerVariant: "midfielder", layout: "player", owned: false, number: 8 },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "10-05-1997 | 1,84m | 78kg",
-    firstName: "richarlison",
-    club: "Tottenham (ENG)",
-    variant: "forward",
-    countryCode: "BRA",
-    type: "player",
-    lastName: "de",
+    sticker: {
+      player: {
+        name: "Richarlison de Andrade",
+        birthDate: "1997-05-10",
+        position: "ST",
+        height: 184,
+        weight: 78
+      },
+      currentTeam: { name: "Tottenham (ENG)", fifaCode: "ENG" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      code: "ALB009",
+      type: "player",
+      id: "album-9",
+      order: 9
+    },
+    playerVariant: "forward",
+    layout: "player",
     owned: true,
     number: 9
   },
   {
-    flag: "/assets/png/flag-brazil.png",
-    firstName: "casemiro",
-    countryCode: "BRA",
-    variant: "silver",
-    type: "extra",
-    lastName: "",
+    sticker: {
+      player: {
+        birthDate: "1992-02-23",
+        name: "Casemiro",
+        position: "CDM",
+        height: 185,
+        weight: 84
+      },
+      currentTeam: { fifaCode: "BRA", name: "Brasil" },
+      team: mockBrazilTeam,
+      rarity: "silver",
+      id: "album-10",
+      code: "ALB010",
+      type: "player",
+      order: 10
+    },
+    extraVariant: "silver",
+    layout: "extra",
     owned: true,
     number: 10
   },
-  { variant: "defender", countryCode: "BRA", type: "player", owned: false, number: 11 },
+  { sticker: placeholderPlayerSticker(11, "CB"), playerVariant: "defender", layout: "player", owned: false, number: 11 },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "14-12-1996 | 1,76m | 68kg",
-    club: "Barcelona (ESP)",
-    variant: "midfielder",
-    firstName: "raphinha",
-    lastName: "belloli",
-    countryCode: "BRA",
-    type: "player",
+    sticker: {
+      player: {
+        name: "Raphinha Belloli",
+        birthDate: "1996-12-14",
+        position: "RW",
+        height: 176,
+        weight: 68
+      },
+      currentTeam: { name: "Barcelona (ESP)", fifaCode: "ESP" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      id: "album-12",
+      code: "ALB012",
+      type: "player",
+      order: 12
+    },
+    playerVariant: "midfielder",
+    layout: "player",
     owned: true,
     number: 12
   },
   {
-    primaryColor: "var(--accent-primary-strong)",
-    secondaryColor: "var(--accent-highlight)",
-    flag: "/assets/png/flag-brazil.png",
-    stats: "15-07-1991 | 1,84m | 84kg",
-    club: "Botafogo (BRA)",
-    variant: "defender",
-    firstName: "danilo",
-    countryCode: "BRA",
-    lastName: "luiz",
-    type: "player",
-    owned: true,
+    sticker: {
+      player: {
+        birthDate: "1991-07-15",
+        name: "Danilo Luiz",
+        position: "RB",
+        height: 184,
+        weight: 84
+      },
+      currentTeam: { name: "Botafogo (BRA)", fifaCode: "BRA" },
+      team: mockBrazilTeam,
+      rarity: "normal",
+      id: "album-13",
+      code: "ALB013",
+      type: "player",
+      order: 13
+    },
+    playerVariant: "defender",
+    layout: "player",
     repeated: 3,
+    owned: true,
     number: 13
   },
-  { variant: "goalkeeper", countryCode: "BRA", type: "player", owned: false, number: 14 },
-  { countryCode: "BRA", variant: "bronze", type: "extra", owned: false, number: 15 },
-  { variant: "forward", countryCode: "BRA", type: "player", owned: false, number: 16 },
-  { variant: "midfielder", countryCode: "BRA", type: "player", owned: false, number: 17 },
-  { variant: "defender", countryCode: "BRA", type: "player", owned: false, number: 18 }
+  { sticker: placeholderPlayerSticker(14, "GK"), playerVariant: "goalkeeper", layout: "player", owned: false, number: 14 },
+  {
+    sticker: { ...placeholderPlayerSticker(15, "ST"), rarity: "bronze" },
+    extraVariant: "bronze",
+    layout: "extra",
+    owned: false,
+    number: 15
+  },
+  { sticker: placeholderPlayerSticker(16, "ST"), playerVariant: "forward", layout: "player", owned: false, number: 16 },
+  { sticker: placeholderPlayerSticker(17, "CM"), playerVariant: "midfielder", layout: "player", owned: false, number: 17 },
+  { sticker: placeholderPlayerSticker(18, "CB"), playerVariant: "defender", layout: "player", owned: false, number: 18 }
 ];

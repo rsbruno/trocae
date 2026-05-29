@@ -6,7 +6,6 @@ import {
   StickerSpecContainer,
   StickerPlayerAvatar,
   StickerSidebarGroup,
-  type StickerVariant,
   StickerCountryName,
   StickerPlayerStats,
   StickerBackground,
@@ -57,8 +56,6 @@ function AlbumPage() {
       : brazilAlbumStickers.map((s, i) => ({ ...s, number: i + 1, owned: i < 6 }));
 
   const renderStickerTile = (sticker: (typeof brazilAlbumStickers)[number]) => {
-    const avatar = (sticker as { avatar?: string }).avatar;
-
     if (!sticker.owned) {
       return (
         <button
@@ -92,40 +89,35 @@ function AlbumPage() {
           type="button"
         >
           <div className="overflow-hidden shadow-lg transition-all active:scale-[0.985]">
-            <ShowIf if={sticker.type === "extra"}>
-              <ExtraStickerRoot variant={sticker.variant as "normal" | "silver" | "bronze" | "gold"} size="album">
+            <ShowIf if={sticker.layout === "extra"}>
+              <ExtraStickerRoot variant={sticker.extraVariant} data={sticker.sticker} size="album">
                 <ExtraStickerLogo />
-                <ExtraStickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
-                <ExtraStickerPlayerAvatar src={avatar ?? "/assets/png/soccer-player.png"} alt={sticker.lastName ?? "Jogador"} />
-                <ExtraStickerPlayerName>
-                  {sticker.firstName} {sticker.lastName}
-                </ExtraStickerPlayerName>
+                <ExtraStickerFlag />
+                <ExtraStickerPlayerAvatar />
+                <ExtraStickerPlayerName />
               </ExtraStickerRoot>
             </ShowIf>
-            <ShowIf if={sticker.type === "player"}>
-              <StickerRoot variant={sticker.variant as StickerVariant} size="album">
-                <StickerBackground
-                  primaryColor={sticker.primaryColor ?? "var(--accent-primary-strong)"}
-                  secondaryColor={sticker.secondaryColor ?? "var(--accent-highlight)"}
-                />
+            <ShowIf if={sticker.layout === "player"}>
+              <StickerRoot variant={sticker.playerVariant} data={sticker.sticker} size="album">
+                <StickerBackground />
                 <StickerContent>
                   <StickerColumn>
-                    <StickerPlayerAvatar src={avatar ?? "/assets/png/soccer-player.png"} alt={sticker.lastName ?? "Jogador"} />
+                    <StickerPlayerAvatar />
                     <StickerSpecContainer mode="player">
-                      <StickerPlayerName lastName={sticker.lastName ?? "sobrenome"} firstName={sticker.firstName ?? "nome"} />
-                      <StickerPlayerStats>{sticker.stats ?? "—"}</StickerPlayerStats>
+                      <StickerPlayerName />
+                      <StickerPlayerStats />
                     </StickerSpecContainer>
                   </StickerColumn>
                   <StickerSidebar>
                     <StickerLogo />
                     <StickerSidebarGroup>
-                      <StickerFlag src={sticker.flag ?? "/assets/png/flag-brazil.png"} alt="" />
-                      <StickerCountryName>{(sticker.countryCode ?? "BRA").split("").join(" ")}</StickerCountryName>
+                      <StickerFlag />
+                      <StickerCountryName />
                     </StickerSidebarGroup>
                   </StickerSidebar>
                 </StickerContent>
                 <StickerSpecContainer mode="club">
-                  <StickerClubLabel>{sticker.club ?? "Clube do jogador"}</StickerClubLabel>
+                  <StickerClubLabel />
                 </StickerSpecContainer>
               </StickerRoot>
             </ShowIf>
