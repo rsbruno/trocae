@@ -102,7 +102,6 @@ function SignUpPage() {
             name="confirmPassword"
             control={control}
           />
-
           <ButtonRoot className="relative mt-1" disabled={isSubmitting} variant="primary" type="submit" size="xl">
             <ButtonLabel>Criar conta</ButtonLabel>
           </ButtonRoot>

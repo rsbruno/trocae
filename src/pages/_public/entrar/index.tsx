@@ -1,56 +1,61 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { type SubmitEvent, useState } from "react";
+import type { UserCredential } from "firebase/auth";
 
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useForm, Form } from "react-hook-form";
+
+import { useSignInWithGoogleService } from "@/services/firebase/sign-in-with-google.service";
+import { useSignInWithEmailService } from "@/services/firebase/sign-in-with-email.service";
+import { PasswordFieldControlled } from "@/components/ui/fields/controlled/password-field";
 import { PageStackFooter, PageStackMain, PageStackRoot } from "@/components/ui/page/stack";
-import { type SignInInput, signInSchema } from "@/schemas/zod/sign-in";
-import { PasswordField } from "@/components/ui/fields/password-field";
+import { getCurrentProfileService } from "@/services/users/get-current-profile.service";
+import { TextFieldControlled } from "@/components/ui/fields/controlled/text-field";
+import { type SignInFormData, EMPTY_DATA, resolver } from "@/schemas/zod/sign-in";
 import { ButtonLabel, ButtonRoot } from "@/components/ui/button";
 import { PageBrandMark } from "@/components/ui/page/brand-mark";
-import { TextField } from "@/components/ui/fields/text-field";
 import { GoogleIcon } from "@/assets/icons/google-icon";
 import { Typography } from "@/components/ui/typography";
-import { ShowIf } from "@/components/utils/show";
+import { useAuthStore } from "@/stores/auth.store";
+import { notify } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/_public/entrar/")({
-  component: EntrarPage
+  component: SignInPage
 });
 
-type SignInFieldErrors = Partial<Record<keyof SignInInput, string>>;
+function SignInPage() {
+  const { control, reset } = useForm({ resolver });
+  const setUser = useAuthStore((state) => state.setUser);
+  const setSession = useAuthStore((state) => state.setSession);
 
-function EntrarPage() {
-  const [form, setForm] = useState<SignInInput>({ password: "", email: "" });
-  const [fieldErrors, setFieldErrors] = useState<SignInFieldErrors>({});
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const onSuccess = async (credential: UserCredential) => {
+    const { user } = credential;
+    const profile = await getCurrentProfileService(user.uid);
 
-  const update = (field: keyof SignInInput) => (value: string) => {
-    setForm((prev) => ({ ...prev, [field]: value }));
-    if (fieldErrors[field]) setFieldErrors((prev) => ({ ...prev, [field]: undefined }));
+    setSession({
+      accessToken: await user.getIdToken(),
+      refreshToken: user.refreshToken
+    });
+    setUser(profile);
+    reset(EMPTY_DATA);
   };
 
-  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const googleSignIn = useSignInWithGoogleService({
+    onError: (error) => notify("error", error.message),
+    onSuccess
+  });
 
-    const result = signInSchema.safeParse(form);
+  const signInWithEmail = useSignInWithEmailService({
+    onError: (error) => notify("error", error.message),
+    onSuccess
+  });
 
-    if (!result.success) {
-      const { issues } = result.error;
+  const isSubmitting = signInWithEmail.isPending || googleSignIn.isPending;
 
-      setFieldErrors({
-        password: issues.find((issue) => issue.path[0] === "password")?.message,
-        email: issues.find((issue) => issue.path[0] === "email")?.message
-      });
-      setError(null);
-      return;
-    }
+  const handleGoogleSignIn = () => {
+    googleSignIn.mutate();
+  };
 
-    setFieldErrors({});
-    setIsLoading(true);
-    setError(null);
-
-    await new Promise((r) => setTimeout(r, 1500));
-    setIsLoading(false);
-    setError("E-mail ou senha incorretos. Tente novamente.");
+  const handleSignInWithEmail = (data: SignInFormData) => {
+    signInWithEmail.mutate({ password: data.password, email: data.email });
   };
 
   return (
@@ -60,24 +65,34 @@ function EntrarPage() {
           <PageBrandMark />
         </div>
 
-        <form className="flex w-full flex-col gap-4" onSubmit={handleSubmit} noValidate>
-          <TextField
+        <div className="mb-6 flex w-full flex-col gap-1.5">
+          <Typography className="tracking-tight" variant="bold" size="xl" as="h1">
+            Entrar
+          </Typography>
+          <Typography color="muted" size="sm" as="p">
+            Acesse com e-mail e senha.
+          </Typography>
+        </div>
+
+        <Form
+          onSubmit={({ data }) => handleSignInWithEmail(data)}
+          className="flex w-full flex-col gap-4"
+          control={control}
+          noValidate
+        >
+          <TextFieldControlled
             placeholder="seu@email.com"
-            onChange={update("email")}
-            error={fieldErrors.email}
             autoComplete="email"
-            value={form.email}
+            control={control}
             label="E-mail"
-            name="email"
             type="email"
+            name="email"
           />
           <div className="flex flex-col gap-1.5">
-            <PasswordField
+            <PasswordFieldControlled
               autoComplete="current-password"
-              onChange={update("password")}
-              error={fieldErrors.password}
               placeholder="••••••••"
-              value={form.password}
+              control={control}
               name="password"
               label="Senha"
             />
@@ -87,22 +102,10 @@ function EntrarPage() {
               </ButtonRoot>
             </div>
           </div>
-
-          <ShowIf if={Boolean(error)}>
-            <Typography color="danger" role="alert" size="sm" as="p">
-              {error}
-            </Typography>
-          </ShowIf>
-
-          <ButtonRoot className="relative mt-1" disabled={isLoading} variant="primary" type="submit" size="xl">
-            <ShowIf if={isLoading}>
-              <span className="border-bg/30 border-t-bg size-4 animate-spin rounded-full border-2" />
-            </ShowIf>
-            <ShowIf if={!isLoading}>
-              <ButtonLabel>Continuar</ButtonLabel>
-            </ShowIf>
+          <ButtonRoot className="relative mt-1" disabled={isSubmitting} variant="primary" type="submit" size="xl">
+            <ButtonLabel>Continuar</ButtonLabel>
           </ButtonRoot>
-        </form>
+        </Form>
 
         <div className="my-6 flex w-full items-center gap-3">
           <div className="h-px flex-1 bg-white/8" />
@@ -112,7 +115,14 @@ function EntrarPage() {
           <div className="h-px flex-1 bg-white/8" />
         </div>
 
-        <ButtonRoot variant="secondary" className="w-full" type="button" size="xl">
+        <ButtonRoot
+          onClick={handleGoogleSignIn}
+          className="relative w-full"
+          disabled={isSubmitting}
+          variant="secondary"
+          type="button"
+          size="xl"
+        >
           <GoogleIcon />
           <ButtonLabel>Continuar com Google</ButtonLabel>
         </ButtonRoot>
