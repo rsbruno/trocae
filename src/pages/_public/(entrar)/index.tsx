@@ -1,6 +1,6 @@
 import type { UserCredential } from "firebase/auth";
 
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, redirect, Link } from "@tanstack/react-router";
 import { useForm, Form } from "react-hook-form";
 
 import { useSignInWithGoogleService } from "@/services/firebase/sign-in-with-google.service";
@@ -17,11 +17,21 @@ import { Typography } from "@/components/ui/typography";
 import { useAuthStore } from "@/stores/auth.store";
 import { notify } from "@/components/ui/sonner";
 
-export const Route = createFileRoute("/_public/entrar/")({
+export const Route = createFileRoute("/_public/(entrar)/")({
+  beforeLoad: async () => {
+    if (!useAuthStore.persist.hasHydrated())
+      await new Promise<void>((resolve) => {
+        useAuthStore.persist.onFinishHydration(() => resolve());
+      });
+
+    const { session } = useAuthStore.getState();
+    if (session) throw redirect({ to: "/home" });
+  },
   component: SignInPage
 });
 
 function SignInPage() {
+  const navigate = useNavigate();
   const { control, reset } = useForm({ resolver });
   const setUser = useAuthStore((state) => state.setUser);
   const setSession = useAuthStore((state) => state.setSession);
@@ -36,6 +46,13 @@ function SignInPage() {
     });
     setUser(profile);
     reset(EMPTY_DATA);
+
+    if (profile === null || !profile.fullName || !profile.nickname) {
+      await navigate({ to: "/finalizar-cadastro" });
+      return;
+    }
+
+    await navigate({ to: "/home" });
   };
 
   const googleSignIn = useSignInWithGoogleService({
@@ -132,7 +149,7 @@ function SignInPage() {
         <Typography color="muted" as="span" size="sm">
           Não tem conta?{" "}
           <ButtonRoot variant="link" asChild>
-            <Link to="/criar-conta">
+            <Link to="/cadastrar">
               <ButtonLabel>Criar conta</ButtonLabel>
             </Link>
           </ButtonRoot>

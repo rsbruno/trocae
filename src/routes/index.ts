@@ -11,8 +11,9 @@
 import { Route as rootRouteImport } from './../pages/__root'
 import { Route as PublicRouteRouteImport } from './../pages/_public/route'
 import { Route as AuthRouteRouteImport } from './../pages/_auth/route'
-import { Route as PublicEntrarIndexRouteImport } from './../pages/_public/entrar/index'
-import { Route as PublicCriarContaIndexRouteImport } from './../pages/_public/criar-conta/index'
+import { Route as PublicFinalizarCadastroIndexRouteImport } from './../pages/_public/finalizar-cadastro/index'
+import { Route as PublicCadastrarIndexRouteImport } from './../pages/_public/cadastrar/index'
+import { Route as PublicentrarIndexRouteImport } from './../pages/_public/(entrar)/index'
 import { Route as AuthTradesIndexRouteImport } from './../pages/_auth/trades/index'
 import { Route as AuthProfileIndexRouteImport } from './../pages/_auth/profile/index'
 import { Route as AuthInventoryIndexRouteImport } from './../pages/_auth/inventory/index'
@@ -28,14 +29,20 @@ const AuthRouteRoute = AuthRouteRouteImport.update({
   id: '/_auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PublicEntrarIndexRoute = PublicEntrarIndexRouteImport.update({
-  id: '/entrar/',
-  path: '/entrar/',
+const PublicFinalizarCadastroIndexRoute =
+  PublicFinalizarCadastroIndexRouteImport.update({
+    id: '/finalizar-cadastro/',
+    path: '/finalizar-cadastro/',
+    getParentRoute: () => PublicRouteRoute,
+  } as any)
+const PublicCadastrarIndexRoute = PublicCadastrarIndexRouteImport.update({
+  id: '/cadastrar/',
+  path: '/cadastrar/',
   getParentRoute: () => PublicRouteRoute,
 } as any)
-const PublicCriarContaIndexRoute = PublicCriarContaIndexRouteImport.update({
-  id: '/criar-conta/',
-  path: '/criar-conta/',
+const PublicentrarIndexRoute = PublicentrarIndexRouteImport.update({
+  id: '/(entrar)/',
+  path: '/',
   getParentRoute: () => PublicRouteRoute,
 } as any)
 const AuthTradesIndexRoute = AuthTradesIndexRouteImport.update({
@@ -70,25 +77,25 @@ const AuthAlbumIdPaisIndexRoute = AuthAlbumIdPaisIndexRouteImport.update({
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof PublicRouteRouteWithChildren
+  '/': typeof PublicentrarIndexRoute
   '/album/': typeof AuthAlbumIndexRoute
   '/home/': typeof AuthHomeIndexRoute
   '/inventory/': typeof AuthInventoryIndexRoute
   '/profile/': typeof AuthProfileIndexRoute
   '/trades/': typeof AuthTradesIndexRoute
-  '/criar-conta/': typeof PublicCriarContaIndexRoute
-  '/entrar/': typeof PublicEntrarIndexRoute
+  '/cadastrar/': typeof PublicCadastrarIndexRoute
+  '/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
   '/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof PublicRouteRouteWithChildren
+  '/': typeof PublicentrarIndexRoute
   '/album': typeof AuthAlbumIndexRoute
   '/home': typeof AuthHomeIndexRoute
   '/inventory': typeof AuthInventoryIndexRoute
   '/profile': typeof AuthProfileIndexRoute
   '/trades': typeof AuthTradesIndexRoute
-  '/criar-conta': typeof PublicCriarContaIndexRoute
-  '/entrar': typeof PublicEntrarIndexRoute
+  '/cadastrar': typeof PublicCadastrarIndexRoute
+  '/finalizar-cadastro': typeof PublicFinalizarCadastroIndexRoute
   '/album/$id/$pais': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesById {
@@ -100,8 +107,9 @@ export interface FileRoutesById {
   '/_auth/inventory/': typeof AuthInventoryIndexRoute
   '/_auth/profile/': typeof AuthProfileIndexRoute
   '/_auth/trades/': typeof AuthTradesIndexRoute
-  '/_public/criar-conta/': typeof PublicCriarContaIndexRoute
-  '/_public/entrar/': typeof PublicEntrarIndexRoute
+  '/_public/(entrar)/': typeof PublicentrarIndexRoute
+  '/_public/cadastrar/': typeof PublicCadastrarIndexRoute
+  '/_public/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
   '/_auth/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRouteTypes {
@@ -113,8 +121,8 @@ export interface FileRouteTypes {
     | '/inventory/'
     | '/profile/'
     | '/trades/'
-    | '/criar-conta/'
-    | '/entrar/'
+    | '/cadastrar/'
+    | '/finalizar-cadastro/'
     | '/album/$id/$pais/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -124,8 +132,8 @@ export interface FileRouteTypes {
     | '/inventory'
     | '/profile'
     | '/trades'
-    | '/criar-conta'
-    | '/entrar'
+    | '/cadastrar'
+    | '/finalizar-cadastro'
     | '/album/$id/$pais'
   id:
     | '__root__'
@@ -136,8 +144,9 @@ export interface FileRouteTypes {
     | '/_auth/inventory/'
     | '/_auth/profile/'
     | '/_auth/trades/'
-    | '/_public/criar-conta/'
-    | '/_public/entrar/'
+    | '/_public/(entrar)/'
+    | '/_public/cadastrar/'
+    | '/_public/finalizar-cadastro/'
     | '/_auth/album/$id/$pais/'
   fileRoutesById: FileRoutesById
 }
@@ -162,18 +171,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_public/entrar/': {
-      id: '/_public/entrar/'
-      path: '/entrar'
-      fullPath: '/entrar/'
-      preLoaderRoute: typeof PublicEntrarIndexRouteImport
+    '/_public/finalizar-cadastro/': {
+      id: '/_public/finalizar-cadastro/'
+      path: '/finalizar-cadastro'
+      fullPath: '/finalizar-cadastro/'
+      preLoaderRoute: typeof PublicFinalizarCadastroIndexRouteImport
       parentRoute: typeof PublicRouteRoute
     }
-    '/_public/criar-conta/': {
-      id: '/_public/criar-conta/'
-      path: '/criar-conta'
-      fullPath: '/criar-conta/'
-      preLoaderRoute: typeof PublicCriarContaIndexRouteImport
+    '/_public/cadastrar/': {
+      id: '/_public/cadastrar/'
+      path: '/cadastrar'
+      fullPath: '/cadastrar/'
+      preLoaderRoute: typeof PublicCadastrarIndexRouteImport
+      parentRoute: typeof PublicRouteRoute
+    }
+    '/_public/(entrar)/': {
+      id: '/_public/(entrar)/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof PublicentrarIndexRouteImport
       parentRoute: typeof PublicRouteRoute
     }
     '/_auth/trades/': {
@@ -244,13 +260,15 @@ const AuthRouteRouteWithChildren = AuthRouteRoute._addFileChildren(
 )
 
 interface PublicRouteRouteChildren {
-  PublicCriarContaIndexRoute: typeof PublicCriarContaIndexRoute
-  PublicEntrarIndexRoute: typeof PublicEntrarIndexRoute
+  PublicentrarIndexRoute: typeof PublicentrarIndexRoute
+  PublicCadastrarIndexRoute: typeof PublicCadastrarIndexRoute
+  PublicFinalizarCadastroIndexRoute: typeof PublicFinalizarCadastroIndexRoute
 }
 
 const PublicRouteRouteChildren: PublicRouteRouteChildren = {
-  PublicCriarContaIndexRoute: PublicCriarContaIndexRoute,
-  PublicEntrarIndexRoute: PublicEntrarIndexRoute,
+  PublicentrarIndexRoute: PublicentrarIndexRoute,
+  PublicCadastrarIndexRoute: PublicCadastrarIndexRoute,
+  PublicFinalizarCadastroIndexRoute: PublicFinalizarCadastroIndexRoute,
 }
 
 const PublicRouteRouteWithChildren = PublicRouteRoute._addFileChildren(
