@@ -18,10 +18,10 @@ import { useAuthStore } from "@/stores/auth.store";
 import { notify } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/_public/criar-conta/")({
-  component: CriarContaPage
+  component: SignUpPage
 });
 
-function CriarContaPage() {
+function SignUpPage() {
   const { control, reset } = useForm({ resolver });
   const setUser = useAuthStore((state) => state.setUser);
   const setSession = useAuthStore((state) => state.setSession);
