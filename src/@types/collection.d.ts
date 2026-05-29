@@ -11,3 +11,8 @@ export type Collection = {
   sticker: Sticker;
   createdAt: Timestamp;
 };
+
+export type CollectionStickerStats = {
+  ownedCount: number;
+  ownedCountByStickerId: number;
+};

@@ -1,6 +1,7 @@
 import { MagnifyingGlassIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import { useWatch, useForm, Form } from "react-hook-form";
 import { createFileRoute } from "@tanstack/react-router";
+import { useQueryClient } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
 import type { StickerRarity } from "@/@types/collection";
@@ -36,6 +37,7 @@ import {
   EmptyStateIcon,
   EmptyStateRoot
 } from "@/components/ui/empty-state";
+import { useGetCollectionStickerStats } from "@/services/collections/get-sticker-collection-stats.service";
 import { useUpsertCollectionItemService } from "@/services/stickers/upsert-collection-item.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { type AddStickerFormData, EMPTY_DATA, resolver } from "@/schemas/zod/add-sticker";
@@ -43,6 +45,8 @@ import { useFindStickerByCode } from "@/services/stickers/find-sticker-by-code.s
 import { SearchInputControlled } from "@/components/ui/fields/controlled/search-input";
 import { SelectFieldControlled } from "@/components/ui/fields/controlled/select-field";
 import { ButtonLabel, ButtonRoot } from "@/components/ui/button";
+import { SurfaceCardGhost } from "@/components/ui/surface-card";
+import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { useDebounce } from "@/hooks/use-debounce";
 import { ShowIf } from "@/components/utils/show";
@@ -71,6 +75,7 @@ const variationToStickerRarity: Record<StickerVariationType, StickerRarity> = {
 };
 
 function AddStickerPage() {
+  const queryClient = useQueryClient();
   const { setValue, control, reset } = useForm({ resolver });
   const [debouncedCode, setDebouncedCode] = useState("");
 
@@ -81,8 +86,13 @@ function AddStickerPage() {
 
   const { data: found, isFetching, isFetched, error } = useFindStickerByCode(debouncedCode);
 
+  const selectedStickerRarity = variation?.value ? variationToStickerRarity[variation.value as StickerVariationType] : undefined;
+
+  const collectionStats = useGetCollectionStickerStats(found?.id, selectedStickerRarity);
+
   const upsertCollectionItem = useUpsertCollectionItemService({
     onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: ["use-get-collection-sticker-stats"] });
       reset(EMPTY_DATA);
       setDebouncedCode("");
       notify("success", "Figurinha adicionada à sua coleção.");
@@ -101,6 +111,9 @@ function AddStickerPage() {
 
   const isExtra = variation?.value.startsWith("extra") ?? false;
   const extraVariant = variation?.value ? (extraVariantByValue[variation.value] ?? "normal") : "normal";
+  const collectionStatsData = collectionStats.data;
+  const ownedCount = collectionStatsData?.ownedCount;
+  const ownedCountByStickerId = collectionStatsData?.ownedCountByStickerId;
   const hasMinQuery = debouncedCode.length >= 2;
   const showResult = hasMinQuery && Boolean(found);
   const showNotFound = hasMinQuery && isFetched && !isFetching && !found && !error;
@@ -233,6 +246,65 @@ function AddStickerPage() {
               control={control}
               noValidate
             >
+              <ShowIf if={collectionStats.isLoading || Boolean(collectionStats.error) || Boolean(collectionStatsData)}>
+                <SurfaceCardGhost className="flex flex-col gap-3 py-4">
+                  <Typography variant="semibold" color="base" size="sm" as="p">
+                    Na sua coleção
+                  </Typography>
+
+                  <ShowIf if={collectionStats.isLoading}>
+                    <Typography className="text-center" variant="medium" color="subtle" size="sm" as="p">
+                      Consultando...
+                    </Typography>
+                  </ShowIf>
+
+                  <ShowIf if={Boolean(collectionStats.error)}>
+                    <Typography className="text-center" variant="medium" color="subtle" size="sm" as="p">
+                      {collectionStats.error?.message ?? "Não foi possível carregar as estatísticas."}
+                    </Typography>
+                  </ShowIf>
+
+                  <ShowIf if={Boolean(collectionStatsData)}>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-surface/70 flex flex-col items-center gap-1 rounded-lg border border-white/6 px-2 py-3">
+                        <Typography variant="bold" color="base" as="span" size="xl">
+                          {ownedCount}
+                        </Typography>
+                        <Typography className="text-center" variant="medium" color="subtle" as="span" size="xs">
+                          Nesta variação
+                        </Typography>
+                      </div>
+                      <div className="bg-surface/70 flex flex-col items-center gap-1 rounded-lg border border-white/6 px-2 py-3">
+                        <Typography variant="bold" color="base" as="span" size="xl">
+                          {ownedCountByStickerId}
+                        </Typography>
+                        <Typography className="text-center" variant="medium" color="subtle" as="span" size="xs">
+                          Nessa categoria
+                        </Typography>
+                      </div>
+                    </div>
+
+                    <ShowIf if={ownedCount === 0 && ownedCountByStickerId === 0}>
+                      <Typography className="text-center" variant="medium" color="subtle" size="sm" as="p">
+                        Você não tem nenhuma desta figurinha.
+                      </Typography>
+                    </ShowIf>
+
+                    <ShowIf if={ownedCount === 0 && ownedCountByStickerId !== undefined && ownedCountByStickerId > 0}>
+                      <Typography className="text-center" variant="medium" color="subtle" size="sm" as="p">
+                        Você não tem nenhuma nesta variação, mas tem {ownedCountByStickerId} em outras.
+                      </Typography>
+                    </ShowIf>
+
+                    <ShowIf if={ownedCount !== undefined && ownedCount > 0}>
+                      <Typography className="text-center" variant="medium" color="subtle" size="sm" as="p">
+                        {ownedCount === 1 ? "Você já tem 1 igual." : `Você já tem ${ownedCount} iguais.`}
+                      </Typography>
+                    </ShowIf>
+                  </ShowIf>
+                </SurfaceCardGhost>
+              </ShowIf>
+
               <ButtonRoot className="relative w-full" disabled={isSubmitting} variant="primary" type="submit" size="xl">
                 <ButtonLabel>{isSubmitting ? "Adicionando..." : "Pegar figurinha"}</ButtonLabel>
               </ButtonRoot>
