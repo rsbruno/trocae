@@ -12,7 +12,8 @@ const defaultSeedsDir = path.join(databaseDir, "2026");
 const seedFileOrder = ["groups.json", "teams.json"];
 
 const referenceFieldCollections: Record<string, string> = {
-  groupRef: "groups"
+  groupRef: "groups",
+  teamRef: "teams"
 };
 
 export type SeedDocumentResult = {

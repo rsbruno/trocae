@@ -1,7 +1,5 @@
 import type { DocumentReference } from "firebase/firestore";
 
-import type { Team } from "./team";
-
 export type StickerType = "badge" | "team" | "player";
 
 export type StickerRarity = "common" | "normal" | "bronze" | "silver" | "gold";
@@ -15,7 +13,7 @@ export type Sticker = {
   name: string;
   type: StickerType;
   rarity: StickerRarity;
-  teamRef: DocumentReference<Team>;
+  teamRef: DocumentReference;
   playerPosition: PlayerPosition;
   playerName: string;
   weight: number;

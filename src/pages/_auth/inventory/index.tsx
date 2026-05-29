@@ -2,9 +2,9 @@ import { ArrowsDownUp, Check, Hash } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
+import { SearchInput } from "@/components/ui/fields/search-input";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
@@ -70,10 +70,7 @@ function InventoryPage() {
           </ForEach>
         </div>
 
-        <SearchInputRoot>
-          <SearchInputIcon />
-          <SearchInputField placeholder="Buscar por número, nome ou país..." />
-        </SearchInputRoot>
+        <SearchInput placeholder="Buscar por número, nome ou país..." name="inventorySearch" />
 
         <div className="flex items-center gap-2">
           <Tabs onValueChange={(value) => setActiveTab(value as FilterTab)} className="flex-1" value={activeTab}>

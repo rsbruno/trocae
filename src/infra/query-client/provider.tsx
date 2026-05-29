@@ -6,11 +6,9 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { ShowIf } from "@/components/utils/show";
 
 import { queryClient } from "./query-client";
-
 type QueryProviderProps = {
   children: ReactNode;
 };
-
 export function QueryProvider({ children }: QueryProviderProps) {
   return (
     <QueryClientProvider client={queryClient}>

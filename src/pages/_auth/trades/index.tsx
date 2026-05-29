@@ -2,11 +2,11 @@ import { ArrowsLeftRight, PaperPlaneTilt, Sparkle, Plus } from "@phosphor-icons/
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { wishlistItems, tradeHistory, tradeOffers } from "@/mocks/trades";
 import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
+import { SearchInput } from "@/components/ui/fields/search-input";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -63,10 +63,7 @@ function TradesPage() {
                 </Typography>
               </ButtonRoot>
             </div>
-            <SearchInputRoot>
-              <SearchInputIcon />
-              <SearchInputField placeholder="Buscar na wishlist..." />
-            </SearchInputRoot>
+            <SearchInput placeholder="Buscar na wishlist..." name="wishlistSearch" />
             <div className="flex flex-col gap-2">
               <ForEach items={wishlistItems}>
                 {(item) => (

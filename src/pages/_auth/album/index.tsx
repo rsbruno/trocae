@@ -33,8 +33,8 @@ import {
   PageHeaderTitle,
   PageHeaderRoot
 } from "@/components/ui/page/header";
-import { SearchInputField, SearchInputIcon, SearchInputRoot } from "@/components/ui/fields/search-input";
 import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
+import { SearchInput } from "@/components/ui/fields/search-input";
 import { brazilAlbumStickers, albumGroups } from "@/mocks/album";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
@@ -153,10 +153,7 @@ function AlbumPage() {
         </PageHeaderActions>
       </PageHeaderRoot>
       <div className="mb-5 px-4">
-        <SearchInputRoot>
-          <SearchInputIcon />
-          <SearchInputField placeholder="Buscar por número ou jogador..." />
-        </SearchInputRoot>
+        <SearchInput placeholder="Buscar por número ou jogador..." name="albumSearch" />
       </div>
 
       <ShowIf if={view === "groups"}>

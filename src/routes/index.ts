@@ -19,6 +19,7 @@ import { Route as AuthProfileIndexRouteImport } from './../pages/_auth/profile/i
 import { Route as AuthInventoryIndexRouteImport } from './../pages/_auth/inventory/index'
 import { Route as AuthHomeIndexRouteImport } from './../pages/_auth/home/index'
 import { Route as AuthAlbumIndexRouteImport } from './../pages/_auth/album/index'
+import { Route as AuthInventoryAddIndexRouteImport } from './../pages/_auth/inventory/add/index'
 import { Route as AuthAlbumIdPaisIndexRouteImport } from './../pages/_auth/album/$id/$pais/index'
 
 const PublicRouteRoute = PublicRouteRouteImport.update({
@@ -70,6 +71,11 @@ const AuthAlbumIndexRoute = AuthAlbumIndexRouteImport.update({
   path: '/album/',
   getParentRoute: () => AuthRouteRoute,
 } as any)
+const AuthInventoryAddIndexRoute = AuthInventoryAddIndexRouteImport.update({
+  id: '/inventory/add/',
+  path: '/inventory/add/',
+  getParentRoute: () => AuthRouteRoute,
+} as any)
 const AuthAlbumIdPaisIndexRoute = AuthAlbumIdPaisIndexRouteImport.update({
   id: '/album/$id/$pais/',
   path: '/album/$id/$pais/',
@@ -85,6 +91,7 @@ export interface FileRoutesByFullPath {
   '/trades/': typeof AuthTradesIndexRoute
   '/cadastrar/': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
+  '/inventory/add/': typeof AuthInventoryAddIndexRoute
   '/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesByTo {
@@ -96,6 +103,7 @@ export interface FileRoutesByTo {
   '/trades': typeof AuthTradesIndexRoute
   '/cadastrar': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro': typeof PublicFinalizarCadastroIndexRoute
+  '/inventory/add': typeof AuthInventoryAddIndexRoute
   '/album/$id/$pais': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesById {
@@ -110,6 +118,7 @@ export interface FileRoutesById {
   '/_public/(entrar)/': typeof PublicentrarIndexRoute
   '/_public/cadastrar/': typeof PublicCadastrarIndexRoute
   '/_public/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
+  '/_auth/inventory/add/': typeof AuthInventoryAddIndexRoute
   '/_auth/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRouteTypes {
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/trades/'
     | '/cadastrar/'
     | '/finalizar-cadastro/'
+    | '/inventory/add/'
     | '/album/$id/$pais/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -134,6 +144,7 @@ export interface FileRouteTypes {
     | '/trades'
     | '/cadastrar'
     | '/finalizar-cadastro'
+    | '/inventory/add'
     | '/album/$id/$pais'
   id:
     | '__root__'
@@ -147,6 +158,7 @@ export interface FileRouteTypes {
     | '/_public/(entrar)/'
     | '/_public/cadastrar/'
     | '/_public/finalizar-cadastro/'
+    | '/_auth/inventory/add/'
     | '/_auth/album/$id/$pais/'
   fileRoutesById: FileRoutesById
 }
@@ -227,6 +239,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthAlbumIndexRouteImport
       parentRoute: typeof AuthRouteRoute
     }
+    '/_auth/inventory/add/': {
+      id: '/_auth/inventory/add/'
+      path: '/inventory/add'
+      fullPath: '/inventory/add/'
+      preLoaderRoute: typeof AuthInventoryAddIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
+    }
     '/_auth/album/$id/$pais/': {
       id: '/_auth/album/$id/$pais/'
       path: '/album/$id/$pais'
@@ -243,6 +262,7 @@ interface AuthRouteRouteChildren {
   AuthInventoryIndexRoute: typeof AuthInventoryIndexRoute
   AuthProfileIndexRoute: typeof AuthProfileIndexRoute
   AuthTradesIndexRoute: typeof AuthTradesIndexRoute
+  AuthInventoryAddIndexRoute: typeof AuthInventoryAddIndexRoute
   AuthAlbumIdPaisIndexRoute: typeof AuthAlbumIdPaisIndexRoute
 }
 
@@ -252,6 +272,7 @@ const AuthRouteRouteChildren: AuthRouteRouteChildren = {
   AuthInventoryIndexRoute: AuthInventoryIndexRoute,
   AuthProfileIndexRoute: AuthProfileIndexRoute,
   AuthTradesIndexRoute: AuthTradesIndexRoute,
+  AuthInventoryAddIndexRoute: AuthInventoryAddIndexRoute,
   AuthAlbumIdPaisIndexRoute: AuthAlbumIdPaisIndexRoute,
 }
 

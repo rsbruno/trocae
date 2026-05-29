@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { twMerge } from "tailwind-merge";
+
 import { PageContext } from "./context";
 
 type PageRootProps = {
@@ -14,7 +16,7 @@ type PageRootProps = {
 export function PageRoot({ className = "mx-auto max-w-md", children, subtitle, showBack, onBack, title }: PageRootProps) {
   return (
     <PageContext.Provider value={{ subtitle, showBack, onBack, title }}>
-      <main className={className}>{children}</main>
+      <main className={twMerge(className, "flex h-full flex-1 flex-col")}>{children}</main>
     </PageContext.Provider>
   );
 }

@@ -4,7 +4,6 @@ import { twMerge } from "tailwind-merge";
 import { ShowIf } from "@/components/utils/show";
 
 import { type FieldContainerProps, fieldInputClassName, FieldContainer } from "./container";
-
 export type TextFieldProps = Omit<FieldContainerProps, "children"> &
   Omit<InputHTMLAttributes<HTMLInputElement>, "onChange" | "name"> & {
     name: string;
@@ -14,32 +13,25 @@ export type TextFieldProps = Omit<FieldContainerProps, "children"> &
     value?: string | number | null;
     prefix?: string;
   };
-
 export const TextFieldPrimitive = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ type = "text", className, onChange, unmask, value, error, mask, name, id, ...props }, ref) => {
     const [text, setText] = useState("");
     const inputId = id ?? name;
     const hasError = Boolean(error);
-
     function onChangeText(e: ChangeEvent<HTMLInputElement>) {
       const next = mask ? mask(e.target.value) : e.target.value;
       onChange?.(unmask ? unmask(next) : next);
       setText(next);
     }
-
     useEffect(() => {
       if (value === undefined) return;
-
       if (value == null) {
         setText("");
         return;
       }
-
       const nextText = mask ? mask(value) : String(value);
-
       if (nextText !== text) setText(nextText);
     }, [value, mask, text]);
-
     return (
       <input
         {...props}
@@ -57,9 +49,7 @@ export const TextFieldPrimitive = forwardRef<HTMLInputElement, TextFieldProps>(
     );
   }
 );
-
 TextFieldPrimitive.displayName = "TextFieldPrimitive";
-
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ className, prefix, error, label, name, id, ...props }, ref) => {
     return (
@@ -82,5 +72,4 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     );
   }
 );
-
 TextField.displayName = "TextField";

@@ -5,13 +5,11 @@ import { twMerge } from "tailwind-merge";
 import { ShowIf } from "@/components/utils/show";
 
 import { type FieldContainerProps, fieldInputClassName, FieldContainer } from "./container";
-
 export type PasswordFieldProps = Omit<FieldContainerProps, "children"> &
   Omit<InputHTMLAttributes<HTMLInputElement>, "onChange" | "name" | "type"> & {
     name: string;
     onChange?: (password: string) => void;
   };
-
 export const PasswordFieldPrimitive = forwardRef<HTMLInputElement, PasswordFieldProps>(
   ({ defaultValue, className, onChange, value, error, name, id, ...props }, ref) => {
     const [internal, setInternal] = useState(() => (defaultValue != null ? String(defaultValue) : ""));
@@ -19,14 +17,11 @@ export const PasswordFieldPrimitive = forwardRef<HTMLInputElement, PasswordField
     const inputId = id ?? name;
     const hasError = Boolean(error);
     const inputValue = value !== undefined ? value : internal;
-
     function onChangePassword(e: ChangeEvent<HTMLInputElement>) {
       const next = e.target.value;
-
       if (value === undefined) setInternal(next);
       onChange?.(next);
     }
-
     return (
       <>
         <input
@@ -61,9 +56,7 @@ export const PasswordFieldPrimitive = forwardRef<HTMLInputElement, PasswordField
     );
   }
 );
-
 PasswordFieldPrimitive.displayName = "PasswordFieldPrimitive";
-
 export const PasswordField = forwardRef<HTMLInputElement, PasswordFieldProps>(
   ({ className, error, label, name, id, ...props }, ref) => {
     return (
@@ -73,5 +66,4 @@ export const PasswordField = forwardRef<HTMLInputElement, PasswordFieldProps>(
     );
   }
 );
-
 PasswordField.displayName = "PasswordField";
