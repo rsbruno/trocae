@@ -17,12 +17,11 @@ export const getCurrentProfileService = async (id: string): Promise<User | null>
 
   const data = snapshot.data();
   return {
-    photoURL: currentUser.photoURL,
-    fullName: data.displayName,
-    createdAt: data.createdAt,
-    email: currentUser.email,
-    nickname: data.nickname,
-    id: currentUser.uid
+    photoURL: currentUser?.photoURL,
+    fullName: data?.displayName,
+    email: currentUser?.email,
+    nickname: data?.nickname,
+    id: currentUser?.uid
   };
 };
 

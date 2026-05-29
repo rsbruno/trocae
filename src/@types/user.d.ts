@@ -1,10 +1,7 @@
-import type { Timestamp } from "firebase-admin/firestore";
-
 export type User = {
   id: string;
-  fullName: string;
+  fullName: string | null;
   email: string;
-  photoURL: string;
-  nickname: string;
-  createdAt: Timestamp;
+  photoURL: string | null;
+  nickname: string | null;
 };
