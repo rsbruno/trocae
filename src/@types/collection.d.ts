@@ -10,6 +10,7 @@ export type Collection = {
   stickerRarity: StickerRarity;
   sticker: Sticker;
   createdAt: Timestamp;
+  pastedAt?: Timestamp;
 };
 
 export type CollectionStickerStats = {

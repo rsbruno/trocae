@@ -1,3 +1,5 @@
+import type { Group } from "./group";
+
 export type Confederation = "CONMEBOL" | "CONCACAF" | "UEFA" | "AFC" | "CAF" | "OFC";
 
 export type Team = {
@@ -17,3 +19,7 @@ export type Team = {
     order: number;
   };
 };
+
+export interface GroupedTeam extends Group {
+  teams: Team[];
+}

@@ -1,225 +1,70 @@
-import { CaretRight, Funnel } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 
 import {
-  StickerSpecContainer,
-  StickerPlayerAvatar,
-  StickerSidebarGroup,
-  StickerCountryName,
-  StickerPlayerStats,
-  StickerBackground,
-  StickerPlayerName,
-  StickerClubLabel,
-  StickerContent,
-  StickerSidebar,
-  StickerColumn,
-  StickerFlag,
-  StickerLogo,
-  StickerRoot
-} from "@/components/v2026/stickers/normal";
-import {
-  ExtraStickerPlayerAvatar,
-  ExtraStickerPlayerName,
-  ExtraStickerFlag,
-  ExtraStickerLogo,
-  ExtraStickerRoot
-} from "@/components/v2026/stickers/extra";
-import {
-  PageHeaderSubtitle,
-  PageHeaderActions,
-  PageHeaderAction,
-  PageHeaderTitle,
-  PageHeaderRoot
-} from "@/components/ui/page/header";
-import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
-import { SearchInput } from "@/components/ui/fields/search-input";
-import { brazilAlbumStickers, albumGroups } from "@/mocks/album";
-import { SurfaceCardRoot } from "@/components/ui/surface-card";
-import { Typography } from "@/components/ui/typography";
+  GroupListItemProgress,
+  GroupListItemAction,
+  GroupListItemStats,
+  GroupListItemFlag,
+  GroupListItemName,
+  GroupListItemRoot,
+  GroupListContent,
+  GroupListHeader,
+  GroupListRoot
+} from "@/components/v2026/groups/list";
+import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { useFindAllGroupedTeams } from "@/services/teams/find-all-grouped-teams.service";
 import { PageRoot } from "@/components/ui/page/root";
-import { ForEach } from "@/components/utils/foreach";
-import { ShowIf } from "@/components/utils/show";
-import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/_auth/album/")({
   component: AlbumPage
 });
 
+const MAX_STICKERS_PER_TEAM = 20;
+
 function AlbumPage() {
-  const [view, setView] = useState<"groups" | "team">("groups");
-  const [selectedTeam, setSelectedTeam] = useState<(typeof albumGroups)[number]["teams"][number] | null>(null);
-
-  const stickers =
-    selectedTeam?.fifaCode === "BRA"
-      ? brazilAlbumStickers
-      : brazilAlbumStickers.map((s, i) => ({ ...s, number: i + 1, owned: i < 6 }));
-
-  const renderStickerTile = (sticker: (typeof brazilAlbumStickers)[number]) => {
-    if (!sticker.owned) {
-      return (
-        <button
-          className="border-border bg-surface-alt hover:bg-surface-alt/80 flex min-h-[340px] w-full flex-col items-center justify-center rounded-sm border border-dashed transition-colors"
-          style={{ minHeight: "340px" }}
-          type="button"
-        >
-          <Typography className="font-heading opacity-25" variant="bold" color="subtle" as="span" size="xl">
-            ?
-          </Typography>
-          <Typography
-            className="bg-surface mt-3 inline-flex items-center gap-1 rounded-full px-2 py-1"
-            variant="medium"
-            color="subtle"
-            as="span"
-            size="xs"
-          >
-            {String(sticker.number).padStart(3, "0")}
-          </Typography>
-          <Typography className="mt-1.5" variant="medium" color="subtle" as="span" size="xs">
-            Faltando
-          </Typography>
-        </button>
-      );
+  const { isLoading: groupsLoading, data: groups } = useFindAllGroupedTeams();
+  const { data: pasted } = useFindAllPastedCollection({
+    select: (stickers) => {
+      return stickers.reduce<Record<string, number>>((acc, item) => {
+        const teamId = item.sticker.team.id;
+        acc[teamId] = (acc[teamId] ?? 0) + 1;
+        return acc;
+      }, {});
     }
-
-    return (
-      <div className="relative">
-        <button
-          className={`block w-full ${sticker.isHolographic ? "border-accent-highlight/30 rounded-sm border-2" : ""}`}
-          type="button"
-        >
-          <div className="overflow-hidden shadow-lg transition-all active:scale-[0.985]">
-            <ShowIf if={sticker.layout === "extra"}>
-              <ExtraStickerRoot variant={sticker.extraVariant} data={sticker.sticker} size="album">
-                <ExtraStickerLogo />
-                <ExtraStickerFlag />
-                <ExtraStickerPlayerAvatar />
-                <ExtraStickerPlayerName />
-              </ExtraStickerRoot>
-            </ShowIf>
-            <ShowIf if={sticker.layout === "player"}>
-              <StickerRoot variant={sticker.playerVariant} data={sticker.sticker} size="album">
-                <StickerBackground />
-                <StickerContent>
-                  <StickerColumn>
-                    <StickerPlayerAvatar />
-                    <StickerSpecContainer mode="player">
-                      <StickerPlayerName />
-                      <StickerPlayerStats />
-                    </StickerSpecContainer>
-                  </StickerColumn>
-                  <StickerSidebar>
-                    <StickerLogo />
-                    <StickerSidebarGroup>
-                      <StickerFlag />
-                      <StickerCountryName />
-                    </StickerSidebarGroup>
-                  </StickerSidebar>
-                </StickerContent>
-                <StickerSpecContainer mode="club">
-                  <StickerClubLabel />
-                </StickerSpecContainer>
-              </StickerRoot>
-            </ShowIf>
-          </div>
-        </button>
-      </div>
-    );
-  };
+  });
 
   return (
-    <PageRoot
-      subtitle={view === "groups" ? "Todas as seleções" : `${selectedTeam?.collected}/${selectedTeam?.total} figurinhas`}
-      title={view === "groups" ? "Álbum" : (selectedTeam?.name ?? "Álbum")}
-      className="mx-auto max-w-md pb-8"
-      onBack={() => setView("groups")}
-      showBack={view === "team"}
-    >
+    <PageRoot className="mx-auto max-w-md pb-8" subtitle="Todas as seleções" title="Álbum">
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
           <PageHeaderSubtitle />
         </div>
-        <PageHeaderActions>
-          <PageHeaderAction icon={<Funnel weight="regular" size={18} />} />
-        </PageHeaderActions>
       </PageHeaderRoot>
-      <div className="mb-5 px-4">
-        <SearchInput placeholder="Buscar por número ou jogador..." name="albumSearch" />
+
+      <div className="flex flex-col gap-7 px-4" aria-busy={groupsLoading}>
+        {groupsLoading
+          ? Array.from({ length: 3 }).map((_, i) => <GroupListRoot skeleton key={i} />)
+          : groups?.map((group) => (
+              <GroupListRoot key={group.id}>
+                <GroupListHeader>Grupo {group.code}</GroupListHeader>
+                <GroupListContent>
+                  {group.teams.map((team) => (
+                    <GroupListItemRoot key={team.id}>
+                      <GroupListItemFlag src={team.flag} />
+                      <GroupListItemName>{team.name}</GroupListItemName>
+                      <GroupListItemStats>
+                        {pasted?.[team.id] ?? 0}/{MAX_STICKERS_PER_TEAM}
+                      </GroupListItemStats>
+                      <GroupListItemProgress value={((pasted?.[team.id] ?? 0) / MAX_STICKERS_PER_TEAM) * 100} />
+                      <GroupListItemAction />
+                    </GroupListItemRoot>
+                  ))}
+                </GroupListContent>
+              </GroupListRoot>
+            ))}
       </div>
-
-      <ShowIf if={view === "groups"}>
-        <div className="flex flex-col gap-7 px-4">
-          <ForEach items={albumGroups}>
-            {(group) => (
-              <section key={group.code}>
-                <Typography className="mb-3 tracking-[0.08em] uppercase" variant="medium" color="accent" size="xs" as="p">
-                  Grupo {group.code}
-                </Typography>
-                <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
-                  <ForEach items={group.teams}>
-                    {(team) => {
-                      const progress = Math.round((team.collected / team.total) * 100);
-                      return (
-                        <button
-                          onClick={() => {
-                            setSelectedTeam(team);
-                            setView("team");
-                          }}
-                          className="flex items-center gap-3 px-4 py-3.5 text-left transition-colors active:bg-white/4"
-                          key={team.fifaCode}
-                          type="button"
-                        >
-                          <Typography as="span" size="lg">
-                            {team.flag}
-                          </Typography>
-                          <Typography className="flex-1" variant="medium" color="base" as="span" size="sm">
-                            {team.name}
-                          </Typography>
-                          <Typography className="tabular-nums" variant="medium" color="subtle" as="span" size="xs">
-                            {team.collected}/{team.total}
-                          </Typography>
-                          <Progress value={progress} className="w-14">
-                            <ProgressTrack className="h-1.5">
-                              <ProgressIndicator />
-                            </ProgressTrack>
-                          </Progress>
-                          <CaretRight className="text-ink-muted" weight="regular" size={14} />
-                        </button>
-                      );
-                    }}
-                  </ForEach>
-                </Card>
-              </section>
-            )}
-          </ForEach>
-        </div>
-      </ShowIf>
-
-      <ShowIf if={view === "team" && !!selectedTeam}>
-        <div className="space-y-6 px-4">
-          <SurfaceCardRoot className="flex items-center gap-4">
-            <Typography as="span" size="xl">
-              {selectedTeam?.flag}
-            </Typography>
-            <div className="flex-1">
-              <Typography variant="medium" color="base" size="md" as="h2">
-                {selectedTeam?.name}
-              </Typography>
-              <Typography variant="medium" color="subtle" size="sm" as="p">
-                {selectedTeam?.collected} de {selectedTeam?.total} figurinhas
-              </Typography>
-            </div>
-            <Typography className="tabular-nums" variant="bold" color="accent" as="span" size="lg">
-              {Math.round(((selectedTeam?.collected ?? 0) / (selectedTeam?.total ?? 1)) * 100)}%
-            </Typography>
-          </SurfaceCardRoot>
-
-          <div className="grid grid-cols-2 gap-1">
-            <ForEach items={stickers}>{(sticker) => <div key={sticker.number}>{renderStickerTile(sticker)}</div>}</ForEach>
-          </div>
-        </div>
-      </ShowIf>
     </PageRoot>
   );
 }
