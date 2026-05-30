@@ -20,7 +20,7 @@ import { Route as AuthInventoryIndexRouteImport } from './../pages/_auth/invento
 import { Route as AuthHomeIndexRouteImport } from './../pages/_auth/home/index'
 import { Route as AuthAlbumIndexRouteImport } from './../pages/_auth/album/index'
 import { Route as AuthInventoryAddIndexRouteImport } from './../pages/_auth/inventory/add/index'
-import { Route as AuthAlbumIdPaisIndexRouteImport } from './../pages/_auth/album/$id/$pais/index'
+import { Route as AuthAlbumPaisIndexRouteImport } from './../pages/_auth/album/$pais/index'
 
 const PublicRouteRoute = PublicRouteRouteImport.update({
   id: '/_public',
@@ -76,9 +76,9 @@ const AuthInventoryAddIndexRoute = AuthInventoryAddIndexRouteImport.update({
   path: '/inventory/add/',
   getParentRoute: () => AuthRouteRoute,
 } as any)
-const AuthAlbumIdPaisIndexRoute = AuthAlbumIdPaisIndexRouteImport.update({
-  id: '/album/$id/$pais/',
-  path: '/album/$id/$pais/',
+const AuthAlbumPaisIndexRoute = AuthAlbumPaisIndexRouteImport.update({
+  id: '/album/$pais/',
+  path: '/album/$pais/',
   getParentRoute: () => AuthRouteRoute,
 } as any)
 
@@ -91,8 +91,8 @@ export interface FileRoutesByFullPath {
   '/trades/': typeof AuthTradesIndexRoute
   '/cadastrar/': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
+  '/album/$pais/': typeof AuthAlbumPaisIndexRoute
   '/inventory/add/': typeof AuthInventoryAddIndexRoute
-  '/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof PublicentrarIndexRoute
@@ -103,8 +103,8 @@ export interface FileRoutesByTo {
   '/trades': typeof AuthTradesIndexRoute
   '/cadastrar': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro': typeof PublicFinalizarCadastroIndexRoute
+  '/album/$pais': typeof AuthAlbumPaisIndexRoute
   '/inventory/add': typeof AuthInventoryAddIndexRoute
-  '/album/$id/$pais': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -118,8 +118,8 @@ export interface FileRoutesById {
   '/_public/(entrar)/': typeof PublicentrarIndexRoute
   '/_public/cadastrar/': typeof PublicCadastrarIndexRoute
   '/_public/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
+  '/_auth/album/$pais/': typeof AuthAlbumPaisIndexRoute
   '/_auth/inventory/add/': typeof AuthInventoryAddIndexRoute
-  '/_auth/album/$id/$pais/': typeof AuthAlbumIdPaisIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -132,8 +132,8 @@ export interface FileRouteTypes {
     | '/trades/'
     | '/cadastrar/'
     | '/finalizar-cadastro/'
+    | '/album/$pais/'
     | '/inventory/add/'
-    | '/album/$id/$pais/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -144,8 +144,8 @@ export interface FileRouteTypes {
     | '/trades'
     | '/cadastrar'
     | '/finalizar-cadastro'
+    | '/album/$pais'
     | '/inventory/add'
-    | '/album/$id/$pais'
   id:
     | '__root__'
     | '/_auth'
@@ -158,8 +158,8 @@ export interface FileRouteTypes {
     | '/_public/(entrar)/'
     | '/_public/cadastrar/'
     | '/_public/finalizar-cadastro/'
+    | '/_auth/album/$pais/'
     | '/_auth/inventory/add/'
-    | '/_auth/album/$id/$pais/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -246,11 +246,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthInventoryAddIndexRouteImport
       parentRoute: typeof AuthRouteRoute
     }
-    '/_auth/album/$id/$pais/': {
-      id: '/_auth/album/$id/$pais/'
-      path: '/album/$id/$pais'
-      fullPath: '/album/$id/$pais/'
-      preLoaderRoute: typeof AuthAlbumIdPaisIndexRouteImport
+    '/_auth/album/$pais/': {
+      id: '/_auth/album/$pais/'
+      path: '/album/$pais'
+      fullPath: '/album/$pais/'
+      preLoaderRoute: typeof AuthAlbumPaisIndexRouteImport
       parentRoute: typeof AuthRouteRoute
     }
   }
@@ -262,8 +262,8 @@ interface AuthRouteRouteChildren {
   AuthInventoryIndexRoute: typeof AuthInventoryIndexRoute
   AuthProfileIndexRoute: typeof AuthProfileIndexRoute
   AuthTradesIndexRoute: typeof AuthTradesIndexRoute
+  AuthAlbumPaisIndexRoute: typeof AuthAlbumPaisIndexRoute
   AuthInventoryAddIndexRoute: typeof AuthInventoryAddIndexRoute
-  AuthAlbumIdPaisIndexRoute: typeof AuthAlbumIdPaisIndexRoute
 }
 
 const AuthRouteRouteChildren: AuthRouteRouteChildren = {
@@ -272,8 +272,8 @@ const AuthRouteRouteChildren: AuthRouteRouteChildren = {
   AuthInventoryIndexRoute: AuthInventoryIndexRoute,
   AuthProfileIndexRoute: AuthProfileIndexRoute,
   AuthTradesIndexRoute: AuthTradesIndexRoute,
+  AuthAlbumPaisIndexRoute: AuthAlbumPaisIndexRoute,
   AuthInventoryAddIndexRoute: AuthInventoryAddIndexRoute,
-  AuthAlbumIdPaisIndexRoute: AuthAlbumIdPaisIndexRoute,
 }
 
 const AuthRouteRouteWithChildren = AuthRouteRoute._addFileChildren(

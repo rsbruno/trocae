@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import {
   GroupListItemProgress,
@@ -6,7 +6,6 @@ import {
   GroupListItemStats,
   GroupListItemFlag,
   GroupListItemName,
-  GroupListItemRoot,
   GroupListContent,
   GroupListHeader,
   GroupListRoot
@@ -24,7 +23,7 @@ const MAX_STICKERS_PER_TEAM = 20;
 
 function AlbumPage() {
   const { isLoading: groupsLoading, data: groups } = useFindAllGroupedTeams();
-  const { data: pasted } = useFindAllPastedCollection({
+  const { data: pasted } = useFindAllPastedCollection(undefined, {
     select: (stickers) => {
       return stickers.reduce<Record<string, number>>((acc, item) => {
         const teamId = item.sticker.team.id;
@@ -51,7 +50,13 @@ function AlbumPage() {
                 <GroupListHeader>Grupo {group.code}</GroupListHeader>
                 <GroupListContent>
                   {group.teams.map((team) => (
-                    <GroupListItemRoot key={team.id}>
+                    <Link
+                      className="flex items-center gap-3 px-4 py-3.5 text-left transition-colors active:bg-white/4"
+                      aria-label={`Ver detalhes de ${team.name}`}
+                      params={{ pais: team.fifaCode }}
+                      to="/album/$pais"
+                      key={team.id}
+                    >
                       <GroupListItemFlag src={team.flag} />
                       <GroupListItemName>{team.name}</GroupListItemName>
                       <GroupListItemStats>
@@ -59,7 +64,7 @@ function AlbumPage() {
                       </GroupListItemStats>
                       <GroupListItemProgress value={((pasted?.[team.id] ?? 0) / MAX_STICKERS_PER_TEAM) * 100} />
                       <GroupListItemAction />
-                    </GroupListItemRoot>
+                    </Link>
                   ))}
                 </GroupListContent>
               </GroupListRoot>

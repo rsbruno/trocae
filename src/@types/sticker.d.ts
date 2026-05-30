@@ -25,6 +25,8 @@ export type Sticker = {
     flag: string;
     primaryColor: string;
     secondaryColor: string;
+    stickerPrimary: string;
+    stickerSecondary: string;
     groupCode: string;
   };
 };

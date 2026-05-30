@@ -9,6 +9,8 @@
     "coach": "Carlo Ancelotti",
     "primaryColor": "#F7E017",
     "secondaryColor": "#1B7F3B",
+    "stickerPrimary": "#8FC899",
+    "stickerSecondary": "#415CA6",
     "group": {
       "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
       "name": "Grupo C",
@@ -26,6 +28,8 @@
     "coach": "Lionel Scaloni",
     "primaryColor": "#6CC6F0",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#8EB7DC",
+    "stickerSecondary": "#F7AF05",
     "group": {
       "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
       "name": "Grupo J",
@@ -43,6 +47,8 @@
     "coach": "Mauricio Pochettino",
     "primaryColor": "#1E3A8A",
     "secondaryColor": "#DC2626",
+    "stickerPrimary": "#94C5EC",
+    "stickerSecondary": "#E4072E",
     "group": {
       "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
       "name": "Grupo D",
@@ -60,6 +66,8 @@
     "coach": "Jaime Lozano",
     "primaryColor": "#006847",
     "secondaryColor": "#CE1126",
+    "stickerPrimary": "#AAD299",
+    "stickerSecondary": "#937367",
     "group": {
       "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
       "name": "Grupo A",
@@ -77,6 +85,8 @@
     "coach": "Jesse Marsch",
     "primaryColor": "#D80621",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#F3A175",
+    "stickerSecondary": "#EC6C08",
     "group": {
       "id": "4f64db3d-a25d-456c-8698-35f183916e25",
       "name": "Grupo B",
@@ -94,6 +104,8 @@
     "coach": "Didier Deschamps",
     "primaryColor": "#1D4ED8",
     "secondaryColor": "#DC2626",
+    "stickerPrimary": "#7CAADA",
+    "stickerSecondary": "#F3A27D",
     "group": {
       "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
       "name": "Grupo I",
@@ -111,6 +123,8 @@
     "coach": "Julian Nagelsmann",
     "primaryColor": "#111111",
     "secondaryColor": "#DD0000",
+    "stickerPrimary": "#F49A79",
+    "stickerSecondary": "#FFC803",
     "group": {
       "id": "50f27e29-fc00-4895-895e-0b815d076a60",
       "name": "Grupo E",
@@ -128,6 +142,8 @@
     "coach": "Thomas Tuchel",
     "primaryColor": "#FFFFFF",
     "secondaryColor": "#CF142B",
+    "stickerPrimary": "#C16967",
+    "stickerSecondary": "#374C9B",
     "group": {
       "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
       "name": "Grupo L",
@@ -145,6 +161,8 @@
     "coach": "Luis de la Fuente",
     "primaryColor": "#C60B1E",
     "secondaryColor": "#FFC400",
+    "stickerPrimary": "#F28E70",
+    "stickerSecondary": "#2F6DB3",
     "group": {
       "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
       "name": "Grupo H",
@@ -162,6 +180,8 @@
     "coach": "Roberto Martínez",
     "primaryColor": "#046A38",
     "secondaryColor": "#DA291C",
+    "stickerPrimary": "#73B963",
+    "stickerSecondary": "#B475AF",
     "group": {
       "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
       "name": "Grupo K",
@@ -179,6 +199,8 @@
     "coach": "Ronald Koeman",
     "primaryColor": "#F97316",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#97B9E1",
+    "stickerSecondary": "#EF7A05",
     "group": {
       "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
       "name": "Grupo F",
@@ -196,6 +218,8 @@
     "coach": "Marcelo Bielsa",
     "primaryColor": "#7CC6FE",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#A5CCED",
+    "stickerSecondary": "#FCB905",
     "group": {
       "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
       "name": "Grupo H",
@@ -213,6 +237,8 @@
     "coach": "Néstor Lorenzo",
     "primaryColor": "#FCD116",
     "secondaryColor": "#003893",
+    "stickerPrimary": "#C17B04",
+    "stickerSecondary": "#B51F1E",
     "group": {
       "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
       "name": "Grupo K",
@@ -230,6 +256,8 @@
     "coach": "Hajime Moriyasu",
     "primaryColor": "#1E40AF",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#F59A7A",
+    "stickerSecondary": "#3A74B8",
     "group": {
       "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
       "name": "Grupo F",
@@ -247,6 +275,8 @@
     "coach": "Walid Regragui",
     "primaryColor": "#C1272D",
     "secondaryColor": "#006233",
+    "stickerPrimary": "#F4997C",
+    "stickerSecondary": "#8D0456",
     "group": {
       "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
       "name": "Grupo C",
@@ -264,6 +294,8 @@
     "coach": "Aliou Cissé",
     "primaryColor": "#00853F",
     "secondaryColor": "#FDEF42",
+    "stickerPrimary": "#F7A924",
+    "stickerSecondary": "#E30612",
     "group": {
       "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
       "name": "Grupo I",
@@ -281,6 +313,8 @@
     "coach": "Hong Myung-bo",
     "primaryColor": "#E11D48",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#8EB7DC",
+    "stickerSecondary": "#FAB741",
     "group": {
       "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
       "name": "Grupo A",
@@ -298,6 +332,8 @@
     "coach": "Tony Popovic",
     "primaryColor": "#FCD116",
     "secondaryColor": "#0B6623",
+    "stickerPrimary": "#F18E70",
+    "stickerSecondary": "#AAD39A",
     "group": {
       "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
       "name": "Grupo D",
@@ -315,6 +351,8 @@
     "coach": "Amir Ghalenoei",
     "primaryColor": "#239F40",
     "secondaryColor": "#DA0000",
+    "stickerPrimary": "#89BD91",
+    "stickerSecondary": "#8C1457",
     "group": {
       "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
       "name": "Grupo G",
@@ -332,6 +370,8 @@
     "coach": "Domenico Tedesco",
     "primaryColor": "#111111",
     "secondaryColor": "#FAE042",
+    "stickerPrimary": "#F28E70",
+    "stickerSecondary": "#FCC41E",
     "group": {
       "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
       "name": "Grupo G",
@@ -349,6 +389,8 @@
     "coach": "Daniel Garnero",
     "primaryColor": "#D52B1E",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#F08364",
+    "stickerSecondary": "#F7AF05",
     "group": {
       "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
       "name": "Grupo D",
@@ -366,6 +408,8 @@
     "coach": "Félix Sánchez Bas",
     "primaryColor": "#FCD116",
     "secondaryColor": "#003893",
+    "stickerPrimary": "#F7AF05",
+    "stickerSecondary": "#D01A25",
     "group": {
       "id": "50f27e29-fc00-4895-895e-0b815d076a60",
       "name": "Grupo E",
@@ -383,6 +427,8 @@
     "coach": "Darren Bazeley",
     "primaryColor": "#FFFFFF",
     "secondaryColor": "#111111",
+    "stickerPrimary": "#6F94B9",
+    "stickerSecondary": "#F49970",
     "group": {
       "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
       "name": "Grupo G",
@@ -400,6 +446,8 @@
     "coach": "Roberto Mancini",
     "primaryColor": "#006C35",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#AAD39D",
+    "stickerSecondary": "#B878B0",
     "group": {
       "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
       "name": "Grupo H",
@@ -417,6 +465,8 @@
     "coach": "Tintín Márquez",
     "primaryColor": "#5C0B2F",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#C16C74",
+    "stickerSecondary": "#AAD39A",
     "group": {
       "id": "4f64db3d-a25d-456c-8698-35f183916e25",
       "name": "Grupo B",
@@ -434,6 +484,8 @@
     "coach": "Srecko Katanec",
     "primaryColor": "#0099B5",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#85CCDB",
+    "stickerSecondary": "#F28A4A",
     "group": {
       "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
       "name": "Grupo K",
@@ -451,6 +503,8 @@
     "coach": "Hussein Ammouta",
     "primaryColor": "#CE1126",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#8FC79A",
+    "stickerSecondary": "#C61D1E",
     "group": {
       "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
       "name": "Grupo J",
@@ -468,6 +522,8 @@
     "coach": "Jesús Casas",
     "primaryColor": "#007A3D",
     "secondaryColor": "#CE1126",
+    "stickerPrimary": "#F2977B",
+    "stickerSecondary": "#00A968",
     "group": {
       "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
       "name": "Grupo I",
@@ -485,6 +541,8 @@
     "coach": "Hossam Hassan",
     "primaryColor": "#CE1126",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#E79273",
+    "stickerSecondary": "#219A3A",
     "group": {
       "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
       "name": "Grupo G",
@@ -502,6 +560,8 @@
     "coach": "Montassar Louhichi",
     "primaryColor": "#E70013",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#EF8263",
+    "stickerSecondary": "#FAB942",
     "group": {
       "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
       "name": "Grupo F",
@@ -519,6 +579,8 @@
     "coach": "Vladimir Petković",
     "primaryColor": "#006233",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#90C89A",
+    "stickerSecondary": "#B878B0",
     "group": {
       "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
       "name": "Grupo J",
@@ -536,6 +598,8 @@
     "coach": "Otto Addo",
     "primaryColor": "#CE1126",
     "secondaryColor": "#FCD116",
+    "stickerPrimary": "#F7AF05",
+    "stickerSecondary": "#D62739",
     "group": {
       "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
       "name": "Grupo L",
@@ -553,6 +617,8 @@
     "coach": "Emerse Faé",
     "primaryColor": "#F77F00",
     "secondaryColor": "#009E60",
+    "stickerPrimary": "#8BC9B7",
+    "stickerSecondary": "#00AEC9",
     "group": {
       "id": "50f27e29-fc00-4895-895e-0b815d076a60",
       "name": "Grupo E",
@@ -570,6 +636,8 @@
     "coach": "Ralf Rangnick",
     "primaryColor": "#ED2939",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#89B5E1",
+    "stickerSecondary": "#B778B0",
     "group": {
       "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
       "name": "Grupo J",
@@ -587,6 +655,8 @@
     "coach": "Sergej Barbarez",
     "primaryColor": "#002395",
     "secondaryColor": "#FECB00",
+    "stickerPrimary": "#83B1CD",
+    "stickerSecondary": "#A8D4C3",
     "group": {
       "id": "4f64db3d-a25d-456c-8698-35f183916e25",
       "name": "Grupo B",
@@ -604,6 +674,8 @@
     "coach": "Zlatko Dalić",
     "primaryColor": "#FF0000",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#F39978",
+    "stickerSecondary": "#00AEC8",
     "group": {
       "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
       "name": "Grupo L",
@@ -621,6 +693,8 @@
     "coach": "Ivan Hašek",
     "primaryColor": "#D7141A",
     "secondaryColor": "#11457E",
+    "stickerPrimary": "#75A6C5",
+    "stickerSecondary": "#B677B1",
     "group": {
       "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
       "name": "Grupo A",
@@ -638,6 +712,8 @@
     "coach": "Steve Clarke",
     "primaryColor": "#005EB8",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#60C3E1",
+    "stickerSecondary": "#F29600",
     "group": {
       "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
       "name": "Grupo C",
@@ -655,6 +731,8 @@
     "coach": "Jon Dahl Tomasson",
     "primaryColor": "#006AA7",
     "secondaryColor": "#FECC00",
+    "stickerPrimary": "#84BEDE",
+    "stickerSecondary": "#B576B0",
     "group": {
       "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
       "name": "Grupo F",
@@ -672,6 +750,8 @@
     "coach": "Murat Yakin",
     "primaryColor": "#D52B1E",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#E79173",
+    "stickerSecondary": "#709ED4",
     "group": {
       "id": "4f64db3d-a25d-456c-8698-35f183916e25",
       "name": "Grupo B",
@@ -689,6 +769,8 @@
     "coach": "Vincenzo Montella",
     "primaryColor": "#E30A17",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#F7AF97",
+    "stickerSecondary": "#00ADC8",
     "group": {
       "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
       "name": "Grupo D",
@@ -706,6 +788,8 @@
     "coach": "Ståle Solbakken",
     "primaryColor": "#BA0C2F",
     "secondaryColor": "#00205B",
+    "stickerPrimary": "#88B4E0",
+    "stickerSecondary": "#AAD19D",
     "group": {
       "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
       "name": "Grupo I",
@@ -723,6 +807,8 @@
     "coach": "Bubista",
     "primaryColor": "#003893",
     "secondaryColor": "#FFFFFF",
+    "stickerPrimary": "#A6BDE5",
+    "stickerSecondary": "#F6A941",
     "group": {
       "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
       "name": "Grupo H",
@@ -740,6 +826,8 @@
     "coach": "Thomas Christiansen",
     "primaryColor": "#D21034",
     "secondaryColor": "#005293",
+    "stickerPrimary": "#F08682",
+    "stickerSecondary": "#A9D299",
     "group": {
       "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
       "name": "Grupo L",
@@ -757,6 +845,8 @@
     "coach": "Hugo Broos",
     "primaryColor": "#007847",
     "secondaryColor": "#FFB612",
+    "stickerPrimary": "#F7A339",
+    "stickerSecondary": "#127E5F",
     "group": {
       "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
       "name": "Grupo A",
@@ -774,6 +864,8 @@
     "coach": "Sébastien Migné",
     "primaryColor": "#00209F",
     "secondaryColor": "#D21034",
+    "stickerPrimary": "#849ECE",
+    "stickerSecondary": "#F29600",
     "group": {
       "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
       "name": "Grupo C",
@@ -791,6 +883,8 @@
     "coach": "Dick Advocaat",
     "primaryColor": "#0057B8",
     "secondaryColor": "#F7D117",
+    "stickerPrimary": "#89B5E1",
+    "stickerSecondary": "#B878B0",
     "group": {
       "id": "50f27e29-fc00-4895-895e-0b815d076a60",
       "name": "Grupo E",
@@ -808,6 +902,8 @@
     "coach": "Sébastien Desabre",
     "primaryColor": "#00A3E0",
     "secondaryColor": "#EF3340",
+    "stickerPrimary": "#87BBE6",
+    "stickerSecondary": "#F4C700",
     "group": {
       "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
       "name": "Grupo K",

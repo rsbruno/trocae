@@ -3,9 +3,9 @@ import { type DocumentReference, getDoc } from "firebase/firestore";
 
 import type { Team } from "@/@types/team";
 
-type UseGetTeamByRefOptions = Omit<UseQueryOptions<Team | null>, "queryKey" | "queryFn" | "enabled">;
+type UseFindTeamByRefOptions = Omit<UseQueryOptions<Team | null>, "queryKey" | "queryFn" | "enabled">;
 
-export const getTeamByRefService = async (teamRef: DocumentReference): Promise<Team | null> => {
+export const findTeamByRefService = async (teamRef: DocumentReference): Promise<Team | null> => {
   const snapshot = await getDoc(teamRef);
 
   if (!snapshot.exists()) {
@@ -19,8 +19,10 @@ export const getTeamByRefService = async (teamRef: DocumentReference): Promise<T
   }
 
   return {
+    stickerSecondary: data.stickerSecondary,
     federationName: data.federationName,
     secondaryColor: data.secondaryColor,
+    stickerPrimary: data.stickerPrimary,
     confederation: data.confederation,
     primaryColor: data.primaryColor,
     fifaCode: data.fifaCode,
@@ -32,10 +34,10 @@ export const getTeamByRefService = async (teamRef: DocumentReference): Promise<T
   };
 };
 
-export function useGetTeamByRef(teamRef: DocumentReference | undefined, options?: UseGetTeamByRefOptions) {
+export function useFindTeamByRef(teamRef: DocumentReference | undefined, options?: UseFindTeamByRefOptions) {
   return useQuery({
     queryKey: ["use-get-team-by-ref", teamRef?.path],
-    queryFn: () => getTeamByRefService(teamRef!),
+    queryFn: () => findTeamByRefService(teamRef!),
     enabled: Boolean(teamRef),
     ...options
   });

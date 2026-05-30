@@ -28,7 +28,9 @@ export type AlbumSticker = {
 };
 
 const mockBrazilTeam: Sticker["team"] = {
+  stickerPrimary: "var(--accent-primary-strong)",
   primaryColor: "var(--accent-primary-strong)",
+  stickerSecondary: "var(--accent-highlight)",
   secondaryColor: "var(--accent-highlight)",
   flag: "/assets/png/flag-brazil.png",
   id: "mock-brazil-team",

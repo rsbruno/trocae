@@ -12,6 +12,8 @@ export type Team = {
   coach: string;
   primaryColor: string;
   secondaryColor: string;
+  stickerPrimary: string;
+  stickerSecondary: string;
   group: {
     id: string;
     name: string;

@@ -51,7 +51,7 @@ export function InventoryRepeatedTab() {
         </EmptyStateRoot>
       </ShowIf>
 
-      <ShowIf if={!isLoading && !error && data?.length === 0}>
+      <ShowIf if={!isLoading && !error && (data?.length ?? 0) === 0}>
         <EmptyStateRoot>
           <EmptyStateIcon className="bg-surface-alt/50 relative overflow-hidden border border-white/5">
             <div className="absolute inset-0 scale-150 rotate-45 bg-linear-to-tr from-transparent via-white/5 to-transparent" />
@@ -64,7 +64,7 @@ export function InventoryRepeatedTab() {
         </EmptyStateRoot>
       </ShowIf>
 
-      <ShowIf if={!isLoading && !error && data?.length > 0}>
+      <ShowIf if={!isLoading && !error && (data?.length ?? 0) > 0}>
         <div className="flex items-center justify-between px-1">
           <Typography variant="medium" color="subtle" as="span" size="xs">
             {data?.length} {data?.length === 1 ? "figurinha repetida" : "figurinhas repetidas"}
