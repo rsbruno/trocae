@@ -102,3 +102,19 @@ export function StickerInlineCode({ className, children, ...props }: TypographyP
     </Typography>
   );
 }
+
+export function StickerInlineRepeatedCount({ className, children, ...props }: ComponentPropsWithoutRef<"div">) {
+  return (
+    <div
+      className={twMerge(
+        "border-accent-primary/30 bg-accent-primary/15 text-accent-primary flex size-7 items-center justify-center rounded-full border text-[12px] leading-none font-bold tabular-nums",
+        className
+      )}
+      {...props}
+    >
+      <Typography variant="medium" color="success" as="span" size="xs">
+        ×{children}
+      </Typography>
+    </div>
+  );
+}

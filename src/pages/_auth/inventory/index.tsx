@@ -15,8 +15,10 @@ import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
+import { ShowIf } from "@/components/utils/show";
 
 import { InventoryStickersTab } from "./_components/tabs/stickers-tab";
+import { InventoryRepeatedTab } from "./_components/tabs/repeated-tab";
 
 export const Route = createFileRoute("/_auth/inventory/")({
   component: InventoryPage
@@ -77,6 +79,9 @@ function InventoryPage() {
               {(tab) => (
                 <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
                   {tab.label}
+                  <ShowIf if={tab.id === "repetidas"}>
+                    <div className="bg-status-info ml-1 inline-block size-1.5 animate-pulse rounded-full" />
+                  </ShowIf>
                 </TabsTrigger>
               )}
             </ForEach>
@@ -88,7 +93,7 @@ function InventoryPage() {
           </TabsContent>
           <TabsContent value="faltam">{/* <InventoryMockList items={mockInventory.filter(i => !i.owned)} /> */}</TabsContent>
           <TabsContent value="repetidas">
-            {/* <InventoryMockList items={mockInventory.filter(i => i.repeated > 0)} /> */}
+            <InventoryRepeatedTab />
           </TabsContent>
         </Tabs>
       </div>
