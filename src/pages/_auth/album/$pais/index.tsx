@@ -44,6 +44,13 @@ import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
 
+import {
+  CountryStickersGridSkeleton,
+  CountryPageHeaderSkeleton,
+  CountryTeamCardSkeleton,
+  CountryStatsSkeleton
+} from "./_components/skeletons";
+
 export const Route = createFileRoute("/_auth/album/$pais/")({
   component: RouteComponent
 });
@@ -83,8 +90,6 @@ function RouteComponent() {
   const totalStickers = countryStickers.length;
   const progress = totalStickers > 0 ? (pastedUniqueCount / totalStickers) * 100 : 0;
 
-  const isLoading = teamLoading || countryLoading || pastedLoading;
-
   return (
     <PageRoot
       title={`Coleção ${team?.name} - ${team?.fifaCode}`}
@@ -93,49 +98,23 @@ function RouteComponent() {
       showBack
     >
       <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
+        <ShowIf if={teamLoading}>
+          <CountryPageHeaderSkeleton />
+        </ShowIf>
+        <ShowIf if={!teamLoading}>
+          <div className="min-w-0 flex-1">
+            <PageHeaderTitle />
+            <PageHeaderSubtitle />
+          </div>
+        </ShowIf>
       </PageHeaderRoot>
 
       <div className="flex flex-col gap-5 px-4">
-        <ShowIf if={isLoading}>
-          <SurfaceCardRoot>
-            <div className="flex items-center gap-4">
-              <div className="bg-surface-alt size-14 rounded-lg" />
-              <div className="flex-1 space-y-2">
-                <div className="bg-surface-alt h-4 w-28 rounded-full" />
-                <div className="bg-surface-alt h-3 w-32 rounded-full" />
-                <div className="bg-surface-alt h-3 w-24 rounded-full" />
-              </div>
-            </div>
-          </SurfaceCardRoot>
-
-          <SurfaceCardGhost className="flex items-center justify-around py-5">
-            <div className="flex flex-col items-center">
-              <div className="bg-surface-alt size-[52px] rounded-full" />
-              <div className="bg-surface-alt mt-1 h-3 w-14 rounded-full" />
-            </div>
-            <div className="bg-border h-10 w-px" />
-            <div className="text-center">
-              <div className="bg-surface-alt mx-auto h-6 w-10 rounded-full" />
-              <div className="bg-surface-alt mt-1 h-3 w-14 rounded-full" />
-            </div>
-            <div className="bg-border h-10 w-px" />
-            <div className="text-center">
-              <div className="bg-surface-alt mx-auto h-6 w-10 rounded-full" />
-              <div className="bg-surface-alt mt-1 h-3 w-14 rounded-full" />
-            </div>
-            <div className="bg-border h-10 w-px" />
-            <div className="text-center">
-              <div className="bg-surface-alt mx-auto h-6 w-10 rounded-full" />
-              <div className="bg-surface-alt mt-1 h-3 w-14 rounded-full" />
-            </div>
-          </SurfaceCardGhost>
+        <ShowIf if={teamLoading}>
+          <CountryTeamCardSkeleton />
         </ShowIf>
 
-        <ShowIf if={!isLoading}>
+        <ShowIf if={!teamLoading}>
           <SurfaceCardGhost>
             <div className="flex items-center gap-4">
               <div className="relative">
@@ -161,7 +140,13 @@ function RouteComponent() {
               </div>
             </div>
           </SurfaceCardGhost>
+        </ShowIf>
 
+        <ShowIf if={countryLoading || pastedLoading}>
+          <CountryStatsSkeleton />
+        </ShowIf>
+
+        <ShowIf if={!countryLoading && !pastedLoading}>
           <SurfaceCardRoot className="flex items-center justify-around py-5">
             <div className="flex flex-col items-center">
               <ProfileProgressRingRoot progress={progress} strokeWidth={4} size={52} />
@@ -200,7 +185,13 @@ function RouteComponent() {
               </Typography>
             </div>
           </SurfaceCardRoot>
+        </ShowIf>
 
+        <ShowIf if={countryLoading || pastedLoading}>
+          <CountryStickersGridSkeleton />
+        </ShowIf>
+
+        <ShowIf if={!countryLoading && !pastedLoading}>
           <div className="grid grid-cols-2 gap-1">
             <ForEach items={countryStickers}>
               {(item) => {
