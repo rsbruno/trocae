@@ -1,5 +1,5 @@
-import { ArrowsDownUp, Check, Hash, Plus } from "@phosphor-icons/react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { Plus } from "@phosphor-icons/react";
 import { useState } from "react";
 
 import {
@@ -9,43 +9,31 @@ import {
   PageHeaderTitle,
   PageHeaderRoot
 } from "@/components/ui/page/header";
-import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
+import { TabsContent, TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { SearchInput } from "@/components/ui/fields/search-input";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
-import { ButtonRoot } from "@/components/ui/button";
-import { mockInventory } from "@/mocks/inventory";
-import { ShowIf } from "@/components/utils/show";
-import { Card } from "@/components/ui/card";
+
+import { InventoryStickersTab } from "./_components/tabs/stickers-tab";
 
 export const Route = createFileRoute("/_auth/inventory/")({
   component: InventoryPage
 });
 
-type FilterTab = "all" | "owned" | "missing" | "repeated";
+type InventoryTab = "todas" | "tenho" | "faltam" | "repetidas";
 
 function InventoryPage() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<FilterTab>("all");
-  const [sortAsc, setSortAsc] = useState(true);
+  const [activeTab, setActiveTab] = useState<InventoryTab>("todas");
 
-  const tabs: { id: FilterTab; label: string }[] = [
-    { label: "Todas", id: "all" },
-    { label: "Tenho", id: "owned" },
-    { label: "Faltam", id: "missing" },
-    { label: "Repetidas", id: "repeated" }
+  const tabs: { id: InventoryTab; label: string }[] = [
+    { label: "Todas", id: "todas" },
+    { label: "Tenho", id: "tenho" },
+    { label: "Faltam", id: "faltam" },
+    { label: "Repetidas", id: "repetidas" }
   ];
-
-  const filtered = mockInventory.filter((s) => {
-    if (activeTab === "owned") return s.owned;
-    if (activeTab === "missing") return !s.owned;
-    if (activeTab === "repeated") return s.repeated > 0;
-    return true;
-  });
-
-  const sorted = [...filtered].sort((a, b) => (sortAsc ? a.number - b.number : b.number - a.number));
 
   return (
     <PageRoot subtitle="218 coletadas · 47 repetidas" className="mx-auto max-w-md pb-8" title="Inventário" showBack>
@@ -58,6 +46,7 @@ function InventoryPage() {
           <PageHeaderAction onClick={() => navigate({ to: "/inventory/add" })} icon={<Plus weight="bold" size={18} />} />
         </PageHeaderActions>
       </PageHeaderRoot>
+
       <div className="flex flex-col gap-5 px-4">
         <div className="grid grid-cols-3 gap-2">
           <ForEach
@@ -67,13 +56,13 @@ function InventoryPage() {
               { color: "text-ink-muted", label: "Faltando", value: "420" }
             ]}
           >
-            {(s) => (
-              <SurfaceCardGhost className="flex flex-col items-center py-3" key={s.label}>
-                <Typography className={s.color} variant="semibold" as="span" size="lg">
-                  {s.value}
+            {(summary) => (
+              <SurfaceCardGhost className="flex flex-col items-center py-3" key={summary.label}>
+                <Typography className={summary.color} variant="semibold" as="span" size="lg">
+                  {summary.value}
                 </Typography>
                 <Typography variant="medium" color="subtle" as="span" size="xs">
-                  {s.label}
+                  {summary.label}
                 </Typography>
               </SurfaceCardGhost>
             )}
@@ -82,67 +71,26 @@ function InventoryPage() {
 
         <SearchInput placeholder="Buscar por número, nome ou país..." name="inventorySearch" />
 
-        <div className="flex items-center gap-2">
-          <Tabs onValueChange={(value) => setActiveTab(value as FilterTab)} className="flex-1" value={activeTab}>
-            <TabsList className="w-full">
-              <ForEach items={tabs}>
-                {(tab) => (
-                  <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
-                    {tab.label}
-                  </TabsTrigger>
-                )}
-              </ForEach>
-            </TabsList>
-          </Tabs>
-          <ButtonRoot
-            className="text-ink-secondary rounded-md"
-            onClick={() => setSortAsc(!sortAsc)}
-            variant="secondary"
-            type="button"
-            size="icon"
-          >
-            <ArrowsDownUp weight="regular" size={14} />
-          </ButtonRoot>
-        </div>
+        <Tabs onValueChange={(value) => setActiveTab(value as InventoryTab)} className="gap-4" value={activeTab}>
+          <TabsList className="w-full">
+            <ForEach items={tabs}>
+              {(tab) => (
+                <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
+                  {tab.label}
+                </TabsTrigger>
+              )}
+            </ForEach>
+          </TabsList>
 
-        <Card className="flex flex-col divide-y divide-white/6 overflow-hidden p-0">
-          <ForEach items={sorted}>
-            {(sticker) => (
-              <div className={`flex items-center gap-3 px-4 py-3.5 ${sticker.owned ? "" : "opacity-50"}`} key={sticker.number}>
-                <div className="bg-surface-alt flex size-10 shrink-0 items-center justify-center rounded-md">
-                  <Typography variant="medium" color="muted" as="span" size="xs">
-                    {String(sticker.number).padStart(3, "0")}
-                  </Typography>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-1.5">
-                    <Typography variant="medium" color="base" as="span" size="sm">
-                      {sticker.name}
-                    </Typography>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Typography as="span">{sticker.flag}</Typography>
-                    <Typography variant="medium" color="subtle" as="span" size="xs">
-                      {sticker.country}
-                    </Typography>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <ShowIf if={sticker.owned}>
-                    <span className="bg-accent-primary/10 text-accent-primary flex size-7 items-center justify-center rounded-full">
-                      <Check weight="bold" size={13} />
-                    </span>
-                  </ShowIf>
-                  <ShowIf if={!sticker.owned}>
-                    <span className="bg-surface-alt text-ink-muted flex size-7 items-center justify-center rounded-full">
-                      <Hash weight="regular" size={12} />
-                    </span>
-                  </ShowIf>
-                </div>
-              </div>
-            )}
-          </ForEach>
-        </Card>
+          <TabsContent value="todas">{/* <InventoryMockList items={mockInventory} /> */}</TabsContent>
+          <TabsContent value="tenho">
+            <InventoryStickersTab />
+          </TabsContent>
+          <TabsContent value="faltam">{/* <InventoryMockList items={mockInventory.filter(i => !i.owned)} /> */}</TabsContent>
+          <TabsContent value="repetidas">
+            {/* <InventoryMockList items={mockInventory.filter(i => i.repeated > 0)} /> */}
+          </TabsContent>
+        </Tabs>
       </div>
     </PageRoot>
   );

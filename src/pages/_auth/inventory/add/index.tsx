@@ -69,6 +69,7 @@ function AddStickerPage() {
   const upsertCollectionItem = useUpsertCollectionItemService({
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: ["use-get-collection-sticker-stats"] });
+      void queryClient.invalidateQueries({ queryKey: ["use-find-all-collection-items"] });
       reset(EMPTY_DATA);
       setDebouncedCode("");
       notify("success", "Figurinha adicionada à sua coleção.");

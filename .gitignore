@@ -26,5 +26,8 @@ firebase-service-account.json
 *.sln
 *.sw?
 .cursor
+.agents
+.claude
+.codex
 .tanstack
 .pnpm-store
