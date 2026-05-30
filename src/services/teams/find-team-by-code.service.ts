@@ -4,6 +4,7 @@ import { type UseQueryOptions, useQuery } from "@tanstack/react-query";
 import type { Team } from "@/@types/team";
 
 import { getFirestoreClient } from "@/infra/firebase/client";
+import { normalize } from "@/helpers/strings";
 
 type UseFindTeamByCodeOptions = Omit<UseQueryOptions<Team | null, Error, Team | null>, "queryKey" | "queryFn" | "enabled">;
 
@@ -36,12 +37,10 @@ export const findTeamByCodeService = async (code: string): Promise<Team | null> 
 };
 
 export function useFindTeamByCode(code: string | undefined, options?: UseFindTeamByCodeOptions) {
-  const normalizedCode = code?.trim().toUpperCase();
-
   return useQuery({
-    queryFn: () => findTeamByCodeService(normalizedCode),
-    queryKey: ["use-find-team-by-code", normalizedCode],
-    enabled: normalizedCode?.length > 0,
+    queryFn: () => findTeamByCodeService(normalize(code)),
+    queryKey: ["use-find-team-by-code", code],
+    enabled: Boolean(code?.length),
     ...options
   });
 }

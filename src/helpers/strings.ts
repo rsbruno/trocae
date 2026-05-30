@@ -1,4 +1,6 @@
-export function normalize(value: string) {
+export function normalize(value?: string) {
+  if (!value) return "";
+
   return value
     .trim()
     .toLowerCase()
