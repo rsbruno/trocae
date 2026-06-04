@@ -28,6 +28,10 @@ import {
   ExtraStickerRoot
 } from "@/components/v2026/stickers/extra";
 import {
+  getCollectionStickerStatsQueryKeys,
+  useGetCollectionStickerStats
+} from "@/services/collections/get-sticker-collection-stats.service";
+import {
   EmptyStateDescription,
   EmptyStateContent,
   EmptyStateTitle,
@@ -35,7 +39,7 @@ import {
   EmptyStateRoot
 } from "@/components/ui/empty-state";
 import { type AddStickerFormData, STICKER_CODE_LENGTH, EMPTY_DATA, resolver } from "@/schemas/zod/add-sticker";
-import { useGetCollectionStickerStats } from "@/services/collections/get-sticker-collection-stats.service";
+import { findAllCollectionItemsQueryKeys } from "@/services/collections/find-all-collection-items.service";
 import { useUpsertCollectionItemService } from "@/services/stickers/upsert-collection-item.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { useFindStickerByCode } from "@/services/stickers/find-sticker-by-code.service";
@@ -68,8 +72,8 @@ function AddStickerPage() {
 
   const upsertCollectionItem = useUpsertCollectionItemService({
     onSuccess: () => {
-      void queryClient.invalidateQueries({ queryKey: ["use-get-collection-sticker-stats"] });
-      void queryClient.invalidateQueries({ queryKey: ["use-find-all-collection-items"] });
+      void queryClient.invalidateQueries({ queryKey: getCollectionStickerStatsQueryKeys.all() });
+      void queryClient.invalidateQueries({ queryKey: findAllCollectionItemsQueryKeys.all() });
       reset(EMPTY_DATA);
       setDebouncedCode("");
       notify("success", "Figurinha adicionada à sua coleção.");

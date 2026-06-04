@@ -6,6 +6,10 @@ import type { GroupedTeam, Team } from "@/@types/team";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { sortBy } from "@/helpers/sort-by";
 
+export const findAllGroupedTeamsQueryKeys = {
+  all: () => ["use-find-all-teams"] as const
+};
+
 export const findAllGroupedTeamsService = async (): Promise<GroupedTeam[]> => {
   const teamsRef = collection(getFirestoreClient(), "teams");
   const teamsQuery = query(teamsRef);
@@ -33,8 +37,8 @@ export const findAllGroupedTeamsService = async (): Promise<GroupedTeam[]> => {
 
 export function useFindAllGroupedTeams(options?: Omit<UseQueryOptions<GroupedTeam[], Error>, "queryKey" | "queryFn">) {
   return useQuery({
+    queryKey: findAllGroupedTeamsQueryKeys.all(),
     queryFn: findAllGroupedTeamsService,
-    queryKey: ["use-find-all-teams"],
     ...options
   });
 }

@@ -6,6 +6,11 @@ import type { Sticker } from "@/@types/sticker";
 import { STICKER_CODE_LENGTH } from "@/schemas/zod/add-sticker";
 import { getFirestoreClient } from "@/infra/firebase/client";
 
+export const findStickerByCodeQueryKeys = {
+  byCode: (code: string) => [...findStickerByCodeQueryKeys.all(), code.trim().toUpperCase()] as const,
+  all: () => ["use-find-sticker-by-code"] as const
+};
+
 type UseFindStickerByCodeOptions = Omit<
   UseQueryOptions<Sticker | null, Error, Sticker | null>,
   "queryKey" | "queryFn" | "enabled"
@@ -26,8 +31,8 @@ export function useFindStickerByCode(code: string, options?: UseFindStickerByCod
   const normalizedCode = code.trim().toUpperCase();
 
   return useQuery({
+    queryKey: findStickerByCodeQueryKeys.byCode(normalizedCode),
     queryFn: () => findStickerByCodeService(normalizedCode),
-    queryKey: ["use-find-sticker-by-code", normalizedCode],
     enabled: normalizedCode.length === STICKER_CODE_LENGTH,
     ...options
   });

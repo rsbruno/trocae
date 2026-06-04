@@ -6,6 +6,11 @@ import type { Team } from "@/@types/team";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { normalize } from "@/helpers/strings";
 
+export const findTeamByCodeQueryKeys = {
+  byCode: (code: string | undefined) => [...findTeamByCodeQueryKeys.all(), normalize(code)] as const,
+  all: () => ["use-find-team-by-code"] as const
+};
+
 type UseFindTeamByCodeOptions = Omit<UseQueryOptions<Team | null, Error, Team | null>, "queryKey" | "queryFn" | "enabled">;
 
 export const findTeamByCodeService = async (code: string): Promise<Team | null> => {
@@ -39,7 +44,7 @@ export const findTeamByCodeService = async (code: string): Promise<Team | null> 
 export function useFindTeamByCode(code: string | undefined, options?: UseFindTeamByCodeOptions) {
   return useQuery({
     queryFn: () => findTeamByCodeService(normalize(code)),
-    queryKey: ["use-find-team-by-code", code],
+    queryKey: findTeamByCodeQueryKeys.byCode(code),
     enabled: Boolean(code?.length),
     ...options
   });

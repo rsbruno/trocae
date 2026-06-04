@@ -53,7 +53,7 @@ function AlbumPage() {
                     <Link
                       className="flex items-center gap-3 px-4 py-3.5 text-left transition-colors active:bg-white/4"
                       aria-label={`Ver detalhes de ${team.name}`}
-                      params={{ pais: team.fifaCode }}
+                      params={() => ({ pais: team.fifaCode })}
                       to="/album/$pais"
                       key={team.id}
                     >

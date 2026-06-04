@@ -1,7 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Fragment } from "react/jsx-runtime";
-
-import type { Collection } from "@/@types/collection";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { PlusIcon } from "@phosphor-icons/react";
 
 import {
   StickerSpecContainer,
@@ -33,8 +31,12 @@ import {
   StickerEmptyLabel,
   StickerEmptyRoot
 } from "@/components/v2026/stickers/empty";
+import {
+  buildPastedStickerSummaries,
+  useFindAllPastedCollection
+} from "@/services/collections/findall-pasted-collection.service";
+import { buildAvailableStickerCounts, useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
 import { useFindAllStickersByCountry } from "@/services/stickers/find-all-stickers-by-country.service";
-import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
@@ -42,6 +44,7 @@ import { useFindTeamByCode } from "@/services/teams/find-team-by-code.service";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
+import { ButtonRoot } from "@/components/ui/button";
 import { ShowIf } from "@/components/utils/show";
 
 import {
@@ -55,36 +58,16 @@ export const Route = createFileRoute("/_auth/album/$pais/")({
   component: RouteComponent
 });
 
-type PastedStickerSummary = {
-  stickerId: string;
-  repeatedCount: number;
-};
-
-function buildPastedStickerSummaries(items: Collection[]) {
-  return items.reduce<Record<string, PastedStickerSummary>>((acc, item) => {
-    const current = acc[item.sticker.id];
-
-    if (!current) {
-      acc[item.sticker.id] = {
-        stickerId: item.sticker.id,
-        repeatedCount: 1
-      };
-      return acc;
-    }
-
-    current.repeatedCount += 1;
-    return acc;
-  }, {});
-}
-
 function RouteComponent() {
   const { pais: countryCode } = Route.useParams();
 
   const { data: countryStickers = [], isLoading: countryLoading } = useFindAllStickersByCountry(countryCode);
   const { data: pastedStickers = [], isLoading: pastedLoading } = useFindAllPastedCollection(countryCode);
+  const { isLoading: collectionLoading, data: collectionItems = [] } = useFindAllCollectionItems();
   const { isLoading: teamLoading, data: team } = useFindTeamByCode(countryCode);
 
   const pastedSummaries = buildPastedStickerSummaries(pastedStickers);
+  const availableStickerCounts = buildAvailableStickerCounts(collectionItems);
   const pastedUniqueCount = Object.keys(pastedSummaries).length;
   const repeatedCount = pastedStickers.length - pastedUniqueCount;
   const totalStickers = countryStickers.length;
@@ -187,17 +170,77 @@ function RouteComponent() {
           </SurfaceCardRoot>
         </ShowIf>
 
-        <ShowIf if={countryLoading || pastedLoading}>
+        <ShowIf if={countryLoading || pastedLoading || collectionLoading}>
           <CountryStickersGridSkeleton />
         </ShowIf>
 
-        <ShowIf if={!countryLoading && !pastedLoading}>
+        <ShowIf if={!countryLoading && !pastedLoading && !collectionLoading}>
           <div className="grid grid-cols-2 gap-1">
             <ForEach items={countryStickers}>
               {(item) => {
                 const pasted = pastedStickers.find((pasted) => pasted.sticker.id === item.id);
+                const availableCount = availableStickerCounts[item.id] ?? 0;
+                const canPaste = availableCount > 0;
+
+                if (canPaste) {
+                  return (
+                    <Link
+                      className="group relative block rounded-xl transition-transform outline-none active:scale-[0.98]"
+                      aria-label={`Colar figurinha ${item.code}`}
+                      params={{ stickerId: item.id }}
+                      to="/album/colar/$stickerId"
+                    >
+                      <ShowIf if={Boolean(pasted) && pasted?.stickerRarity === "common"}>
+                        <StickerRoot size="album" data={item}>
+                          <StickerBackground />
+                          <StickerContent>
+                            <StickerColumn>
+                              <StickerPlayerAvatar />
+                              <StickerSpecContainer mode="player">
+                                <StickerPlayerName />
+                                <StickerPlayerStats />
+                              </StickerSpecContainer>
+                            </StickerColumn>
+                            <StickerSidebar>
+                              <StickerLogo />
+                              <StickerSidebarGroup>
+                                <StickerFlag />
+                                <StickerCountryName />
+                              </StickerSidebarGroup>
+                            </StickerSidebar>
+                          </StickerContent>
+                          <StickerSpecContainer mode="club">
+                            <StickerClubLabel />
+                          </StickerSpecContainer>
+                        </StickerRoot>
+                      </ShowIf>
+
+                      <ShowIf if={Boolean(pasted) && pasted?.stickerRarity !== "common"}>
+                        <ExtraStickerRoot variant={pasted?.stickerRarity as ExtraStickerVariant} size="album" data={item}>
+                          <ExtraStickerLogo />
+                          <ExtraStickerFlag />
+                          <ExtraStickerPlayerAvatar />
+                          <ExtraStickerPlayerName />
+                        </ExtraStickerRoot>
+                      </ShowIf>
+
+                      <ShowIf if={!pasted}>
+                        <StickerEmptyRoot data={item}>
+                          <StickerEmptyBackground />
+                          <StickerEmptyLabel />
+                          <StickerEmptyPlayerName />
+                        </StickerEmptyRoot>
+                      </ShowIf>
+
+                      <ButtonRoot className="absolute top-1 right-1 z-10">
+                        <PlusIcon className="size-5" weight="bold" />
+                      </ButtonRoot>
+                    </Link>
+                  );
+                }
+
                 return (
-                  <Fragment>
+                  <div aria-label={item.code} className="relative">
                     <ShowIf if={Boolean(pasted) && pasted?.stickerRarity === "common"}>
                       <StickerRoot size="album" data={item}>
                         <StickerBackground />
@@ -239,7 +282,7 @@ function RouteComponent() {
                         <StickerEmptyPlayerName />
                       </StickerEmptyRoot>
                     </ShowIf>
-                  </Fragment>
+                  </div>
                 );
               }}
             </ForEach>

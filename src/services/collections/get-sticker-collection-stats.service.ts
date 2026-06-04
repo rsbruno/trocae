@@ -6,6 +6,12 @@ import type { CollectionStickerStats, StickerRarity } from "@/@types/collection"
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
 
+export const getCollectionStickerStatsQueryKeys = {
+  detail: (stickerId: string | undefined, stickerRarity: StickerRarity | undefined) =>
+    [...getCollectionStickerStatsQueryKeys.all(), stickerId ?? null, stickerRarity ?? null] as const,
+  all: () => ["use-get-collection-sticker-stats"] as const
+};
+
 export type GetCollectionStickerStatsInput = {
   stickerId: string;
   stickerRarity: StickerRarity;
@@ -60,7 +66,7 @@ export function useGetCollectionStickerStats(
         stickerRarity: stickerRarity!,
         stickerId: stickerId!
       }),
-    queryKey: ["use-get-collection-sticker-stats", stickerId, stickerRarity],
+    queryKey: getCollectionStickerStatsQueryKeys.detail(stickerId, stickerRarity),
     enabled: Boolean(stickerId) && Boolean(stickerRarity),
     ...options
   });

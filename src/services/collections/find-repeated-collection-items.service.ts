@@ -9,6 +9,10 @@ import { getFirebaseAuth } from "@/infra/firebase/auth";
 
 import { parseCollectionDocument } from "./find-all-collection-items.service";
 
+export const findRepeatedCollectionItemsQueryKeys = {
+  all: () => ["use-find-repeated-collection-items"] as const
+};
+
 export type RepeatedCollectionItem = {
   sticker: Sticker;
   stickerRarity: string;
@@ -63,7 +67,7 @@ export function useFindRepeatedCollectionItems(
   options?: Omit<UseQueryOptions<RepeatedCollectionItem[], Error>, "queryKey" | "queryFn">
 ) {
   return useQuery({
-    queryKey: ["use-find-repeated-collection-items"],
+    queryKey: findRepeatedCollectionItemsQueryKeys.all(),
     queryFn: findRepeatedCollectionItemsService,
     ...options
   });

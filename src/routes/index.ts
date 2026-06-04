@@ -21,6 +21,7 @@ import { Route as AuthHomeIndexRouteImport } from './../pages/_auth/home/index'
 import { Route as AuthAlbumIndexRouteImport } from './../pages/_auth/album/index'
 import { Route as AuthInventoryAddIndexRouteImport } from './../pages/_auth/inventory/add/index'
 import { Route as AuthAlbumPaisIndexRouteImport } from './../pages/_auth/album/$pais/index'
+import { Route as AuthAlbumColarStickerIdIndexRouteImport } from './../pages/_auth/album/colar/$stickerId/index'
 
 const PublicRouteRoute = PublicRouteRouteImport.update({
   id: '/_public',
@@ -81,6 +82,12 @@ const AuthAlbumPaisIndexRoute = AuthAlbumPaisIndexRouteImport.update({
   path: '/album/$pais/',
   getParentRoute: () => AuthRouteRoute,
 } as any)
+const AuthAlbumColarStickerIdIndexRoute =
+  AuthAlbumColarStickerIdIndexRouteImport.update({
+    id: '/album/colar/$stickerId/',
+    path: '/album/colar/$stickerId/',
+    getParentRoute: () => AuthRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof PublicentrarIndexRoute
@@ -93,6 +100,7 @@ export interface FileRoutesByFullPath {
   '/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
   '/album/$pais/': typeof AuthAlbumPaisIndexRoute
   '/inventory/add/': typeof AuthInventoryAddIndexRoute
+  '/album/colar/$stickerId/': typeof AuthAlbumColarStickerIdIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof PublicentrarIndexRoute
@@ -105,6 +113,7 @@ export interface FileRoutesByTo {
   '/finalizar-cadastro': typeof PublicFinalizarCadastroIndexRoute
   '/album/$pais': typeof AuthAlbumPaisIndexRoute
   '/inventory/add': typeof AuthInventoryAddIndexRoute
+  '/album/colar/$stickerId': typeof AuthAlbumColarStickerIdIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -120,6 +129,7 @@ export interface FileRoutesById {
   '/_public/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
   '/_auth/album/$pais/': typeof AuthAlbumPaisIndexRoute
   '/_auth/inventory/add/': typeof AuthInventoryAddIndexRoute
+  '/_auth/album/colar/$stickerId/': typeof AuthAlbumColarStickerIdIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -134,6 +144,7 @@ export interface FileRouteTypes {
     | '/finalizar-cadastro/'
     | '/album/$pais/'
     | '/inventory/add/'
+    | '/album/colar/$stickerId/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -146,6 +157,7 @@ export interface FileRouteTypes {
     | '/finalizar-cadastro'
     | '/album/$pais'
     | '/inventory/add'
+    | '/album/colar/$stickerId'
   id:
     | '__root__'
     | '/_auth'
@@ -160,6 +172,7 @@ export interface FileRouteTypes {
     | '/_public/finalizar-cadastro/'
     | '/_auth/album/$pais/'
     | '/_auth/inventory/add/'
+    | '/_auth/album/colar/$stickerId/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -253,6 +266,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthAlbumPaisIndexRouteImport
       parentRoute: typeof AuthRouteRoute
     }
+    '/_auth/album/colar/$stickerId/': {
+      id: '/_auth/album/colar/$stickerId/'
+      path: '/album/colar/$stickerId'
+      fullPath: '/album/colar/$stickerId/'
+      preLoaderRoute: typeof AuthAlbumColarStickerIdIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
+    }
   }
 }
 
@@ -264,6 +284,7 @@ interface AuthRouteRouteChildren {
   AuthTradesIndexRoute: typeof AuthTradesIndexRoute
   AuthAlbumPaisIndexRoute: typeof AuthAlbumPaisIndexRoute
   AuthInventoryAddIndexRoute: typeof AuthInventoryAddIndexRoute
+  AuthAlbumColarStickerIdIndexRoute: typeof AuthAlbumColarStickerIdIndexRoute
 }
 
 const AuthRouteRouteChildren: AuthRouteRouteChildren = {
@@ -274,6 +295,7 @@ const AuthRouteRouteChildren: AuthRouteRouteChildren = {
   AuthTradesIndexRoute: AuthTradesIndexRoute,
   AuthAlbumPaisIndexRoute: AuthAlbumPaisIndexRoute,
   AuthInventoryAddIndexRoute: AuthInventoryAddIndexRoute,
+  AuthAlbumColarStickerIdIndexRoute: AuthAlbumColarStickerIdIndexRoute,
 }
 
 const AuthRouteRouteWithChildren = AuthRouteRoute._addFileChildren(

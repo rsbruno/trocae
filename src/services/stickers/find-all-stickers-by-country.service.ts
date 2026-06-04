@@ -6,6 +6,11 @@ import type { Sticker } from "@/@types/sticker";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { normalize } from "@/helpers/strings";
 
+export const findAllStickersByCountryQueryKeys = {
+  byCountry: (countryCode: string) => [...findAllStickersByCountryQueryKeys.all(), countryCode.trim()] as const,
+  all: () => ["use-find-all-stickers-by-country"] as const
+};
+
 export const findAllStickersByCountryService = async (countryCode: string): Promise<Sticker[]> => {
   const normalizedCountry = normalize(countryCode);
 
@@ -37,8 +42,8 @@ export function useFindAllStickersByCountry(countryCode: string, options?: UseFi
   const normalizedCountry = countryCode.trim();
 
   return useQuery({
+    queryKey: findAllStickersByCountryQueryKeys.byCountry(normalizedCountry),
     queryFn: () => findAllStickersByCountryService(normalizedCountry),
-    queryKey: ["use-find-all-stickers-by-country", normalizedCountry],
     ...options
   });
 }

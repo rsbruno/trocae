@@ -23,7 +23,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "strict": true
   },
   "include": ["src"],
   "exclude": ["src/database/seed.ts", "src/infra/firebase/admin.ts"]

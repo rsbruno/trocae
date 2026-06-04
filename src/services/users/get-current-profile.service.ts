@@ -6,6 +6,11 @@ import type { User } from "@/@types/user";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
 
+export const getCurrentProfileQueryKeys = {
+  byUserId: (userId: string) => [...getCurrentProfileQueryKeys.all(), userId] as const,
+  all: () => ["use-get-current-profile"] as const
+};
+
 type UseGetUserByIdOptions = Omit<UseQueryOptions<User | null>, "queryKey" | "queryFn" | "enabled">;
 
 export const getCurrentProfileService = async (id: string): Promise<User | null> => {
@@ -25,8 +30,8 @@ export const getCurrentProfileService = async (id: string): Promise<User | null>
 
 export function useGetCurrentProfile(userId: string, options?: UseGetUserByIdOptions) {
   return useQuery({
+    queryKey: getCurrentProfileQueryKeys.byUserId(userId),
     queryFn: () => getCurrentProfileService(userId),
-    queryKey: ["use-get-current-profile", userId],
     enabled: Boolean(userId),
     ...options
   });

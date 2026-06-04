@@ -7,9 +7,36 @@ import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
 import { normalize } from "@/helpers/strings";
 
+export const findAllPastedCollectionQueryKeys = {
+  byCountry: (countryCode?: string) => [...findAllPastedCollectionQueryKeys.all(), countryCode ?? null] as const,
+  all: () => ["use-find-all-pasted-stickers"] as const
+};
+
 export type FindAllPastedCollectionInput = {
   countryCode?: string;
 };
+
+export type PastedStickerSummary = {
+  stickerId: string;
+  repeatedCount: number;
+};
+
+export function buildPastedStickerSummaries(items: Collection[]) {
+  return items.reduce<Record<string, PastedStickerSummary>>((acc, item) => {
+    const current = acc[item.sticker.id];
+
+    if (!current) {
+      acc[item.sticker.id] = {
+        stickerId: item.sticker.id,
+        repeatedCount: 1
+      };
+      return acc;
+    }
+
+    current.repeatedCount += 1;
+    return acc;
+  }, {});
+}
 
 export const findAllPastedCollectionService = async ({ countryCode }: FindAllPastedCollectionInput = {}): Promise<
   Collection[]
@@ -51,7 +78,7 @@ export function useFindAllPastedCollection<TData = Collection[]>(
   options?: Omit<UseQueryOptions<Collection[], Error, TData>, "queryKey" | "queryFn">
 ) {
   return useQuery<Collection[], Error, TData>({
-    queryKey: ["use-find-all-pasted-stickers", countryCode ?? null],
+    queryKey: findAllPastedCollectionQueryKeys.byCountry(countryCode),
     queryFn: () => findAllPastedCollectionService({ countryCode }),
     ...options
   });
