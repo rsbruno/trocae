@@ -26,11 +26,6 @@ import {
   ExtraStickerRoot
 } from "@/components/v2026/stickers/extra";
 import {
-  buildRepeatedStickerCountByCountry,
-  buildAvailableStickerCounts,
-  useFindAllCollectionItems
-} from "@/services/collections/find-all-collection-items.service";
-import {
   StickerEmptyBackground,
   StickerEmptyPlayerName,
   StickerEmptyLabel,
@@ -40,7 +35,9 @@ import {
   buildPastedStickerSummaries,
   useFindAllPastedCollection
 } from "@/services/collections/findall-pasted-collection.service";
+import { buildRepeatedStickerCountByCountry, buildAvailableStickerCounts } from "@/helpers/collections/collection-items";
 import { useFindAllStickersByCountry } from "@/services/stickers/find-all-stickers-by-country.service";
+import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
