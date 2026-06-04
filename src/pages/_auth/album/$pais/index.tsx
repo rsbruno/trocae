@@ -26,6 +26,11 @@ import {
   ExtraStickerRoot
 } from "@/components/v2026/stickers/extra";
 import {
+  buildRepeatedStickerCountByCountry,
+  buildAvailableStickerCounts,
+  useFindAllCollectionItems
+} from "@/services/collections/find-all-collection-items.service";
+import {
   StickerEmptyBackground,
   StickerEmptyPlayerName,
   StickerEmptyLabel,
@@ -35,7 +40,6 @@ import {
   buildPastedStickerSummaries,
   useFindAllPastedCollection
 } from "@/services/collections/findall-pasted-collection.service";
-import { buildAvailableStickerCounts, useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
 import { useFindAllStickersByCountry } from "@/services/stickers/find-all-stickers-by-country.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
@@ -69,7 +73,7 @@ function RouteComponent() {
   const pastedSummaries = buildPastedStickerSummaries(pastedStickers);
   const availableStickerCounts = buildAvailableStickerCounts(collectionItems);
   const pastedUniqueCount = Object.keys(pastedSummaries).length;
-  const repeatedCount = pastedStickers.length - pastedUniqueCount;
+  const repeatedCount = buildRepeatedStickerCountByCountry(collectionItems, countryCode);
   const totalStickers = countryStickers.length;
   const progress = totalStickers > 0 ? (pastedUniqueCount / totalStickers) * 100 : 0;
 
@@ -125,11 +129,11 @@ function RouteComponent() {
           </SurfaceCardGhost>
         </ShowIf>
 
-        <ShowIf if={countryLoading || pastedLoading}>
+        <ShowIf if={countryLoading || pastedLoading || collectionLoading}>
           <CountryStatsSkeleton />
         </ShowIf>
 
-        <ShowIf if={!countryLoading && !pastedLoading}>
+        <ShowIf if={!countryLoading && !pastedLoading && !collectionLoading}>
           <SurfaceCardRoot className="flex items-center justify-around py-5">
             <div className="flex flex-col items-center">
               <ProfileProgressRingRoot progress={progress} strokeWidth={4} size={52} />
