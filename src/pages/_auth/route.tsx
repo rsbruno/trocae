@@ -29,7 +29,7 @@ export const Route = createFileRoute("/_auth")({
 
 function AuthLayout() {
   return (
-    <div className="bg-bg inset-0 flex max-h-dvh min-h-dvh flex-col overflow-y-scroll">
+    <div className="bg-bg inset-0 flex max-h-dvh min-h-dvh flex-col overflow-y-scroll" data-app-scroll-root>
       <Outlet />
       <BottomNavigation />
     </div>
