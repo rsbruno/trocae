@@ -41,6 +41,7 @@ import { buildPastedStickerSummaries } from "@/helpers/collections/pasted-collec
 import { CountryProgressHeader } from "@/components/v2026/countries/progress-header";
 import { useFindTeamByCode } from "@/services/teams/find-team-by-code.service";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -74,12 +75,7 @@ function RouteComponent() {
   const progress = totalStickers > 0 ? (pastedUniqueCount / totalStickers) * 100 : 0;
 
   return (
-    <PageRoot
-      title={`Coleção ${team?.name} - ${team?.fifaCode}`}
-      className="mx-auto max-w-md pb-8"
-      subtitle="Detalhes da página"
-      showBack
-    >
+    <PageRoot title={`Coleção ${team?.name} - ${team?.fifaCode}`} subtitle="Detalhes da página" showBack>
       <PageHeaderRoot>
         <ShowIf if={teamLoading}>
           <CountryPageHeaderSkeleton />
@@ -92,7 +88,7 @@ function RouteComponent() {
         </ShowIf>
       </PageHeaderRoot>
 
-      <div className="flex flex-col gap-5 px-4">
+      <PageContent className="gap-5">
         <ShowIf if={teamLoading}>
           <CountryTeamCardSkeleton />
         </ShowIf>
@@ -264,7 +260,7 @@ function RouteComponent() {
             </ForEach>
           </div>
         </ShowIf>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

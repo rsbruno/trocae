@@ -17,6 +17,7 @@ import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/component
 import { ProfileProgressRingRoot } from "@/pages/_auth/perfil/_components/profile-progress-ring";
 import { useFindAllGroupedTeams } from "@/services/teams/find-all-grouped-teams.service";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -39,7 +40,7 @@ function AlbumPage() {
   const statsLoading = groupsFetching || pastedFetching || collectionFetching;
 
   return (
-    <PageRoot className="mx-auto max-w-md pb-8" subtitle="Todas as seleções" title="Meu álbum">
+    <PageRoot subtitle="Todas as seleções" title="Meu álbum">
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
@@ -47,7 +48,7 @@ function AlbumPage() {
         </div>
       </PageHeaderRoot>
 
-      <div aria-busy={groupsFetching || pastedFetching || collectionFetching} className="flex flex-col gap-7 px-4">
+      <PageContent aria-busy={groupsFetching || pastedFetching || collectionFetching}>
         <ShowIf if={statsLoading}>
           <AlbumStatsSkeleton />
         </ShowIf>
@@ -121,7 +122,7 @@ function AlbumPage() {
             )}
           </ForEach>
         </ShowIf>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

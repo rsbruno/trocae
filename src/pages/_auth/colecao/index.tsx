@@ -12,6 +12,7 @@ import {
 import { TabsContent, TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { CollectionSummary } from "@/components/v2026/collections/summary";
 import { SearchInput } from "@/components/ui/fields/search-input";
+import { PageContent } from "@/components/ui/page/content";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
@@ -40,7 +41,7 @@ function InventoryPage() {
   ];
 
   return (
-    <PageRoot subtitle="Todas as figurinhas por país" className="mx-auto max-w-md pb-8" title="Inventário" showBack>
+    <PageRoot subtitle="Todas as figurinhas por país" title="Inventário" showBack>
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
@@ -51,7 +52,7 @@ function InventoryPage() {
         </PageHeaderActions>
       </PageHeaderRoot>
 
-      <div className="flex flex-col gap-5 px-4">
+      <PageContent className="gap-5">
         <CollectionSummary />
 
         <SearchInput
@@ -88,7 +89,7 @@ function InventoryPage() {
             <InventoryRepeatedTab search={search} />
           </TabsContent>
         </Tabs>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

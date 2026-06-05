@@ -52,6 +52,7 @@ import { findAllPastedCollectionQueryKeys } from "@/services/collections/findall
 import { findAllCollectionItemsQueryKeys } from "@/services/collections/find-all-collection-items.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -128,7 +129,7 @@ function PasteStickerPage() {
   };
 
   return (
-    <PageRoot subtitle="Escolha uma cópia disponível" className="mx-auto max-w-md pb-8" title="Colar figurinha" showBack>
+    <PageRoot subtitle="Escolha uma cópia disponível" title="Colar figurinha" showBack>
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
@@ -136,7 +137,7 @@ function PasteStickerPage() {
         </div>
       </PageHeaderRoot>
 
-      <div className="flex flex-col gap-5 px-4">
+      <PageContent className="gap-5">
         <ShowIf if={Boolean(referenceSticker) && !isPageFetching}>
           <SurfaceCardGhost>
             <div className="flex items-center gap-4">
@@ -233,7 +234,7 @@ function PasteStickerPage() {
             </ForEach>
           </div>
         </ShowIf>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

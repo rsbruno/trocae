@@ -7,6 +7,7 @@ import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card"
 import { wishlistItems, tradeHistory, tradeOffers } from "@/mocks/trades";
 import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { SearchInput } from "@/components/ui/fields/search-input";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -30,14 +31,14 @@ function TradesPage() {
   ];
 
   return (
-    <PageRoot className="mx-auto max-w-md pb-8" subtitle="2 ofertas pendentes" title="Trocas" showBack>
+    <PageRoot subtitle="2 ofertas pendentes" title="Trocas" showBack>
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
           <PageHeaderSubtitle />
         </div>
       </PageHeaderRoot>
-      <div className="flex flex-col gap-5 px-4">
+      <PageContent className="gap-5">
         <Tabs onValueChange={(value) => setActiveTab(value as Tab)} value={activeTab}>
           <TabsList className="w-full">
             <ForEach items={tabs}>
@@ -205,7 +206,7 @@ function TradesPage() {
             </ForEach>
           </div>
         </ShowIf>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

@@ -13,10 +13,10 @@ type PageRootProps = {
   className?: string;
 };
 
-export function PageRoot({ className = "mx-auto max-w-md", children, subtitle, showBack, onBack, title }: PageRootProps) {
+export function PageRoot({ className, children, subtitle, showBack, onBack, title }: PageRootProps) {
   return (
     <PageContext.Provider value={{ subtitle, showBack, onBack, title }}>
-      <main className={twMerge(className, "flex h-full flex-1 flex-col")}>{children}</main>
+      <main className={twMerge(className, "flex h-full flex-1 flex-col pb-10")}>{children}</main>
     </PageContext.Provider>
   );
 }

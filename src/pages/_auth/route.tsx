@@ -29,10 +29,8 @@ export const Route = createFileRoute("/_auth")({
 
 function AuthLayout() {
   return (
-    <div className="bg-bg fixed inset-0 flex flex-col overflow-hidden">
-      <div className="flex-1 overflow-x-hidden overflow-y-auto pb-[calc(8rem+env(safe-area-inset-bottom))]">
-        <Outlet />
-      </div>
+    <div className="bg-bg inset-0 flex max-h-dvh flex-col overflow-y-scroll pb-20">
+      <Outlet />
       <BottomNavigation />
     </div>
   );

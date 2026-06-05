@@ -42,6 +42,7 @@ import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/prog
 import { useFindAllStickers } from "@/services/stickers/find-all-stickers.service";
 import { CollectionSummary } from "@/components/v2026/collections/summary";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
@@ -79,7 +80,7 @@ function HomePage() {
         </PageHeaderActions>
       </PageHeaderRoot>
 
-      <div className="flex flex-col gap-7 px-4 pb-8">
+      <PageContent>
         <CollectionSummary />
 
         <section className="grid grid-cols-2 gap-2">
@@ -266,7 +267,7 @@ function HomePage() {
             </Card>
           </ShowIf>
         </section>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

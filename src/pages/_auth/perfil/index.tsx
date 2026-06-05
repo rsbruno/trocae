@@ -11,6 +11,7 @@ import {
 import { useGetCurrentProfile } from "@/services/users/get-current-profile.service";
 import { CollectionSummary } from "@/components/v2026/collections/summary";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { useAuthStore } from "@/stores/auth.store";
@@ -36,12 +37,7 @@ function ProfilePage() {
     .toUpperCase();
 
   return (
-    <PageRoot
-      subtitle={nickname ? "@" + nickname : (email ?? undefined)}
-      className="mx-auto max-w-md pb-8"
-      title="Perfil"
-      showBack
-    >
+    <PageRoot subtitle={nickname ? "@" + nickname : (email ?? undefined)} title="Perfil" showBack>
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
@@ -52,7 +48,7 @@ function ProfilePage() {
         </PageHeaderActions>
       </PageHeaderRoot>
 
-      <div className="flex flex-col gap-5 px-4">
+      <PageContent className="gap-5">
         <SurfaceCardRoot>
           <div className="flex items-center gap-4">
             <div className="bg-accent-primary flex size-14 items-center justify-center overflow-hidden rounded-lg">
@@ -90,7 +86,7 @@ function ProfilePage() {
         </SurfaceCardRoot>
 
         <CollectionSummary />
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }

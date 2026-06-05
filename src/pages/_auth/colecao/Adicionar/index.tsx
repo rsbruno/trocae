@@ -52,6 +52,7 @@ import { SelectFieldControlled } from "@/components/ui/fields/controlled/select-
 import { STICKER_RARITY_OPTIONS } from "@/constants/options/sticker-rarity";
 import { ButtonLabel, ButtonRoot } from "@/components/ui/button";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
+import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { useDebounce } from "@/hooks/use-debounce";
@@ -121,7 +122,7 @@ function AddStickerPage() {
   };
 
   return (
-    <PageRoot subtitle="Procure pelo código da figurinha" className="mx-auto max-w-md pb-8" title="Adicionar figurinha" showBack>
+    <PageRoot subtitle="Procure pelo código da figurinha" title="Adicionar figurinha" showBack>
       <PageHeaderRoot>
         <div className="min-w-0 flex-1">
           <PageHeaderTitle />
@@ -129,7 +130,7 @@ function AddStickerPage() {
         </div>
       </PageHeaderRoot>
 
-      <div className="flex flex-1 flex-col gap-5 px-4">
+      <PageContent className="flex-1 gap-5">
         <SearchInputControlled
           placeholder="Digite o código..."
           maxLength={STICKER_CODE_LENGTH}
@@ -362,7 +363,7 @@ function AddStickerPage() {
             </EmptyStateContent>
           </EmptyStateRoot>
         </ShowIf>
-      </div>
+      </PageContent>
     </PageRoot>
   );
 }
