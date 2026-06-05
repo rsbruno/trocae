@@ -32,3 +32,4 @@ firebase-service-account.json
 .tanstack
 .pnpm-store
 skills-lock.json
+.env.production
