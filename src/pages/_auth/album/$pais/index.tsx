@@ -35,8 +35,8 @@ import { buildRepeatedStickerCountByCountry, buildAvailableStickerCounts } from 
 import { useFindAllStickersByCountry } from "@/services/stickers/find-all-stickers-by-country.service";
 import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
 import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/_auth/perfil/_components/profile-progress-ring";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { buildPastedStickerSummaries } from "@/helpers/collections/pasted-collection";
 import { CountryProgressHeader } from "@/components/v2026/countries/progress-header";
 import { useFindTeamByCode } from "@/services/teams/find-team-by-code.service";
@@ -75,18 +75,16 @@ function RouteComponent() {
   const progress = totalStickers > 0 ? (pastedUniqueCount / totalStickers) * 100 : 0;
 
   return (
-    <PageRoot title={`Coleção ${team?.name} - ${team?.fifaCode}`} subtitle="Detalhes da página" showBack>
-      <PageHeaderRoot>
+    <PageRoot title={`Coleção ${team?.name} - ${team?.fifaCode}`} subtitle="Detalhes da página" back={{ to: "/album" }}>
+      <PageHeader>
         <ShowIf if={teamLoading}>
           <CountryPageHeaderSkeleton />
         </ShowIf>
         <ShowIf if={!teamLoading}>
-          <div className="min-w-0 flex-1">
-            <PageHeaderTitle />
-            <PageHeaderSubtitle />
-          </div>
+          <PageHeaderTitle />
+          <PageHeaderSubtitle />
         </ShowIf>
-      </PageHeaderRoot>
+      </PageHeader>
 
       <PageContent className="gap-5">
         <ShowIf if={teamLoading}>

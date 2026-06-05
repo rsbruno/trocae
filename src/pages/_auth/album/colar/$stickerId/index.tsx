@@ -50,7 +50,7 @@ import {
 } from "@/components/ui/empty-state";
 import { findAllPastedCollectionQueryKeys } from "@/services/collections/findall-pasted-collection.service";
 import { findAllCollectionItemsQueryKeys } from "@/services/collections/find-all-collection-items.service";
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
@@ -129,13 +129,15 @@ function PasteStickerPage() {
   };
 
   return (
-    <PageRoot subtitle="Escolha uma cópia disponível" title="Colar figurinha" showBack>
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-      </PageHeaderRoot>
+    <PageRoot
+      back={referenceSticker ? { params: { pais: referenceSticker.team.fifaCode }, to: "/album/$pais" } : { to: "/album" }}
+      subtitle="Escolha uma cópia disponível"
+      title="Colar figurinha"
+    >
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
 
       <PageContent className="gap-5">
         <ShowIf if={Boolean(referenceSticker) && !isPageFetching}>

@@ -7,7 +7,7 @@ import {
   PageHeaderActions,
   PageHeaderAction,
   PageHeaderTitle,
-  PageHeaderRoot
+  PageHeader
 } from "@/components/ui/page/header";
 import { TabsContent, TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
 import { CollectionSummary } from "@/components/v2026/collections/summary";
@@ -41,16 +41,14 @@ function InventoryPage() {
   ];
 
   return (
-    <PageRoot subtitle="Todas as figurinhas por país" title="Inventário" showBack>
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
+    <PageRoot subtitle="Todas as figurinhas que você ja coletou ou ainda faltam" title="Minha coleção">
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
         <PageHeaderActions>
           <PageHeaderAction onClick={() => navigate({ to: "/colecao/Adicionar" })} icon={<Plus weight="bold" size={18} />} />
         </PageHeaderActions>
-      </PageHeaderRoot>
+      </PageHeader>
 
       <PageContent className="gap-5">
         <CollectionSummary />
@@ -66,7 +64,7 @@ function InventoryPage() {
           <TabsList className="w-full">
             <ForEach items={tabs}>
               {(tab) => (
-                <TabsTrigger className="flex-1" value={tab.id} key={tab.id}>
+                <TabsTrigger className="flex-1 cursor-pointer" value={tab.id} key={tab.id}>
                   {tab.label}
                   <ShowIf if={tab.id === "repetidas"}>
                     <div className="bg-status-info ml-1 inline-block size-1.5 animate-pulse rounded-full" />

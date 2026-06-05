@@ -1,10 +1,11 @@
+import type { LinkProps } from "@tanstack/react-router";
+
 import { createContext } from "react";
 
 export type PageContextValue = {
   title?: string;
   subtitle?: string;
-  showBack?: boolean;
-  onBack?: () => void;
+  back?: Omit<LinkProps, "children">;
 };
 
 export const PageContext = createContext<PageContextValue>({});

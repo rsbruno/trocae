@@ -1,4 +1,4 @@
-import { CaretRight, PlusCircle, Package, Images, Bell } from "@phosphor-icons/react";
+import { CaretRight, ImagesIcon, PlusCircle, Package } from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import {
@@ -30,22 +30,16 @@ import {
   buildCollectionCountryGroups,
   buildCollectionOverview
 } from "@/helpers/colecao/collection-overview";
-import {
-  PageHeaderSubtitle,
-  PageHeaderActions,
-  PageHeaderAction,
-  PageHeaderTitle,
-  PageHeaderRoot
-} from "@/components/ui/page/header";
 import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { ProgressIndicator, ProgressTrack, Progress } from "@/components/ui/progress";
 import { useFindAllStickers } from "@/services/stickers/find-all-stickers.service";
 import { CollectionSummary } from "@/components/v2026/collections/summary";
 import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
-import { ForEach } from "@/components/utils/foreach";
 import { PageRoot } from "@/components/ui/page/root";
+import { ForEach } from "@/components/utils/foreach";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ShowIf } from "@/components/utils/show";
 import { Card } from "@/components/ui/card";
@@ -69,16 +63,11 @@ function HomePage() {
   const isLoading = stickersFetching || collectionFetching;
 
   return (
-    <PageRoot subtitle="Resumo geral do álbum" title="Início">
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-        <PageHeaderActions>
-          <PageHeaderAction icon={<Bell weight="regular" size={18} />} />
-        </PageHeaderActions>
-      </PageHeaderRoot>
+    <PageRoot subtitle="Resumo geral do álbum" title="Resumo">
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
 
       <PageContent>
         <CollectionSummary />
@@ -87,7 +76,7 @@ function HomePage() {
           <Link to="/album">
             <SurfaceCardGhost className="flex h-full flex-col gap-3 p-3 transition-colors active:bg-white/4">
               <div className="bg-accent-primary/10 text-accent-primary flex size-9 items-center justify-center rounded-lg">
-                <Images weight="duotone" size={18} />
+                <ImagesIcon weight="duotone" size={18} />
               </div>
               <div className="min-w-0">
                 <Typography variant="semibold" className="block" color="base" as="span" size="sm">

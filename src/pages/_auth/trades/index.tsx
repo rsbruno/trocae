@@ -2,7 +2,7 @@ import { ArrowsLeftRight, PaperPlaneTilt, Sparkle, Plus } from "@phosphor-icons/
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { wishlistItems, tradeHistory, tradeOffers } from "@/mocks/trades";
 import { TabsTrigger, TabsList, Tabs } from "@/components/ui/tabs";
@@ -31,13 +31,11 @@ function TradesPage() {
   ];
 
   return (
-    <PageRoot subtitle="2 ofertas pendentes" title="Trocas" showBack>
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-      </PageHeaderRoot>
+    <PageRoot subtitle="2 ofertas pendentes" back={{ to: "/home" }} title="Trocas">
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
       <PageContent className="gap-5">
         <Tabs onValueChange={(value) => setActiveTab(value as Tab)} value={activeTab}>
           <TabsList className="w-full">

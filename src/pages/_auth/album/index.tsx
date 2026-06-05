@@ -13,8 +13,8 @@ import {
 import { buildAlbumGlobalStats, buildAlbumPastedStats, MAX_STICKERS_PER_TEAM } from "@/helpers/album/album-stats";
 import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
 import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { ProfileProgressRingRoot } from "@/pages/_auth/perfil/_components/profile-progress-ring";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { useFindAllGroupedTeams } from "@/services/teams/find-all-grouped-teams.service";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { PageContent } from "@/components/ui/page/content";
@@ -41,12 +41,10 @@ function AlbumPage() {
 
   return (
     <PageRoot subtitle="Todas as seleções" title="Meu álbum">
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-      </PageHeaderRoot>
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
 
       <PageContent aria-busy={groupsFetching || pastedFetching || collectionFetching}>
         <ShowIf if={statsLoading}>

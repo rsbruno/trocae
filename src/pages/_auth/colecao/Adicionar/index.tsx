@@ -45,7 +45,7 @@ import {
 import { type AddStickerFormData, STICKER_CODE_LENGTH, EMPTY_DATA, resolver } from "@/schemas/zod/add-sticker";
 import { findAllPastedCollectionQueryKeys } from "@/services/collections/findall-pasted-collection.service";
 import { useUpsertCollectionItemService } from "@/services/stickers/upsert-collection-item.service";
-import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { useFindStickerByCode } from "@/services/stickers/find-sticker-by-code.service";
 import { SearchInputControlled } from "@/components/ui/fields/controlled/search-input";
 import { SelectFieldControlled } from "@/components/ui/fields/controlled/select-field";
@@ -122,13 +122,11 @@ function AddStickerPage() {
   };
 
   return (
-    <PageRoot subtitle="Procure pelo código da figurinha" title="Adicionar figurinha" showBack>
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-      </PageHeaderRoot>
+    <PageRoot subtitle="Procure pelo código da figurinha" title="Adicionar figurinha" back={{ to: "/colecao" }}>
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
 
       <PageContent className="flex-1 gap-5">
         <SearchInputControlled

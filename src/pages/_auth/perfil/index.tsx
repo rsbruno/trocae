@@ -1,15 +1,8 @@
-import { ShareNetwork, Gear } from "@phosphor-icons/react";
+import { ShareNetworkIcon } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 
-import {
-  PageHeaderSubtitle,
-  PageHeaderActions,
-  PageHeaderAction,
-  PageHeaderTitle,
-  PageHeaderRoot
-} from "@/components/ui/page/header";
+import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
 import { useGetCurrentProfile } from "@/services/users/get-current-profile.service";
-import { CollectionSummary } from "@/components/v2026/collections/summary";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { PageContent } from "@/components/ui/page/content";
 import { Typography } from "@/components/ui/typography";
@@ -37,16 +30,11 @@ function ProfilePage() {
     .toUpperCase();
 
   return (
-    <PageRoot subtitle={nickname ? "@" + nickname : (email ?? undefined)} title="Perfil" showBack>
-      <PageHeaderRoot>
-        <div className="min-w-0 flex-1">
-          <PageHeaderTitle />
-          <PageHeaderSubtitle />
-        </div>
-        <PageHeaderActions>
-          <PageHeaderAction icon={<Gear weight="regular" size={18} />} />
-        </PageHeaderActions>
-      </PageHeaderRoot>
+    <PageRoot subtitle={nickname ? "@" + nickname : (email ?? undefined)} title="Meu Perfil">
+      <PageHeader>
+        <PageHeaderTitle />
+        <PageHeaderSubtitle />
+      </PageHeader>
 
       <PageContent className="gap-5">
         <SurfaceCardRoot>
@@ -80,12 +68,10 @@ function ProfilePage() {
               className="bg-surface-alt text-ink-secondary hover:bg-surface rounded-md p-2.5 transition-colors"
               type="button"
             >
-              <ShareNetwork weight="regular" size={14} />
+              <ShareNetworkIcon weight="regular" size={14} />
             </button>
           </div>
         </SurfaceCardRoot>
-
-        <CollectionSummary />
       </PageContent>
     </PageRoot>
   );
