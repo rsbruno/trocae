@@ -1,4 +1,3 @@
-import { ShareNetworkIcon } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeader } from "@/components/ui/page/header";
@@ -39,7 +38,7 @@ function ProfilePage() {
       <PageContent className="gap-5">
         <SurfaceCardRoot>
           <div className="flex items-center gap-4">
-            <div className="bg-accent-primary flex size-14 items-center justify-center overflow-hidden rounded-lg">
+            <div className="flex size-14 items-center justify-center overflow-hidden rounded-lg">
               <ShowIf if={Boolean(profile?.photoURL)}>
                 <img className="size-full object-cover" src={profile?.photoURL ?? ""} alt={fullName} />
               </ShowIf>
@@ -64,12 +63,6 @@ function ProfilePage() {
                 {nickname ? "@" + nickname : email}
               </Typography>
             </div>
-            <button
-              className="bg-surface-alt text-ink-secondary hover:bg-surface rounded-md p-2.5 transition-colors"
-              type="button"
-            >
-              <ShareNetworkIcon weight="regular" size={14} />
-            </button>
           </div>
         </SurfaceCardRoot>
       </PageContent>
