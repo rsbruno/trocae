@@ -6,7 +6,7 @@ type PageContentProps = ComponentPropsWithoutRef<"div">;
 
 export function PageContent({ className, children, ...props }: PageContentProps) {
   return (
-    <div className={twMerge("flex flex-col gap-7 px-8", className)} {...props}>
+    <div className={twMerge("flex flex-col gap-7 px-4", className)} {...props}>
       {children}
     </div>
   );

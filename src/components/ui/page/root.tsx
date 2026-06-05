@@ -16,7 +16,7 @@ type PageRootProps = {
 export function PageRoot({ className, children, subtitle, title, back }: PageRootProps) {
   return (
     <PageContext.Provider value={{ subtitle, title, back }}>
-      <main className={twMerge(className, "flex h-full flex-1 flex-col pb-10")}>{children}</main>
+      <main className={twMerge(className, "mx-auto flex h-full w-full max-w-md flex-1 flex-col pb-10")}>{children}</main>
     </PageContext.Provider>
   );
 }
