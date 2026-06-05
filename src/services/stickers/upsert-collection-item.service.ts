@@ -11,11 +11,16 @@ import { getFirebaseAuth } from "@/infra/firebase/auth";
 export type UpsertCollectionItemInput = {
   sticker: Sticker;
   stickerRarity: StickerRarity;
+  pasteNow?: boolean;
 };
 
 type UseUpsertCollectionItemOptions = Omit<UseMutationOptions<Collection, Error, UpsertCollectionItemInput>, "mutationFn">;
 
-export const upsertCollectionItemService = async ({ stickerRarity, sticker }: UpsertCollectionItemInput): Promise<Collection> => {
+export const upsertCollectionItemService = async ({
+  stickerRarity,
+  pasteNow,
+  sticker
+}: UpsertCollectionItemInput): Promise<Collection> => {
   const auth = getFirebaseAuth();
   await auth.authStateReady();
 
@@ -32,6 +37,7 @@ export const upsertCollectionItemService = async ({ stickerRarity, sticker }: Up
 
   await setDoc(collectionRef, {
     createdAt: serverTimestamp(),
+    ...(pasteNow ? { pastedAt: serverTimestamp() } : {}),
     id: collectionId,
     stickerRarity,
     sticker,
@@ -51,6 +57,7 @@ export const upsertCollectionItemService = async ({ stickerRarity, sticker }: Up
   }
 
   return {
+    pastedAt: data.pastedAt instanceof Timestamp ? data.pastedAt : undefined,
     createdAt: data.createdAt,
     id: collectionId,
     stickerRarity,

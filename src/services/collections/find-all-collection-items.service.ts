@@ -3,10 +3,15 @@ import { type UseQueryOptions, useQuery } from "@tanstack/react-query";
 
 import type { Collection } from "@/@types/collection";
 
+import { type StickerSearchInput, matchesStickerSearch } from "@/helpers/stickers/search";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
 
 export const findAllCollectionItemsQueryKeys = {
+  list: (input: StickerSearchInput = {}) =>
+    input.search?.trim()
+      ? ([...findAllCollectionItemsQueryKeys.all(), input.search.trim()] as const)
+      : findAllCollectionItemsQueryKeys.all(),
   all: () => ["use-find-all-collection-items"] as const
 };
 
@@ -19,7 +24,7 @@ export function parseCollectionDocument(document: QueryDocumentSnapshot<Document
   } as Collection;
 }
 
-export const findAllCollectionItemsService = async (): Promise<Collection[]> => {
+export const findAllCollectionItemsService = async ({ search }: StickerSearchInput = {}): Promise<Collection[]> => {
   const auth = getFirebaseAuth();
   await auth.authStateReady();
 
@@ -35,13 +40,16 @@ export const findAllCollectionItemsService = async (): Promise<Collection[]> => 
   const snapshot = await getDocs(collectionsQuery);
   const items = snapshot.docs.map(parseCollectionDocument);
 
-  return items;
+  return items.filter((item) => matchesStickerSearch(item.sticker, search));
 };
 
-export function useFindAllCollectionItems(options?: Omit<UseQueryOptions<Collection[], Error>, "queryKey" | "queryFn">) {
+export function useFindAllCollectionItems(
+  input: StickerSearchInput = {},
+  options?: Omit<UseQueryOptions<Collection[], Error>, "queryKey" | "queryFn">
+) {
   return useQuery({
-    queryKey: findAllCollectionItemsQueryKeys.all(),
-    queryFn: findAllCollectionItemsService,
+    queryKey: findAllCollectionItemsQueryKeys.list(input),
+    queryFn: () => findAllCollectionItemsService(input),
     ...options
   });
 }

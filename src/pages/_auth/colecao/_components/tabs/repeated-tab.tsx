@@ -1,18 +1,6 @@
 import { RepeatIcon } from "@phosphor-icons/react";
 
 import {
-  StickerInlineRepeatedCount,
-  StickerInlinePlayerName,
-  StickerInlineTeamFlag,
-  StickerInlineTeamName,
-  StickerInlineContent,
-  StickerInlineRarity,
-  StickerInlineCard,
-  StickerInlineCode,
-  StickerInlineRoot,
-  StickerInlineEnd
-} from "@/components/v2026/stickers/inline";
-import {
   EmptyStateDescription,
   EmptyStateContent,
   EmptyStateTitle,
@@ -20,35 +8,32 @@ import {
   EmptyStateRoot
 } from "@/components/ui/empty-state";
 import { useFindRepeatedCollectionItems } from "@/services/collections/find-repeated-collection-items.service";
+import { StickerInlineCard } from "@/components/v2026/stickers/inline";
 import { Typography } from "@/components/ui/typography";
 import { ForEach } from "@/components/utils/foreach";
 import { ShowIf } from "@/components/utils/show";
 
-import { InventoryStickerListItemSkeleton } from "../skeleton/inventory-sticker-list-item-skeleton";
+import { InventoryStickerListLoading } from "../inventory-sticker-list-loading";
+import { InventoryStickerRow } from "../inventory-sticker-row";
+import { InventoryTabError } from "../inventory-tab-error";
 
-export function InventoryRepeatedTab() {
-  const { isLoading, error, data } = useFindRepeatedCollectionItems();
+type InventoryRepeatedTabProps = {
+  search?: string;
+};
+
+export function InventoryRepeatedTab({ search }: InventoryRepeatedTabProps) {
+  const { isLoading, error, data } = useFindRepeatedCollectionItems({ search });
 
   const totalRepeated = data?.reduce((sum, item) => sum + item.repeatedCount, 0) ?? 0;
 
   return (
     <div className="flex flex-col gap-4">
       <ShowIf if={isLoading}>
-        <StickerInlineCard>
-          {Array.from({ length: 10 }).map((_, index) => (
-            <InventoryStickerListItemSkeleton key={index} />
-          ))}
-        </StickerInlineCard>
+        <InventoryStickerListLoading />
       </ShowIf>
 
       <ShowIf if={Boolean(error) && !isLoading}>
-        <EmptyStateRoot className="py-8" tone="danger">
-          <EmptyStateContent>
-            <EmptyStateTitle className="text-status-danger">
-              {error?.message ?? "Não foi possível carregar as repetidas."}
-            </EmptyStateTitle>
-          </EmptyStateContent>
-        </EmptyStateRoot>
+        <InventoryTabError fallback="Não foi possível carregar as repetidas." message={error?.message} />
       </ShowIf>
 
       <ShowIf if={!isLoading && !error && (data?.length ?? 0) === 0}>
@@ -77,18 +62,7 @@ export function InventoryRepeatedTab() {
         <StickerInlineCard>
           <ForEach items={data}>
             {(item) => (
-              <StickerInlineRoot rarity={item.stickerRarity} data={item.sticker}>
-                <StickerInlineTeamFlag />
-                <StickerInlineContent>
-                  <StickerInlinePlayerName />
-                  <StickerInlineTeamName />
-                </StickerInlineContent>
-                <StickerInlineEnd>
-                  <StickerInlineCode />
-                  <StickerInlineRarity />
-                </StickerInlineEnd>
-                <StickerInlineRepeatedCount>{item.repeatedCount}</StickerInlineRepeatedCount>
-              </StickerInlineRoot>
+              <InventoryStickerRow repeatedCount={item.repeatedCount} rarity={item.stickerRarity} sticker={item.sticker} />
             )}
           </ForEach>
         </StickerInlineCard>

@@ -31,17 +31,16 @@ import {
   StickerEmptyLabel,
   StickerEmptyRoot
 } from "@/components/v2026/stickers/empty";
-import {
-  buildPastedStickerSummaries,
-  useFindAllPastedCollection
-} from "@/services/collections/findall-pasted-collection.service";
 import { buildRepeatedStickerCountByCountry, buildAvailableStickerCounts } from "@/helpers/collections/collection-items";
 import { useFindAllStickersByCountry } from "@/services/stickers/find-all-stickers-by-country.service";
+import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
 import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
-import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
-import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
+import { ProfileProgressRingRoot } from "@/pages/_auth/perfil/_components/profile-progress-ring";
+import { buildPastedStickerSummaries } from "@/helpers/collections/pasted-collection";
+import { CountryProgressHeader } from "@/components/v2026/countries/progress-header";
 import { useFindTeamByCode } from "@/services/teams/find-team-by-code.service";
+import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";
 import { PageRoot } from "@/components/ui/page/root";
 import { ForEach } from "@/components/utils/foreach";
@@ -98,32 +97,8 @@ function RouteComponent() {
           <CountryTeamCardSkeleton />
         </ShowIf>
 
-        <ShowIf if={!teamLoading}>
-          <SurfaceCardGhost>
-            <div className="flex items-center gap-4">
-              <div className="relative">
-                <div className="bg-accent-primary flex size-14 items-center justify-center overflow-hidden rounded-lg">
-                  <img className="size-full object-cover" src={team?.flag} alt={team?.name} />
-                </div>
-              </div>
-              <div className="flex-1">
-                <Typography variant="semibold" color="base" size="md" as="h2">
-                  {team?.name}
-                </Typography>
-                <Typography color="muted" size="sm" as="p">
-                  {team?.federationName}
-                </Typography>
-                <div className="text-ink-muted mt-1 flex gap-3 text-xs leading-4 font-medium">
-                  <Typography className="flex items-center gap-1" variant="medium" color="subtle" as="span" size="xs">
-                    {team?.coach}
-                  </Typography>
-                  <Typography className="flex items-center gap-1" variant="medium" color="subtle" as="span" size="xs">
-                    {team?.confederation} · Grupo {team?.group?.code}
-                  </Typography>
-                </div>
-              </div>
-            </div>
-          </SurfaceCardGhost>
+        <ShowIf if={!teamLoading && Boolean(team)}>
+          <CountryProgressHeader currentCount={pastedUniqueCount} totalCount={totalStickers} progress={progress} team={team!} />
         </ShowIf>
 
         <ShowIf if={countryLoading || pastedLoading || collectionLoading}>

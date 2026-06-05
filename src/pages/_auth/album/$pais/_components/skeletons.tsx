@@ -1,7 +1,7 @@
 import { Fragment } from "react/jsx-runtime";
 
-import { SurfaceCardGhost, SurfaceCardRoot } from "@/components/ui/surface-card";
 import { StickerRoot } from "@/components/v2026/stickers/normal";
+import { SurfaceCardGhost } from "@/components/ui/surface-card";
 import { ForEach } from "@/components/utils/foreach";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -16,23 +16,16 @@ export function CountryPageHeaderSkeleton() {
 
 export function CountryTeamCardSkeleton() {
   return (
-    <SurfaceCardRoot>
-      <div className="flex items-center gap-4">
-        <div className="relative">
-          <Skeleton className="size-14" tone="muted" rounded="lg" />
-          <Skeleton className="absolute -right-1 -bottom-1 h-6 w-12" rounded="full" tone="muted" />
-        </div>
-        <div className="flex-1 space-y-2">
+    <div className="flex items-center gap-3 px-1">
+      <Skeleton className="size-9 shrink-0" tone="muted" rounded="md" />
+      <div className="min-w-0 flex-1">
+        <div className="mb-2 flex items-center justify-between gap-2">
           <Skeleton className="h-4 w-28" rounded="sm" tone="base" />
-          <Skeleton className="h-3 w-40" tone="muted" rounded="sm" />
-          <div className="flex gap-3 pt-0.5">
-            <Skeleton className="h-3 w-24" tone="muted" rounded="sm" />
-            <Skeleton className="h-3 w-32" tone="muted" rounded="sm" />
-          </div>
+          <Skeleton className="h-3 w-10" rounded="sm" tone="muted" />
         </div>
-        <Skeleton className="size-9" tone="muted" rounded="md" />
+        <Skeleton className="h-[5px] w-full" rounded="full" tone="muted" />
       </div>
-    </SurfaceCardRoot>
+    </div>
   );
 }
 

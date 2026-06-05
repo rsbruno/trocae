@@ -4,12 +4,17 @@ import { type UseQueryOptions, useQuery } from "@tanstack/react-query";
 import type { Collection } from "@/@types/collection";
 import type { Sticker } from "@/@types/sticker";
 
+import { type StickerSearchInput, matchesStickerSearch } from "@/helpers/stickers/search";
 import { getFirestoreClient } from "@/infra/firebase/client";
 import { getFirebaseAuth } from "@/infra/firebase/auth";
 
 import { parseCollectionDocument } from "./find-all-collection-items.service";
 
 export const findRepeatedCollectionItemsQueryKeys = {
+  list: (input: StickerSearchInput = {}) =>
+    input.search?.trim()
+      ? ([...findRepeatedCollectionItemsQueryKeys.all(), input.search.trim()] as const)
+      : findRepeatedCollectionItemsQueryKeys.all(),
   all: () => ["use-find-repeated-collection-items"] as const
 };
 
@@ -19,7 +24,9 @@ export type RepeatedCollectionItem = {
   repeatedCount: number;
 };
 
-export const findRepeatedCollectionItemsService = async (): Promise<RepeatedCollectionItem[]> => {
+export const findRepeatedCollectionItemsService = async ({ search }: StickerSearchInput = {}): Promise<
+  RepeatedCollectionItem[]
+> => {
   const auth = getFirebaseAuth();
   await auth.authStateReady();
 
@@ -33,7 +40,10 @@ export const findRepeatedCollectionItemsService = async (): Promise<RepeatedColl
   const collectionsQuery = query(collectionsRef, where("userId", "==", currentUser.uid));
 
   const snapshot = await getDocs(collectionsQuery);
-  const items = snapshot.docs.map(parseCollectionDocument).filter((doc): doc is Collection => doc !== null);
+  const items = snapshot.docs
+    .map(parseCollectionDocument)
+    .filter((doc): doc is Collection => doc !== null)
+    .filter((item) => matchesStickerSearch(item.sticker, search));
 
   const stickerMap = new Map<string, Collection[]>();
 
@@ -64,11 +74,12 @@ export const findRepeatedCollectionItemsService = async (): Promise<RepeatedColl
 };
 
 export function useFindRepeatedCollectionItems(
+  input: StickerSearchInput = {},
   options?: Omit<UseQueryOptions<RepeatedCollectionItem[], Error>, "queryKey" | "queryFn">
 ) {
   return useQuery({
-    queryKey: findRepeatedCollectionItemsQueryKeys.all(),
-    queryFn: findRepeatedCollectionItemsService,
+    queryKey: findRepeatedCollectionItemsQueryKeys.list(input),
+    queryFn: () => findRepeatedCollectionItemsService(input),
     ...options
   });
 }

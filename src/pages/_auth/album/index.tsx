@@ -14,7 +14,7 @@ import { buildAlbumGlobalStats, buildAlbumPastedStats, MAX_STICKERS_PER_TEAM } f
 import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
 import { useFindAllCollectionItems } from "@/services/collections/find-all-collection-items.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
-import { ProfileProgressRingRoot } from "@/pages/_auth/profile/_components/profile-progress-ring";
+import { ProfileProgressRingRoot } from "@/pages/_auth/perfil/_components/profile-progress-ring";
 import { useFindAllGroupedTeams } from "@/services/teams/find-all-grouped-teams.service";
 import { SurfaceCardRoot } from "@/components/ui/surface-card";
 import { Typography } from "@/components/ui/typography";

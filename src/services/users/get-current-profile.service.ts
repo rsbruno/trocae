@@ -14,24 +14,28 @@ export const getCurrentProfileQueryKeys = {
 type UseGetUserByIdOptions = Omit<UseQueryOptions<User | null>, "queryKey" | "queryFn" | "enabled">;
 
 export const getCurrentProfileService = async (id: string): Promise<User | null> => {
-  const { currentUser } = getFirebaseAuth();
+  const auth = getFirebaseAuth();
+  await auth.authStateReady();
+
+  const currentUser = auth.currentUser;
   const snapshot = await getDoc(doc(getFirestoreClient(), "users", id));
+
   if (!currentUser && !snapshot.exists()) return null;
 
   const data = snapshot.data();
   return {
     fullName: data?.displayName ?? currentUser?.displayName ?? null,
+    email: data?.email ?? currentUser?.email ?? null,
     photoURL: currentUser?.photoURL ?? null,
-    email: currentUser?.email ?? null,
     nickname: data?.nickname ?? null,
     id: currentUser?.uid ?? id
   };
 };
 
-export function useGetCurrentProfile(userId: string, options?: UseGetUserByIdOptions) {
+export function useGetCurrentProfile(userId: string | undefined, options?: UseGetUserByIdOptions) {
   return useQuery({
-    queryKey: getCurrentProfileQueryKeys.byUserId(userId),
-    queryFn: () => getCurrentProfileService(userId),
+    queryKey: getCurrentProfileQueryKeys.byUserId(userId ?? ""),
+    queryFn: () => getCurrentProfileService(userId!),
     enabled: Boolean(userId),
     ...options
   });

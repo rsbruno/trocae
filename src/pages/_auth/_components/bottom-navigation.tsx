@@ -14,10 +14,10 @@ type NavigationItem = {
 
 const navigationItems: NavigationItem[] = [
   { label: "Album", to: "/album", icon: Images },
-  { to: "/inventory", label: "Colecao", icon: Package },
+  { label: "Colecao", to: "/colecao", icon: Package },
   { label: "Inicio", isCenter: true, icon: House, to: "/" },
   { icon: ArrowsLeftRight, label: "Trocas", to: "/trades" },
-  { label: "Perfil", to: "/profile", icon: User }
+  { label: "Perfil", to: "/perfil", icon: User }
 ];
 
 function isNavigationItemActive(pathname: string, to: string) {
@@ -30,7 +30,7 @@ export function BottomNavigation() {
   const currentPath = location.pathname;
 
   return (
-    <nav className="absolute right-0 bottom-0 left-0 z-50 px-5 pb-5">
+    <nav className="absolute right-0 bottom-0 left-0 z-50 px-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))]">
       <div className="bg-surface/75 mx-auto grid max-w-md grid-cols-5 items-end rounded-[20px] border border-white/10 px-2 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.35)] ring-1 ring-white/5 backdrop-blur-xl">
         <ForEach items={navigationItems}>
           {(item) => {

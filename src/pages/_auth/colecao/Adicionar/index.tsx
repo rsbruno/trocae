@@ -38,8 +38,12 @@ import {
   EmptyStateIcon,
   EmptyStateRoot
 } from "@/components/ui/empty-state";
+import {
+  findAllCollectionItemsQueryKeys,
+  useFindAllCollectionItems
+} from "@/services/collections/find-all-collection-items.service";
 import { type AddStickerFormData, STICKER_CODE_LENGTH, EMPTY_DATA, resolver } from "@/schemas/zod/add-sticker";
-import { findAllCollectionItemsQueryKeys } from "@/services/collections/find-all-collection-items.service";
+import { findAllPastedCollectionQueryKeys } from "@/services/collections/findall-pasted-collection.service";
 import { useUpsertCollectionItemService } from "@/services/stickers/upsert-collection-item.service";
 import { PageHeaderSubtitle, PageHeaderTitle, PageHeaderRoot } from "@/components/ui/page/header";
 import { useFindStickerByCode } from "@/services/stickers/find-sticker-by-code.service";
@@ -56,7 +60,7 @@ import { notify } from "@/components/ui/sonner";
 
 import { AddStickerStatsBlockSkeleton } from "./_components/skeleton/stats-block-skeleton";
 
-export const Route = createFileRoute("/_auth/inventory/add/")({
+export const Route = createFileRoute("/_auth/colecao/Adicionar/")({
   component: AddStickerPage
 });
 
@@ -69,14 +73,19 @@ function AddStickerPage() {
   const debounceSearch = useDebounce(setDebouncedCode, 400);
   const stickerSearch = useFindStickerByCode(debouncedCode);
   const collectionStats = useGetCollectionStickerStats(stickerSearch.data?.id, variationWatch?.value);
+  const pastedCollectionSearch = useFindAllCollectionItems({ search: debouncedCode }, { enabled: Boolean(stickerSearch.data) });
+  const hasPastedInAlbum = pastedCollectionSearch.data?.some((item) => {
+    return item.sticker.id === stickerSearch.data?.id && Boolean(item.pastedAt);
+  });
 
   const upsertCollectionItem = useUpsertCollectionItemService({
-    onSuccess: () => {
+    onSuccess: (_, variables) => {
       void queryClient.invalidateQueries({ queryKey: getCollectionStickerStatsQueryKeys.all() });
       void queryClient.invalidateQueries({ queryKey: findAllCollectionItemsQueryKeys.all() });
+      void queryClient.invalidateQueries({ queryKey: findAllPastedCollectionQueryKeys.all() });
       reset(EMPTY_DATA);
       setDebouncedCode("");
-      notify("success", "Figurinha adicionada à sua coleção.");
+      notify("success", variables.pasteNow ? "Figurinha adicionada e colada no álbum." : "Figurinha adicionada à sua coleção.");
     },
     onError: (mutationError) => notify("error", mutationError.message)
   });
@@ -89,14 +98,25 @@ function AddStickerPage() {
     if (stickerSearch.data) setValue("variation", EMPTY_DATA.variation);
   }, [stickerSearch.data, setValue]);
 
-  const handleAddSticker = (data: AddStickerFormData) => {
+  const handleAddSticker = (data: AddStickerFormData, pasteNow = false) => {
     if (!stickerSearch.data) {
       return;
     }
 
     upsertCollectionItem.mutate({
       stickerRarity: data.variation.value,
-      sticker: stickerSearch.data
+      sticker: stickerSearch.data,
+      pasteNow
+    });
+  };
+
+  const handlePasteNow = () => {
+    if (!stickerSearch.data || !variationWatch?.value) return;
+
+    upsertCollectionItem.mutate({
+      stickerRarity: variationWatch.value,
+      sticker: stickerSearch.data,
+      pasteNow: true
     });
   };
 
@@ -315,6 +335,19 @@ function AddStickerPage() {
             >
               <ButtonLabel>Pegar figurinha</ButtonLabel>
             </ButtonRoot>
+
+            <ShowIf if={!pastedCollectionSearch.isFetching && !hasPastedInAlbum}>
+              <ButtonRoot
+                loading={upsertCollectionItem.isPending}
+                className="relative w-full"
+                onClick={handlePasteNow}
+                variant="secondary"
+                type="button"
+                size="xl"
+              >
+                <ButtonLabel>Colar agora</ButtonLabel>
+              </ButtonRoot>
+            </ShowIf>
           </Form>
         </ShowIf>
 
