@@ -1,4 +1,4 @@
-import { ArrowsLeftRight, type Icon, Package, Images, House, User } from "@phosphor-icons/react";
+import { ArrowsLeftRightIcon, StickerIcon, HouseIcon, type Icon, BookIcon, UserIcon } from "@phosphor-icons/react";
 import { useRouterState, Link } from "@tanstack/react-router";
 
 import { Typography } from "@/components/ui/typography";
@@ -13,11 +13,11 @@ type NavigationItem = {
 };
 
 const navigationItems: NavigationItem[] = [
-  { label: "Album", to: "/album", icon: Images },
-  { label: "Colecao", to: "/colecao", icon: Package },
-  { label: "Inicio", isCenter: true, icon: House, to: "/" },
-  { icon: ArrowsLeftRight, label: "Trocas", to: "/trades" },
-  { label: "Perfil", to: "/perfil", icon: User }
+  { label: "Album", icon: BookIcon, to: "/album" },
+  { icon: StickerIcon, label: "Colecao", to: "/colecao" },
+  { label: "Inicio", icon: HouseIcon, isCenter: true, to: "/" },
+  { icon: ArrowsLeftRightIcon, label: "Trocas", to: "/trades" },
+  { label: "Perfil", icon: UserIcon, to: "/perfil" }
 ];
 
 function isNavigationItemActive(pathname: string, to: string) {
