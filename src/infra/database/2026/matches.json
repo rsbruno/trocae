@@ -1,0 +1,2450 @@
+[
+  {
+    "id": "group-a-rsa-kor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 101,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "d75bfe12-5a0f-5c19-9f86-272a30b02b2b",
+      "name": "África do Sul",
+      "fifaCode": "RSA",
+      "flag": "/assets/png/flag-south-africa.png",
+      "primaryColor": "#007847",
+      "secondaryColor": "#FFB612",
+      "stickerPrimary": "#F7A339",
+      "stickerSecondary": "#127E5F"
+    },
+    "awayTeam": {
+      "id": "d7e9feb9-29f0-47f1-b83f-6a1af35c08a1",
+      "name": "Coreia do Sul",
+      "fifaCode": "KOR",
+      "flag": "/assets/png/flag-south-korea.png",
+      "primaryColor": "#E11D48",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#FAB741"
+    }
+  },
+  {
+    "id": "group-a-mex-cze",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 102,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "335d54c5-1010-4ed3-92b8-6984ff102a12",
+      "name": "México",
+      "fifaCode": "MEX",
+      "flag": "/assets/png/flag-mexico.png",
+      "primaryColor": "#006847",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#AAD299",
+      "stickerSecondary": "#937367"
+    },
+    "awayTeam": {
+      "id": "97c9ec2c-0fb9-417a-aa34-02013a57face",
+      "name": "Tchéquia",
+      "fifaCode": "CZE",
+      "flag": "/assets/png/flag-czechia.png",
+      "primaryColor": "#D7141A",
+      "secondaryColor": "#11457E",
+      "stickerPrimary": "#75A6C5",
+      "stickerSecondary": "#B677B1"
+    }
+  },
+  {
+    "id": "group-a-rsa-mex",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 103,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "d75bfe12-5a0f-5c19-9f86-272a30b02b2b",
+      "name": "África do Sul",
+      "fifaCode": "RSA",
+      "flag": "/assets/png/flag-south-africa.png",
+      "primaryColor": "#007847",
+      "secondaryColor": "#FFB612",
+      "stickerPrimary": "#F7A339",
+      "stickerSecondary": "#127E5F"
+    },
+    "awayTeam": {
+      "id": "335d54c5-1010-4ed3-92b8-6984ff102a12",
+      "name": "México",
+      "fifaCode": "MEX",
+      "flag": "/assets/png/flag-mexico.png",
+      "primaryColor": "#006847",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#AAD299",
+      "stickerSecondary": "#937367"
+    }
+  },
+  {
+    "id": "group-a-kor-cze",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 104,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "d7e9feb9-29f0-47f1-b83f-6a1af35c08a1",
+      "name": "Coreia do Sul",
+      "fifaCode": "KOR",
+      "flag": "/assets/png/flag-south-korea.png",
+      "primaryColor": "#E11D48",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#FAB741"
+    },
+    "awayTeam": {
+      "id": "97c9ec2c-0fb9-417a-aa34-02013a57face",
+      "name": "Tchéquia",
+      "fifaCode": "CZE",
+      "flag": "/assets/png/flag-czechia.png",
+      "primaryColor": "#D7141A",
+      "secondaryColor": "#11457E",
+      "stickerPrimary": "#75A6C5",
+      "stickerSecondary": "#B677B1"
+    }
+  },
+  {
+    "id": "group-a-rsa-cze",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 105,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "d75bfe12-5a0f-5c19-9f86-272a30b02b2b",
+      "name": "África do Sul",
+      "fifaCode": "RSA",
+      "flag": "/assets/png/flag-south-africa.png",
+      "primaryColor": "#007847",
+      "secondaryColor": "#FFB612",
+      "stickerPrimary": "#F7A339",
+      "stickerSecondary": "#127E5F"
+    },
+    "awayTeam": {
+      "id": "97c9ec2c-0fb9-417a-aa34-02013a57face",
+      "name": "Tchéquia",
+      "fifaCode": "CZE",
+      "flag": "/assets/png/flag-czechia.png",
+      "primaryColor": "#D7141A",
+      "secondaryColor": "#11457E",
+      "stickerPrimary": "#75A6C5",
+      "stickerSecondary": "#B677B1"
+    }
+  },
+  {
+    "id": "group-a-kor-mex",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 106,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "40a1253b-3319-4251-8010-c40ec2f222e5",
+      "name": "Grupo A",
+      "code": "A",
+      "order": 1
+    },
+    "homeTeam": {
+      "id": "d7e9feb9-29f0-47f1-b83f-6a1af35c08a1",
+      "name": "Coreia do Sul",
+      "fifaCode": "KOR",
+      "flag": "/assets/png/flag-south-korea.png",
+      "primaryColor": "#E11D48",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#FAB741"
+    },
+    "awayTeam": {
+      "id": "335d54c5-1010-4ed3-92b8-6984ff102a12",
+      "name": "México",
+      "fifaCode": "MEX",
+      "flag": "/assets/png/flag-mexico.png",
+      "primaryColor": "#006847",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#AAD299",
+      "stickerSecondary": "#937367"
+    }
+  },
+  {
+    "id": "group-b-bih-can",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 201,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "fe6c5917-cac8-4853-a2f2-55637cdcea95",
+      "name": "Bósnia e Herzegovina",
+      "fifaCode": "BIH",
+      "flag": "/assets/png/flag-bosnia.png",
+      "primaryColor": "#002395",
+      "secondaryColor": "#FECB00",
+      "stickerPrimary": "#83B1CD",
+      "stickerSecondary": "#A8D4C3"
+    },
+    "awayTeam": {
+      "id": "7f6d3313-1bf7-4462-807d-82e590477c00",
+      "name": "Canadá",
+      "fifaCode": "CAN",
+      "flag": "/assets/png/flag-canada.png",
+      "primaryColor": "#D80621",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F3A175",
+      "stickerSecondary": "#EC6C08"
+    }
+  },
+  {
+    "id": "group-b-qat-sui",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 202,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "b248c8a5-0c70-4e78-9a97-daae946ffb7b",
+      "name": "Qatar",
+      "fifaCode": "QAT",
+      "flag": "/assets/png/flag-qatar.png",
+      "primaryColor": "#5C0B2F",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#C16C74",
+      "stickerSecondary": "#AAD39A"
+    },
+    "awayTeam": {
+      "id": "9a5d2fd9-8fe6-4370-ae4d-7ecd6547240a",
+      "name": "Suíça",
+      "fifaCode": "SUI",
+      "flag": "/assets/png/flag-switzerland.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79173",
+      "stickerSecondary": "#709ED4"
+    }
+  },
+  {
+    "id": "group-b-bih-qat",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 203,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "fe6c5917-cac8-4853-a2f2-55637cdcea95",
+      "name": "Bósnia e Herzegovina",
+      "fifaCode": "BIH",
+      "flag": "/assets/png/flag-bosnia.png",
+      "primaryColor": "#002395",
+      "secondaryColor": "#FECB00",
+      "stickerPrimary": "#83B1CD",
+      "stickerSecondary": "#A8D4C3"
+    },
+    "awayTeam": {
+      "id": "b248c8a5-0c70-4e78-9a97-daae946ffb7b",
+      "name": "Qatar",
+      "fifaCode": "QAT",
+      "flag": "/assets/png/flag-qatar.png",
+      "primaryColor": "#5C0B2F",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#C16C74",
+      "stickerSecondary": "#AAD39A"
+    }
+  },
+  {
+    "id": "group-b-can-sui",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 204,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "7f6d3313-1bf7-4462-807d-82e590477c00",
+      "name": "Canadá",
+      "fifaCode": "CAN",
+      "flag": "/assets/png/flag-canada.png",
+      "primaryColor": "#D80621",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F3A175",
+      "stickerSecondary": "#EC6C08"
+    },
+    "awayTeam": {
+      "id": "9a5d2fd9-8fe6-4370-ae4d-7ecd6547240a",
+      "name": "Suíça",
+      "fifaCode": "SUI",
+      "flag": "/assets/png/flag-switzerland.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79173",
+      "stickerSecondary": "#709ED4"
+    }
+  },
+  {
+    "id": "group-b-bih-sui",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 205,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "fe6c5917-cac8-4853-a2f2-55637cdcea95",
+      "name": "Bósnia e Herzegovina",
+      "fifaCode": "BIH",
+      "flag": "/assets/png/flag-bosnia.png",
+      "primaryColor": "#002395",
+      "secondaryColor": "#FECB00",
+      "stickerPrimary": "#83B1CD",
+      "stickerSecondary": "#A8D4C3"
+    },
+    "awayTeam": {
+      "id": "9a5d2fd9-8fe6-4370-ae4d-7ecd6547240a",
+      "name": "Suíça",
+      "fifaCode": "SUI",
+      "flag": "/assets/png/flag-switzerland.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79173",
+      "stickerSecondary": "#709ED4"
+    }
+  },
+  {
+    "id": "group-b-can-qat",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 206,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "4f64db3d-a25d-456c-8698-35f183916e25",
+      "name": "Grupo B",
+      "code": "B",
+      "order": 2
+    },
+    "homeTeam": {
+      "id": "7f6d3313-1bf7-4462-807d-82e590477c00",
+      "name": "Canadá",
+      "fifaCode": "CAN",
+      "flag": "/assets/png/flag-canada.png",
+      "primaryColor": "#D80621",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F3A175",
+      "stickerSecondary": "#EC6C08"
+    },
+    "awayTeam": {
+      "id": "b248c8a5-0c70-4e78-9a97-daae946ffb7b",
+      "name": "Qatar",
+      "fifaCode": "QAT",
+      "flag": "/assets/png/flag-qatar.png",
+      "primaryColor": "#5C0B2F",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#C16C74",
+      "stickerSecondary": "#AAD39A"
+    }
+  },
+  {
+    "id": "group-c-bra-sco",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 301,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "09b92e51-00e2-45d8-a9a1-d70da9e1643f",
+      "name": "Brasil",
+      "fifaCode": "BRA",
+      "flag": "/assets/png/flag-brazil.png",
+      "primaryColor": "#F7E017",
+      "secondaryColor": "#1B7F3B",
+      "stickerPrimary": "#8FC899",
+      "stickerSecondary": "#415CA6"
+    },
+    "awayTeam": {
+      "id": "997aef9c-1d57-429c-b2da-4d44796c7f7d",
+      "name": "Escócia",
+      "fifaCode": "SCO",
+      "flag": "/assets/png/flag-scotland.png",
+      "primaryColor": "#005EB8",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#60C3E1",
+      "stickerSecondary": "#F29600"
+    }
+  },
+  {
+    "id": "group-c-hai-mar",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 302,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "796bb156-e1e5-579f-bd2c-9caaa85fd1f2",
+      "name": "Haiti",
+      "fifaCode": "HAI",
+      "flag": "/assets/png/flag-haiti.png",
+      "primaryColor": "#00209F",
+      "secondaryColor": "#D21034",
+      "stickerPrimary": "#849ECE",
+      "stickerSecondary": "#F29600"
+    },
+    "awayTeam": {
+      "id": "0771d35f-802a-4f99-bb3b-62cbf4e38eba",
+      "name": "Marrocos",
+      "fifaCode": "MAR",
+      "flag": "/assets/png/flag-morocco.png",
+      "primaryColor": "#C1272D",
+      "secondaryColor": "#006233",
+      "stickerPrimary": "#F4997C",
+      "stickerSecondary": "#8D0456"
+    }
+  },
+  {
+    "id": "group-c-bra-hai",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 303,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "09b92e51-00e2-45d8-a9a1-d70da9e1643f",
+      "name": "Brasil",
+      "fifaCode": "BRA",
+      "flag": "/assets/png/flag-brazil.png",
+      "primaryColor": "#F7E017",
+      "secondaryColor": "#1B7F3B",
+      "stickerPrimary": "#8FC899",
+      "stickerSecondary": "#415CA6"
+    },
+    "awayTeam": {
+      "id": "796bb156-e1e5-579f-bd2c-9caaa85fd1f2",
+      "name": "Haiti",
+      "fifaCode": "HAI",
+      "flag": "/assets/png/flag-haiti.png",
+      "primaryColor": "#00209F",
+      "secondaryColor": "#D21034",
+      "stickerPrimary": "#849ECE",
+      "stickerSecondary": "#F29600"
+    }
+  },
+  {
+    "id": "group-c-sco-mar",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 304,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "997aef9c-1d57-429c-b2da-4d44796c7f7d",
+      "name": "Escócia",
+      "fifaCode": "SCO",
+      "flag": "/assets/png/flag-scotland.png",
+      "primaryColor": "#005EB8",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#60C3E1",
+      "stickerSecondary": "#F29600"
+    },
+    "awayTeam": {
+      "id": "0771d35f-802a-4f99-bb3b-62cbf4e38eba",
+      "name": "Marrocos",
+      "fifaCode": "MAR",
+      "flag": "/assets/png/flag-morocco.png",
+      "primaryColor": "#C1272D",
+      "secondaryColor": "#006233",
+      "stickerPrimary": "#F4997C",
+      "stickerSecondary": "#8D0456"
+    }
+  },
+  {
+    "id": "group-c-bra-mar",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 305,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "09b92e51-00e2-45d8-a9a1-d70da9e1643f",
+      "name": "Brasil",
+      "fifaCode": "BRA",
+      "flag": "/assets/png/flag-brazil.png",
+      "primaryColor": "#F7E017",
+      "secondaryColor": "#1B7F3B",
+      "stickerPrimary": "#8FC899",
+      "stickerSecondary": "#415CA6"
+    },
+    "awayTeam": {
+      "id": "0771d35f-802a-4f99-bb3b-62cbf4e38eba",
+      "name": "Marrocos",
+      "fifaCode": "MAR",
+      "flag": "/assets/png/flag-morocco.png",
+      "primaryColor": "#C1272D",
+      "secondaryColor": "#006233",
+      "stickerPrimary": "#F4997C",
+      "stickerSecondary": "#8D0456"
+    }
+  },
+  {
+    "id": "group-c-sco-hai",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 306,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "49a21f83-3327-4e8a-9280-2e912a55a638",
+      "name": "Grupo C",
+      "code": "C",
+      "order": 3
+    },
+    "homeTeam": {
+      "id": "997aef9c-1d57-429c-b2da-4d44796c7f7d",
+      "name": "Escócia",
+      "fifaCode": "SCO",
+      "flag": "/assets/png/flag-scotland.png",
+      "primaryColor": "#005EB8",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#60C3E1",
+      "stickerSecondary": "#F29600"
+    },
+    "awayTeam": {
+      "id": "796bb156-e1e5-579f-bd2c-9caaa85fd1f2",
+      "name": "Haiti",
+      "fifaCode": "HAI",
+      "flag": "/assets/png/flag-haiti.png",
+      "primaryColor": "#00209F",
+      "secondaryColor": "#D21034",
+      "stickerPrimary": "#849ECE",
+      "stickerSecondary": "#F29600"
+    }
+  },
+  {
+    "id": "group-d-aus-usa",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 401,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "6ca20b74-ffa1-410b-b59a-be6d91b8ffdf",
+      "name": "Austrália",
+      "fifaCode": "AUS",
+      "flag": "/assets/png/flag-australia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#0B6623",
+      "stickerPrimary": "#F18E70",
+      "stickerSecondary": "#AAD39A"
+    },
+    "awayTeam": {
+      "id": "5d31037d-a18c-4d02-98e5-98911149c713",
+      "name": "Estados Unidos",
+      "fifaCode": "USA",
+      "flag": "/assets/png/flag-usa.png",
+      "primaryColor": "#1E3A8A",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#94C5EC",
+      "stickerSecondary": "#E4072E"
+    }
+  },
+  {
+    "id": "group-d-par-tur",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 402,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "f6d73ac8-0463-4ee4-aaab-76ce5f3783f3",
+      "name": "Paraguai",
+      "fifaCode": "PAR",
+      "flag": "/assets/png/flag-paraguay.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F08364",
+      "stickerSecondary": "#F7AF05"
+    },
+    "awayTeam": {
+      "id": "8ef3437b-7184-487c-8b77-c4f44771db22",
+      "name": "Turquia",
+      "fifaCode": "TUR",
+      "flag": "/assets/png/flag-turkey.png",
+      "primaryColor": "#E30A17",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F7AF97",
+      "stickerSecondary": "#00ADC8"
+    }
+  },
+  {
+    "id": "group-d-aus-par",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 403,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "6ca20b74-ffa1-410b-b59a-be6d91b8ffdf",
+      "name": "Austrália",
+      "fifaCode": "AUS",
+      "flag": "/assets/png/flag-australia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#0B6623",
+      "stickerPrimary": "#F18E70",
+      "stickerSecondary": "#AAD39A"
+    },
+    "awayTeam": {
+      "id": "f6d73ac8-0463-4ee4-aaab-76ce5f3783f3",
+      "name": "Paraguai",
+      "fifaCode": "PAR",
+      "flag": "/assets/png/flag-paraguay.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F08364",
+      "stickerSecondary": "#F7AF05"
+    }
+  },
+  {
+    "id": "group-d-usa-tur",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 404,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "5d31037d-a18c-4d02-98e5-98911149c713",
+      "name": "Estados Unidos",
+      "fifaCode": "USA",
+      "flag": "/assets/png/flag-usa.png",
+      "primaryColor": "#1E3A8A",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#94C5EC",
+      "stickerSecondary": "#E4072E"
+    },
+    "awayTeam": {
+      "id": "8ef3437b-7184-487c-8b77-c4f44771db22",
+      "name": "Turquia",
+      "fifaCode": "TUR",
+      "flag": "/assets/png/flag-turkey.png",
+      "primaryColor": "#E30A17",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F7AF97",
+      "stickerSecondary": "#00ADC8"
+    }
+  },
+  {
+    "id": "group-d-aus-tur",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 405,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "6ca20b74-ffa1-410b-b59a-be6d91b8ffdf",
+      "name": "Austrália",
+      "fifaCode": "AUS",
+      "flag": "/assets/png/flag-australia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#0B6623",
+      "stickerPrimary": "#F18E70",
+      "stickerSecondary": "#AAD39A"
+    },
+    "awayTeam": {
+      "id": "8ef3437b-7184-487c-8b77-c4f44771db22",
+      "name": "Turquia",
+      "fifaCode": "TUR",
+      "flag": "/assets/png/flag-turkey.png",
+      "primaryColor": "#E30A17",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F7AF97",
+      "stickerSecondary": "#00ADC8"
+    }
+  },
+  {
+    "id": "group-d-usa-par",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 406,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "7c75b68e-032c-4e1e-9666-7af18c86a6ca",
+      "name": "Grupo D",
+      "code": "D",
+      "order": 4
+    },
+    "homeTeam": {
+      "id": "5d31037d-a18c-4d02-98e5-98911149c713",
+      "name": "Estados Unidos",
+      "fifaCode": "USA",
+      "flag": "/assets/png/flag-usa.png",
+      "primaryColor": "#1E3A8A",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#94C5EC",
+      "stickerSecondary": "#E4072E"
+    },
+    "awayTeam": {
+      "id": "f6d73ac8-0463-4ee4-aaab-76ce5f3783f3",
+      "name": "Paraguai",
+      "fifaCode": "PAR",
+      "flag": "/assets/png/flag-paraguay.png",
+      "primaryColor": "#D52B1E",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F08364",
+      "stickerSecondary": "#F7AF05"
+    }
+  },
+  {
+    "id": "group-e-ger-civ",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 501,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "5c484f49-c2e5-40c0-88df-9c39a601477d",
+      "name": "Alemanha",
+      "fifaCode": "GER",
+      "flag": "/assets/png/flag-germany.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#DD0000",
+      "stickerPrimary": "#F49A79",
+      "stickerSecondary": "#FFC803"
+    },
+    "awayTeam": {
+      "id": "cda8c56e-72f5-4af5-a559-727c06b74dee",
+      "name": "Costa do Marfim",
+      "fifaCode": "CIV",
+      "flag": "/assets/png/flag-ivory-coast.png",
+      "primaryColor": "#F77F00",
+      "secondaryColor": "#009E60",
+      "stickerPrimary": "#8BC9B7",
+      "stickerSecondary": "#00AEC9"
+    }
+  },
+  {
+    "id": "group-e-cuw-ecu",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 502,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "f35856ed-af2b-5895-b27d-8191797a7ebd",
+      "name": "Curaçao",
+      "fifaCode": "CUW",
+      "flag": "/assets/png/flag-curacao.png",
+      "primaryColor": "#0057B8",
+      "secondaryColor": "#F7D117",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "47885e92-c2cb-4431-9c02-dcd3617a1df2",
+      "name": "Equador",
+      "fifaCode": "ECU",
+      "flag": "/assets/png/flag-ecuador.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D01A25"
+    }
+  },
+  {
+    "id": "group-e-ger-cuw",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 503,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "5c484f49-c2e5-40c0-88df-9c39a601477d",
+      "name": "Alemanha",
+      "fifaCode": "GER",
+      "flag": "/assets/png/flag-germany.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#DD0000",
+      "stickerPrimary": "#F49A79",
+      "stickerSecondary": "#FFC803"
+    },
+    "awayTeam": {
+      "id": "f35856ed-af2b-5895-b27d-8191797a7ebd",
+      "name": "Curaçao",
+      "fifaCode": "CUW",
+      "flag": "/assets/png/flag-curacao.png",
+      "primaryColor": "#0057B8",
+      "secondaryColor": "#F7D117",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B878B0"
+    }
+  },
+  {
+    "id": "group-e-civ-ecu",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 504,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "cda8c56e-72f5-4af5-a559-727c06b74dee",
+      "name": "Costa do Marfim",
+      "fifaCode": "CIV",
+      "flag": "/assets/png/flag-ivory-coast.png",
+      "primaryColor": "#F77F00",
+      "secondaryColor": "#009E60",
+      "stickerPrimary": "#8BC9B7",
+      "stickerSecondary": "#00AEC9"
+    },
+    "awayTeam": {
+      "id": "47885e92-c2cb-4431-9c02-dcd3617a1df2",
+      "name": "Equador",
+      "fifaCode": "ECU",
+      "flag": "/assets/png/flag-ecuador.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D01A25"
+    }
+  },
+  {
+    "id": "group-e-ger-ecu",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 505,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "5c484f49-c2e5-40c0-88df-9c39a601477d",
+      "name": "Alemanha",
+      "fifaCode": "GER",
+      "flag": "/assets/png/flag-germany.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#DD0000",
+      "stickerPrimary": "#F49A79",
+      "stickerSecondary": "#FFC803"
+    },
+    "awayTeam": {
+      "id": "47885e92-c2cb-4431-9c02-dcd3617a1df2",
+      "name": "Equador",
+      "fifaCode": "ECU",
+      "flag": "/assets/png/flag-ecuador.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D01A25"
+    }
+  },
+  {
+    "id": "group-e-civ-cuw",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 506,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "50f27e29-fc00-4895-895e-0b815d076a60",
+      "name": "Grupo E",
+      "code": "E",
+      "order": 5
+    },
+    "homeTeam": {
+      "id": "cda8c56e-72f5-4af5-a559-727c06b74dee",
+      "name": "Costa do Marfim",
+      "fifaCode": "CIV",
+      "flag": "/assets/png/flag-ivory-coast.png",
+      "primaryColor": "#F77F00",
+      "secondaryColor": "#009E60",
+      "stickerPrimary": "#8BC9B7",
+      "stickerSecondary": "#00AEC9"
+    },
+    "awayTeam": {
+      "id": "f35856ed-af2b-5895-b27d-8191797a7ebd",
+      "name": "Curaçao",
+      "fifaCode": "CUW",
+      "flag": "/assets/png/flag-curacao.png",
+      "primaryColor": "#0057B8",
+      "secondaryColor": "#F7D117",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B878B0"
+    }
+  },
+  {
+    "id": "group-f-ned-jpn",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 601,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "ceae1eee-0b92-449c-8133-c0fa8ebd8d50",
+      "name": "Holanda",
+      "fifaCode": "NED",
+      "flag": "/assets/png/flag-netherlands.png",
+      "primaryColor": "#F97316",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#97B9E1",
+      "stickerSecondary": "#EF7A05"
+    },
+    "awayTeam": {
+      "id": "1027eb6d-f854-4a5d-ae5f-4379f4f1cde9",
+      "name": "Japão",
+      "fifaCode": "JPN",
+      "flag": "/assets/png/flag-japan.png",
+      "primaryColor": "#1E40AF",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F59A7A",
+      "stickerSecondary": "#3A74B8"
+    }
+  },
+  {
+    "id": "group-f-swe-tun",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 602,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "e4490f39-d19f-410a-9623-65d5cd26a7b2",
+      "name": "Suécia",
+      "fifaCode": "SWE",
+      "flag": "/assets/png/flag-sweden.png",
+      "primaryColor": "#006AA7",
+      "secondaryColor": "#FECC00",
+      "stickerPrimary": "#84BEDE",
+      "stickerSecondary": "#B576B0"
+    },
+    "awayTeam": {
+      "id": "07873a48-e247-4227-9ffe-5b7328ff81f0",
+      "name": "Tunísia",
+      "fifaCode": "TUN",
+      "flag": "/assets/png/flag-tunisia.png",
+      "primaryColor": "#E70013",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#EF8263",
+      "stickerSecondary": "#FAB942"
+    }
+  },
+  {
+    "id": "group-f-ned-swe",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 603,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "ceae1eee-0b92-449c-8133-c0fa8ebd8d50",
+      "name": "Holanda",
+      "fifaCode": "NED",
+      "flag": "/assets/png/flag-netherlands.png",
+      "primaryColor": "#F97316",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#97B9E1",
+      "stickerSecondary": "#EF7A05"
+    },
+    "awayTeam": {
+      "id": "e4490f39-d19f-410a-9623-65d5cd26a7b2",
+      "name": "Suécia",
+      "fifaCode": "SWE",
+      "flag": "/assets/png/flag-sweden.png",
+      "primaryColor": "#006AA7",
+      "secondaryColor": "#FECC00",
+      "stickerPrimary": "#84BEDE",
+      "stickerSecondary": "#B576B0"
+    }
+  },
+  {
+    "id": "group-f-jpn-tun",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 604,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "1027eb6d-f854-4a5d-ae5f-4379f4f1cde9",
+      "name": "Japão",
+      "fifaCode": "JPN",
+      "flag": "/assets/png/flag-japan.png",
+      "primaryColor": "#1E40AF",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F59A7A",
+      "stickerSecondary": "#3A74B8"
+    },
+    "awayTeam": {
+      "id": "07873a48-e247-4227-9ffe-5b7328ff81f0",
+      "name": "Tunísia",
+      "fifaCode": "TUN",
+      "flag": "/assets/png/flag-tunisia.png",
+      "primaryColor": "#E70013",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#EF8263",
+      "stickerSecondary": "#FAB942"
+    }
+  },
+  {
+    "id": "group-f-ned-tun",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 605,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "ceae1eee-0b92-449c-8133-c0fa8ebd8d50",
+      "name": "Holanda",
+      "fifaCode": "NED",
+      "flag": "/assets/png/flag-netherlands.png",
+      "primaryColor": "#F97316",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#97B9E1",
+      "stickerSecondary": "#EF7A05"
+    },
+    "awayTeam": {
+      "id": "07873a48-e247-4227-9ffe-5b7328ff81f0",
+      "name": "Tunísia",
+      "fifaCode": "TUN",
+      "flag": "/assets/png/flag-tunisia.png",
+      "primaryColor": "#E70013",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#EF8263",
+      "stickerSecondary": "#FAB942"
+    }
+  },
+  {
+    "id": "group-f-jpn-swe",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 606,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "0720fcfa-38aa-4998-9c29-d354cf581595",
+      "name": "Grupo F",
+      "code": "F",
+      "order": 6
+    },
+    "homeTeam": {
+      "id": "1027eb6d-f854-4a5d-ae5f-4379f4f1cde9",
+      "name": "Japão",
+      "fifaCode": "JPN",
+      "flag": "/assets/png/flag-japan.png",
+      "primaryColor": "#1E40AF",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F59A7A",
+      "stickerSecondary": "#3A74B8"
+    },
+    "awayTeam": {
+      "id": "e4490f39-d19f-410a-9623-65d5cd26a7b2",
+      "name": "Suécia",
+      "fifaCode": "SWE",
+      "flag": "/assets/png/flag-sweden.png",
+      "primaryColor": "#006AA7",
+      "secondaryColor": "#FECC00",
+      "stickerPrimary": "#84BEDE",
+      "stickerSecondary": "#B576B0"
+    }
+  },
+  {
+    "id": "group-g-bel-egy",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 701,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "b15d3f78-8e95-4b6f-9395-508c93a23bb1",
+      "name": "Bélgica",
+      "fifaCode": "BEL",
+      "flag": "/assets/png/flag-belgium.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#FAE042",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#FCC41E"
+    },
+    "awayTeam": {
+      "id": "9f0ef0d7-c5d4-431b-ba5a-2689380c851d",
+      "name": "Egito",
+      "fifaCode": "EGY",
+      "flag": "/assets/png/flag-egypt.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79273",
+      "stickerSecondary": "#219A3A"
+    }
+  },
+  {
+    "id": "group-g-irn-nzl",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 702,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "eea2e603-9bdb-4746-9630-4dd6768ecd9d",
+      "name": "Irã",
+      "fifaCode": "IRN",
+      "flag": "/assets/png/flag-iran.png",
+      "primaryColor": "#239F40",
+      "secondaryColor": "#DA0000",
+      "stickerPrimary": "#89BD91",
+      "stickerSecondary": "#8C1457"
+    },
+    "awayTeam": {
+      "id": "da7f786a-3e8f-497b-83b3-4ada3d4c7b39",
+      "name": "Nova Zelândia",
+      "fifaCode": "NZL",
+      "flag": "/assets/png/flag-new-zealand.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#111111",
+      "stickerPrimary": "#6F94B9",
+      "stickerSecondary": "#F49970"
+    }
+  },
+  {
+    "id": "group-g-bel-irn",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 703,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "b15d3f78-8e95-4b6f-9395-508c93a23bb1",
+      "name": "Bélgica",
+      "fifaCode": "BEL",
+      "flag": "/assets/png/flag-belgium.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#FAE042",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#FCC41E"
+    },
+    "awayTeam": {
+      "id": "eea2e603-9bdb-4746-9630-4dd6768ecd9d",
+      "name": "Irã",
+      "fifaCode": "IRN",
+      "flag": "/assets/png/flag-iran.png",
+      "primaryColor": "#239F40",
+      "secondaryColor": "#DA0000",
+      "stickerPrimary": "#89BD91",
+      "stickerSecondary": "#8C1457"
+    }
+  },
+  {
+    "id": "group-g-egy-nzl",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 704,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "9f0ef0d7-c5d4-431b-ba5a-2689380c851d",
+      "name": "Egito",
+      "fifaCode": "EGY",
+      "flag": "/assets/png/flag-egypt.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79273",
+      "stickerSecondary": "#219A3A"
+    },
+    "awayTeam": {
+      "id": "da7f786a-3e8f-497b-83b3-4ada3d4c7b39",
+      "name": "Nova Zelândia",
+      "fifaCode": "NZL",
+      "flag": "/assets/png/flag-new-zealand.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#111111",
+      "stickerPrimary": "#6F94B9",
+      "stickerSecondary": "#F49970"
+    }
+  },
+  {
+    "id": "group-g-bel-nzl",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 705,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "b15d3f78-8e95-4b6f-9395-508c93a23bb1",
+      "name": "Bélgica",
+      "fifaCode": "BEL",
+      "flag": "/assets/png/flag-belgium.png",
+      "primaryColor": "#111111",
+      "secondaryColor": "#FAE042",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#FCC41E"
+    },
+    "awayTeam": {
+      "id": "da7f786a-3e8f-497b-83b3-4ada3d4c7b39",
+      "name": "Nova Zelândia",
+      "fifaCode": "NZL",
+      "flag": "/assets/png/flag-new-zealand.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#111111",
+      "stickerPrimary": "#6F94B9",
+      "stickerSecondary": "#F49970"
+    }
+  },
+  {
+    "id": "group-g-egy-irn",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 706,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "05eeb6a8-4672-4a42-a4ae-b21d445c7f19",
+      "name": "Grupo G",
+      "code": "G",
+      "order": 7
+    },
+    "homeTeam": {
+      "id": "9f0ef0d7-c5d4-431b-ba5a-2689380c851d",
+      "name": "Egito",
+      "fifaCode": "EGY",
+      "flag": "/assets/png/flag-egypt.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#E79273",
+      "stickerSecondary": "#219A3A"
+    },
+    "awayTeam": {
+      "id": "eea2e603-9bdb-4746-9630-4dd6768ecd9d",
+      "name": "Irã",
+      "fifaCode": "IRN",
+      "flag": "/assets/png/flag-iran.png",
+      "primaryColor": "#239F40",
+      "secondaryColor": "#DA0000",
+      "stickerPrimary": "#89BD91",
+      "stickerSecondary": "#8C1457"
+    }
+  },
+  {
+    "id": "group-h-ksa-cpv",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 801,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "a70d9453-f989-4749-8a37-e7fb4d075cb9",
+      "name": "Arábia Saudita",
+      "fifaCode": "KSA",
+      "flag": "/assets/png/flag-saudi-arabia.png",
+      "primaryColor": "#006C35",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#AAD39D",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "a08802a0-2aa9-4543-9bcd-348b5bf650d4",
+      "name": "Cabo Verde",
+      "fifaCode": "CPV",
+      "flag": "/assets/png/flag-cape-verde.png",
+      "primaryColor": "#003893",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A6BDE5",
+      "stickerSecondary": "#F6A941"
+    }
+  },
+  {
+    "id": "group-h-esp-uru",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 802,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "7e594d33-6bb5-4bce-9257-c2c8d911b1ca",
+      "name": "Espanha",
+      "fifaCode": "ESP",
+      "flag": "/assets/png/flag-spain.png",
+      "primaryColor": "#C60B1E",
+      "secondaryColor": "#FFC400",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#2F6DB3"
+    },
+    "awayTeam": {
+      "id": "6b0d091b-9cb9-4b6f-ab67-ee74b8e003f4",
+      "name": "Uruguai",
+      "fifaCode": "URU",
+      "flag": "/assets/png/flag-uruguay.png",
+      "primaryColor": "#7CC6FE",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A5CCED",
+      "stickerSecondary": "#FCB905"
+    }
+  },
+  {
+    "id": "group-h-ksa-esp",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 803,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "a70d9453-f989-4749-8a37-e7fb4d075cb9",
+      "name": "Arábia Saudita",
+      "fifaCode": "KSA",
+      "flag": "/assets/png/flag-saudi-arabia.png",
+      "primaryColor": "#006C35",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#AAD39D",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "7e594d33-6bb5-4bce-9257-c2c8d911b1ca",
+      "name": "Espanha",
+      "fifaCode": "ESP",
+      "flag": "/assets/png/flag-spain.png",
+      "primaryColor": "#C60B1E",
+      "secondaryColor": "#FFC400",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#2F6DB3"
+    }
+  },
+  {
+    "id": "group-h-cpv-uru",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 804,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "a08802a0-2aa9-4543-9bcd-348b5bf650d4",
+      "name": "Cabo Verde",
+      "fifaCode": "CPV",
+      "flag": "/assets/png/flag-cape-verde.png",
+      "primaryColor": "#003893",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A6BDE5",
+      "stickerSecondary": "#F6A941"
+    },
+    "awayTeam": {
+      "id": "6b0d091b-9cb9-4b6f-ab67-ee74b8e003f4",
+      "name": "Uruguai",
+      "fifaCode": "URU",
+      "flag": "/assets/png/flag-uruguay.png",
+      "primaryColor": "#7CC6FE",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A5CCED",
+      "stickerSecondary": "#FCB905"
+    }
+  },
+  {
+    "id": "group-h-ksa-uru",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 805,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "a70d9453-f989-4749-8a37-e7fb4d075cb9",
+      "name": "Arábia Saudita",
+      "fifaCode": "KSA",
+      "flag": "/assets/png/flag-saudi-arabia.png",
+      "primaryColor": "#006C35",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#AAD39D",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "6b0d091b-9cb9-4b6f-ab67-ee74b8e003f4",
+      "name": "Uruguai",
+      "fifaCode": "URU",
+      "flag": "/assets/png/flag-uruguay.png",
+      "primaryColor": "#7CC6FE",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A5CCED",
+      "stickerSecondary": "#FCB905"
+    }
+  },
+  {
+    "id": "group-h-cpv-esp",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 806,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "604b3419-0f2d-413d-99a6-2c038fb7a4e2",
+      "name": "Grupo H",
+      "code": "H",
+      "order": 8
+    },
+    "homeTeam": {
+      "id": "a08802a0-2aa9-4543-9bcd-348b5bf650d4",
+      "name": "Cabo Verde",
+      "fifaCode": "CPV",
+      "flag": "/assets/png/flag-cape-verde.png",
+      "primaryColor": "#003893",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#A6BDE5",
+      "stickerSecondary": "#F6A941"
+    },
+    "awayTeam": {
+      "id": "7e594d33-6bb5-4bce-9257-c2c8d911b1ca",
+      "name": "Espanha",
+      "fifaCode": "ESP",
+      "flag": "/assets/png/flag-spain.png",
+      "primaryColor": "#C60B1E",
+      "secondaryColor": "#FFC400",
+      "stickerPrimary": "#F28E70",
+      "stickerSecondary": "#2F6DB3"
+    }
+  },
+  {
+    "id": "group-i-fra-irq",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 901,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "3bbd9482-3a61-4c61-a899-5c9ccfde66ea",
+      "name": "França",
+      "fifaCode": "FRA",
+      "flag": "/assets/png/flag-france.png",
+      "primaryColor": "#1D4ED8",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#7CAADA",
+      "stickerSecondary": "#F3A27D"
+    },
+    "awayTeam": {
+      "id": "9d66904f-0159-4695-907c-2be9e41b781f",
+      "name": "Iraque",
+      "fifaCode": "IRQ",
+      "flag": "/assets/png/flag-iraq.png",
+      "primaryColor": "#007A3D",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#F2977B",
+      "stickerSecondary": "#00A968"
+    }
+  },
+  {
+    "id": "group-i-nor-sen",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 902,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "a0d2c0aa-61a2-4a4c-a09f-706a1b50cb47",
+      "name": "Noruega",
+      "fifaCode": "NOR",
+      "flag": "/assets/png/flag-norway.png",
+      "primaryColor": "#BA0C2F",
+      "secondaryColor": "#00205B",
+      "stickerPrimary": "#88B4E0",
+      "stickerSecondary": "#AAD19D"
+    },
+    "awayTeam": {
+      "id": "a657a1e2-cc71-4223-ae98-444f1bc67ab1",
+      "name": "Senegal",
+      "fifaCode": "SEN",
+      "flag": "/assets/png/flag-senegal.png",
+      "primaryColor": "#00853F",
+      "secondaryColor": "#FDEF42",
+      "stickerPrimary": "#F7A924",
+      "stickerSecondary": "#E30612"
+    }
+  },
+  {
+    "id": "group-i-fra-nor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 903,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "3bbd9482-3a61-4c61-a899-5c9ccfde66ea",
+      "name": "França",
+      "fifaCode": "FRA",
+      "flag": "/assets/png/flag-france.png",
+      "primaryColor": "#1D4ED8",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#7CAADA",
+      "stickerSecondary": "#F3A27D"
+    },
+    "awayTeam": {
+      "id": "a0d2c0aa-61a2-4a4c-a09f-706a1b50cb47",
+      "name": "Noruega",
+      "fifaCode": "NOR",
+      "flag": "/assets/png/flag-norway.png",
+      "primaryColor": "#BA0C2F",
+      "secondaryColor": "#00205B",
+      "stickerPrimary": "#88B4E0",
+      "stickerSecondary": "#AAD19D"
+    }
+  },
+  {
+    "id": "group-i-irq-sen",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 904,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "9d66904f-0159-4695-907c-2be9e41b781f",
+      "name": "Iraque",
+      "fifaCode": "IRQ",
+      "flag": "/assets/png/flag-iraq.png",
+      "primaryColor": "#007A3D",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#F2977B",
+      "stickerSecondary": "#00A968"
+    },
+    "awayTeam": {
+      "id": "a657a1e2-cc71-4223-ae98-444f1bc67ab1",
+      "name": "Senegal",
+      "fifaCode": "SEN",
+      "flag": "/assets/png/flag-senegal.png",
+      "primaryColor": "#00853F",
+      "secondaryColor": "#FDEF42",
+      "stickerPrimary": "#F7A924",
+      "stickerSecondary": "#E30612"
+    }
+  },
+  {
+    "id": "group-i-fra-sen",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 905,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "3bbd9482-3a61-4c61-a899-5c9ccfde66ea",
+      "name": "França",
+      "fifaCode": "FRA",
+      "flag": "/assets/png/flag-france.png",
+      "primaryColor": "#1D4ED8",
+      "secondaryColor": "#DC2626",
+      "stickerPrimary": "#7CAADA",
+      "stickerSecondary": "#F3A27D"
+    },
+    "awayTeam": {
+      "id": "a657a1e2-cc71-4223-ae98-444f1bc67ab1",
+      "name": "Senegal",
+      "fifaCode": "SEN",
+      "flag": "/assets/png/flag-senegal.png",
+      "primaryColor": "#00853F",
+      "secondaryColor": "#FDEF42",
+      "stickerPrimary": "#F7A924",
+      "stickerSecondary": "#E30612"
+    }
+  },
+  {
+    "id": "group-i-irq-nor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 906,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "c256412e-ce86-4a7b-a572-cbde3c96b6e4",
+      "name": "Grupo I",
+      "code": "I",
+      "order": 9
+    },
+    "homeTeam": {
+      "id": "9d66904f-0159-4695-907c-2be9e41b781f",
+      "name": "Iraque",
+      "fifaCode": "IRQ",
+      "flag": "/assets/png/flag-iraq.png",
+      "primaryColor": "#007A3D",
+      "secondaryColor": "#CE1126",
+      "stickerPrimary": "#F2977B",
+      "stickerSecondary": "#00A968"
+    },
+    "awayTeam": {
+      "id": "a0d2c0aa-61a2-4a4c-a09f-706a1b50cb47",
+      "name": "Noruega",
+      "fifaCode": "NOR",
+      "flag": "/assets/png/flag-norway.png",
+      "primaryColor": "#BA0C2F",
+      "secondaryColor": "#00205B",
+      "stickerPrimary": "#88B4E0",
+      "stickerSecondary": "#AAD19D"
+    }
+  },
+  {
+    "id": "group-j-alg-arg",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1001,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "b4e01d6b-0e6a-444a-aa38-d40cd007d9e6",
+      "name": "Argélia",
+      "fifaCode": "ALG",
+      "flag": "/assets/png/flag-algeria.png",
+      "primaryColor": "#006233",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#90C89A",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "4977a899-436c-4cb2-b384-ab2afc584447",
+      "name": "Argentina",
+      "fifaCode": "ARG",
+      "flag": "/assets/png/flag-argentina.png",
+      "primaryColor": "#6CC6F0",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#F7AF05"
+    }
+  },
+  {
+    "id": "group-j-aut-jor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1002,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "566540a4-501d-4440-94c6-8b2b18bb169a",
+      "name": "Áustria",
+      "fifaCode": "AUT",
+      "flag": "/assets/png/flag-austria.png",
+      "primaryColor": "#ED2939",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B778B0"
+    },
+    "awayTeam": {
+      "id": "581f58f2-61f6-4f85-89b6-e5193fa42d58",
+      "name": "Jordânia",
+      "fifaCode": "JOR",
+      "flag": "/assets/png/flag-jordan.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8FC79A",
+      "stickerSecondary": "#C61D1E"
+    }
+  },
+  {
+    "id": "group-j-alg-aut",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1003,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "b4e01d6b-0e6a-444a-aa38-d40cd007d9e6",
+      "name": "Argélia",
+      "fifaCode": "ALG",
+      "flag": "/assets/png/flag-algeria.png",
+      "primaryColor": "#006233",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#90C89A",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "566540a4-501d-4440-94c6-8b2b18bb169a",
+      "name": "Áustria",
+      "fifaCode": "AUT",
+      "flag": "/assets/png/flag-austria.png",
+      "primaryColor": "#ED2939",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B778B0"
+    }
+  },
+  {
+    "id": "group-j-arg-jor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1004,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "4977a899-436c-4cb2-b384-ab2afc584447",
+      "name": "Argentina",
+      "fifaCode": "ARG",
+      "flag": "/assets/png/flag-argentina.png",
+      "primaryColor": "#6CC6F0",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#F7AF05"
+    },
+    "awayTeam": {
+      "id": "581f58f2-61f6-4f85-89b6-e5193fa42d58",
+      "name": "Jordânia",
+      "fifaCode": "JOR",
+      "flag": "/assets/png/flag-jordan.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8FC79A",
+      "stickerSecondary": "#C61D1E"
+    }
+  },
+  {
+    "id": "group-j-alg-jor",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1005,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "b4e01d6b-0e6a-444a-aa38-d40cd007d9e6",
+      "name": "Argélia",
+      "fifaCode": "ALG",
+      "flag": "/assets/png/flag-algeria.png",
+      "primaryColor": "#006233",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#90C89A",
+      "stickerSecondary": "#B878B0"
+    },
+    "awayTeam": {
+      "id": "581f58f2-61f6-4f85-89b6-e5193fa42d58",
+      "name": "Jordânia",
+      "fifaCode": "JOR",
+      "flag": "/assets/png/flag-jordan.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8FC79A",
+      "stickerSecondary": "#C61D1E"
+    }
+  },
+  {
+    "id": "group-j-arg-aut",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1006,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "4cc523e2-d8c2-4968-906c-163c9f66797a",
+      "name": "Grupo J",
+      "code": "J",
+      "order": 10
+    },
+    "homeTeam": {
+      "id": "4977a899-436c-4cb2-b384-ab2afc584447",
+      "name": "Argentina",
+      "fifaCode": "ARG",
+      "flag": "/assets/png/flag-argentina.png",
+      "primaryColor": "#6CC6F0",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#8EB7DC",
+      "stickerSecondary": "#F7AF05"
+    },
+    "awayTeam": {
+      "id": "566540a4-501d-4440-94c6-8b2b18bb169a",
+      "name": "Áustria",
+      "fifaCode": "AUT",
+      "flag": "/assets/png/flag-austria.png",
+      "primaryColor": "#ED2939",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#89B5E1",
+      "stickerSecondary": "#B778B0"
+    }
+  },
+  {
+    "id": "group-k-col-por",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1101,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "0f1efc61-610a-4cce-9a0d-9fb742e780bf",
+      "name": "Colômbia",
+      "fifaCode": "COL",
+      "flag": "/assets/png/flag-colombia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#C17B04",
+      "stickerSecondary": "#B51F1E"
+    },
+    "awayTeam": {
+      "id": "a5ca31d3-8303-41fb-bce1-674308d84f10",
+      "name": "Portugal",
+      "fifaCode": "POR",
+      "flag": "/assets/png/flag-portugal.png",
+      "primaryColor": "#046A38",
+      "secondaryColor": "#DA291C",
+      "stickerPrimary": "#73B963",
+      "stickerSecondary": "#B475AF"
+    }
+  },
+  {
+    "id": "group-k-cod-uzb",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1102,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "c2983458-d9db-5927-a24e-445565dc62fa",
+      "name": "RD Congo",
+      "fifaCode": "COD",
+      "flag": "/assets/png/flag-dr-congo.png",
+      "primaryColor": "#00A3E0",
+      "secondaryColor": "#EF3340",
+      "stickerPrimary": "#87BBE6",
+      "stickerSecondary": "#F4C700"
+    },
+    "awayTeam": {
+      "id": "3f7b5c4e-876c-4ce3-b3f0-8c8a4c0f7d37",
+      "name": "Uzbequistão",
+      "fifaCode": "UZB",
+      "flag": "/assets/png/flag-uzbekistan.png",
+      "primaryColor": "#0099B5",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#85CCDB",
+      "stickerSecondary": "#F28A4A"
+    }
+  },
+  {
+    "id": "group-k-col-cod",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1103,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "0f1efc61-610a-4cce-9a0d-9fb742e780bf",
+      "name": "Colômbia",
+      "fifaCode": "COL",
+      "flag": "/assets/png/flag-colombia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#C17B04",
+      "stickerSecondary": "#B51F1E"
+    },
+    "awayTeam": {
+      "id": "c2983458-d9db-5927-a24e-445565dc62fa",
+      "name": "RD Congo",
+      "fifaCode": "COD",
+      "flag": "/assets/png/flag-dr-congo.png",
+      "primaryColor": "#00A3E0",
+      "secondaryColor": "#EF3340",
+      "stickerPrimary": "#87BBE6",
+      "stickerSecondary": "#F4C700"
+    }
+  },
+  {
+    "id": "group-k-por-uzb",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1104,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "a5ca31d3-8303-41fb-bce1-674308d84f10",
+      "name": "Portugal",
+      "fifaCode": "POR",
+      "flag": "/assets/png/flag-portugal.png",
+      "primaryColor": "#046A38",
+      "secondaryColor": "#DA291C",
+      "stickerPrimary": "#73B963",
+      "stickerSecondary": "#B475AF"
+    },
+    "awayTeam": {
+      "id": "3f7b5c4e-876c-4ce3-b3f0-8c8a4c0f7d37",
+      "name": "Uzbequistão",
+      "fifaCode": "UZB",
+      "flag": "/assets/png/flag-uzbekistan.png",
+      "primaryColor": "#0099B5",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#85CCDB",
+      "stickerSecondary": "#F28A4A"
+    }
+  },
+  {
+    "id": "group-k-col-uzb",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1105,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "0f1efc61-610a-4cce-9a0d-9fb742e780bf",
+      "name": "Colômbia",
+      "fifaCode": "COL",
+      "flag": "/assets/png/flag-colombia.png",
+      "primaryColor": "#FCD116",
+      "secondaryColor": "#003893",
+      "stickerPrimary": "#C17B04",
+      "stickerSecondary": "#B51F1E"
+    },
+    "awayTeam": {
+      "id": "3f7b5c4e-876c-4ce3-b3f0-8c8a4c0f7d37",
+      "name": "Uzbequistão",
+      "fifaCode": "UZB",
+      "flag": "/assets/png/flag-uzbekistan.png",
+      "primaryColor": "#0099B5",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#85CCDB",
+      "stickerSecondary": "#F28A4A"
+    }
+  },
+  {
+    "id": "group-k-por-cod",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1106,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "c316ba72-74f0-4822-9c8f-a0f2b48bd0b1",
+      "name": "Grupo K",
+      "code": "K",
+      "order": 11
+    },
+    "homeTeam": {
+      "id": "a5ca31d3-8303-41fb-bce1-674308d84f10",
+      "name": "Portugal",
+      "fifaCode": "POR",
+      "flag": "/assets/png/flag-portugal.png",
+      "primaryColor": "#046A38",
+      "secondaryColor": "#DA291C",
+      "stickerPrimary": "#73B963",
+      "stickerSecondary": "#B475AF"
+    },
+    "awayTeam": {
+      "id": "c2983458-d9db-5927-a24e-445565dc62fa",
+      "name": "RD Congo",
+      "fifaCode": "COD",
+      "flag": "/assets/png/flag-dr-congo.png",
+      "primaryColor": "#00A3E0",
+      "secondaryColor": "#EF3340",
+      "stickerPrimary": "#87BBE6",
+      "stickerSecondary": "#F4C700"
+    }
+  },
+  {
+    "id": "group-l-cro-gha",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1201,
+    "matchday": 1,
+    "groupMatchIndex": 1,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "15f75948-c833-48dd-8729-9a47423dad37",
+      "name": "Croácia",
+      "fifaCode": "CRO",
+      "flag": "/assets/png/flag-croatia.png",
+      "primaryColor": "#FF0000",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F39978",
+      "stickerSecondary": "#00AEC8"
+    },
+    "awayTeam": {
+      "id": "10ea29fd-4c5c-4501-adcc-610c03300900",
+      "name": "Gana",
+      "fifaCode": "GHA",
+      "flag": "/assets/png/flag-ghana.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FCD116",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D62739"
+    }
+  },
+  {
+    "id": "group-l-eng-pan",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1202,
+    "matchday": 1,
+    "groupMatchIndex": 2,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "d665ddb6-3a69-414e-8d35-d390ab738353",
+      "name": "Inglaterra",
+      "fifaCode": "ENG",
+      "flag": "/assets/png/flag-england.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#CF142B",
+      "stickerPrimary": "#C16967",
+      "stickerSecondary": "#374C9B"
+    },
+    "awayTeam": {
+      "id": "593c2d60-a4c9-41de-ba41-e7318f34e07a",
+      "name": "Panamá",
+      "fifaCode": "PAN",
+      "flag": "/assets/png/flag-panama.png",
+      "primaryColor": "#D21034",
+      "secondaryColor": "#005293",
+      "stickerPrimary": "#F08682",
+      "stickerSecondary": "#A9D299"
+    }
+  },
+  {
+    "id": "group-l-cro-eng",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1203,
+    "matchday": 2,
+    "groupMatchIndex": 3,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "15f75948-c833-48dd-8729-9a47423dad37",
+      "name": "Croácia",
+      "fifaCode": "CRO",
+      "flag": "/assets/png/flag-croatia.png",
+      "primaryColor": "#FF0000",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F39978",
+      "stickerSecondary": "#00AEC8"
+    },
+    "awayTeam": {
+      "id": "d665ddb6-3a69-414e-8d35-d390ab738353",
+      "name": "Inglaterra",
+      "fifaCode": "ENG",
+      "flag": "/assets/png/flag-england.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#CF142B",
+      "stickerPrimary": "#C16967",
+      "stickerSecondary": "#374C9B"
+    }
+  },
+  {
+    "id": "group-l-gha-pan",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1204,
+    "matchday": 2,
+    "groupMatchIndex": 4,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "10ea29fd-4c5c-4501-adcc-610c03300900",
+      "name": "Gana",
+      "fifaCode": "GHA",
+      "flag": "/assets/png/flag-ghana.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FCD116",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D62739"
+    },
+    "awayTeam": {
+      "id": "593c2d60-a4c9-41de-ba41-e7318f34e07a",
+      "name": "Panamá",
+      "fifaCode": "PAN",
+      "flag": "/assets/png/flag-panama.png",
+      "primaryColor": "#D21034",
+      "secondaryColor": "#005293",
+      "stickerPrimary": "#F08682",
+      "stickerSecondary": "#A9D299"
+    }
+  },
+  {
+    "id": "group-l-cro-pan",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1205,
+    "matchday": 3,
+    "groupMatchIndex": 5,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "15f75948-c833-48dd-8729-9a47423dad37",
+      "name": "Croácia",
+      "fifaCode": "CRO",
+      "flag": "/assets/png/flag-croatia.png",
+      "primaryColor": "#FF0000",
+      "secondaryColor": "#FFFFFF",
+      "stickerPrimary": "#F39978",
+      "stickerSecondary": "#00AEC8"
+    },
+    "awayTeam": {
+      "id": "593c2d60-a4c9-41de-ba41-e7318f34e07a",
+      "name": "Panamá",
+      "fifaCode": "PAN",
+      "flag": "/assets/png/flag-panama.png",
+      "primaryColor": "#D21034",
+      "secondaryColor": "#005293",
+      "stickerPrimary": "#F08682",
+      "stickerSecondary": "#A9D299"
+    }
+  },
+  {
+    "id": "group-l-gha-eng",
+    "stage": "group",
+    "status": "scheduled",
+    "order": 1206,
+    "matchday": 3,
+    "groupMatchIndex": 6,
+    "group": {
+      "id": "1885c92d-ed65-4b08-9f52-4c0dc75339e4",
+      "name": "Grupo L",
+      "code": "L",
+      "order": 12
+    },
+    "homeTeam": {
+      "id": "10ea29fd-4c5c-4501-adcc-610c03300900",
+      "name": "Gana",
+      "fifaCode": "GHA",
+      "flag": "/assets/png/flag-ghana.png",
+      "primaryColor": "#CE1126",
+      "secondaryColor": "#FCD116",
+      "stickerPrimary": "#F7AF05",
+      "stickerSecondary": "#D62739"
+    },
+    "awayTeam": {
+      "id": "d665ddb6-3a69-414e-8d35-d390ab738353",
+      "name": "Inglaterra",
+      "fifaCode": "ENG",
+      "flag": "/assets/png/flag-england.png",
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#CF142B",
+      "stickerPrimary": "#C16967",
+      "stickerSecondary": "#374C9B"
+    }
+  }
+]

@@ -13,7 +13,7 @@ import { getAdminFirestore } from "@/infra/firebase/admin";
 const databaseDir = path.dirname(fileURLToPath(import.meta.url));
 const defaultSeedsDir = path.join(databaseDir, "2026");
 
-const seedFileOrder = ["groups.json", "teams.json", "stickers.json"];
+const seedFileOrder = ["groups.json", "teams.json", "matches.json", "stickers.json"];
 
 export type SeedDocumentResult = {
   collectionId: string;

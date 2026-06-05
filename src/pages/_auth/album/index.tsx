@@ -5,10 +5,7 @@ import {
   GroupListItemAction,
   GroupListItemStats,
   GroupListItemFlag,
-  GroupListItemName,
-  GroupListContent,
-  GroupListHeader,
-  GroupListRoot
+  GroupListItemName
 } from "@/components/v2026/groups/list";
 import { buildAlbumGlobalStats, buildAlbumPastedStats, MAX_STICKERS_PER_TEAM } from "@/helpers/album/album-stats";
 import { useFindAllPastedCollection } from "@/services/collections/findall-pasted-collection.service";
@@ -38,6 +35,14 @@ function AlbumPage() {
 
   const albumStats = buildAlbumGlobalStats(groups, collectionItems, pastedStats?.uniqueCount ?? 0);
   const statsLoading = groupsFetching || pastedFetching || collectionFetching;
+
+  function getTeamPastedCount(teamId: string) {
+    return pastedStats?.byTeam[teamId] ?? 0;
+  }
+
+  function getGroupPastedCount(group: (typeof groups)[number]) {
+    return group.teams.reduce((total, team) => total + getTeamPastedCount(team.id), 0);
+  }
 
   return (
     <PageRoot subtitle="Todas as seleções" title="Meu álbum">
@@ -92,32 +97,54 @@ function AlbumPage() {
 
         <ShowIf if={!groupsFetching}>
           <ForEach items={groups}>
-            {(group) => (
-              <GroupListRoot key={group.id}>
-                <GroupListHeader>Grupo {group.code}</GroupListHeader>
-                <GroupListContent>
-                  <ForEach items={group.teams}>
-                    {(team) => (
-                      <Link
-                        className="flex items-center gap-3 px-4 py-3.5 text-left transition-colors active:bg-white/4"
-                        aria-label={`Ver detalhes de ${team.name}`}
-                        params={() => ({ pais: team.fifaCode })}
-                        to="/album/$pais"
-                        key={team.id}
-                      >
-                        <GroupListItemFlag src={team.flag} />
-                        <GroupListItemName>{team.name}</GroupListItemName>
-                        <GroupListItemStats>
-                          {pastedStats?.byTeam[team.id] ?? 0}/{MAX_STICKERS_PER_TEAM}
-                        </GroupListItemStats>
-                        <GroupListItemProgress value={((pastedStats?.byTeam[team.id] ?? 0) / MAX_STICKERS_PER_TEAM) * 100} />
-                        <GroupListItemAction />
-                      </Link>
-                    )}
-                  </ForEach>
-                </GroupListContent>
-              </GroupListRoot>
-            )}
+            {(group) => {
+              const groupPastedCount = getGroupPastedCount(group);
+              const groupTotalStickers = group.teams.length * MAX_STICKERS_PER_TEAM;
+
+              return (
+                <SurfaceCardRoot className="overflow-hidden p-0" key={group.id}>
+                  <div className="border-b border-white/6 px-4 py-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <Typography variant="semibold" color="base" size="sm" as="h2">
+                        Grupo {group.code}
+                      </Typography>
+                      <Typography className="tabular-nums" variant="medium" color="subtle" size="xs" as="span">
+                        {groupPastedCount}/{groupTotalStickers}
+                      </Typography>
+                    </div>
+                    <Typography variant="medium" color="subtle" size="xs" as="p">
+                      {group.teams.length} seleções
+                    </Typography>
+                  </div>
+
+                  <div className="divide-y divide-white/6">
+                    <ForEach items={group.teams}>
+                      {(team) => {
+                        const pastedCount = getTeamPastedCount(team.id);
+
+                        return (
+                          <Link
+                            className="grid grid-cols-[auto_minmax(0,1fr)_auto_auto_auto] items-center gap-3 px-4 py-3.5 text-left transition-colors active:bg-white/4"
+                            aria-label={`Ver detalhes de ${team.name}`}
+                            params={() => ({ pais: team.fifaCode })}
+                            to="/album/$pais"
+                            key={team.id}
+                          >
+                            <GroupListItemFlag src={team.flag} />
+                            <GroupListItemName className="truncate">{team.name}</GroupListItemName>
+                            <GroupListItemStats>
+                              {pastedCount}/{MAX_STICKERS_PER_TEAM}
+                            </GroupListItemStats>
+                            <GroupListItemProgress value={(pastedCount / MAX_STICKERS_PER_TEAM) * 100} />
+                            <GroupListItemAction />
+                          </Link>
+                        );
+                      }}
+                    </ForEach>
+                  </div>
+                </SurfaceCardRoot>
+              );
+            }}
           </ForEach>
         </ShowIf>
       </PageContent>

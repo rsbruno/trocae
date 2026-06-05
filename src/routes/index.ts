@@ -14,8 +14,8 @@ import { Route as AuthRouteRouteImport } from './../pages/_auth/route'
 import { Route as PublicFinalizarCadastroIndexRouteImport } from './../pages/_public/finalizar-cadastro/index'
 import { Route as PublicCadastrarIndexRouteImport } from './../pages/_public/cadastrar/index'
 import { Route as PublicentrarIndexRouteImport } from './../pages/_public/(entrar)/index'
-import { Route as AuthTradesIndexRouteImport } from './../pages/_auth/trades/index'
 import { Route as AuthPerfilIndexRouteImport } from './../pages/_auth/perfil/index'
+import { Route as AuthPartidasIndexRouteImport } from './../pages/_auth/partidas/index'
 import { Route as AuthHomeIndexRouteImport } from './../pages/_auth/home/index'
 import { Route as AuthColecaoIndexRouteImport } from './../pages/_auth/colecao/index'
 import { Route as AuthAlbumIndexRouteImport } from './../pages/_auth/album/index'
@@ -47,14 +47,14 @@ const PublicentrarIndexRoute = PublicentrarIndexRouteImport.update({
   path: '/',
   getParentRoute: () => PublicRouteRoute,
 } as any)
-const AuthTradesIndexRoute = AuthTradesIndexRouteImport.update({
-  id: '/trades/',
-  path: '/trades/',
-  getParentRoute: () => AuthRouteRoute,
-} as any)
 const AuthPerfilIndexRoute = AuthPerfilIndexRouteImport.update({
   id: '/perfil/',
   path: '/perfil/',
+  getParentRoute: () => AuthRouteRoute,
+} as any)
+const AuthPartidasIndexRoute = AuthPartidasIndexRouteImport.update({
+  id: '/partidas/',
+  path: '/partidas/',
   getParentRoute: () => AuthRouteRoute,
 } as any)
 const AuthHomeIndexRoute = AuthHomeIndexRouteImport.update({
@@ -95,8 +95,8 @@ export interface FileRoutesByFullPath {
   '/album/': typeof AuthAlbumIndexRoute
   '/colecao/': typeof AuthColecaoIndexRoute
   '/home/': typeof AuthHomeIndexRoute
+  '/partidas/': typeof AuthPartidasIndexRoute
   '/perfil/': typeof AuthPerfilIndexRoute
-  '/trades/': typeof AuthTradesIndexRoute
   '/cadastrar/': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
   '/album/$pais/': typeof AuthAlbumPaisIndexRoute
@@ -108,8 +108,8 @@ export interface FileRoutesByTo {
   '/album': typeof AuthAlbumIndexRoute
   '/colecao': typeof AuthColecaoIndexRoute
   '/home': typeof AuthHomeIndexRoute
+  '/partidas': typeof AuthPartidasIndexRoute
   '/perfil': typeof AuthPerfilIndexRoute
-  '/trades': typeof AuthTradesIndexRoute
   '/cadastrar': typeof PublicCadastrarIndexRoute
   '/finalizar-cadastro': typeof PublicFinalizarCadastroIndexRoute
   '/album/$pais': typeof AuthAlbumPaisIndexRoute
@@ -123,8 +123,8 @@ export interface FileRoutesById {
   '/_auth/album/': typeof AuthAlbumIndexRoute
   '/_auth/colecao/': typeof AuthColecaoIndexRoute
   '/_auth/home/': typeof AuthHomeIndexRoute
+  '/_auth/partidas/': typeof AuthPartidasIndexRoute
   '/_auth/perfil/': typeof AuthPerfilIndexRoute
-  '/_auth/trades/': typeof AuthTradesIndexRoute
   '/_public/(entrar)/': typeof PublicentrarIndexRoute
   '/_public/cadastrar/': typeof PublicCadastrarIndexRoute
   '/_public/finalizar-cadastro/': typeof PublicFinalizarCadastroIndexRoute
@@ -139,8 +139,8 @@ export interface FileRouteTypes {
     | '/album/'
     | '/colecao/'
     | '/home/'
+    | '/partidas/'
     | '/perfil/'
-    | '/trades/'
     | '/cadastrar/'
     | '/finalizar-cadastro/'
     | '/album/$pais/'
@@ -152,8 +152,8 @@ export interface FileRouteTypes {
     | '/album'
     | '/colecao'
     | '/home'
+    | '/partidas'
     | '/perfil'
-    | '/trades'
     | '/cadastrar'
     | '/finalizar-cadastro'
     | '/album/$pais'
@@ -166,8 +166,8 @@ export interface FileRouteTypes {
     | '/_auth/album/'
     | '/_auth/colecao/'
     | '/_auth/home/'
+    | '/_auth/partidas/'
     | '/_auth/perfil/'
-    | '/_auth/trades/'
     | '/_public/(entrar)/'
     | '/_public/cadastrar/'
     | '/_public/finalizar-cadastro/'
@@ -218,18 +218,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicentrarIndexRouteImport
       parentRoute: typeof PublicRouteRoute
     }
-    '/_auth/trades/': {
-      id: '/_auth/trades/'
-      path: '/trades'
-      fullPath: '/trades/'
-      preLoaderRoute: typeof AuthTradesIndexRouteImport
-      parentRoute: typeof AuthRouteRoute
-    }
     '/_auth/perfil/': {
       id: '/_auth/perfil/'
       path: '/perfil'
       fullPath: '/perfil/'
       preLoaderRoute: typeof AuthPerfilIndexRouteImport
+      parentRoute: typeof AuthRouteRoute
+    }
+    '/_auth/partidas/': {
+      id: '/_auth/partidas/'
+      path: '/partidas'
+      fullPath: '/partidas/'
+      preLoaderRoute: typeof AuthPartidasIndexRouteImport
       parentRoute: typeof AuthRouteRoute
     }
     '/_auth/home/': {
@@ -281,8 +281,8 @@ interface AuthRouteRouteChildren {
   AuthAlbumIndexRoute: typeof AuthAlbumIndexRoute
   AuthColecaoIndexRoute: typeof AuthColecaoIndexRoute
   AuthHomeIndexRoute: typeof AuthHomeIndexRoute
+  AuthPartidasIndexRoute: typeof AuthPartidasIndexRoute
   AuthPerfilIndexRoute: typeof AuthPerfilIndexRoute
-  AuthTradesIndexRoute: typeof AuthTradesIndexRoute
   AuthAlbumPaisIndexRoute: typeof AuthAlbumPaisIndexRoute
   AuthColecaoAdicionarIndexRoute: typeof AuthColecaoAdicionarIndexRoute
   AuthAlbumColarStickerIdIndexRoute: typeof AuthAlbumColarStickerIdIndexRoute
@@ -292,8 +292,8 @@ const AuthRouteRouteChildren: AuthRouteRouteChildren = {
   AuthAlbumIndexRoute: AuthAlbumIndexRoute,
   AuthColecaoIndexRoute: AuthColecaoIndexRoute,
   AuthHomeIndexRoute: AuthHomeIndexRoute,
+  AuthPartidasIndexRoute: AuthPartidasIndexRoute,
   AuthPerfilIndexRoute: AuthPerfilIndexRoute,
-  AuthTradesIndexRoute: AuthTradesIndexRoute,
   AuthAlbumPaisIndexRoute: AuthAlbumPaisIndexRoute,
   AuthColecaoAdicionarIndexRoute: AuthColecaoAdicionarIndexRoute,
   AuthAlbumColarStickerIdIndexRoute: AuthAlbumColarStickerIdIndexRoute,

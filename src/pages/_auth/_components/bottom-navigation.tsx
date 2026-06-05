@@ -1,4 +1,4 @@
-import { ArrowsLeftRightIcon, StickerIcon, HouseIcon, type Icon, BookIcon, UserIcon } from "@phosphor-icons/react";
+import { SoccerBallIcon, StickerIcon, HouseIcon, type Icon, BookIcon, UserIcon } from "@phosphor-icons/react";
 import { useRouterState, Link } from "@tanstack/react-router";
 
 import { Typography } from "@/components/ui/typography";
@@ -16,7 +16,7 @@ const navigationItems: NavigationItem[] = [
   { label: "Album", icon: BookIcon, to: "/album" },
   { icon: StickerIcon, label: "Colecao", to: "/colecao" },
   { label: "Inicio", icon: HouseIcon, isCenter: true, to: "/" },
-  { icon: ArrowsLeftRightIcon, label: "Trocas", to: "/trades" },
+  { icon: SoccerBallIcon, label: "Partidas", to: "/partidas" },
   { label: "Perfil", icon: UserIcon, to: "/perfil" }
 ];
 
