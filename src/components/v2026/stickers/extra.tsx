@@ -142,8 +142,8 @@ export function ExtraStickerPlayerName({ className, children, ...props }: Omit<C
         "font-sticker bg-sticker-extra absolute bottom-3 mx-[5%] block w-[90%] rounded-tr-xl rounded-bl-xl py-1 text-center uppercase",
         className
       )}
-      color="inverse"
       variant="bold"
+      color="base"
       as="span"
       size="xs"
       {...props}

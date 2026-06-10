@@ -193,16 +193,13 @@ export function StickerPlayerName({ className }: StickerPlayerNameProps) {
 
   return (
     <Typography
-      className={twMerge("font-sticker block uppercase", className)}
+      className={twMerge("font-sticker block leading-2 uppercase", className)}
       variant="medium"
-      color="inverse"
+      color="base"
+      size="xxs"
       as="span"
-      size="xs"
     >
-      {displayFirstName}{" "}
-      <Typography color="inverse" variant="bold" size="xs" as="b">
-        {displayLastName}
-      </Typography>
+      {displayFirstName} <b>{displayLastName}</b>
     </Typography>
   );
 }
@@ -217,11 +214,11 @@ export function StickerPlayerStats({ className, ...props }: Omit<ComponentPropsW
 
   return (
     <Typography
-      className={twMerge("font-sticker block", className)}
+      className={twMerge("font-sticker block leading-2", className)}
       variant="medium"
-      color="inverse"
+      color="base"
       as="small"
-      size="xs"
+      size="xxs"
       {...props}
     >
       {playerStats || "—"}
@@ -235,10 +232,10 @@ export function StickerTeamLabel({ className, children, ...props }: Omit<Compone
   return (
     <Typography
       className={twMerge("font-sticker uppercase", className)}
-      color="inverse"
       variant="bold"
+      color="base"
       as="small"
-      size="xs"
+      size="xxs"
       {...props}
     >
       {children ?? data.currentTeam.name}
